@@ -556,7 +556,30 @@
       letter-spacing: 0.04em;
     }
 
-    /* ── PHOTO STRIP ── */
+    /* ── PHOTO GALLERY ── */
+    .photo-gallery {
+      columns: 3;
+      column-gap: 6px;
+      padding: 0;
+      line-height: 0;
+    }
+    .photo-gallery img {
+      width: 100%;
+      height: auto;
+      break-inside: avoid;
+      margin-bottom: 6px;
+      border-radius: 4px;
+      display: block;
+      line-height: 0;
+    }
+    @media (max-width: 700px) {
+      .photo-gallery { columns: 2; }
+    }
+    @media (max-width: 400px) {
+      .photo-gallery { columns: 1; }
+    }
+
+    /* ── PHOTO STRIP (legacy) ── */
     .photo-strip {
       display: flex;
       height: 380px;
@@ -766,7 +789,9 @@
 
 <!-- ── NAV ── -->
 <nav id="nav">
-  <a href="#hero" class="nav-logo">Yishai</a>
+  <a href="#hero" class="nav-logo">
+    <img src="curated/05%20cartoon.png" alt="Yishai logo" style="height:38px;width:auto;vertical-align:middle;margin-right:0.5rem;border-radius:3px;">Yishai
+  </a>
   <ul class="nav-links">
     <li><a href="#video">Watch</a></li>
     <li><a href="#services">Services</a></li>
@@ -947,13 +972,16 @@
   </div>
 </section>
 
-<!-- ── PHOTO STRIP ── -->
-<div class="photo-strip">
-  <img src="curated/10%20staubers.jpg" alt="Audience reaction">
-  <img src="curated/07%20yishai%20gesturing%20aroud%20and%20around%20with%20jacob%20and%20wife%20with%20extra%20top.png" alt="Yishai performing on stage">
-  <img src="curated/12%20crowd%20gazing.jpg" alt="Crowd watching">
-  <img src="curated/08%20yakins%20laughing.jpg" alt="Audience laughing">
-  <img src="curated/13%20elazraki%20kids.png" alt="Kids at camp show">
+<!-- ── PHOTO GALLERY ── -->
+<div class="photo-gallery">
+  <img src="curated/11%20bitsritz%20cryptext.jpg" alt="Dramatic reveal moment" loading="lazy">
+  <img src="curated/08%20yakins%20laughing.jpg" alt="Audience laughing" loading="lazy">
+  <img src="curated/13%20elazraki%20kids.png" alt="Kids at camp show" loading="lazy">
+  <img src="curated/07%20yishai%20gesturing%20aroud%20and%20around%20with%20jacob%20and%20wife%20with%20extra%20top.png" alt="Yishai performing on stage" loading="lazy">
+  <img src="curated/09%20yosef%20clapping.png" alt="Audience member clapping" loading="lazy">
+  <img src="curated/12%20crowd%20gazing.jpg" alt="Crowd watching intently" loading="lazy">
+  <img src="curated/10%20staubers.jpg" alt="Audience reaction" loading="lazy">
+  <img src="curated/14%20strosberg%20crowd.png" alt="Kids watching the show" loading="lazy">
 </div>
 
 <!-- ── TESTIMONIALS ── -->
