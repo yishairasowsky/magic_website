@@ -1,0 +1,13 @@
+# Screenshots & temp files
+*.png
+*.jpg
+!curated/**
+ovelap.png
+copied.png
+titles.png
+
+# PDFs (kept locally, not needed for the site)
+*.pdf
+
+# Claude memory
+.claude/

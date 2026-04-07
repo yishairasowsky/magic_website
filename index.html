@@ -1,0 +1,1232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yishai — Magician &amp; Mind Reader | Israel</title>
+  <meta name="description" content="Yishai is a magician and mentalist performing across Israel at corporate events, bar mitzvahs, sheva berachos, and private celebrations. Book: 054-848-2245">
+  <meta property="og:title" content="Yishai — Magician &amp; Mind Reader">
+  <meta property="og:description" content="Five-star magic and mind reading for your next event. Performs in Hebrew and English across Israel.">
+  <meta property="og:url" content="https://www.yishai.show">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:      #06060e;
+      --bg2:     #0d0d1c;
+      --bg3:     #111126;
+      --gold:    #c9a84c;
+      --gold-lt: #e8c96a;
+      --white:   #f0f0f0;
+      --muted:   #777;
+      --nav-h:   68px;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--bg);
+      color: var(--white);
+      line-height: 1.6;
+    }
+
+    /* ── NAV ── */
+    nav#nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      height: var(--nav-h);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 6%;
+      z-index: 100;
+      transition: background 0.35s, box-shadow 0.35s;
+    }
+    nav#nav.scrolled {
+      background: rgba(6,6,14,0.95);
+      backdrop-filter: blur(12px);
+      box-shadow: 0 1px 0 rgba(201,168,76,0.12);
+    }
+    .nav-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.55rem;
+      font-weight: 700;
+      color: var(--gold);
+      text-decoration: none;
+      letter-spacing: 0.03em;
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+      align-items: center;
+      white-space: nowrap;
+    }
+    .nav-links a {
+      color: rgba(240,240,240,0.8);
+      text-decoration: none;
+      font-size: 0.82rem;
+      font-weight: 500;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      white-space: nowrap;
+      transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--gold); }
+    .nav-book {
+      background: var(--gold) !important;
+      color: #000 !important;
+      padding: 0.48rem 1.25rem !important;
+      border-radius: 4px !important;
+      font-weight: 600 !important;
+      letter-spacing: 0.04em !important;
+      transition: background 0.2s !important;
+    }
+    .nav-book:hover { background: var(--gold-lt) !important; }
+
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 5px;
+      background: none;
+      border: none;
+    }
+    .hamburger span {
+      display: block;
+      width: 22px;
+      height: 2px;
+      background: var(--white);
+      transition: all 0.3s;
+      border-radius: 2px;
+    }
+
+    @media (max-width: 860px) {
+      nav#nav { flex-wrap: wrap; height: auto; padding: 0.9rem 6%; align-items: center; }
+      .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        gap: 0;
+        padding: 0.5rem 0 1rem;
+        border-top: 1px solid rgba(201,168,76,0.15);
+        margin-top: 0.5rem;
+      }
+      .nav-links.open { display: flex; }
+      .nav-links li { width: 100%; }
+      .nav-links a {
+        display: block;
+        padding: 0.8rem 0;
+        border-bottom: 1px solid rgba(255,255,255,0.05);
+        font-size: 1rem;
+        letter-spacing: 0.04em;
+      }
+      .nav-book {
+        display: block;
+        margin-top: 0.8rem;
+        text-align: center;
+        padding: 0.75rem !important;
+        border-bottom: none !important;
+      }
+      .hamburger { display: flex; }
+    }
+
+    /* ── SECTION COMMONS ── */
+    section { padding: 5.5rem 6%; }
+    .eyebrow {
+      font-size: 0.72rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.75rem;
+      font-weight: 500;
+    }
+    h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(2rem, 4.5vw, 2.9rem);
+      font-weight: 700;
+      line-height: 1.15;
+      margin-bottom: 1rem;
+    }
+    .lead {
+      color: rgba(240,240,240,0.6);
+      font-size: 1rem;
+      max-width: 560px;
+      line-height: 1.8;
+      margin-bottom: 2.5rem;
+    }
+    .center { text-align: center; }
+    .center .lead { margin-left: auto; margin-right: auto; }
+    .rule {
+      width: 52px; height: 2px;
+      background: linear-gradient(to right, var(--gold), transparent);
+      margin: 1.2rem 0 2rem;
+    }
+    .center .rule { margin-left: auto; margin-right: auto; }
+
+    /* ── HERO ── */
+    #hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: var(--nav-h) 6% 0;
+      position: relative;
+      overflow: hidden;
+      background-image: url('curated/07%20yishai%20gesturing%20aroud%20and%20around%20with%20jacob%20and%20wife%20with%20extra%20top.png');
+      background-size: cover;
+      background-position: center top;
+    }
+    #hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to bottom,
+        rgba(6,6,14,0.5) 0%,
+        rgba(6,6,14,0.4) 40%,
+        rgba(6,6,14,0.75) 100%
+      );
+      z-index: 1;
+    }
+    #hero-canvas {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      z-index: 2;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 3;
+      max-width: 720px;
+    }
+    /* Play button in hero */
+    .hero-play {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.7rem;
+      background: rgba(255,255,255,0.12);
+      border: 2px solid rgba(255,255,255,0.5);
+      backdrop-filter: blur(8px);
+      color: #fff;
+      padding: 0.9rem 2rem;
+      border-radius: 100px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      font-family: 'Inter', sans-serif;
+      cursor: pointer;
+      transition: background 0.2s, border-color 0.2s, transform 0.2s;
+      letter-spacing: 0.04em;
+    }
+    .hero-play:hover {
+      background: rgba(201,168,76,0.25);
+      border-color: var(--gold);
+      transform: scale(1.04);
+    }
+    .hero-play .play-icon {
+      width: 32px; height: 32px;
+      background: var(--gold);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #000;
+      font-size: 0.75rem;
+      padding-left: 2px;
+      flex-shrink: 0;
+    }
+    /* Modal */
+    #modal {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.93);
+      z-index: 200;
+      align-items: center;
+      justify-content: center;
+    }
+    #modal.open { display: flex; }
+    .modal-inner {
+      position: relative;
+      width: 92%;
+      max-width: 960px;
+    }
+    .modal-close {
+      position: absolute;
+      top: -2.5rem;
+      right: 0;
+      background: none;
+      border: none;
+      color: rgba(255,255,255,0.7);
+      font-size: 1.5rem;
+      cursor: pointer;
+      line-height: 1;
+      transition: color 0.2s;
+    }
+    .modal-close:hover { color: var(--gold); }
+    .modal-video {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 30px 80px rgba(0,0,0,0.8);
+    }
+    .modal-video iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      border: 0;
+    }
+    .hero-name {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(5rem, 14vw, 9rem);
+      font-weight: 900;
+      line-height: 0.9;
+      letter-spacing: -0.02em;
+      color: var(--white);
+      margin-bottom: 1rem;
+    }
+    .hero-name span { color: var(--gold); }
+    .hero-title {
+      font-size: clamp(0.85rem, 2vw, 1rem);
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: rgba(201,168,76,0.75);
+      margin-bottom: 1.5rem;
+      font-weight: 400;
+    }
+    .hero-tagline {
+      font-size: clamp(1rem, 2.4vw, 1.2rem);
+      color: rgba(240,240,240,0.65);
+      max-width: 500px;
+      margin: 0 auto 2.8rem;
+      font-weight: 300;
+      line-height: 1.75;
+    }
+    .hero-btns {
+      display: flex;
+      gap: 1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .btn-gold {
+      background: var(--gold);
+      color: #000;
+      padding: 0.85rem 2rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.9rem;
+      letter-spacing: 0.04em;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .btn-gold:hover { background: var(--gold-lt); transform: translateY(-2px); }
+    .btn-outline {
+      border: 1px solid rgba(201,168,76,0.45);
+      color: var(--gold);
+      padding: 0.85rem 2rem;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 0.9rem;
+      letter-spacing: 0.04em;
+      transition: border-color 0.2s, background 0.2s, transform 0.2s;
+    }
+    .btn-outline:hover {
+      border-color: var(--gold);
+      background: rgba(201,168,76,0.07);
+      transform: translateY(-2px);
+    }
+    .hero-scroll {
+      position: absolute;
+      bottom: 1.8rem;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      color: var(--muted);
+      font-size: 0.65rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      animation: floatDown 2.2s ease-in-out infinite;
+    }
+    .hero-scroll::after {
+      content: '';
+      display: block;
+      width: 1px; height: 36px;
+      background: linear-gradient(to bottom, var(--gold), transparent);
+    }
+    @keyframes floatDown {
+      0%, 100% { transform: translateX(-50%) translateY(0); }
+      55% { transform: translateX(-50%) translateY(7px); }
+    }
+
+    /* ── SOCIAL PROOF BAR ── */
+    #proof {
+      background: var(--bg2);
+      padding: 2.5rem 6%;
+      border-top: 1px solid rgba(201,168,76,0.1);
+      border-bottom: 1px solid rgba(201,168,76,0.1);
+    }
+    .proof-inner {
+      display: flex;
+      justify-content: center;
+      gap: 4rem;
+      flex-wrap: wrap;
+    }
+    .proof-stat {
+      text-align: center;
+    }
+    .proof-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.2rem;
+      font-weight: 700;
+      color: var(--gold);
+      line-height: 1;
+    }
+    .proof-label {
+      font-size: 0.72rem;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-top: 0.35rem;
+    }
+
+    /* ── EVENT TYPES ── */
+    #events {
+      background: var(--bg);
+      padding: 4rem 6% 3rem;
+    }
+    .events-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.65rem;
+      justify-content: center;
+      margin-top: 2rem;
+    }
+    .etag {
+      border: 1px solid rgba(201,168,76,0.25);
+      color: rgba(240,240,240,0.75);
+      padding: 0.5rem 1.15rem;
+      border-radius: 100px;
+      font-size: 0.88rem;
+      transition: border-color 0.2s, color 0.2s, background 0.2s;
+      cursor: default;
+    }
+    .etag:hover {
+      border-color: var(--gold);
+      color: var(--gold);
+      background: rgba(201,168,76,0.05);
+    }
+
+    /* ── VIDEO ── */
+    #video {
+      background: var(--bg2);
+      padding-bottom: 3.5rem;
+    }
+    .featured-video {
+      max-width: 820px;
+      margin: 0 auto 2.5rem;
+      border-radius: 8px;
+      overflow: hidden;
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      box-shadow: 0 24px 64px rgba(0,0,0,0.7), 0 0 0 1px rgba(201,168,76,0.15);
+    }
+    .featured-video iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      border: 0;
+    }
+    .video-grid-label {
+      font-size: 0.72rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--muted);
+      text-align: center;
+      margin: 2.5rem 0 1.2rem;
+    }
+    .video-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+      gap: 0.85rem;
+      max-width: 820px;
+      margin: 0 auto;
+    }
+    /* Lazy YouTube embeds */
+    .yt {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      border-radius: 6px;
+      overflow: hidden;
+      cursor: pointer;
+      background: var(--bg3);
+    }
+    .yt img {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: opacity 0.2s;
+    }
+    .yt:hover img { opacity: 0.75; }
+    .yt .play {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 48px; height: 48px;
+      background: rgba(0,0,0,0.7);
+      border: 2px solid rgba(255,255,255,0.6);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 1rem;
+      padding-left: 3px;
+      pointer-events: none;
+      transition: background 0.2s;
+    }
+    .yt:hover .play { background: var(--gold); border-color: var(--gold); color: #000; }
+    .yt iframe {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      border: 0;
+    }
+    .yt .label {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      background: linear-gradient(transparent, rgba(0,0,0,0.75));
+      padding: 1.5rem 0.75rem 0.6rem;
+      font-size: 0.78rem;
+      color: rgba(255,255,255,0.85);
+      pointer-events: none;
+    }
+
+    /* ── SERVICES ── */
+    #services {
+      background: var(--bg);
+    }
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.25rem;
+    }
+    @media (max-width: 860px) {
+      .services-grid { grid-template-columns: 1fr; }
+    }
+    .scard {
+      background: var(--bg2);
+      border: 1px solid rgba(201,168,76,0.1);
+      border-radius: 8px;
+      padding: 2.25rem 2rem;
+      transition: border-color 0.3s, transform 0.3s;
+    }
+    .scard:hover { border-color: rgba(201,168,76,0.35); transform: translateY(-4px); }
+    .scard-icon { font-size: 2rem; margin-bottom: 1.1rem; }
+    .scard h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.35rem;
+      color: var(--gold);
+      margin-bottom: 0.75rem;
+    }
+    .scard p { color: rgba(240,240,240,0.62); font-size: 0.93rem; line-height: 1.75; }
+    .scard-detail {
+      margin-top: 1rem;
+      font-size: 0.78rem;
+      color: var(--muted);
+      letter-spacing: 0.04em;
+    }
+
+    /* ── PHOTO STRIP ── */
+    .photo-strip {
+      display: flex;
+      height: 380px;
+      overflow: hidden;
+    }
+    .photo-strip img {
+      flex: 1;
+      min-width: 0;
+      object-fit: cover;
+      object-position: center;
+      filter: brightness(0.85) saturate(0.9);
+      transition: flex 0.5s ease, filter 0.4s;
+      cursor: pointer;
+      display: block;
+    }
+    .photo-strip img:hover {
+      flex: 2.8;
+      filter: brightness(1) saturate(1.1);
+    }
+    @media (max-width: 600px) {
+      .photo-strip { height: 220px; }
+    }
+
+    /* ── TESTIMONIALS ── */
+    #testimonials {
+      background: var(--bg2);
+    }
+    .tgrid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 1.1rem;
+      margin-top: 2.5rem;
+    }
+    .tcard {
+      background: var(--bg);
+      border: 1px solid rgba(255,255,255,0.05);
+      border-radius: 8px;
+      padding: 1.75rem 1.6rem;
+      position: relative;
+    }
+    .tcard::before {
+      content: '\201C';
+      font-family: 'Playfair Display', serif;
+      font-size: 4.5rem;
+      line-height: 1;
+      color: var(--gold);
+      opacity: 0.18;
+      position: absolute;
+      top: 0.4rem;
+      left: 1.1rem;
+    }
+    .tstars { color: var(--gold); font-size: 0.75rem; letter-spacing: 0.08em; margin-bottom: 0.75rem; }
+    .ttext {
+      font-size: 0.92rem;
+      line-height: 1.75;
+      color: rgba(240,240,240,0.78);
+      font-style: italic;
+      margin-bottom: 1.1rem;
+    }
+    .tauthor { font-weight: 600; font-size: 0.87rem; color: var(--gold); }
+    .trole { font-size: 0.77rem; color: var(--muted); margin-top: 0.15rem; }
+
+    /* ── ABOUT ── */
+    #about {
+      background: var(--bg);
+    }
+    .about-wrap {
+      display: grid;
+      grid-template-columns: 1fr 1.1fr;
+      gap: 5rem;
+      align-items: center;
+    }
+    @media (max-width: 780px) { .about-wrap { grid-template-columns: 1fr; gap: 2.5rem; } }
+    .about-img {
+      border-radius: 8px;
+      overflow: hidden;
+      aspect-ratio: 3/4;
+      background: linear-gradient(135deg, #1d0a35, #0d0d1c);
+      border: 1px solid rgba(201,168,76,0.12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--muted);
+      font-size: 0.82rem;
+      text-align: center;
+      padding: 2rem;
+    }
+    /* When you have a photo, replace the div content with: <img src="yishai-portrait.jpg" alt="Yishai" style="width:100%;height:100%;object-fit:cover;"> */
+    .about-text p {
+      color: rgba(240,240,240,0.65);
+      font-size: 0.95rem;
+      line-height: 1.85;
+      margin-bottom: 1.1rem;
+    }
+    .about-langs {
+      display: flex;
+      gap: 0.75rem;
+      margin: 1.5rem 0;
+    }
+    .lang-badge {
+      border: 1px solid rgba(201,168,76,0.3);
+      color: var(--gold);
+      padding: 0.35rem 0.9rem;
+      border-radius: 4px;
+      font-size: 0.82rem;
+      letter-spacing: 0.06em;
+    }
+    .ref-box {
+      margin-top: 1.5rem;
+      padding: 1.1rem 1.4rem;
+      background: rgba(201,168,76,0.05);
+      border-left: 3px solid var(--gold);
+      border-radius: 0 4px 4px 0;
+      font-size: 0.86rem;
+      color: rgba(240,240,240,0.6);
+      line-height: 1.65;
+    }
+
+    /* ── CONTACT ── */
+    #contact {
+      background: var(--bg2);
+    }
+    .contact-cards {
+      display: flex;
+      gap: 1.1rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 2.8rem 0;
+      max-width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .ccard {
+      background: var(--bg);
+      border: 1px solid rgba(201,168,76,0.14);
+      border-radius: 8px;
+      padding: 1.75rem 2.25rem;
+      text-decoration: none;
+      color: var(--white);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      min-width: 190px;
+      transition: border-color 0.22s, transform 0.22s;
+    }
+    .ccard:hover { border-color: var(--gold); transform: translateY(-3px); }
+    .ccard .icon { font-size: 1.7rem; }
+    .ccard .clabel {
+      font-size: 0.68rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+    .ccard .cval { font-size: 0.97rem; font-weight: 500; }
+    .ccard.wa { border-color: rgba(37,211,102,0.2); }
+    .ccard.wa:hover { border-color: #25d366; }
+    .contact-note {
+      text-align: center;
+      max-width: 480px;
+      margin: 0 auto;
+      color: var(--muted);
+      font-size: 0.88rem;
+      line-height: 1.7;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      background: #03030a;
+      border-top: 1px solid rgba(255,255,255,0.04);
+      padding: 2.5rem 6%;
+      text-align: center;
+    }
+    .footer-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      color: var(--gold);
+      margin-bottom: 0.5rem;
+    }
+    .footer-sub {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-bottom: 1.25rem;
+    }
+    .footer-nav {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+    }
+    .footer-nav a {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.82rem;
+      transition: color 0.2s;
+    }
+    .footer-nav a:hover { color: var(--gold); }
+    .footer-copy {
+      font-size: 0.74rem;
+      color: rgba(119,119,119,0.45);
+    }
+    .footer-copy a { color: inherit; text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<!-- ── NAV ── -->
+<nav id="nav">
+  <a href="#hero" class="nav-logo">Yishai</a>
+  <ul class="nav-links">
+    <li><a href="#video">Watch</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#testimonials">Reviews</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact" class="nav-book">Book Now</a></li>
+  </ul>
+  <button class="hamburger" id="hbg" onclick="toggleMenu()" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+
+<!-- ── MODAL ── -->
+<div id="modal" onclick="closeModal(event)">
+  <div class="modal-inner">
+    <button class="modal-close" onclick="closeModal()">✕</button>
+    <div class="modal-video">
+      <iframe id="modal-iframe" src="" title="Yishai – Official Trailer"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+<!-- ── HERO ── -->
+<section id="hero">
+  <canvas id="hero-canvas"></canvas>
+  <div class="hero-content">
+    <div class="hero-title">Magician &amp; Mind Reader &nbsp;·&nbsp; Israel</div>
+    <h1 class="hero-name"><span>Yishai</span></h1>
+    <p class="hero-tagline">Imagine your guests stunned into disbelief — not once, but all evening long.</p>
+    <div class="hero-btns" style="flex-direction:column;align-items:center;gap:1.2rem;">
+      <button class="hero-play" onclick="openModal()">
+        <span class="play-icon">&#9654;</span>
+        Watch the Trailer
+      </button>
+      <a href="#contact" class="btn-gold">Book Your Event</a>
+    </div>
+  </div>
+  <div class="hero-scroll">Scroll</div>
+</section>
+
+<!-- ── SOCIAL PROOF ── -->
+<div id="proof">
+  <div class="proof-inner">
+    <div class="proof-stat">
+      <div class="proof-num">22+</div>
+      <div class="proof-label">Verified Reviews</div>
+    </div>
+    <div class="proof-stat">
+      <div class="proof-num">★★★★★</div>
+      <div class="proof-label">Audience Rating</div>
+    </div>
+    <div class="proof-stat">
+      <div class="proof-num">2,000+</div>
+      <div class="proof-label">Audience Members</div>
+    </div>
+    <div class="proof-stat">
+      <div class="proof-num">2</div>
+      <div class="proof-label">Languages (HE / EN)</div>
+    </div>
+  </div>
+</div>
+
+<!-- ── EVENT TYPES ── -->
+<section id="events">
+  <div class="center">
+    <div class="eyebrow">Perfect for any occasion</div>
+    <h2>Events Yishai Performs At</h2>
+    <div class="rule"></div>
+  </div>
+  <div class="events-grid">
+    <span class="etag">Sheva Berachos</span>
+    <span class="etag">Bar &amp; Bat Mitzvah</span>
+    <span class="etag">Corporate Events</span>
+    <span class="etag">Anniversary Celebrations</span>
+    <span class="etag">Birthday Parties</span>
+    <span class="etag">Office &amp; Team Events</span>
+    <span class="etag">Schools &amp; Camps</span>
+    <span class="etag">Fundraisers</span>
+    <span class="etag">Weddings</span>
+    <span class="etag">Private Celebrations</span>
+    <span class="etag">Chanukah &amp; Holiday Parties</span>
+    <span class="etag">Chol Hamoed Events</span>
+  </div>
+</section>
+
+<!-- ── VIDEO ── -->
+<section id="video">
+  <div class="center">
+    <div class="eyebrow">See it to believe it</div>
+    <h2>Watch Yishai Perform</h2>
+    <div class="rule"></div>
+    <p class="lead">Words don't do it justice. Watch for yourself.</p>
+  </div>
+  <div class="yt featured-yt" onclick="loadYT(this, 'Xfp8TRRoLww')" style="max-width:820px;margin:0 auto 2.5rem;border-radius:8px;box-shadow:0 24px 64px rgba(0,0,0,0.7),0 0 0 1px rgba(201,168,76,0.15);">
+    <img src="https://img.youtube.com/vi/Xfp8TRRoLww/maxresdefault.jpg" alt="Yishai – Official Trailer" style="width:100%;height:100%;object-fit:cover;">
+    <div class="play" style="width:72px;height:72px;font-size:1.6rem;">&#9654;</div>
+    <div class="label" style="font-size:1rem;padding:3rem 1.5rem 1rem;">Official Trailer — Mind-Blowing Magic &amp; Mentalism</div>
+  </div>
+
+  <p class="video-grid-label">More magic — click to play</p>
+  <div class="video-grid">
+    <div class="yt" onclick="loadYT(this, 'k4KxVCAcQJE')">
+      <img src="https://img.youtube.com/vi/k4KxVCAcQJE/hqdefault.jpg" alt="Cup and Ball" loading="lazy">
+      <div class="play">&#9654;</div>
+      <div class="label">Cup and Ball</div>
+    </div>
+    <div class="yt" onclick="loadYT(this, 'q74jaDD8rv8')">
+      <img src="https://img.youtube.com/vi/q74jaDD8rv8/hqdefault.jpg" alt="Card Pop Up Move" loading="lazy">
+      <div class="play">&#9654;</div>
+      <div class="label">Card Pop Up Move</div>
+    </div>
+    <div class="yt" onclick="loadYT(this, 'aG8Bb3LTVw4')">
+      <img src="https://img.youtube.com/vi/aG8Bb3LTVw4/hqdefault.jpg" alt="Card to Mouth" loading="lazy">
+      <div class="play">&#9654;</div>
+      <div class="label">Card to Mouth</div>
+    </div>
+    <div class="yt" onclick="loadYT(this, 'ZDF3WA131-w')">
+      <img src="https://img.youtube.com/vi/ZDF3WA131-w/hqdefault.jpg" alt="Cards Transform in Hand" loading="lazy">
+      <div class="play">&#9654;</div>
+      <div class="label">Cards Transform in Hand</div>
+    </div>
+    <div class="yt" onclick="loadYT(this, 'yYBHQGtUPEs')">
+      <img src="https://img.youtube.com/vi/yYBHQGtUPEs/hqdefault.jpg" alt="Ring and String" loading="lazy">
+      <div class="play">&#9654;</div>
+      <div class="label">Ring and String</div>
+    </div>
+    <div class="yt" onclick="loadYT(this, 'MkaoQMGypjQ')">
+      <img src="https://img.youtube.com/vi/MkaoQMGypjQ/hqdefault.jpg" alt="Rubber Band Melt Apart" loading="lazy">
+      <div class="play">&#9654;</div>
+      <div class="label">Rubber Band Melt Apart</div>
+    </div>
+    <div class="yt" onclick="loadYT(this, 'PS0jBpvKTHw')">
+      <img src="https://img.youtube.com/vi/PS0jBpvKTHw/hqdefault.jpg" alt="Appearing Money and Cereal" loading="lazy">
+      <div class="play">&#9654;</div>
+      <div class="label">Appearing Money &amp; Cereal</div>
+    </div>
+    <div class="yt" onclick="loadYT(this, 'rgxCFZWBoV0')">
+      <img src="https://img.youtube.com/vi/rgxCFZWBoV0/hqdefault.jpg" alt="Coins and Rubber Bands" loading="lazy">
+      <div class="play">&#9654;</div>
+      <div class="label">Coins and Rubber Bands</div>
+    </div>
+    <div class="yt" onclick="loadYT(this, '73GhXNrsU1o')">
+      <img src="https://img.youtube.com/vi/73GhXNrsU1o/hqdefault.jpg" alt="Color Changing Teleporting Card" loading="lazy">
+      <div class="play">&#9654;</div>
+      <div class="label">Color Changing Card</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── SERVICES ── -->
+<section id="services">
+  <div class="eyebrow">What Yishai offers</div>
+  <h2>Choose Your Experience</h2>
+  <div class="rule"></div>
+  <p class="lead">Every performance is tailored to your event — your guests, your atmosphere, your occasion.</p>
+  <div class="services-grid">
+    <div class="scard">
+      <div class="scard-icon">🎭</div>
+      <h3>Stage Show</h3>
+      <p>A full interactive performance blending mentalism, magic, and sharp improvisational humor. Audiences participate, laugh, and are left genuinely baffled. Suitable for every age and background.</p>
+      <div class="scard-detail">45–60 min &nbsp;·&nbsp; Any size audience &nbsp;·&nbsp; Hebrew or English</div>
+    </div>
+    <div class="scard">
+      <div class="scard-icon">🃏</div>
+      <h3>Close-Up &amp; Strolling Magic</h3>
+      <p>Yishai moves table-to-table creating intimate moments of wonder. Cards, coins, rubber bands — impossible things happen right in your guests' hands. Perfect for cocktail hours and dinner events.</p>
+      <div class="scard-detail">1–3 hours &nbsp;·&nbsp; Any event size &nbsp;·&nbsp; Ideal for mingling</div>
+    </div>
+    <div class="scard">
+      <div class="scard-icon">💻</div>
+      <h3>Virtual Zoom Show</h3>
+      <p>Mind-blowing mentalism and interactive magic that works perfectly online. Cards are chosen, minds are read — entirely through a screen. A genuine surprise for remote teams and online events.</p>
+      <div class="scard-detail">45–60 min &nbsp;·&nbsp; Any time zone &nbsp;·&nbsp; Remote teams welcome</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── PHOTO STRIP ── -->
+<div class="photo-strip">
+  <img src="curated/10%20staubers.jpg" alt="Audience reaction">
+  <img src="curated/07%20yishai%20gesturing%20aroud%20and%20around%20with%20jacob%20and%20wife%20with%20extra%20top.png" alt="Yishai performing on stage">
+  <img src="curated/12%20crowd%20gazing.jpg" alt="Crowd watching">
+  <img src="curated/08%20yakins%20laughing.jpg" alt="Audience laughing">
+  <img src="curated/13%20elazraki%20kids.png" alt="Kids at camp show">
+</div>
+
+<!-- ── TESTIMONIALS ── -->
+<section id="testimonials">
+  <div class="center">
+    <div class="eyebrow">What people are saying</div>
+    <h2>Audience Reactions</h2>
+    <div class="rule"></div>
+  </div>
+  <div style="text-align:center;margin-bottom:2rem;">
+    <a href="https://share.google/U6EnQrO04QeCmk8cw"
+      target="_blank" rel="noopener"
+      style="display:inline-flex;align-items:center;gap:0.5rem;border:1px solid rgba(66,133,244,0.3);color:rgba(240,240,240,0.7);padding:0.55rem 1.3rem;border-radius:100px;text-decoration:none;font-size:0.85rem;transition:border-color 0.2s,color 0.2s;"
+      onmouseover="this.style.borderColor='#4285f4';this.style.color='#4285f4'"
+      onmouseout="this.style.borderColor='rgba(66,133,244,0.3)';this.style.color='rgba(240,240,240,0.7)'">
+      ⭐ Enjoyed the show? Leave a Google review
+    </a>
+  </div>
+  <div class="tgrid">
+    <div class="tcard">
+      <div class="tstars">★★★★★</div>
+      <p class="ttext">"EVERYBODY was openmouthed! Yishai delivered five-star, mindblowing, crowd-gasping entertainment that had us hanging onto every move."</p>
+      <div class="tauthor">Yocheved S.</div>
+      <div class="trole">Family Chanukah Event, Jerusalem</div>
+    </div>
+    <div class="tcard">
+      <div class="tstars">★★★★★</div>
+      <p class="ttext">"WOW!!!! Yishai!! You are awesome! What a show! Totally amazing! Continue to inspire, amaze and make people happy!"</p>
+      <div class="tauthor">Dovid Newman</div>
+      <div class="trole">Sheva Berachos</div>
+    </div>
+    <div class="tcard">
+      <div class="tstars">★★★★★</div>
+      <p class="ttext">"Yishai is an extremely talented mentalist, and it was truly impressive. The professionalism, calm confidence, and warm interaction with the audience made the experience especially enjoyable."</p>
+      <div class="tauthor">Miriam Horowitz</div>
+      <div class="trole">Director, Rofeh Cholim Cancer Society</div>
+    </div>
+    <div class="tcard">
+      <div class="tstars">★★★★★</div>
+      <p class="ttext">"I am still baffled how you knew I was thinking of Genghis Khan. Truly amazing. It was really one of the biggest highlights of the evening."</p>
+      <div class="tauthor">Jacob Lunon</div>
+      <div class="trole">Actor, Director &amp; Producer, Carousel Theater Festival</div>
+    </div>
+    <div class="tcard">
+      <div class="tstars">★★★★★</div>
+      <p class="ttext">"The entire assembly was mesmerized and impressed with Yishai's incredible performance. His feats of mind-reading and number work was truly outstanding."</p>
+      <div class="tauthor">Robert Binder</div>
+      <div class="trole">Bar Mitzvah, Tzur Hadassah</div>
+    </div>
+    <div class="tcard">
+      <div class="tstars">★★★★★</div>
+      <p class="ttext">"What really stood out was Yishai's sensitivity to the rhythm of the event. If you're planning a simcha and want a performer who can uplift the atmosphere, Yishai is the one to call."</p>
+      <div class="tauthor">Rabbi Rami Strosberg</div>
+      <div class="trole">Simcha, Beit Shemesh</div>
+    </div>
+    <div class="tcard">
+      <div class="tstars">★★★★★</div>
+      <p class="ttext">"The show was interesting, mesmerizing, and thoughtfully crafted — a blend of professionalism, humor, and personal charm."</p>
+      <div class="tauthor">Ms. Tahel</div>
+      <div class="trole">Event Coordinator, Zichron Menachem</div>
+    </div>
+    <div class="tcard">
+      <div class="tstars">★★★★★</div>
+      <p class="ttext">"How one person can keep an audience ages 5 to 70 entertained for an hour is itself pure magic! The entire show was personal, well thought out."</p>
+      <div class="tauthor">Dovid Newman</div>
+      <div class="trole">Beitar Illit</div>
+    </div>
+    <div class="tcard">
+      <div class="tstars">★★★★★</div>
+      <p class="ttext">"His magic show kept everyone mesmerized — from our 5-year-olds laughing and cheering to the teenagers genuinely entertained."</p>
+      <div class="tauthor">Akiva N. and family</div>
+      <div class="trole">Chanukah Event, Beit Shemesh</div>
+    </div>
+    <div class="tcard">
+      <div class="tstars">★★★★★</div>
+      <p class="ttext">"Yishai was incredibly friendly and personable with everyone in the room. Everyone was absolutely blown away."</p>
+      <div class="tauthor">Leora Deverett</div>
+      <div class="trole">Lone Soldier Center Community Coordinator</div>
+    </div>
+    <div class="tcard">
+      <div class="tstars">★★★★★</div>
+      <p class="ttext">"Your presentation brought immense joy and truly elevated our event!"</p>
+      <div class="tauthor">C. Landsman</div>
+      <div class="trole">Sheva Berachos, Ramat Shlomo</div>
+    </div>
+    <div class="tcard">
+      <div class="tstars">★★★★★</div>
+      <p class="ttext">"The guests loved your presentation last night. They are asking when you can come back!"</p>
+      <div class="tauthor">N. N.</div>
+      <div class="trole">Evening Entertainment for War Refugees, Jerusalem</div>
+    </div>
+  </div>
+</section>
+
+<!-- ── ABOUT ── -->
+<section id="about">
+  <div class="about-wrap">
+    <div class="about-img" style="padding:0;background:none;border:none;">
+      <img src="curated/06%20yishai%20headshot.png" alt="Yishai" style="width:100%;height:100%;object-fit:cover;border-radius:8px;">
+    </div>
+    <div class="about-text">
+      <div class="eyebrow">About Yishai</div>
+      <h2>Magic &amp; Mind Reading That Connects</h2>
+      <div class="rule"></div>
+      <p>Yishai has been amazing audiences across Israel for years — from intimate family celebrations and sheva berachos to large corporate galas and community events.</p>
+      <p>His performances combine genuine mentalism, sleight-of-hand magic, and natural humor in a way that feels personal and surprising rather than staged. Every audience is different, and Yishai tailors each show to the occasion.</p>
+      <p>He has performed at bar mitzvahs, fundraisers, theater festivals, mental health centers, schools, camps, restaurants, and everything in between — bringing that same warmth and professionalism to every room he walks into.</p>
+      <div class="about-langs">
+        <span class="lang-badge">English</span>
+        <span class="lang-badge">עברית</span>
+      </div>
+      <div class="ref-box">
+        References available from event planners and past clients across Israel — happy to connect you directly. Just ask.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section id="contact">
+  <div class="center">
+    <div class="eyebrow">Let's make it happen</div>
+    <h2>Book Yishai for Your Event</h2>
+    <div class="rule"></div>
+    <p class="lead">Tell Yishai about your event and he'll get back to you quickly with availability and pricing.</p>
+  </div>
+  <div class="contact-cards">
+    <a href="https://wa.me/972548482245" class="ccard wa" target="_blank" rel="noopener">
+      <span class="icon">💬</span>
+      <span class="clabel">WhatsApp</span>
+      <span class="cval">054-848-2245</span>
+    </a>
+    <a href="tel:0548482245" class="ccard">
+      <span class="icon">📞</span>
+      <span class="clabel">Phone</span>
+      <span class="cval">054-848-2245</span>
+    </a>
+    <a href="mailto:info@yishai.show" class="ccard">
+      <span class="icon">✉️</span>
+      <span class="clabel">Email</span>
+      <span class="cval">info@yishai.show</span>
+    </a>
+    <a href="https://share.google/U6EnQrO04QeCmk8cw" class="ccard" target="_blank" rel="noopener" style="border-color:rgba(66,133,244,0.25);">
+      <span class="icon">⭐</span>
+      <span class="clabel">Google Review</span>
+      <span class="cval">Leave a Review</span>
+    </a>
+    <a href="https://www.facebook.com/yishai.rasowsky" class="ccard" target="_blank" rel="noopener" style="border-color:rgba(24,119,242,0.25);">
+      <span class="icon" style="font-size:1.4rem;font-weight:700;font-family:sans-serif;color:#4267B2;">f</span>
+      <span class="clabel">Facebook</span>
+      <span class="cval">yishai.rasowsky</span>
+    </a>
+  </div>
+  <div style="text-align:center;margin-top:0.5rem;">
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSd2m8M6YU6VdlKMtSdfHtv2JK0CbqzVfJJ8B79wKu1WznH6-w/viewform?usp=header"
+      target="_blank" rel="noopener" class="btn-gold">
+      Fill Out Booking Form
+    </a>
+  </div>
+  <p class="contact-note" style="margin-top:1.5rem;">Performs across Israel in Hebrew and English. Share your event date, location, and expected guest count to get started.</p>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-logo">Yishai</div>
+  <div class="footer-sub">Magician &amp; Mind Reader · Israel</div>
+  <nav class="footer-nav">
+    <a href="#video">Watch</a>
+    <a href="#services">Services</a>
+    <a href="#testimonials">Reviews</a>
+    <a href="#about">About</a>
+    <a href="#contact">Book</a>
+  </nav>
+  <div class="footer-copy">© 2026 Yishai &nbsp;·&nbsp; <a href="mailto:info@yishai.show">info@yishai.show</a> &nbsp;·&nbsp; www.yishai.show</div>
+</footer>
+
+<script>
+  // Sticky nav
+  const nav = document.getElementById('nav');
+  window.addEventListener('scroll', () => {
+    nav.classList.toggle('scrolled', window.scrollY > 40);
+  }, { passive: true });
+
+  // Mobile menu — toggles the single nav-links list
+  function toggleMenu() {
+    document.querySelector('.nav-links').classList.toggle('open');
+  }
+  // Close on outside click
+  document.addEventListener('click', e => {
+    const links = document.querySelector('.nav-links');
+    const hbg = document.getElementById('hbg');
+    if (links.classList.contains('open') && !links.contains(e.target) && !hbg.contains(e.target)) {
+      links.classList.remove('open');
+    }
+  });
+  // Close when a link is clicked
+  document.querySelectorAll('.nav-links a').forEach(a => {
+    a.addEventListener('click', () => document.querySelector('.nav-links').classList.remove('open'));
+  });
+
+  // Trailer modal
+  function openModal() {
+    document.getElementById('modal-iframe').src =
+      'https://www.youtube.com/embed/Xfp8TRRoLww?autoplay=1&rel=0';
+    document.getElementById('modal').classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeModal(e) {
+    if (e && e.target !== document.getElementById('modal')) return;
+    document.getElementById('modal-iframe').src = '';
+    document.getElementById('modal').classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape') {
+      document.getElementById('modal-iframe').src = '';
+      document.getElementById('modal').classList.remove('open');
+      document.body.style.overflow = '';
+    }
+  });
+
+  // Lazy YouTube loader
+  function loadYT(el, id) {
+    el.innerHTML = `<iframe src="https://www.youtube.com/embed/${id}?autoplay=1&rel=0"
+      title="Yishai performance" allowfullscreen
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>`;
+  }
+
+  // Hero particle animation
+  (function () {
+    const canvas = document.getElementById('hero-canvas');
+    const ctx = canvas.getContext('2d');
+    let W, H, particles = [];
+
+    function resize() {
+      W = canvas.width = canvas.offsetWidth;
+      H = canvas.height = canvas.offsetHeight;
+    }
+    resize();
+    window.addEventListener('resize', resize, { passive: true });
+
+    function Particle() {
+      this.reset = function () {
+        this.x = Math.random() * W;
+        this.y = Math.random() * H;
+        this.r = Math.random() * 1.4 + 0.2;
+        this.o = Math.random() * 0.55 + 0.08;
+        this.vy = -(Math.random() * 0.28 + 0.06);
+        this.vx = (Math.random() - 0.5) * 0.15;
+        this.fade = Math.random() * 0.0008 + 0.0003;
+      };
+      this.reset();
+      this.y = Math.random() * H; // distribute initially
+    }
+
+    for (let i = 0; i < 90; i++) particles.push(new Particle());
+
+    function draw() {
+      ctx.clearRect(0, 0, W, H);
+      particles.forEach(p => {
+        p.y += p.vy;
+        p.x += p.vx;
+        p.o -= p.fade;
+        if (p.o <= 0 || p.y < 0) p.reset();
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(201,168,76,${p.o})`;
+        ctx.fill();
+      });
+      requestAnimationFrame(draw);
+    }
+    draw();
+  })();
+</script>
+</body>
+</html>
