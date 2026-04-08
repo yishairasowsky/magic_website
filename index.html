@@ -145,6 +145,9 @@
 
     /* ── SECTION COMMONS ── */
     section { padding: 4.5rem 6%; }
+    @media (max-width: 700px) {
+      section { padding: 3.5rem 5%; }
+    }
     .eyebrow {
       font-size: 0.72rem;
       letter-spacing: 0.3em;
@@ -181,7 +184,7 @@
       min-height: 100vh;
       display: flex;
       align-items: center;
-      padding: var(--nav-h) 6% 0;
+      padding: var(--nav-h) 6% 5.5rem;
       position: relative;
       overflow: hidden;
       background: #000;
@@ -206,10 +209,15 @@
       max-width: 560px;
     }
     @media (max-width: 700px) {
-      .hero-photo { width: 100%; opacity: 0.35; -webkit-mask-image: none; mask-image: none; }
+      #hero { padding-bottom: 7rem; }
+      .hero-photo { width: 100%; opacity: 0.3; -webkit-mask-image: none; mask-image: none; }
       .hero-inner { text-align: center; max-width: 100%; }
       .hero-btns { justify-content: center !important; }
-      .hero-tagline { margin: 0 auto 2rem !important; }
+      .hero-tagline { margin: 0 auto 1.8rem !important; }
+      .hero-name { font-size: clamp(4rem, 18vw, 6rem); }
+    }
+    @media (max-width: 400px) {
+      .hero-scroll { display: none; }
     }
     #hero-canvas {
       position: absolute;
@@ -397,7 +405,7 @@
     .proof-inner {
       display: flex;
       justify-content: center;
-      gap: 4rem;
+      gap: 2.5rem 4rem;
       flex-wrap: wrap;
     }
     .proof-stat {
