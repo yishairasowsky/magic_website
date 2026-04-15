@@ -584,6 +584,34 @@
       color: rgba(255,255,255,0.85);
       pointer-events: none;
     }
+    .clip-link-btn {
+      position: absolute;
+      top: 7px; right: 7px;
+      background: rgba(0,0,0,0.72);
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      padding: 4px 9px;
+      font-size: 0.68rem;
+      letter-spacing: .02em;
+      cursor: pointer;
+      opacity: 0;
+      transition: opacity 0.18s, background 0.18s;
+      z-index: 10;
+      line-height: 1.4;
+      pointer-events: auto;
+    }
+    .yt:hover .clip-link-btn,
+    [data-share]:hover > .clip-link-btn { opacity: 1; }
+    .clip-link-btn:hover { background: var(--red); }
+    [data-share] { position: relative; }
+    @keyframes clip-flash {
+      0%   { outline: 3px solid transparent; }
+      20%  { outline: 3px solid var(--red); }
+      80%  { outline: 3px solid var(--red); }
+      100% { outline: 3px solid transparent; }
+    }
+    .clip-highlight { animation: clip-flash 1.6s ease forwards; }
 
     /* ── SERVICES ── */
     #services {
@@ -974,7 +1002,7 @@
 </div>
 
 <!-- ── EVENT TYPES ── -->
-<section id="events">
+<section id="events" data-share>
   <div class="center">
     <div class="eyebrow">Perfect for any occasion</div>
     <h2>Events Yishai Performs At</h2>
@@ -997,14 +1025,14 @@
 </section>
 
 <!-- ── VIDEO ── -->
-<section id="video">
+<section id="video" data-share>
   <div class="center">
     <div class="eyebrow">See it to believe it</div>
     <h2>Watch Yishai Perform</h2>
     <div class="rule"></div>
     <p class="lead">Words don't do it justice. Watch for yourself.</p>
   </div>
-  <div class="yt featured-yt" onclick="loadYT(this, 'Xfp8TRRoLww')" style="max-width:820px;margin:0 auto 2.5rem;border-radius:8px;box-shadow:0 24px 64px rgba(0,0,0,0.7),0 0 0 1px rgba(200,32,42,0.15);">
+  <div class="yt featured-yt" data-ytid="Xfp8TRRoLww" onclick="loadYT(this, 'Xfp8TRRoLww')" style="max-width:820px;margin:0 auto 2.5rem;border-radius:8px;box-shadow:0 24px 64px rgba(0,0,0,0.7),0 0 0 1px rgba(200,32,42,0.15);">
     <img src="https://img.youtube.com/vi/Xfp8TRRoLww/maxresdefault.jpg" alt="Yishai – Official Trailer" style="width:100%;height:100%;object-fit:cover;">
     <div class="play" style="width:72px;height:72px;font-size:1.6rem;">&#9654;</div>
     <div class="label" style="font-size:1rem;padding:3rem 1.5rem 1rem;">Official Trailer — Mind-Blowing Magic &amp; Mentalism</div>
@@ -1012,47 +1040,47 @@
 
   <p class="video-grid-label">More magic — click to play</p>
   <div class="video-grid">
-    <div class="yt" onclick="loadYT(this, 'k4KxVCAcQJE')">
+    <div class="yt" data-ytid="k4KxVCAcQJE" onclick="loadYT(this, 'k4KxVCAcQJE')">
       <img src="https://img.youtube.com/vi/k4KxVCAcQJE/hqdefault.jpg" alt="Cup and Ball" loading="lazy">
       <div class="play">&#9654;</div>
       <div class="label">Cup and Ball</div>
     </div>
-    <div class="yt" onclick="loadYT(this, 'q74jaDD8rv8')">
+    <div class="yt" data-ytid="q74jaDD8rv8" onclick="loadYT(this, 'q74jaDD8rv8')">
       <img src="https://img.youtube.com/vi/q74jaDD8rv8/hqdefault.jpg" alt="Card Pop Up Move" loading="lazy">
       <div class="play">&#9654;</div>
       <div class="label">Card Pop Up Move</div>
     </div>
-    <div class="yt" onclick="loadYT(this, 'aG8Bb3LTVw4')">
+    <div class="yt" data-ytid="aG8Bb3LTVw4" onclick="loadYT(this, 'aG8Bb3LTVw4')">
       <img src="https://img.youtube.com/vi/aG8Bb3LTVw4/hqdefault.jpg" alt="Card to Mouth" loading="lazy">
       <div class="play">&#9654;</div>
       <div class="label">Card to Mouth</div>
     </div>
-    <div class="yt" onclick="loadYT(this, 'ZDF3WA131-w')">
+    <div class="yt" data-ytid="ZDF3WA131-w" onclick="loadYT(this, 'ZDF3WA131-w')">
       <img src="https://img.youtube.com/vi/ZDF3WA131-w/hqdefault.jpg" alt="Cards Transform in Hand" loading="lazy">
       <div class="play">&#9654;</div>
       <div class="label">Cards Transform in Hand</div>
     </div>
-    <div class="yt" onclick="loadYT(this, 'yYBHQGtUPEs')">
+    <div class="yt" data-ytid="yYBHQGtUPEs" onclick="loadYT(this, 'yYBHQGtUPEs')">
       <img src="https://img.youtube.com/vi/yYBHQGtUPEs/hqdefault.jpg" alt="Ring and String" loading="lazy">
       <div class="play">&#9654;</div>
       <div class="label">Ring and String</div>
     </div>
-    <div class="yt" onclick="loadYT(this, 'MkaoQMGypjQ')">
+    <div class="yt" data-ytid="MkaoQMGypjQ" onclick="loadYT(this, 'MkaoQMGypjQ')">
       <img src="https://img.youtube.com/vi/MkaoQMGypjQ/hqdefault.jpg" alt="Rubber Band Melt Apart" loading="lazy">
       <div class="play">&#9654;</div>
       <div class="label">Rubber Band Melt Apart</div>
     </div>
-    <div class="yt" onclick="loadYT(this, 'PS0jBpvKTHw')">
+    <div class="yt" data-ytid="PS0jBpvKTHw" onclick="loadYT(this, 'PS0jBpvKTHw')">
       <img src="https://img.youtube.com/vi/PS0jBpvKTHw/hqdefault.jpg" alt="Appearing Money and Cereal" loading="lazy">
       <div class="play">&#9654;</div>
       <div class="label">Appearing Money &amp; Cereal</div>
     </div>
-    <div class="yt" onclick="loadYT(this, 'rgxCFZWBoV0')">
+    <div class="yt" data-ytid="rgxCFZWBoV0" onclick="loadYT(this, 'rgxCFZWBoV0')">
       <img src="https://img.youtube.com/vi/rgxCFZWBoV0/hqdefault.jpg" alt="Coins and Rubber Bands" loading="lazy">
       <div class="play">&#9654;</div>
       <div class="label">Coins and Rubber Bands</div>
     </div>
-    <div class="yt" onclick="loadYT(this, '73GhXNrsU1o')">
+    <div class="yt" data-ytid="73GhXNrsU1o" onclick="loadYT(this, '73GhXNrsU1o')">
       <img src="https://img.youtube.com/vi/73GhXNrsU1o/hqdefault.jpg" alt="Color Changing Teleporting Card" loading="lazy">
       <div class="play">&#9654;</div>
       <div class="label">Color Changing Card</div>
@@ -1061,22 +1089,22 @@
 
   <p class="video-grid-label" style="margin-top:2.5rem;">Featured on other channels — click to play</p>
   <div class="video-grid">
-    <div class="yt" onclick="loadYT(this, 'a8XP6saMvKo')">
+    <div class="yt" data-ytid="a8XP6saMvKo" onclick="loadYT(this, 'a8XP6saMvKo')">
       <img src="https://img.youtube.com/vi/a8XP6saMvKo/hqdefault.jpg" alt="He Read My Mind – Podcast Feature" loading="lazy">
       <div class="play">&#9654;</div>
       <div class="label">He Read My Mind. Guess The Trick?!</div>
     </div>
-    <div class="yt" onclick="loadYT(this, '4bSXZJVqQJ0')">
+    <div class="yt" data-ytid="4bSXZJVqQJ0" onclick="loadYT(this, '4bSXZJVqQJ0')">
       <img src="https://img.youtube.com/vi/4bSXZJVqQJ0/hqdefault.jpg" alt="Podcast Live Appearance" loading="lazy">
       <div class="play">&#9654;</div>
       <div class="label">Podcast Live Appearance</div>
     </div>
-    <div class="yt" onclick="loadYT(this, '_msqSf8QAiI')">
+    <div class="yt" data-ytid="_msqSf8QAiI" onclick="loadYT(this, '_msqSf8QAiI')">
       <img src="https://img.youtube.com/vi/_msqSf8QAiI/hqdefault.jpg" alt="Mentalism Clip" loading="lazy">
       <div class="play">&#9654;</div>
       <div class="label">Mentalism Clip</div>
     </div>
-    <div class="yt" onclick="loadYT(this, 'camV6FzULWA')">
+    <div class="yt" data-ytid="camV6FzULWA" onclick="loadYT(this, 'camV6FzULWA')">
       <img src="https://img.youtube.com/vi/camV6FzULWA/hqdefault.jpg" alt="Live Show – Katamon Avos U'Banim" loading="lazy">
       <div class="play">&#9654;</div>
       <div class="label">Live Show – Katamon Avos U'Banim</div>
@@ -1085,7 +1113,7 @@
 </section>
 
 <!-- ── SERVICES ── -->
-<section id="services">
+<section id="services" data-share>
   <div class="eyebrow">What Yishai offers</div>
   <h2>Choose Your Experience</h2>
   <div class="rule"></div>
@@ -1125,7 +1153,7 @@
 </div>
 
 <!-- ── TESTIMONIALS ── -->
-<section id="testimonials">
+<section id="testimonials" data-share>
   <div class="center">
     <div class="eyebrow">What people are saying</div>
     <h2>Audience Reactions</h2>
@@ -1141,79 +1169,79 @@
     </a>
   </div>
   <div class="tgrid">
-    <div class="tcard">
+    <div class="tcard" id="t-yocheved-s" data-share>
       <div class="tstars">★★★★★</div>
       <p class="ttext">"EVERYBODY was openmouthed! Yishai delivered five-star, mindblowing, crowd-gasping entertainment that had us hanging onto every move."</p>
       <div class="tauthor">Yocheved S.</div>
       <div class="trole">Family Chanukah Event, Jerusalem</div>
     </div>
-    <div class="tcard">
+    <div class="tcard" id="t-dovid-newman" data-share>
       <div class="tstars">★★★★★</div>
       <p class="ttext">"WOW!!!! Yishai!! You are awesome! What a show! Totally amazing! Continue to inspire, amaze and make people happy!"</p>
       <div class="tauthor">Dovid Newman</div>
       <div class="trole">Sheva Berachos</div>
     </div>
-    <div class="tcard">
+    <div class="tcard" id="t-miriam-horowitz" data-share>
       <div class="tstars">★★★★★</div>
       <p class="ttext">"Yishai is an extremely talented mentalist, and it was truly impressive. The professionalism, calm confidence, and warm interaction with the audience made the experience especially enjoyable."</p>
       <div class="tauthor">Miriam Horowitz</div>
       <div class="trole">Director, Rofeh Cholim Cancer Society</div>
     </div>
-    <div class="tcard">
+    <div class="tcard" id="t-jacob-lunon" data-share>
       <div class="tstars">★★★★★</div>
       <p class="ttext">"I am still baffled how you knew I was thinking of Genghis Khan. Truly amazing. It was really one of the biggest highlights of the evening."</p>
       <div class="tauthor">Jacob Lunon</div>
       <div class="trole">Actor, Director &amp; Producer, Carousel Theater Festival</div>
     </div>
-    <div class="tcard">
+    <div class="tcard" id="t-robert-binder" data-share>
       <div class="tstars">★★★★★</div>
       <p class="ttext">"The entire assembly was mesmerized and impressed with Yishai's incredible performance. His feats of mind-reading and number work was truly outstanding."</p>
       <div class="tauthor">Robert Binder</div>
       <div class="trole">Bar Mitzvah, Tzur Hadassah</div>
     </div>
-    <div class="tcard">
+    <div class="tcard" id="t-rabbi-strosberg" data-share>
       <div class="tstars">★★★★★</div>
       <p class="ttext">"What really stood out was Yishai's sensitivity to the rhythm of the event. If you're planning a simcha and want a performer who can uplift the atmosphere, Yishai is the one to call."</p>
       <div class="tauthor">Rabbi Rami Strosberg</div>
       <div class="trole">Simcha, Beit Shemesh</div>
     </div>
-    <div class="tcard">
+    <div class="tcard" id="t-ms-tahel" data-share>
       <div class="tstars">★★★★★</div>
       <p class="ttext">"The show was interesting, mesmerizing, and thoughtfully crafted — a blend of professionalism, humor, and personal charm."</p>
       <div class="tauthor">Ms. Tahel</div>
       <div class="trole">Event Coordinator, Zichron Menachem</div>
     </div>
-    <div class="tcard">
+    <div class="tcard" id="t-dovid-newman-2" data-share>
       <div class="tstars">★★★★★</div>
       <p class="ttext">"How one person can keep an audience ages 5 to 70 entertained for an hour is itself pure magic! The entire show was personal, well thought out."</p>
       <div class="tauthor">Dovid Newman</div>
       <div class="trole">Beitar Illit</div>
     </div>
-    <div class="tcard">
+    <div class="tcard" id="t-akiva-n" data-share>
       <div class="tstars">★★★★★</div>
       <p class="ttext">"His magic show kept everyone mesmerized — from our 5-year-olds laughing and cheering to the teenagers genuinely entertained."</p>
       <div class="tauthor">Akiva N. and family</div>
       <div class="trole">Chanukah Event, Beit Shemesh</div>
     </div>
-    <div class="tcard">
+    <div class="tcard" id="t-leora-deverett" data-share>
       <div class="tstars">★★★★★</div>
       <p class="ttext">"Yishai was incredibly friendly and personable with everyone in the room. Everyone was absolutely blown away."</p>
       <div class="tauthor">Leora Deverett</div>
       <div class="trole">Lone Soldier Center Community Coordinator</div>
     </div>
-    <div class="tcard">
+    <div class="tcard" id="t-c-landsman" data-share>
       <div class="tstars">★★★★★</div>
       <p class="ttext">"Your presentation brought immense joy and truly elevated our event!"</p>
       <div class="tauthor">C. Landsman</div>
       <div class="trole">Sheva Berachos, Ramat Shlomo</div>
     </div>
-    <div class="tcard">
+    <div class="tcard" id="t-n-n" data-share>
       <div class="tstars">★★★★★</div>
       <p class="ttext">"The guests loved your presentation last night. They are asking when you can come back!"</p>
       <div class="tauthor">N. N.</div>
       <div class="trole">Evening Entertainment for War Refugees, Jerusalem</div>
     </div>
-    <div class="tcard">
+    <div class="tcard" id="t-tzirel-loeb" data-share>
       <div class="tstars">★★★★★</div>
       <p class="ttext">"We hired Yishai for an extended family Chanukah party, and he was absolutely incredible! From start to finish he was so easy to work with and truly a fantastic entertainer. He had the kids completely engaged, laughing, and having an amazing time the whole event. It was a huge hit — everyone loved it! Highly recommended!!"</p>
       <div class="tauthor">Tzirel Loeb</div>
@@ -1223,7 +1251,7 @@
 </section>
 
 <!-- ── BLOG ── -->
-<section id="blog">
+<section id="blog" data-share>
   <div class="eyebrow">From the blog</div>
   <h2>Articles</h2>
   <div class="rule" style="margin:1rem auto 0;"></div>
@@ -1280,7 +1308,7 @@
 </section>
 
 <!-- ── ABOUT ── -->
-<section id="about">
+<section id="about" data-share>
   <div class="about-wrap">
     <div class="about-img" style="padding:0;background:none;border:none;">
       <img src="curated/06%20yishai%20headshot.png" alt="Yishai" style="width:100%;height:100%;object-fit:cover;border-radius:8px;">
@@ -1304,7 +1332,7 @@
 </section>
 
 <!-- ── CONTACT ── -->
-<section id="contact">
+<section id="contact" data-share>
   <div class="center">
     <div class="eyebrow">Let's make it happen</div>
     <h2>Book Yishai for Your Event</h2>
@@ -1406,12 +1434,62 @@
     }
   });
 
-  // Lazy YouTube loader
+  // Lazy YouTube loader — preserves the copy-link button
   function loadYT(el, id) {
+    const btn = el.querySelector('.clip-link-btn');
     el.innerHTML = `<iframe src="https://www.youtube.com/embed/${id}?autoplay=1&rel=0"
       title="Yishai performance" allowfullscreen
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>`;
+    if (btn) el.appendChild(btn);
   }
+
+  // Inject copy-link buttons on all shareable elements
+  function makeShareBtn(el, url) {
+    const btn = document.createElement('button');
+    btn.className = 'clip-link-btn';
+    btn.title = 'Copy direct link';
+    btn.textContent = '\uD83D\uDD17 Copy link';
+    btn.addEventListener('click', e => {
+      e.stopPropagation();
+      navigator.clipboard.writeText(url).then(() => {
+        btn.textContent = 'Copied!';
+        setTimeout(() => { btn.textContent = '\uD83D\uDD17 Copy link'; }, 2000);
+      });
+    });
+    return btn;
+  }
+
+  // Video thumbnails → #clip-YTID
+  document.querySelectorAll('.yt[data-ytid]').forEach(el => {
+    const url = location.origin + location.pathname + '#clip-' + el.dataset.ytid;
+    el.appendChild(makeShareBtn(el, url));
+  });
+
+  // Any other element with [data-share][id] → #ID
+  document.querySelectorAll('[data-share][id]:not(.yt)').forEach(el => {
+    const url = location.origin + location.pathname + '#' + el.id;
+    el.appendChild(makeShareBtn(el, url));
+  });
+
+  // Deep-link: scroll to and highlight any shareable element
+  (function () {
+    const hash = location.hash;
+    if (!hash) return;
+    let el;
+    const clipMatch = hash.match(/^#clip-(.+)$/);
+    if (clipMatch) {
+      el = document.querySelector(`.yt[data-ytid="${CSS.escape(clipMatch[1])}"]`);
+    } else {
+      const id = CSS.escape(hash.slice(1));
+      el = document.querySelector(`[data-share]#${id}, .yt[data-ytid]#${id}`);
+    }
+    if (!el) return;
+    setTimeout(() => {
+      el.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      el.classList.add('clip-highlight');
+      el.addEventListener('animationend', () => el.classList.remove('clip-highlight'), { once: true });
+    }, 350);
+  })();
 
   // Hero particle animation
   (function () {
