@@ -849,14 +849,14 @@
       background: var(--bg2);
     }
     .contact-cards {
-      display: flex;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
       gap: 1.1rem;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin: 2.8rem 0;
-      max-width: 900px;
-      margin-left: auto;
-      margin-right: auto;
+      margin: 2.8rem auto;
+      max-width: 700px;
+    }
+    @media (max-width: 600px) {
+      .contact-cards { grid-template-columns: 1fr; }
     }
     .ccard {
       background: var(--bg);
@@ -869,7 +869,6 @@
       flex-direction: column;
       align-items: center;
       gap: 0.5rem;
-      min-width: 190px;
       transition: border-color 0.22s, transform 0.22s;
     }
     .ccard:hover { border-color: var(--red); transform: translateY(-3px); }
