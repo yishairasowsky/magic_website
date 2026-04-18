@@ -619,13 +619,27 @@
     #services {
       background: var(--bg);
     }
+    .services-subhead {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      border-bottom: 1px solid rgba(200,32,42,0.18);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1.25rem;
+    }
     .services-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       gap: 1.25rem;
     }
+    .services-grid--2 { grid-template-columns: repeat(2, 1fr); }
+    .services-grid--1 { grid-template-columns: 1fr; }
     @media (max-width: 860px) {
-      .services-grid { grid-template-columns: 1fr; }
+      .services-grid,
+      .services-grid--2,
+      .services-grid--1 { grid-template-columns: 1fr; }
     }
     .scard {
       background: var(--bg2);
@@ -1120,7 +1134,9 @@
   <h2>Choose Your Experience</h2>
   <div class="rule"></div>
   <p class="lead">Every performance is tailored to your event — your guests, your atmosphere, your occasion.</p>
-  <div class="services-grid">
+
+  <div class="services-subhead">Full-Length Shows</div>
+  <div class="services-grid services-grid--2">
     <div class="scard">
       <div class="scard-icon">🎭</div>
       <h3>Stage Show</h3>
@@ -1128,16 +1144,20 @@
       <div class="scard-detail">45–60 min &nbsp;·&nbsp; Any size audience &nbsp;·&nbsp; Hebrew or English</div>
     </div>
     <div class="scard">
-      <div class="scard-icon">🃏</div>
-      <h3>Close-Up &amp; Strolling Magic</h3>
-      <p>Yishai moves table-to-table creating intimate moments of wonder. Cards, coins, rubber bands — impossible things happen right in your guests' hands. Perfect for cocktail hours and dinner events.</p>
-      <div class="scard-detail">1–3 hours &nbsp;·&nbsp; Any event size &nbsp;·&nbsp; Ideal for mingling</div>
-    </div>
-    <div class="scard">
       <div class="scard-icon">💻</div>
       <h3>Virtual Zoom Show</h3>
       <p>Mind-blowing mentalism and interactive magic that works perfectly online. Cards are chosen, minds are read — entirely through a screen. A genuine surprise for remote teams and online events.</p>
       <div class="scard-detail">45–60 min &nbsp;·&nbsp; Any time zone &nbsp;·&nbsp; Remote teams welcome</div>
+    </div>
+  </div>
+
+  <div class="services-subhead" style="margin-top:2.5rem;">Walk-Around &amp; Roving Magic</div>
+  <div class="services-grid services-grid--1">
+    <div class="scard">
+      <div class="scard-icon">🃏</div>
+      <h3>Close-Up &amp; Strolling Magic</h3>
+      <p>Yishai moves through the crowd — table to table, group to group — creating intimate bursts of wonder wherever he goes. Cards, coins, rubber bands: impossible things happen right in your guests' hands. Ideal for outdoor celebrations, Independence Day events, municipal gatherings, cocktail hours, and large parties where the action comes to the audience.</p>
+      <div class="scard-detail">1–3 hours &nbsp;·&nbsp; Outdoor &amp; indoor events &nbsp;·&nbsp; Any crowd size &nbsp;·&nbsp; Hebrew or English</div>
     </div>
   </div>
 </section>
