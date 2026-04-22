@@ -944,6 +944,34 @@
       font-size: 0.82rem;
       transition: color 0.2s;
     }
+
+    /* ── FAQ ── */
+    .faq-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.25rem;
+      max-width: 960px;
+      margin: 2.5rem auto 0;
+      text-align: left;
+    }
+    .faq-item {
+      padding: 1.5rem 1.6rem;
+      background: var(--bg3);
+      border: 1px solid rgba(200,32,42,0.12);
+      border-radius: 8px;
+    }
+    .faq-q {
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: var(--white);
+      margin-bottom: 0.55rem;
+      line-height: 1.4;
+    }
+    .faq-a {
+      font-size: 0.88rem;
+      color: rgba(240,240,240,0.62);
+      line-height: 1.75;
+    }
     .footer-nav a:hover { color: var(--red); }
     .footer-copy {
       font-size: 0.74rem;
@@ -1330,6 +1358,18 @@
   <h2>Articles</h2>
   <div class="rule" style="margin:1rem auto 0;"></div>
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.5rem;max-width:1100px;margin:2rem auto 0;text-align:left;">
+    <a class="blog-card" href="/blog/magician-efrat-gush-etzion.html" style="margin-top:0;">
+      <div class="blog-tag">Efrat &amp; Gush Etzion &nbsp;·&nbsp; 4 min read</div>
+      <h3>Magician in Efrat: Entertainment for Your Gush Etzion Simcha</h3>
+      <p>What bar mitzvahs, sheva berachos, and community events look like when the entertainer actually speaks your language.</p>
+      <span class="blog-read">Read article →</span>
+    </a>
+    <a class="blog-card" href="/blog/magician-jerusalem-anglo.html" style="margin-top:0;">
+      <div class="blog-tag">Jerusalem &nbsp;·&nbsp; 4 min read</div>
+      <h3>English-Speaking Magician in Jerusalem</h3>
+      <p>Serving Anglo communities across Jerusalem — Ramot, Katamon, Rechavia, Har Nof, and more.</p>
+      <span class="blog-read">Read article →</span>
+    </a>
     <a class="blog-card" href="/blog/magician-ramat-bet-shemesh.html" style="margin-top:0;">
       <div class="blog-tag">Ramat Bet Shemesh &nbsp;·&nbsp; 4 min read</div>
       <h3>Looking for a Magician in Ramat Bet Shemesh?</h3>
@@ -1413,6 +1453,39 @@
       <div class="ref-box">
         References available from event planners and past clients across Israel — happy to connect you directly. Just ask.
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── FAQ ── -->
+<section id="faq" data-share style="background:var(--bg2);text-align:center;">
+  <div class="eyebrow">Common questions</div>
+  <h2>Before You Book</h2>
+  <div class="rule" style="margin:1rem auto 0;"></div>
+  <div class="faq-grid">
+    <div class="faq-item">
+      <div class="faq-q">Is the show appropriate for a frum simcha?</div>
+      <div class="faq-a">Completely. Everything is clean, family-appropriate, and suitable for a religious setting. The humor is warm and intelligent — nothing edgy, nothing that requires explanation. Works for mixed-gender audiences.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Do you travel to our community?</div>
+      <div class="faq-a">Yes — Ramat Bet Shemesh, Efrat, Gush Etzion, Jerusalem, Ra'anana, Netanya, Modiin, and everywhere in between. If you're in Israel, reach out and we'll sort out the details.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">The show runs in English?</div>
+      <div class="faq-a">English is Yishai's first language. For Anglo crowds the show runs primarily in English, with Hebrew woven in naturally wherever the crowd calls for it — exactly how bilingual communities actually talk.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Can you work around davening or other scheduling needs?</div>
+      <div class="faq-a">Of course. Just let Yishai know the timeline for the evening — he fits around your program, not the other way around.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">What's the difference between the close-up and the stage show?</div>
+      <div class="faq-a">Close-up is Yishai moving table to table during mingling — intimate, personal, and immediate. The stage show is a full seated performance for the whole room. Many events benefit from both, one after the other.</div>
+    </div>
+    <div class="faq-item">
+      <div class="faq-q">Do you have references from the Anglo community?</div>
+      <div class="faq-a">Yes — happy to connect you with past clients from Ramat Bet Shemesh, Efrat, and Jerusalem. Just ask when you reach out.</div>
     </div>
   </div>
 </section>
