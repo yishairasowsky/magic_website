@@ -15,9 +15,11 @@
 
 Dear [Name],
 
-I'm writing with a concept that several of Jerusalem's leading restaurants are beginning to explore: integrating a resident close-up artist into the dining experience — not as entertainment added *onto* the evening, but woven seamlessly *into* the service itself.
+Every restaurant faces the same challenge: the gap between when guests sit down and when the food arrives. The wait between courses. A kitchen running behind on a busy Friday night. These are the moments when impatience builds, phones come out, and a great evening starts to feel slow.
 
-My name is Yishai. I'm a close-up magician and mentalist who has worked inside fine-dining environments, most recently at Andalucia, where I served as the resident tableside experience artist. My role there was not to perform a show — it was to elevate the space between courses, to transform a kitchen delay into an unexpected highlight, and to give guests a moment so personal and astonishing that it became the story they told about the restaurant long after the meal ended.
+What if those moments became the highlight of the evening instead?
+
+My name is Yishai. I'm a close-up magician and mentalist who has worked inside fine-dining environments, most recently at Andalucia, where I served as a resident tableside experience artist. My role was not to perform a show — it was to step in during wait times, approach tables that were between courses or delayed, and transform that dead time into the most talked-about moment of the night. Guests didn't just stop noticing the wait. They forgot they were waiting at all.
 
 Here is what my manager at Andalucia had to say:
 
@@ -43,7 +45,7 @@ Use these as bullet points in a follow-up email, a one-pager leave-behind, or ta
 
 ### Why a Resident Experience Artist Pays for Itself
 
-- **Service Gap Management.** Kitchen delays, slow table turns, and wait times are the #1 source of negative reviews. A two-minute tableside experience transforms dead time into the most talked-about moment of the evening. At Andalucia, staff actively directed me to tables that were waiting — and those guests never noticed the delay.
+- **Turn Wait Time into Your Best-Reviewed Moment.** Kitchen delays, slow table turns, and the gap between courses are the #1 source of negative reviews. With a resident magician, your staff can direct me to any table that's waiting — and those guests won't just stop complaining, they'll forget they were waiting at all. At Andalucia, the manager regularly sent me to tables he was running late to. Not one of those guests noticed the delay.
 
 - **Social Media Shareability.** In 2026, the guest *is* the marketing department. Close-up magic and mentalism are inherently "film-worthy" — short, visual, astonishing. Every performance is a potential Instagram Reel or TikTok posted by the guest themselves, tagging your venue organically. This is user-generated content you cannot buy.
 
