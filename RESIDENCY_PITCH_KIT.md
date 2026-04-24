@@ -25,7 +25,7 @@ Here is what my manager at Andalucia had to say:
 
 What I'm proposing is simple and low-risk: a **one-month pilot program** — one evening per week — at no long-term commitment. I integrate with your front-of-house team, dress to match your aesthetic, and operate with the discretion of a sommelier. If it elevates your guest reviews and repeat visits, we continue. If not, you've lost nothing.
 
-[Venue Name] already offers an extraordinary culinary experience. I would love to explore how a subtle layer of wonder could make it truly unforgettable.
+[Venue Name] already offers an extraordinary culinary experience. I would love to explore how a subtle layer of wonder could make it truly unforgettable — both during regular service and as a premium offering for any private or corporate events you host at the venue.
 
 I'd welcome the chance to stop by for a brief, in-person demonstration at your convenience — five minutes of your time is all I'd need.
 
@@ -50,6 +50,8 @@ Use these as bullet points in a follow-up email, a one-pager leave-behind, or ta
 - **Repeat Visits & Word-of-Mouth.** Guests who experience something personally astonishing at a restaurant don't just return — they bring friends. "You have to go to [Venue] on Thursday nights" becomes a recommendation rooted in a specific, emotional memory, not just good food.
 
 - **Brand Differentiation & Prestige.** Jerusalem's luxury dining scene is competitive. A resident magician signals that your venue invests in the *total* guest journey — the same philosophy that drives the world's top hotel brands (The Ritz-Carlton, Aman, Four Seasons). It positions your restaurant as an *experience destination*, not just a place to eat.
+
+- **A Built-In Offering for Private & Corporate Events.** Your venue already hosts private dinners, corporate events, and exclusive celebrations. A resident magician becomes a premium add-on you can offer those clients — an experience element that differentiates your event space from every competitor and drives higher-value bookings.
 
 ---
 
