@@ -16,7 +16,7 @@
 | 5 | Modern (Israel Museum) | 02-648-0862 | Call |
 
 | 6 | ImerSion | 055-500-9659 | WhatsApp | 2026-04-26 | Sent — asked for manager | Awaiting reply |
-| 7 | Taizu | 03-522-5005 / info@taizu.co.il | Call or email |
+| 7 | Taizu | @taizurestaurant | Instagram DM | 2026-04-26 | Sent — asked for manager | Awaiting reply |
 | 8 | Pastel | 03-644-7741 | Call |
 | 9 | The Norman Hotel | 03-543-5555 / reservations@thenorman.com | Call or email |
 
