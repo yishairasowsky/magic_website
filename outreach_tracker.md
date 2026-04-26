@@ -56,6 +56,8 @@
 | 34 | Olim in Tel Aviv | @olim.in.tlv | Instagram DM | 2026-04-26 | Sent — events pitch | Awaiting reply |
 | 35 | Mindspace Israel | @mindspace.israel | Instagram DM | 2026-04-26 | Sent — events pitch | Awaiting reply |
 | 36 | Derby Bar Herzliya | @derbybar.herz | Instagram DM | 2026-04-26 | Sent — new direct message | Awaiting reply |
+| 37 | WeWork Israel | @wework_israel | Instagram DM | 2026-04-27 | Sent — events pitch | Awaiting reply |
+| 38 | Tel Aviv Intl Salon | @salon.tlv | Instagram DM | 2026-04-27 | Sent — events pitch | Awaiting reply |
 
 ## Follow-Up Log
 
