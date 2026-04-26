@@ -33,6 +33,7 @@
 | B | JTLV / Shiri (058-782-2990) | Ari referral | WhatsApp | 2026-04-26 | Sent — asked to connect with Avi Hill | Awaiting reply |
 | 14 | The Setai Tel Aviv | @thesetaitelaviv | Instagram DM | 2026-04-26 | Sent — asked for manager | Awaiting reply |
 | 15 | Santa Katarina | @santa.katarina | Instagram DM | 2026-04-26 | Sent — asked for manager | Awaiting reply |
+| 16 | King David Hotel | @kingdavidhotel | Instagram DM | 2026-04-26 | Sent — new direct message | Awaiting reply |
 
 ## Follow-Up Log
 
