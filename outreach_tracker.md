@@ -41,6 +41,7 @@
 | 19 | Startup Grind Tel Aviv | @startupgrindtlv | Instagram DM | 2026-04-26 | Sent — events pitch | Awaiting reply |
 | 20 | Inbal Hotel | @inbalhotel | Instagram DM | 2026-04-26 | Sent — new direct message | Awaiting reply |
 | 21 | Helena wine bar | @helena.tlv | Instagram DM | 2026-04-26 | Sent — new direct message | Awaiting reply |
+| 22 | Vega wine bar | @vega_wine_bar | Instagram DM | 2026-04-26 | Sent — new direct message | Awaiting reply |
 
 ## Follow-Up Log
 
