@@ -49,6 +49,10 @@
 | 27 | Gvahim | @gvahim | Instagram DM | 2026-04-26 | Auto-reply — asked for email | Sent info@yishai.show |
 | 28 | Speakeasy rooftop | @speakeasy.tlv | Instagram DM | 2026-04-26 | DMs closed | Skipped |
 | 29 | Brown Hotels | @brownhotels | Instagram DM | 2026-04-26 | Sent — new direct message | Awaiting reply |
+| 30 | Danny Marx Events | @danny_marx_event_planner | Instagram DM | 2026-04-26 | Sent — event planner pitch | Awaiting reply |
+| 31 | Events by Shani | @events_by_shani | Instagram DM | 2026-04-26 | Sent — event planner pitch | Awaiting reply |
+| 32 | The Drisco Hotel | @thedrisco | Instagram DM | 2026-04-26 | Sent — new direct message | Awaiting reply |
+| 33 | JLIC Jerusalem | @jlicjerusalem | Instagram DM | 2026-04-26 | Sent — events pitch | Awaiting reply |
 
 ## Follow-Up Log
 
