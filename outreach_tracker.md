@@ -21,6 +21,7 @@
 | 9 | The Norman Hotel | @thenormantlv | Instagram DM | 2026-04-26 | Sent — asked for manager | Awaiting reply |
 
 | 10 | Waldorf Astoria Jerusalem | @waldorfastoriajerusalem | Instagram DM + WhatsApp | 2026-04-26 | Sent — asked for manager | Awaiting reply |
+| 11 | George & John (Drisco Hotel) | @georgeandjohn.restaurant | Instagram DM | 2026-04-26 | Sent — asked for manager | Awaiting reply |
 
 ## Follow-Up Log
 
