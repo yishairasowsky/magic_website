@@ -45,6 +45,10 @@
 | 23 | Nefesh B'Nefesh TLV | @nbntlv | Instagram DM | 2026-04-26 | Sent — events pitch | Awaiting reply |
 | 24 | SuraMare rooftop | @suramare_tlv | Instagram DM | 2026-04-26 | Sent — new direct message | Awaiting reply |
 | 25 | Chabad on the Coast TLV | @chabadonthecoast | Instagram DM | 2026-04-26 | Sent — events pitch | Awaiting reply |
+| 26 | YJP Tel Aviv | @yjptlv | Instagram DM | 2026-04-26 | Sent — events pitch | Awaiting reply |
+| 27 | Gvahim | @gvahim | Instagram DM | 2026-04-26 | Auto-reply — asked for email | Sent info@yishai.show |
+| 28 | Speakeasy rooftop | @speakeasy.tlv | Instagram DM | 2026-04-26 | DMs closed | Skipped |
+| 29 | Brown Hotels | @brownhotels | Instagram DM | 2026-04-26 | Sent — new direct message | Awaiting reply |
 
 ## Follow-Up Log
 
