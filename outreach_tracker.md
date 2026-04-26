@@ -20,6 +20,8 @@
 | 8 | Pastel | @pastel_tlv | Instagram DM | 2026-04-26 | Sent — asked for manager | Awaiting reply |
 | 9 | The Norman Hotel | @thenormantlv | Instagram DM | 2026-04-26 | Sent — asked for manager | Awaiting reply |
 
+| 10 | Waldorf Astoria Jerusalem | @waldorfastoriajerusalem | Instagram DM + WhatsApp | 2026-04-26 | Sent — asked for manager | Awaiting reply |
+
 ## Follow-Up Log
 
 *(Updates will be added here as replies come in)*
