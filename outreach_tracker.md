@@ -5,7 +5,7 @@
 | # | Venue | Contact | Method | Date Sent | Status | Notes |
 |---|-------|---------|--------|-----------|--------|-------|
 | 1 | Angelica | 02-623-0056 | WhatsApp | 2026-04-25 | Sent (long version) | Message was too long, no reply yet |
-| 2 | Mamilla Rooftop | 053-220-4220 | WhatsApp | 2026-04-26 | Sent | Awaiting reply |
+| 2 | Mamilla Rooftop | 053-220-4220 | WhatsApp | 2026-04-26 | Sent — asked for manager | Awaiting reply |
 
 ## Not Yet Contacted
 
