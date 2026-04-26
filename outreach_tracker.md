@@ -43,6 +43,8 @@
 | 21 | Helena wine bar | @helena.tlv | Instagram DM | 2026-04-26 | Sent — new direct message | Awaiting reply |
 | 22 | Vega wine bar | @vega_wine_bar | Instagram DM | 2026-04-26 | Sent — new direct message | Awaiting reply |
 | 23 | Nefesh B'Nefesh TLV | @nbntlv | Instagram DM | 2026-04-26 | Sent — events pitch | Awaiting reply |
+| 24 | SuraMare rooftop | @suramare_tlv | Instagram DM | 2026-04-26 | Sent — new direct message | Awaiting reply |
+| 25 | Chabad on the Coast TLV | @chabadonthecoast | Instagram DM | 2026-04-26 | Sent — events pitch | Awaiting reply |
 
 ## Follow-Up Log
 
