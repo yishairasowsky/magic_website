@@ -18,10 +18,16 @@
 | 6 | ImerSion | 055-500-9659 | WhatsApp | 2026-04-26 | Sent — asked for manager | Awaiting reply |
 | 7 | Taizu | @taizurestaurant | Instagram DM | 2026-04-26 | Sent — asked for manager | Awaiting reply |
 | 8 | Pastel | @pastel_tlv | Instagram DM | 2026-04-26 | Sent — asked for manager | Awaiting reply |
-| 9 | The Norman Hotel | @thenormantlv | Instagram DM | 2026-04-26 | Replied — asked for details to forward to sales & marketing | Sent summary + contact details |
+| 9 | The Norman Hotel | @thenormantlv | Instagram DM | 2026-04-26 | Replied — asked for details to forward to sales & marketing | Sent full pitch + testimonial + free trial offer. Awaiting reply |
 
 | 10 | Waldorf Astoria Jerusalem | @waldorfastoriajerusalem | Instagram DM + WhatsApp | 2026-04-26 | Sent — asked for manager | Awaiting reply |
 | 11 | George & John (Drisco Hotel) | @georgeandjohn.restaurant | Instagram DM | 2026-04-26 | Sent — asked for manager | Awaiting reply |
+
+## Other Contacts
+
+| # | Contact | Source | Method | Date | Status | Notes |
+|---|---------|--------|--------|------|--------|-------|
+| A | Ari (054-922-2518) | Jay @ Tel Aviv Arts Council | WhatsApp | 2026-04-26 | In conversation | Asked for event organizer referrals. Awaiting reply |
 
 ## Follow-Up Log
 
