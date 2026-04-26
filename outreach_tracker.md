@@ -18,7 +18,7 @@
 | 6 | ImerSion | 055-500-9659 | WhatsApp | 2026-04-26 | Sent — asked for manager | Awaiting reply |
 | 7 | Taizu | @taizurestaurant | Instagram DM | 2026-04-26 | Sent — asked for manager | Awaiting reply |
 | 8 | Pastel | @pastel_tlv | Instagram DM | 2026-04-26 | Sent — asked for manager | Awaiting reply |
-| 9 | The Norman Hotel | 03-543-5555 / reservations@thenorman.com | Call or email |
+| 9 | The Norman Hotel | @thenormantlv | Instagram DM | 2026-04-26 | Sent — asked for manager | Awaiting reply |
 
 ## Follow-Up Log
 
