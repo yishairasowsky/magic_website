@@ -31,7 +31,8 @@
 |---|---------|--------|--------|------|--------|-------|
 | A | Ari (054-922-2518) | Jay @ Tel Aviv Arts Council | WhatsApp | 2026-04-26 | Done | Referred us to Avi Hill at JTLV |
 | B | JTLV / Shiri (058-782-2990) | Ari referral | WhatsApp | 2026-04-26 | Done — gave Avi's number | |
-| C | Avi Hill / JTLV (058-565-1472) | Shiri referral | WhatsApp | 2026-04-26 | Sent — direct pitch + free trial offer | Awaiting reply |
+| C | Avi Hill / JTLV (058-565-1472) | Shiri referral | WhatsApp | 2026-04-26 | Replied — said yes, arrange with Shiri | Handed off to Shiri |
+| D | Shiri / JTLV (058-782-2990) | Avi Hill | WhatsApp | 2026-04-26 | Sent — asked to schedule a call | Awaiting reply |
 | 14 | The Setai Tel Aviv | @thesetaitelaviv | Instagram DM | 2026-04-26 | Sent — asked for manager | Awaiting reply |
 | 15 | Santa Katarina | @santa.katarina | Instagram DM | 2026-04-26 | Sent — asked for manager | Awaiting reply |
 | 16 | King David Hotel | @kingdavidhotel | Instagram DM | 2026-04-26 | Sent — new direct message | Awaiting reply |
