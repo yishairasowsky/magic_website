@@ -11,7 +11,7 @@
 
 | # | Venue | Contact | Method |
 |---|-------|---------|--------|
-| 3 | Mona | monarestteam@gmail.com / @monarest | Email or Instagram DM |
+| 3 | Mona | @monarest | Instagram DM | 2026-04-26 | Sent — asked for manager | Awaiting reply |
 | 4 | Machneyuda | 02-533-3442 | Call |
 | 5 | Modern (Israel Museum) | 02-648-0862 | Call |
 
