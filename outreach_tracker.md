@@ -37,6 +37,7 @@
 | 16 | King David Hotel | @kingdavidhotel | Instagram DM | 2026-04-26 | Sent — new direct message | Awaiting reply |
 | 17 | David Citadel Hotel | @thedavidcitadel | Instagram DM | 2026-04-26 | Auto-reply received | WhatsApp also available: 053-220-4220 |
 | 18 | Herbert Samuel (Ritz-Carlton) | @herbertsamuel_rest | Instagram DM | 2026-04-26 | Sent — new direct message | Awaiting reply |
+| 19 | Startup Grind Tel Aviv | @startupgrindtlv | Instagram DM | 2026-04-26 | Sent — events pitch | Awaiting reply |
 
 ## Follow-Up Log
 
