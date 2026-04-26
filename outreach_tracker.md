@@ -29,7 +29,10 @@
 
 | # | Contact | Source | Method | Date | Status | Notes |
 |---|---------|--------|--------|------|--------|-------|
-| A | Ari (054-922-2518) | Jay @ Tel Aviv Arts Council | WhatsApp | 2026-04-26 | In conversation | Asked for event organizer referrals. Awaiting reply |
+| A | Ari (054-922-2518) | Jay @ Tel Aviv Arts Council | WhatsApp | 2026-04-26 | Done | Referred us to Avi Hill at JTLV |
+| B | JTLV / Shiri (058-782-2990) | Ari referral | WhatsApp | 2026-04-26 | Sent — asked to connect with Avi Hill | Awaiting reply |
+| 14 | The Setai Tel Aviv | @thesetaitelaviv | Instagram DM | 2026-04-26 | Sent — asked for manager | Awaiting reply |
+| 15 | Santa Katarina | @santa.katarina | Instagram DM | 2026-04-26 | Sent — asked for manager | Awaiting reply |
 
 ## Follow-Up Log
 
