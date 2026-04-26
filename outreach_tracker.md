@@ -14,7 +14,8 @@
 | 3 | Mona | monarestteam@gmail.com / @monarest | Email or Instagram DM |
 | 4 | Machneyuda | 02-533-3442 | Call |
 | 5 | Modern (Israel Museum) | 02-648-0862 | Call |
-| 6 | ImerSion | 055-500-9659 | WhatsApp |
+
+| 6 | ImerSion | 055-500-9659 | WhatsApp | 2026-04-26 | Sent — asked for manager | Awaiting reply |
 | 7 | Taizu | 03-522-5005 / info@taizu.co.il | Call or email |
 | 8 | Pastel | 03-644-7741 | Call |
 | 9 | The Norman Hotel | 03-543-5555 / reservations@thenorman.com | Call or email |
