@@ -18,7 +18,7 @@
 | 6 | ImerSion | 055-500-9659 | WhatsApp | 2026-04-26 | Sent — asked for manager | Awaiting reply |
 | 7 | Taizu | @taizurestaurant | Instagram DM | 2026-04-26 | Sent — asked for manager | Awaiting reply |
 | 8 | Pastel | @pastel_tlv | Instagram DM | 2026-04-26 | Sent — asked for manager | Awaiting reply |
-| 9 | The Norman Hotel | @thenormantlv | Instagram DM | 2026-04-26 | Sent — asked for manager | Awaiting reply |
+| 9 | The Norman Hotel | @thenormantlv | Instagram DM | 2026-04-26 | Replied — asked for details to forward to sales & marketing | Sent summary + contact details |
 
 | 10 | Waldorf Astoria Jerusalem | @waldorfastoriajerusalem | Instagram DM + WhatsApp | 2026-04-26 | Sent — asked for manager | Awaiting reply |
 | 11 | George & John (Drisco Hotel) | @georgeandjohn.restaurant | Instagram DM | 2026-04-26 | Sent — asked for manager | Awaiting reply |
