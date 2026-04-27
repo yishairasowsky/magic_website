@@ -23,7 +23,7 @@
 | 10 | Waldorf Astoria Jerusalem | @waldorfastoriajerusalem | Instagram DM + WhatsApp | 2026-04-26 | Sent — asked for manager | Awaiting reply |
 | 11 | George & John (Drisco Hotel) | @georgeandjohn.restaurant | Instagram DM | 2026-04-26 | Sent — asked for manager | Awaiting reply |
 | 12 | Katzir (David Kempinski Hotel) | @katzir.telaviv | Instagram DM | 2026-04-26 | Sent — asked for manager | Awaiting reply |
-| 13 | Popina | @popina_chef_restaurant | Instagram DM | 2026-04-26 | Sent — asked for manager | Awaiting reply |
+| 13 | Popina | @popina_chef_restaurant | Instagram DM | 2026-04-26 | Declined — "not relevant for us" | Done |
 
 ## Other Contacts
 
