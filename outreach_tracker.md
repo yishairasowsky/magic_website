@@ -29,7 +29,7 @@
 
 | # | Contact | Source | Method | Date | Status | Notes |
 |---|---------|--------|--------|------|--------|-------|
-| A | Ari (054-922-2518) | Jay @ Tel Aviv Arts Council | WhatsApp | 2026-04-26 | Done | Referred us to Avi Hill at JTLV |
+| A | Ari (054-922-2518) | Jay @ TLV Arts Council | WhatsApp | 2026-04-26 | Done | Referred us to Avi Hill at JTLV. Jay's events are cultural/content — not relevant for magic |
 | B | JTLV / Shiri (058-782-2990) | Ari referral | WhatsApp | 2026-04-26 | Done — gave Avi's number | |
 | C | Avi Hill / JTLV (058-565-1472) | Shiri referral | WhatsApp | 2026-04-26 | Replied — said yes, arrange with Shiri | Handed off to Shiri |
 | D | Shiri / JTLV (058-782-2990) | Avi Hill | WhatsApp | 2026-04-26 | Sent — asked to schedule a call | Awaiting reply |
