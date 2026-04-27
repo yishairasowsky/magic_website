@@ -65,6 +65,10 @@
 | 43 | Imperial Cocktail Bar | @imperialcocktailbar | Instagram DM | 2026-04-27 | Sent — new direct message | Awaiting reply |
 | 44 | Olmaya events Jerusalem | @olmaya_events | Instagram DM | 2026-04-27 | Sent — event venue pitch | Awaiting reply |
 | 45 | Gamos events Ma'ale Adumim | @gamos__event | Instagram DM | 2026-04-27 | Auto-reply — asked for phone number | Sent 054-848-2245, also WhatsApp 053-664-4044 available |
+| 46 | KBYDesigns | @kbydesigns | Instagram DM | 2026-04-27 | Sent — event planner pitch | Awaiting reply |
+| 47 | DreamCatcher Events | @dreamcatcher__israel | Instagram DM | 2026-04-27 | Sent — event planner pitch | Awaiting reply |
+| 48 | Debbie Nussbaum Events | @debbienussbaumevents | Instagram DM | 2026-04-27 | Sent — event planner pitch | Awaiting reply |
+| 49 | Rimon Events / Ryan Burns | WhatsApp | 2026-04-27 | Sent — personal ask for referrals | Existing relationship |
 
 | E | Dead Sea client (050-669-1799) | Ayron Frezy referral | WhatsApp | 2026-04-27 | Sent — interested in May 28 gig | 16 people, 4000 NIS, 8pm |
 
