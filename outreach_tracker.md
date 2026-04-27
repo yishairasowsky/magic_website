@@ -58,6 +58,9 @@
 | 36 | Derby Bar Herzliya | @derbybar.herz | Instagram DM | 2026-04-26 | Sent — new direct message | Awaiting reply |
 | 37 | WeWork Israel | @wework_israel | Instagram DM | 2026-04-27 | Sent — events pitch | Awaiting reply |
 | 38 | Tel Aviv Intl Salon | @salon.tlv | Instagram DM | 2026-04-27 | Sent — events pitch | Awaiting reply |
+| 39 | Villa Brown Jerusalem | @villabrownjerusalem | Instagram DM | 2026-04-27 | Sent — new direct message | Awaiting reply |
+| 40 | Orchid Events | @thisisorchidevents | Instagram DM | 2026-04-27 | Sent — event planner pitch | Awaiting reply |
+| 41 | Letizia Events | @letizia.events | Instagram DM | 2026-04-27 | Sent — event planner pitch | Awaiting reply |
 
 ## Follow-Up Log
 
