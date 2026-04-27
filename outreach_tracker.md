@@ -62,6 +62,8 @@
 | 40 | Orchid Events | @thisisorchidevents | Instagram DM | 2026-04-27 | Sent — event planner pitch | Awaiting reply |
 | 41 | Letizia Events | @letizia.events | Instagram DM | 2026-04-27 | Sent — event planner pitch | Awaiting reply |
 
+| E | Dead Sea client (050-669-1799) | Ayron Frezy referral | WhatsApp | 2026-04-27 | Sent — interested in May 28 gig | 16 people, 4000 NIS, 8pm |
+
 ## Follow-Up Log
 
 *(Updates will be added here as replies come in)*
