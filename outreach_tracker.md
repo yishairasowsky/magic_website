@@ -79,6 +79,9 @@
 | 54 | Ahuva Events | @ahuvaevents | — | — | Skipped — already in contact from 2024-2025 | She'll reach out when relevant |
 | 55 | MK Events Israel | @mkeventsisrael | Instagram DM | 2026-04-28 | Sent — event planner pitch | Awaiting reply |
 | 56 | DJ Shia | @djshia | Instagram DM | 2026-04-28 | Sent — collaboration pitch | Awaiting reply |
+| 57 | Anton Mislawsky (photographer) | @antonmislawsky | Instagram DM | 2026-04-28 | Sent — collaboration pitch | Awaiting reply |
+| 58 | Daniel Notcake (photographer) | @swinopass | Instagram DM | 2026-04-28 | Sent — collaboration pitch | Awaiting reply |
+| 59 | Catalyst Team Building | @catalystglobal | Instagram DM | 2026-04-28 | Sent — corporate pitch | Awaiting reply |
 
 ## Follow-Up Log
 
