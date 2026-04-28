@@ -35,7 +35,7 @@ Warm regards,
 Yishai
 Close-Up Magician & Mentalist | Jerusalem
 [Phone] | [Email]
-Instagram: @yishai_mentalist_and_magician
+Instagram: @yishai.mentalist
 
 ---
 
