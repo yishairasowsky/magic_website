@@ -69,6 +69,10 @@
 | 47 | DreamCatcher Events | @dreamcatcher__israel | Instagram DM | 2026-04-27 | Sent — event planner pitch | Awaiting reply |
 | 48 | Debbie Nussbaum Events | @debbienussbaumevents | Instagram DM | 2026-04-27 | Sent — event planner pitch | Awaiting reply |
 | 49 | Rimon Events / Ryan Burns | WhatsApp | 2026-04-27 | Sent — personal ask for referrals | Existing relationship |
+| 50 | Gatsby Cocktail Bar | @gatsbycocktailroom | Instagram DM | 2026-04-28 | DMs closed | Skipped |
+| 51 | Sambation Cocktail Bar | @sambation_cb | Instagram DM | 2026-04-28 | Sent — new direct message | Awaiting reply |
+| 52 | Lev Shalom Events | @levshalomjerusalem | Instagram DM | 2026-04-28 | Sent — event venue pitch | Awaiting reply |
+| 53 | Yehudit Designs | @yehuditdesigns | Instagram DM | 2026-04-28 | Sent — event planner pitch | Awaiting reply |
 
 | E | Dead Sea client (050-669-1799) | Ayron Frezy referral | WhatsApp | 2026-04-27 | Sent — interested in May 28 gig | 16 people, 4000 NIS, 8pm |
 
