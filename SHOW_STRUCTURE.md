@@ -73,60 +73,65 @@
 3. Variety in type: prediction → physical → mind reading → mathematical → devastating → impossible
 
 ### ACT 1 — "Let me show you what I do" (0-12 min)
-*Establish the Jester character. Get laughs early. Show credibility without being heavy.*
+*Establish the Jester character. Build trust. Show credibility without being heavy.*
 
-**Effect 1: Ultimate Vacation (5 min)**
-- Opens fast, no setup, audience calls out info, instant sealed prediction
-- Tone: light, playful, "let's have some fun"
-- Establishes: I can predict things
-
-**Effect 2: White Dwarf (7 min)**
-- Deeper than Ultimate Vacation — they write something personal, sealed in envelopes, you divine it
-- Escalation: now it's not just random info, it's something THEY chose privately
+**Effect 1: White Dwarf (5 min)**
+- Opens warm and personal — spectator writes anything, sealed in envelopes, you divine it
+- Tone: intimate, impressive but not aggressive
 - Establishes: I can read your private thoughts
+- WHY FIRST: builds trust before you do anything invasive
 
-### ACT 2 — "Now let's get weird" (12-30 min)
-*This is the comedy engine of the show. Maximum audience interaction, maximum laughs, maximum byplay.*
+**Effect 2: Phone Unlock (3 min)**
+- Now that they trust you — BOOM. Break into someone's phone.
+- Short, devastating, real
+- The audience reaction IS the comedy — their faces do the work
+- Establishes: "OK this guy is the real deal"
+- WHY SECOND: the trust from White Dwarf makes this feel thrilling, not threatening
 
-**Effect 3: Name and Place + Drawing Duplication (12 min)**
-- YOUR CORE EFFECT — baby gag, egg beater gag, billet burn drama
-- This is where the Jester character shines brightest
-- The audience is laughing the hardest here
-- But the reveals are genuinely impossible — dual revelation + drawing
-- Establishes: I can read minds AND I'm hilarious
-
-**Effect 4: Book Test (8 min)**
+**Effect 3: Book Test (8 min)**
 - Multiple audience members involved (page, line, word)
 - Whole audience participates in the anagram scramble
-- Interactive, playful, builds energy
+- Interactive, playful, builds energy after the intensity of Phone Unlock
 - Establishes: the whole room is part of this
 
-**Effect 5: PK Touch (8 min)**
-- SHIFT IN TONE — still warm and funny (volunteer reactions) but now it's visceral and physical
-- The audience goes quiet when they see the second person reacting in real time
-- This is the pivot from "funny show" to "wait... is this real?"
-- Establishes: this isn't tricks — something genuinely strange is happening
+### ACT 2 — "Now let's get weird" (12-30 min)
+*Shift gears. From clever to visceral. The show gets progressively more impossible.*
 
-### ACT 3 — "I told you I wasn't serious" (30-45 min)
-*The comedy has earned you their trust. Now deliver the impossible. Layer the climaxes.*
+**Effect 4: Ultimate Vacation (5 min)**
+- Multiple spectators call out info on the spot, instant sealed prediction reveal
+- Quick, punchy, crowd-pleasing
+- Palate cleanser before the big sequence
+- Establishes: I can predict the future, not just read the past
 
-**Effect 6: Card/Number Sequence — Invisible Deck → Magic Square → ACAAN (10 min)**
+**Effect 5: Card/Number Sequence — Invisible Deck → Magic Square → ACAAN (12 min)**
 - Thought-of card revealed as reversed (gasp)
 - Magic Square filled live — every combination adds to their number (intellectual wow)
 - Same card at same number in the mem deck (triple payoff)
 - Establishes: mathematical precision + impossibility
+- THREE escalating climaxes in one sequence
 
-**Effect 7: Phone Unlock (3 min)**
-- Short, devastating, real
-- The audience reaction is the comedy — you don't need jokes, their faces do the work
-- Transition moment: "OK now I'm actually scared of this guy"
+**Effect 6: PK Touch (8 min)**
+- THE PIVOT — still warm and funny (volunteer reactions) but now it's visceral and physical
+- The audience goes quiet when they see the second person reacting in real time
+- This is the moment the show shifts from "impressive tricks" to "something genuinely strange is happening"
+- Establishes: this isn't tricks — this is real
+
+### ACT 3 — "I told you I wasn't serious" (30-45 min)
+*The comedy peaks. The impossibility peaks. Everything converges.*
+
+**Effect 7: Name and Place + Drawing Duplication (12 min)**
+- YOUR CORE EFFECT — baby gag, egg beater gag, billet burn drama
+- This is where the Jester character shines brightest
+- The audience is laughing the hardest here
+- But the reveals are genuinely impossible — dual revelation + drawing
+- WHY PENULTIMATE: after the eerie PK Touch, the laughter releases tension — then the impossible reveals hit even harder because nobody was bracing for them
 
 **Effect 8: Cryptext — THE CLOSER (7 min)**
 - Borrowed bill, multiplied numbers, poster reveals matching decimal
 - Bill number matches
 - Poster flipped: CLIENT'S NAME
 - Standing ovation moment
-- Brings the show full circle — you started light and funny, you end with something that feels like a miracle
+- Brings the show full circle — you started warm and personal, you end with a miracle that's personal to the client
 
 ---
 
