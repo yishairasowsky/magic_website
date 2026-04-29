@@ -74,7 +74,7 @@
 | 52 | Lev Shalom Events | @levshalomjerusalem | Instagram DM | 2026-04-28 | Sent — event venue pitch | Awaiting reply |
 | 53 | Yehudit Designs | @yehuditdesigns | Instagram DM | 2026-04-28 | Sent — event planner pitch | Awaiting reply |
 
-| E | Dead Sea client (050-669-1799) | Ayron Frezy referral | WhatsApp | 2026-04-27 | Sent — interested in May 28 gig | 16 people, 4000 NIS, 8pm |
+| E | Ruth / Dead Sea (050-669-1799) | Ayron Frezy referral | WhatsApp | 2026-04-27 | Follow-up sent Apr 29 | 16 people, 4000 NIS, 8pm, May 28 |
 | F | Yifat / BizMax (050-621-8488) | David at BizMax | WhatsApp | 2026-04-28 | Sent — Hebrew pitch | Awaiting reply |
 | G | Oz Virtuoz (circus artist) | Existing contact | WhatsApp | 2026-04-29 | Offered May 5 gig Kiryat Ono 18:00 | Quoted 3500 NIS, awaiting reply |
 | 54 | Ahuva Events | @ahuvaevents | — | — | Skipped — already in contact from 2024-2025 | She'll reach out when relevant |
