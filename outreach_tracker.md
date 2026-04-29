@@ -50,9 +50,9 @@
 | 28 | Speakeasy rooftop | @speakeasy.tlv | Instagram DM | 2026-04-26 | DMs closed | Skipped |
 | 29 | Brown Hotels | @brownhotels | Instagram DM | 2026-04-26 | Replied — asked to email res@ichotels.co.il | Sending email |
 | 30 | Danny Marx Events | @danny_marx_event_planner | Instagram DM | 2026-04-26 | Sent — event planner pitch | Awaiting reply |
-| 31 | Events by Shani | @events_by_shani | Instagram DM | 2026-04-26 | In conversation — bar/bat mitzvahs, weddings, family events | Asked to set up a call |
+| 31 | Events by Shani | @events_by_shani | Instagram DM | 2026-04-26 | Wants to see live demo, asked about languages | Replying — both languages, offering demo |
 | 32 | The Drisco Hotel | @thedrisco | Instagram DM | 2026-04-26 | Sent — new direct message | Awaiting reply |
-| 33 | JLIC Jerusalem | @jlicjerusalem | Instagram DM | 2026-04-26 | Sent — events pitch | Awaiting reply |
+| 33 | JLIC Jerusalem | @jlicjerusalem | Instagram DM | 2026-04-26 | Replied — wants references | Sending references |
 | 34 | Olim in Tel Aviv | @olim.in.tlv | Instagram DM | 2026-04-26 | Sent — events pitch | Awaiting reply |
 | 35 | Mindspace Israel | @mindspace.israel | Instagram DM | 2026-04-26 | Sent — events pitch | Awaiting reply |
 | 36 | Derby Bar Herzliya | @derbybar.herz | Instagram DM | 2026-04-26 | Sent — new direct message | Awaiting reply |
