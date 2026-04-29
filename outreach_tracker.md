@@ -32,7 +32,7 @@
 | A | Ari (054-922-2518) | Jay @ TLV Arts Council | WhatsApp | 2026-04-26 | Done | Referred us to Avi Hill at JTLV. Jay's events are cultural/content — not relevant for magic |
 | B | JTLV / Shiri (058-782-2990) | Ari referral | WhatsApp | 2026-04-26 | Done — gave Avi's number | |
 | C | Avi Hill / JTLV (058-565-1472) | Shiri referral | WhatsApp | 2026-04-26 | Replied — said yes, arrange with Shiri | Handed off to Shiri |
-| D | Shiri / JTLV (058-782-2990) | Avi Hill | WhatsApp | 2026-04-26 | Sent — asked to schedule a call | Awaiting reply |
+| D | Shiri / JTLV (058-782-2990) | Avi Hill | WhatsApp | 2026-04-26 | Replied — wants to speak tomorrow | Call scheduled for Apr 30 |
 | 14 | The Setai Tel Aviv | @thesetaitelaviv | Instagram DM | 2026-04-26 | Sent — asked for manager | Awaiting reply |
 | 15 | Santa Katarina | @santa.katarina | Instagram DM | 2026-04-26 | Sent — asked for manager | Awaiting reply |
 | 16 | King David Hotel | @kingdavidhotel | Instagram DM | 2026-04-26 | Sent — new direct message | Awaiting reply |
@@ -76,6 +76,7 @@
 
 | E | Dead Sea client (050-669-1799) | Ayron Frezy referral | WhatsApp | 2026-04-27 | Sent — interested in May 28 gig | 16 people, 4000 NIS, 8pm |
 | F | Yifat / BizMax (050-621-8488) | David at BizMax | WhatsApp | 2026-04-28 | Sent — Hebrew pitch | Awaiting reply |
+| G | Oz Virtuoz (circus artist) | Existing contact | WhatsApp | 2026-04-29 | Offered May 5 gig Kiryat Ono 18:00 | Quoted 3500 NIS, awaiting reply |
 | 54 | Ahuva Events | @ahuvaevents | — | — | Skipped — already in contact from 2024-2025 | She'll reach out when relevant |
 | 55 | MK Events Israel | @mkeventsisrael | Instagram DM | 2026-04-28 | Sent — event planner pitch | Awaiting reply |
 | 56 | DJ Shia | @djshia | Instagram DM | 2026-04-28 | Sent — collaboration pitch | Awaiting reply |
