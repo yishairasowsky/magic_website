@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yishai — Mentalist & Magician — Flyer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Inter:wght@300;400;500;600;700&family=Pinyon+Script&display=swap" rel="stylesheet">
+  <style>
+    @page { size: A4; margin: 0; }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #080808;
+      color: #f0f0f0;
+      width: 210mm;
+      min-height: 297mm;
+      margin: 0 auto;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .flyer {
+      width: 100%;
+      min-height: 297mm;
+      padding: 0;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Hero section with photo */
+    .hero {
+      position: relative;
+      height: 48%;
+      min-height: 140mm;
+      overflow: hidden;
+      display: flex;
+      align-items: flex-end;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background: url('curated/15%20poitning_upscayl_5x_upscayl-standard-4x.png') center top / cover no-repeat;
+      filter: brightness(0.6) saturate(0.7);
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, #080808 0%, rgba(8,8,8,0.7) 30%, transparent 60%);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      padding: 0 10mm 8mm;
+      width: 100%;
+    }
+
+    .hero-name {
+      font-family: 'Pinyon Script', cursive;
+      font-size: 72pt;
+      font-weight: 400;
+      color: #ff4444;
+      text-shadow: 0 0 4px #fff, 0 0 11px #ffaaaa, 0 0 25px #ff3333, 0 0 55px #cc1111;
+      line-height: 1;
+      margin-bottom: 2mm;
+    }
+
+    .hero-subtitle {
+      font-size: 10pt;
+      letter-spacing: 0.35em;
+      text-transform: uppercase;
+      color: rgba(240,240,240,0.5);
+      font-weight: 400;
+    }
+
+    /* Tagline */
+    .tagline {
+      padding: 6mm 10mm 4mm;
+      text-align: center;
+    }
+
+    .tagline h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 20pt;
+      font-weight: 700;
+      line-height: 1.3;
+      color: #f0f0f0;
+      margin-bottom: 3mm;
+    }
+
+    .tagline p {
+      font-size: 9.5pt;
+      color: rgba(240,240,240,0.55);
+      line-height: 1.7;
+      max-width: 160mm;
+      margin: 0 auto;
+    }
+
+    /* What you get */
+    .features {
+      padding: 2mm 10mm 4mm;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3mm;
+    }
+
+    .feature {
+      background: rgba(200,32,42,0.06);
+      border: 1px solid rgba(200,32,42,0.2);
+      border-radius: 4mm;
+      padding: 4mm 5mm;
+      text-align: center;
+    }
+
+    .feature-icon {
+      font-size: 18pt;
+      margin-bottom: 1.5mm;
+    }
+
+    .feature h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 10.5pt;
+      color: #c8202a;
+      margin-bottom: 1mm;
+    }
+
+    .feature p {
+      font-size: 7.5pt;
+      color: rgba(240,240,240,0.55);
+      line-height: 1.5;
+    }
+
+    /* Testimonials */
+    .quotes {
+      padding: 3mm 10mm;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3mm;
+    }
+
+    .quote {
+      border-left: 2px solid #c8202a;
+      padding-left: 4mm;
+    }
+
+    .quote p {
+      font-size: 8pt;
+      font-style: italic;
+      color: rgba(240,240,240,0.7);
+      line-height: 1.6;
+      margin-bottom: 1.5mm;
+    }
+
+    .quote .author {
+      font-size: 7pt;
+      font-weight: 600;
+      color: #c8202a;
+    }
+
+    /* Events strip */
+    .events {
+      padding: 3mm 10mm;
+      text-align: center;
+    }
+
+    .events-label {
+      font-size: 7pt;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: rgba(240,240,240,0.35);
+      margin-bottom: 2mm;
+    }
+
+    .events-tags {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.5mm;
+    }
+
+    .events-tags span {
+      border: 1px solid rgba(200,32,42,0.25);
+      color: rgba(240,240,240,0.65);
+      padding: 1.2mm 3mm;
+      border-radius: 20mm;
+      font-size: 7pt;
+    }
+
+    /* Stats bar */
+    .stats {
+      display: flex;
+      justify-content: center;
+      gap: 12mm;
+      padding: 4mm 10mm;
+      border-top: 1px solid rgba(200,32,42,0.12);
+      border-bottom: 1px solid rgba(200,32,42,0.12);
+      margin: 2mm 10mm;
+    }
+
+    .stat-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 18pt;
+      font-weight: 700;
+      color: #c8202a;
+      text-align: center;
+      line-height: 1;
+    }
+
+    .stat-label {
+      font-size: 6pt;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: rgba(240,240,240,0.35);
+      text-align: center;
+      margin-top: 1mm;
+    }
+
+    /* CTA / Contact */
+    .cta {
+      padding: 5mm 10mm 8mm;
+      text-align: center;
+      margin-top: auto;
+    }
+
+    .cta-book {
+      display: inline-block;
+      background: #c8202a;
+      color: #fff;
+      padding: 3mm 10mm;
+      border-radius: 2mm;
+      font-weight: 700;
+      font-size: 10pt;
+      letter-spacing: 0.04em;
+      margin-bottom: 4mm;
+      text-decoration: none;
+    }
+
+    .contact-row {
+      display: flex;
+      justify-content: center;
+      gap: 8mm;
+      flex-wrap: wrap;
+    }
+
+    .contact-item {
+      font-size: 8.5pt;
+      color: rgba(240,240,240,0.6);
+      display: flex;
+      align-items: center;
+      gap: 1.5mm;
+    }
+
+    .contact-item strong {
+      color: #f0f0f0;
+      font-weight: 500;
+    }
+
+    .site-url {
+      display: block;
+      margin-top: 3mm;
+      font-family: 'Pinyon Script', cursive;
+      font-size: 16pt;
+      color: #c8202a;
+      text-shadow: 0 0 8px rgba(200,32,42,0.3);
+    }
+
+    /* Languages note */
+    .langs {
+      display: flex;
+      justify-content: center;
+      gap: 3mm;
+      margin-top: 3mm;
+    }
+
+    .lang {
+      border: 1px solid rgba(200,32,42,0.3);
+      color: #c8202a;
+      padding: 1mm 4mm;
+      border-radius: 2mm;
+      font-size: 7pt;
+      letter-spacing: 0.06em;
+    }
+
+    @media print {
+      body { width: 210mm; min-height: 297mm; }
+      .flyer { min-height: 297mm; }
+    }
+
+    @media screen and (max-width: 600px) {
+      body { width: 100%; min-height: auto; }
+      .hero { min-height: 50vw; }
+      .features { grid-template-columns: 1fr; }
+      .quotes { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+<div class="flyer">
+
+  <div class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-name">Yishai</div>
+      <div class="hero-subtitle">Mentalist &amp; Magician</div>
+    </div>
+  </div>
+
+  <div class="tagline">
+    <h2>Predictions that land. Thoughts that are read.<br>A mystery your guests will never forget.</h2>
+    <p>Yishai is a professional mentalist and magician performing across Israel. His signature show blends mind reading, predictions, and interactive mentalism that leaves audiences stunned. Every show is tailored to your event, your guests, your occasion.</p>
+  </div>
+
+  <div class="stats">
+    <div>
+      <div class="stat-num">★★★★★</div>
+      <div class="stat-label">Audience Rating</div>
+    </div>
+    <div>
+      <div class="stat-num">22+</div>
+      <div class="stat-label">Verified Reviews</div>
+    </div>
+    <div>
+      <div class="stat-num">2,000+</div>
+      <div class="stat-label">Audience Members</div>
+    </div>
+  </div>
+
+  <div class="features">
+    <div class="feature">
+      <div class="feature-icon">🧠</div>
+      <h3>Mentalism Show</h3>
+      <p>Full interactive mind reading performance. 45-60 min. Any audience size.</p>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">🃏</div>
+      <h3>Close-Up Magic</h3>
+      <p>Table-to-table strolling magic. 1-3 hours. Perfect for cocktail hours and parties.</p>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">💻</div>
+      <h3>Virtual Zoom Show</h3>
+      <p>Mind reading that works through a screen. Any time zone.</p>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">🎉</div>
+      <h3>Kids &amp; Family</h3>
+      <p>Ages 5 to 70 entertained together. Clean, family-friendly fun.</p>
+    </div>
+  </div>
+
+  <div class="quotes">
+    <div class="quote">
+      <p>"EVERYBODY was openmouthed! Five-star, mindblowing, crowd-gasping entertainment."</p>
+      <div class="author">Yocheved S. — Family Chanukah Event</div>
+    </div>
+    <div class="quote">
+      <p>"I am still baffled how you knew I was thinking of Genghis Khan. One of the biggest highlights of the evening."</p>
+      <div class="author">Jacob Lunon — Actor &amp; Director</div>
+    </div>
+  </div>
+
+  <div class="events">
+    <div class="events-label">Perfect for</div>
+    <div class="events-tags">
+      <span>Corporate Events</span>
+      <span>Bar &amp; Bat Mitzvah</span>
+      <span>Sheva Berachos</span>
+      <span>Weddings</span>
+      <span>Birthday Parties</span>
+      <span>Fundraisers</span>
+      <span>Schools &amp; Camps</span>
+      <span>Holiday Parties</span>
+    </div>
+  </div>
+
+  <div class="cta">
+    <div class="cta-book">Book Your Event</div>
+    <div class="contact-row">
+      <div class="contact-item">📞 <strong>054-848-2245</strong></div>
+      <div class="contact-item">💬 <strong>WhatsApp</strong></div>
+      <div class="contact-item">✉️ <strong>info@yishai.show</strong></div>
+    </div>
+    <div class="site-url">www.yishai.show</div>
+    <div class="langs">
+      <span class="lang">English</span>
+      <span class="lang">עברית</span>
+    </div>
+  </div>
+
+</div>
+</body>
+</html>
