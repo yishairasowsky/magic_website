@@ -3,7 +3,7 @@ SET LIST
 
 PRESHOW CHECKLIST
 -----------------
-[ ] get number 1-52 from someone -- billet peek
+[ ] preshow billet peek: get number 1-52 + phone code on same billet, switch and burn
 [ ] hand out Cryptext poster
 [ ] force bill
 [ ] calc force
@@ -28,7 +28,7 @@ INTRO
 - invisible deck
 - whiteboard or poster board (TBD) + dry erase marker, grid pre-drawn
 - mem deck
-- NOTE: need a number 1-52 from someone before this -- preshow billet peek or earlier in show
+- NOTE: preshow billet peek -- get number 1-52 + phone code on same billet, switch and burn
 
 
 5. BOOK TEST
