@@ -1,6 +1,19 @@
 SET LIST
 ================
 
+PRESHOW CHECKLIST
+-----------------
+[ ] get number 1-52 from someone -- billet peek
+[ ] hand out Cryptext poster
+[ ] force bill
+[ ] calc force
+[ ] confirm spectator is bringing 20 shekel bill
+[ ] confirm spectator is bringing softcover book
+[ ] whiteboard/poster board -- grid pre-drawn
+[ ] notepad page pre-written
+[ ] billets pre-written and folded
+
+
 INTRO
 - thank host, welcome
 
