@@ -1,12 +1,12 @@
-SET LIST (DRAFT)
+SET LIST
 
-intro - welcome, what a privilege, msg to host
-1. Wallet - number and word
-2. Invisible Deck
-3. Magic Square
-4. ACAAN
-5. Name and Place
-6. White Dwarf - phone code
-7. PK Touch
-8. cryptext bill - preshow need to hand out poster, bill, calc force
-thank host, words of blessing
+[ ] intro - welcome, msg to host
+[ ] 1. Wallet - number and word
+[ ] 2. Invisible Deck
+[ ] 3. Magic Square
+[ ] 4. ACAAN
+[ ] 5. Name and Place
+[ ] 6. White Dwarf - phone code
+[ ] 7. PK Touch
+[ ] 8. Cryptext bill
+[ ] outro - thank host, words of blessing
