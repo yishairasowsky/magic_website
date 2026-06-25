@@ -2,13 +2,7 @@ SET LIST
 ================
 
 INTRO
-- welcome, thank msg to host
-
-HOST INTRODUCTION (give this to the host to read aloud):
-
-EN: Ladies and gentlemen, he is going to know things he has no way of knowing. And by the end of tonight, you will have no idea how any of it happened. He has performed across Israel, and nobody has ever left without a story to tell. Please put your hands together and give a huge welcome to -- Yishai!
-
-HE: גבירותיי ורבותיי, הוא הולך לדעת דברים שאין לו שום דרך לדעת. ובסוף הערב הזה, לא תהיה לכם שום הסבר למה שראיתם. הוא הופיע בפני קהלים רבים בכל רחבי ישראל, ואף אחד מעולם לא עזב בלי סיפור לספר. אנא תנו מחיאות כפיים סוערות לישי!
+- thank host, welcome
 
 1. WALLET
 - wallet
@@ -17,17 +11,9 @@ HE: גבירותיי ורבותיי, הוא הולך לדעת דברים שאי�
 - notepad page pre-written
 
 
-2. INVISIBLE DECK
+2-3-4. CARD ROUTINE (Invisible Deck > Magic Square > ACAAN)
 - invisible deck
-
-
-3. MAGIC SQUARE
-- whiteboard or poster board (TBD)
-- dry erase marker
-- grid pre-drawn
-
-
-4. ACAAN
+- whiteboard or poster board (TBD) + dry erase marker, grid pre-drawn
 - mem deck
 - NOTE: need a number 1-52 from someone before this -- preshow billet peek or earlier in show
 
@@ -37,27 +23,27 @@ HE: גבירותיי ורבותיי, הוא הולך לדעת דברים שאי�
 - NOTE: need something big to write the predicted word on
 
 
-6. NAME AND PLACE
+6. WHITE DWARF
+- 1 big envelope
+- 2 small envelopes (one has a slit)
+- sharpie
+
+
+7. NAME AND PLACE
 - billets (pre-written line, folded, ready to hand out)
 - dummy billet
-sharpie markers 3 regular and one huge
+- sharpie markers -- 3 regular + 1 huge
 - lighter
 - ashtray
 - baby gag poster
 - egg beater
 
 
-7. WHITE DWARF
-- 1 big envelope
-- 2 small envelopes (one has a slit)
-- sharpie
-
-
 8. PK TOUCH
 - (nothing)
 
 
-9. CRYPTEXT BILL  -- CLOSER
+9. CRYPTEXT -- CLOSER
 - PRESHOW: hand out poster, force bill, calc force
 - spectator brings 20 shekel bill
 
