@@ -2,8 +2,13 @@ SET LIST
 ================
 
 INTRO
-- welcome, msg to host
+- welcome, thank msg to host
 
+HOST INTRODUCTION (give this to the host to read aloud):
+
+EN: Ladies and gentlemen, he is going to know things he has no way of knowing. And by the end of tonight, you will have no idea how any of it happened. He has performed across Israel, and nobody has ever left without a story to tell. Please put your hands together and give a huge welcome to -- Yishai!
+
+HE: גבירותיי ורבותיי, הוא הולך לדעת דברים שאין לו שום דרך לדעת. ובסוף הערב הזה, לא תהיה לכם שום הסבר למה שראיתם. הוא הופיע בפני קהלים רבים בכל רחבי ישראל, ואף אחד מעולם לא עזב בלי סיפור לספר. אנא תנו מחיאות כפיים סוערות לישי!
 
 1. WALLET
 - wallet
@@ -23,20 +28,23 @@ INTRO
 
 
 4. ACAAN
-- memdec
+- mem deck
+- NOTE: need a number 1-52 from someone before this -- preshow billet peek or earlier in show
 
 
-5. BOOK TEST  (position TBD)
+5. BOOK TEST
 - spectator brings a book
+- NOTE: need something big to write the predicted word on
 
 
 6. NAME AND PLACE
-- egg beater
+- billets (pre-written line, folded, ready to hand out)
+- dummy billet
+sharpie markers 3 regular and one huge
 - lighter
 - ashtray
-- billets (pre-written line, folded, ready to hand out)
-- dummy bill
 - baby gag poster
+- egg beater
 
 
 7. WHITE DWARF

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: Arial, sans-serif;
+    background: white;
+    padding: 10px;
+  }
+  h1 {
+    text-align: center;
+    font-size: 28px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid black;
+    padding-bottom: 10px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+  .box {
+    border: 2px solid black;
+    border-radius: 6px;
+    padding: 12px 14px;
+  }
+  .box.intro-outro {
+    background: #f0f0f0;
+  }
+  .num {
+    font-size: 13px;
+    font-weight: bold;
+    color: #888;
+    margin-bottom: 2px;
+  }
+  .name {
+    font-size: 26px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    line-height: 1.1;
+    margin-bottom: 8px;
+  }
+  .equipment {
+    font-size: 12px;
+    color: #444;
+    line-height: 1.6;
+  }
+  .note {
+    font-size: 11px;
+    color: #888;
+    margin-top: 6px;
+    font-style: italic;
+  }
+  .arrow {
+    text-align: center;
+    font-size: 22px;
+    color: #999;
+    line-height: 1;
+    grid-column: span 3;
+    margin: -4px 0;
+  }
+
+  @page {
+    size: A4 landscape;
+    margin: 10mm;
+  }
+
+  @media print {
+    body {
+      padding: 10px;
+      transform: scale(0.92);
+      transform-origin: top left;
+    }
+    .name { font-size: 22px; }
+    .equipment { font-size: 11px; line-height: 1.4; }
+    .note { font-size: 10px; }
+    .grid { gap: 8px; }
+  }
+</style>
+</head>
+<body>
+
+<h1>SHOW — YISHAI</h1>
+
+<div class="grid">
+
+  <div class="box intro-outro">
+    <div class="name">INTRO &nbsp;—&nbsp; welcome, msg to host, introduction read aloud</div>
+  </div>
+
+  <div class="box">
+    <div class="num">1</div>
+    <div class="name">WALLET</div>
+    <div class="equipment">
+      wallet<br>
+      notepad + business card inside<br>
+      sharpie<br>
+      page pre-written
+    </div>
+  </div>
+
+  <div class="box">
+    <div class="num">2</div>
+    <div class="name">INVISIBLE DECK</div>
+    <div class="equipment">
+      invisible deck
+    </div>
+  </div>
+
+  <div class="box">
+    <div class="num">3</div>
+    <div class="name">MAGIC SQUARE</div>
+    <div class="equipment">
+      whiteboard or poster board (TBD)<br>
+      dry erase marker<br>
+      grid pre-drawn
+    </div>
+  </div>
+
+  <div class="box">
+    <div class="num">4</div>
+    <div class="name">ACAAN</div>
+    <div class="equipment">
+      mem deck
+    </div>
+    <div class="note">need 1-52 number in advance — billet peek preshow</div>
+  </div>
+
+  <div class="box">
+    <div class="num">5</div>
+    <div class="name">BOOK TEST</div>
+    <div class="equipment">
+      spectator brings softcover book
+    </div>
+    <div class="note">need large surface to write predicted word</div>
+  </div>
+
+  <div class="box">
+    <div class="num">6</div>
+    <div class="name">NAME AND PLACE</div>
+    <div class="equipment">
+      billets (pre-written, folded)<br>
+      dummy billet<br>
+      sharpies — 3 regular + 1 huge<br>
+      lighter + ashtray<br>
+      baby gag poster<br>
+      egg beater
+    </div>
+  </div>
+
+  <div class="box">
+    <div class="num">7</div>
+    <div class="name">WHITE DWARF</div>
+    <div class="equipment">
+      1 big envelope<br>
+      2 small envelopes (one has slit)<br>
+      sharpie
+    </div>
+  </div>
+
+  <div class="box">
+    <div class="num">8</div>
+    <div class="name">PK TOUCH</div>
+    <div class="equipment">
+      (nothing)
+    </div>
+  </div>
+
+  <div class="box">
+    <div class="num">9 — CLOSER</div>
+    <div class="name">CRYPTEXT</div>
+    <div class="equipment">
+      poster (preshow: handed out)<br>
+      bill forced (preshow)<br>
+      calc force (preshow)<br>
+      spectator brings 20₪ bill
+    </div>
+  </div>
+
+  <div class="box intro-outro">
+    <div class="name">OUTRO &nbsp;—&nbsp; thank host, words of blessing</div>
+  </div>
+
+</div>
+
+</body>
+</html>
