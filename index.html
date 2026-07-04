@@ -470,6 +470,35 @@
       transition: background 0.2s, transform 0.2s;
     }
     .btn-gold:hover { background: var(--red-lt); transform: translateY(-2px); }
+    .lead-form {
+      max-width: 480px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+    .lead-form input,
+    .lead-form select {
+      width: 100%;
+      background: var(--bg2);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 4px;
+      color: #fff;
+      padding: 0.8rem 1rem;
+      font-family: inherit;
+      font-size: 0.95rem;
+      box-sizing: border-box;
+      transition: border-color 0.2s;
+    }
+    .lead-form input::placeholder { color: rgba(255,255,255,0.35); }
+    .lead-form input:focus,
+    .lead-form select:focus { outline: none; border-color: var(--red); }
+    .lead-form select { color: rgba(255,255,255,0.6); }
+    .lead-form select option { background: #1a1a1a; color: #fff; }
+    .lead-form .btn-gold { width: 100%; text-align: center; border: none; cursor: pointer; font-size: 1rem; }
+    .lead-form-note { font-size: 0.8rem; color: rgba(255,255,255,0.35); text-align: center; margin-top: 0.25rem; }
+    .form-success { display: none; text-align: center; padding: 1.5rem; border: 1px solid rgba(200,32,42,0.3); border-radius: 4px; }
+    .form-success.visible { display: block; }
     .btn-outline {
       border: 1px solid rgba(200,32,42,0.45);
       color: var(--red);
@@ -1490,11 +1519,44 @@
     <div class="rule"></div>
     <p class="lead">Tell Yishai about your event and he'll get back to you quickly with availability and pricing.</p>
     <div id="booking-form" style="margin-top:1.5rem;scroll-margin-top:calc(var(--nav-h) + 1rem);">
-      <a href="https://docs.google.com/forms/d/e/1FAIpQLSd2m8M6YU6VdlKMtSdfHtv2JK0CbqzVfJJ8B79wKu1WznH6-w/viewform?usp=header"
-        target="_blank" rel="noopener" class="btn-gold">
-        Fill Out Booking Form
-      </a>
+      <form class="lead-form" id="leadForm" action="https://formspree.io/f/xkolynrw" method="POST">
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Email address" required>
+        <input type="tel" name="phone" placeholder="Phone / WhatsApp (optional)">
+        <select name="event_type" required>
+          <option value="" disabled selected>Type of event</option>
+          <option>Bar / Bat Mitzvah</option>
+          <option>Sheva Berachos</option>
+          <option>Corporate event</option>
+          <option>Private party</option>
+          <option>Restaurant / venue</option>
+          <option>Other</option>
+        </select>
+        <input type="text" name="event_date" placeholder="Approximate event date">
+        <button type="submit" class="btn-gold">Get Pricing &amp; Availability</button>
+        <input type="hidden" name="_subject" value="New booking inquiry from yishai.show">
+        <input type="hidden" name="_next" value="">
+      </form>
+      <div class="form-success" id="formSuccess">
+        <p style="color:var(--red);font-size:1.1rem;margin-bottom:0.5rem;">Got it.</p>
+        <p>Yishai will be in touch shortly with availability and pricing.</p>
+      </div>
+      <p class="lead-form-note" style="margin-top:0.75rem;">Prefer to talk? <a href="https://wa.me/972548482245" style="color:var(--red);">WhatsApp 054-848-2245</a></p>
     </div>
+    <script>
+      document.getElementById('leadForm').addEventListener('submit', async function(e) {
+        e.preventDefault();
+        const form = e.target;
+        const data = new FormData(form);
+        const res = await fetch(form.action, { method: 'POST', body: data, headers: { 'Accept': 'application/json' } });
+        if (res.ok) {
+          form.style.display = 'none';
+          document.getElementById('formSuccess').classList.add('visible');
+        } else {
+          alert('Something went wrong. Please WhatsApp or email directly.');
+        }
+      });
+    </script>
   </div>
   <div class="contact-cards">
     <a href="https://wa.me/972548482245" class="ccard wa" target="_blank" rel="noopener">
