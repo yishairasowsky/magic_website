@@ -1541,7 +1541,7 @@
         <p style="color:var(--red);font-size:1.1rem;margin-bottom:0.5rem;">Got it.</p>
         <p>Yishai will be in touch shortly with availability and pricing.</p>
       </div>
-      <p class="lead-form-note" style="margin-top:0.75rem;">Prefer to talk? <a href="https://wa.me/972548482245" style="color:var(--red);">WhatsApp 054-848-2245</a></p>
+      <p class="lead-form-note" style="margin-top:0.75rem;">Prefer to talk? <a href="https://wa.me/972548482245" style="color:var(--red);" onclick="gtag('event','click_whatsapp',{event_category:'contact',event_label:'form_section'})">WhatsApp 054-848-2245</a></p>
     </div>
     <script>
       document.getElementById('leadForm').addEventListener('submit', async function(e) {
@@ -1552,6 +1552,7 @@
         if (res.ok) {
           form.style.display = 'none';
           document.getElementById('formSuccess').classList.add('visible');
+          gtag('event','form_submit',{event_category:'lead',event_label:'booking_inquiry'});
         } else {
           alert('Something went wrong. Please WhatsApp or email directly.');
         }
@@ -1559,17 +1560,17 @@
     </script>
   </div>
   <div class="contact-cards">
-    <a href="https://wa.me/972548482245" class="ccard wa" target="_blank" rel="noopener">
+    <a href="https://wa.me/972548482245" class="ccard wa" target="_blank" rel="noopener" onclick="gtag('event','click_whatsapp',{event_category:'contact',event_label:'contact_section'})">
       <span class="icon">💬</span>
       <span class="clabel">WhatsApp</span>
       <span class="cval">054-848-2245</span>
     </a>
-    <a href="tel:0548482245" class="ccard">
+    <a href="tel:0548482245" class="ccard" onclick="gtag('event','click_phone',{event_category:'contact',event_label:'contact_section'})">
       <span class="icon">📞</span>
       <span class="clabel">Phone</span>
       <span class="cval">054-848-2245</span>
     </a>
-    <a href="mailto:info@yishai.show" class="ccard">
+    <a href="mailto:info@yishai.show" class="ccard" onclick="gtag('event','click_email',{event_category:'contact',event_label:'contact_section'})">
       <span class="icon">✉️</span>
       <span class="clabel">Email</span>
       <span class="cval">info@yishai.show</span>
