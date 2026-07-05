@@ -79,6 +79,16 @@
     .btn:hover { background:var(--red-lt); }
     footer { text-align:center; padding:2rem; border-top:1px solid rgba(200,32,42,0.1); font-size:0.8rem; color:rgba(119,119,119,0.5); }
     footer a { color:inherit; text-decoration:none; }
+
+    .lead-form { max-width: 420px; margin: 1.5rem auto 0; display: flex; flex-direction: column; gap: 0.65rem; text-align: left; }
+    .lead-form input, .lead-form select { width: 100%; background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.12); border-radius: 4px; color: #fff; padding: 0.75rem 0.9rem; font-family: inherit; font-size: 0.9rem; box-sizing: border-box; transition: border-color 0.2s; }
+    .lead-form input::placeholder { color: rgba(255,255,255,0.35); }
+    .lead-form input:focus, .lead-form select:focus { outline: none; border-color: #c8202a; }
+    .lead-form select { color: rgba(255,255,255,0.55); }
+    .lead-form select option { background: #1a1a1a; color: #fff; }
+    .lead-form .btn { width: 100%; text-align: center; border: none; cursor: pointer; padding: 0.82rem; font-size: 0.95rem; margin-top: 0.25rem; }
+    .form-success-blog { display: none; padding: 1rem; text-align: center; }
+    .form-success-blog.visible { display: block; }
   </style>
 </head>
 <body>
@@ -143,7 +153,41 @@
     <div class="post-cta">
       <h2>Planning an Event in Tel Aviv?</h2>
       <p>Send a WhatsApp or fill out the booking form -- I'll get back to you with availability and details.</p>
-      <a href="https://www.yishai.show/#booking" class="btn">Book Yishai</a>
+            <form class="lead-form" id="blogLeadForm" action="https://formspree.io/f/xkolynrw" method="POST">
+        <input type="text" name="name" placeholder="Your name" required>
+        <input type="email" name="email" placeholder="Email address" required>
+        <input type="tel" name="phone" placeholder="Phone / WhatsApp (optional)">
+        <select name="event_type" required>
+          <option value="" disabled selected>Type of event</option>
+          <option>Bar / Bat Mitzvah</option>
+          <option>Sheva Berachos</option>
+          <option>Corporate event</option>
+          <option>Private party</option>
+          <option>Restaurant / venue</option>
+          <option>Other</option>
+        </select>
+        <input type="text" name="event_date" placeholder="Approximate event date">
+        <button type="submit" class="btn">Get Pricing &amp; Availability</button>
+        <input type="hidden" name="_subject" value="New booking inquiry from yishai.show">
+      </form>
+      <div class="form-success-blog" id="blogFormSuccess">
+        <p style="color:#c8202a;margin-bottom:0.4rem;">Got it.</p>
+        <p style="font-size:0.9rem;color:rgba(255,255,255,0.6);">Yishai will be in touch shortly.</p>
+      </div>
+      <script>
+        document.getElementById('blogLeadForm').addEventListener('submit', async function(e) {
+          e.preventDefault();
+          const form = e.target;
+          const res = await fetch(form.action, { method: 'POST', body: new FormData(form), headers: { 'Accept': 'application/json' } });
+          if (res.ok) {
+            form.style.display = 'none';
+            document.getElementById('blogFormSuccess').classList.add('visible');
+            gtag('event','form_submit',{event_category:'lead',event_label:'blog_page'});
+          } else {
+            alert('Something went wrong. Please WhatsApp or email directly.');
+          }
+        });
+      </script>
     </div>
 
   </div>
