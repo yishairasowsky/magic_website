@@ -15,12 +15,12 @@ Welcome + message to host. Warm up crowd — get them to clap and cheer for the 
 ——————————————————————————————
 
 
-1. OUTSIDE SIGHT
+1. KRAUSS OPENER
 ----------------
 [PROLOGUE]
 
 
-Cassidy opener — spectators sight something outside (car / tree). Note who gets both right — use them for B'Wave.
+Questions that sit everyone down — last person standing is the one. Divine the famous person they're thinking of. Backup: invisible deck in pocket.
 
 [EPILOGUE]
 
@@ -28,33 +28,7 @@ Cassidy opener — spectators sight something outside (car / tree). Note who get
 ——————————————————————————————
 
 
-2. JUMBO B'WAVE
----------------
-[PROLOGUE]
-
-
-Bring back the spectator who got both right in Outside Sight. Jumbo B'Wave cards reveal.
-
-[EPILOGUE]
-
-
-——————————————————————————————
-
-
-3. ULTRAMENTAL DECK
--------------------
-[PROLOGUE]
-
-
-Spectator names any card — pass to correct card in memorized deck. "And you could have chosen any card."
-
-[EPILOGUE]
-
-
-——————————————————————————————
-
-
-4. MAGIC SQUARE
+2. MAGIC SQUARE
 ---------------
 [PROLOGUE]
 
@@ -67,20 +41,7 @@ Spectator's number (forced XXXIV preshow via Sven pad) — magic square built ar
 ——————————————————————————————
 
 
-5. ACAAN
---------
-[PROLOGUE]
-
-
-Any card at any number. Use the magic square number as the position. Memorized deck.
-
-[EPILOGUE]
-
-
-——————————————————————————————
-
-
-6. BOOK TEST
+3. BOOK TEST
 ------------
 [PROLOGUE]
 
@@ -93,12 +54,12 @@ Spectator brings their own softcover book. A word is predicted before they open 
 ——————————————————————————————
 
 
-7. WHITE DWARF
+4. WHITE DWARF
 --------------
 [PROLOGUE]
 
 
-Spectator names a famous person. Predicted in a sealed envelope — with a baby gag poster kicker. (1 big envelope, 2 small envelopes — one has slit. Sharpie.)
+Spectator names a famous person. Predicted in a sealed envelope — with a baby gag poster kicker.
 
 [EPILOGUE]
 
@@ -106,12 +67,12 @@ Spectator names a famous person. Predicted in a sealed envelope — with a baby 
 ——————————————————————————————
 
 
-8. TWO-BILLET TEST
-------------------
+5. 4DT
+------
 [PROLOGUE]
 
 
-Spec 1: secret code (phone password / ATM pin). Spec 2: something they want (item or place). Billets burned. Code revealed. (Fallback if no iPhone: Q&A — spec writes answer to a question no one else would know.)
+3-10 spectators each write thought-of info on a billet. Performer divines each one using one-ahead. Billets burned. (Q&A variant: specs write a question instead. Fallback: Two-Billet Test.)
 
 [EPILOGUE]
 
@@ -119,12 +80,12 @@ Spec 1: secret code (phone password / ATM pin). Spec 2: something they want (ite
 ——————————————————————————————
 
 
-9. ULTIMATE VACATION
---------------------
+6. ULTIMATE VACATION + CLOCK
+-----------------------------
 [PROLOGUE]
 
 
-Spectator names: (1) their name, (2) a famous person they want to meet, (3) where they want to meet them, (4) a question they want to ask. All four revealed from a pre-written billet.
+Spectator names: (1) their name, (2) a famous person they want to meet, (3) where they want to meet them, (4) a question they want to ask. Clock trick (Juan Pablo): spec says stop — reveals the hour of the meeting. Full prediction revealed: person + place + question + time.
 
 [EPILOGUE]
 
@@ -132,12 +93,12 @@ Spectator names: (1) their name, (2) a famous person they want to meet, (3) wher
 ——————————————————————————————
 
 
-10. PK TOUCH
-------------
+7. PK TOUCH
+-----------
 [PROLOGUE]
 
 
-Spectator closes their eyes. Touches to forehead (x1) and nose (x3), plus secret touches. Series of questions — were you touched? how many times? where? same or different?
+Spectator closes their eyes. Touches to forehead (x1) and nose (x3), plus secret touches. Series of questions — were you touched? touched a moment ago? how many times? where? same or different?
 
 [EPILOGUE]
 
@@ -145,8 +106,8 @@ Spectator closes their eyes. Touches to forehead (x1) and nose (x3), plus secret
 ——————————————————————————————
 
 
-11. CRYPTEXT  [CLOSER]
------------------------
+8. CRYPTEXT  [CLOSER]
+----------------------
 [PROLOGUE]
 
 
