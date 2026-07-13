@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: Arial, sans-serif;
+    background: white;
+    padding: 10px;
+  }
+  h1 {
+    text-align: center;
+    font-size: 28px;
+    letter-spacing: 4px;
+    margin-bottom: 20px;
+    border-bottom: 3px solid black;
+    padding-bottom: 10px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 8px;
+  }
+  .box {
+    border: 2px solid black;
+    border-radius: 6px;
+    padding: 12px 14px;
+  }
+  .box.intro-outro {
+    background: #f0f0f0;
+  }
+  .num {
+    font-size: 13px;
+    font-weight: bold;
+    color: #888;
+    margin-bottom: 2px;
+  }
+  .name {
+    font-size: 26px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    line-height: 1.1;
+    margin-bottom: 8px;
+  }
+  .equipment {
+    font-size: 12px;
+    color: #444;
+    line-height: 1.6;
+  }
+  .note {
+    font-size: 11px;
+    color: #888;
+    margin-top: 6px;
+    font-style: italic;
+  }
+  .guest {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  .arrow {
+    text-align: center;
+    font-size: 22px;
+    color: #999;
+    line-height: 1;
+    grid-column: span 3;
+    margin: -4px 0;
+  }
+
+  @page {
+    size: 210mm 297mm;
+    margin: 8mm;
+  }
+
+  @media print {
+    body {
+      padding: 0;
+      width: 210mm;
+    }
+    .name { font-size: 18px; }
+    .equipment { font-size: 10px; line-height: 1.3; }
+    .note { font-size: 9px; }
+    .grid { gap: 6px; }
+    h1 { font-size: 22px; margin-bottom: 10px; padding-bottom: 6px; }
+  }
+</style>
+</head>
+<body>
+
+<h1>SET LIST — YISHAI</h1>
+
+<div style="border:2px solid black; border-radius:6px; padding:12px 20px; margin-bottom:14px; display:grid; grid-template-columns:1fr 1fr 1fr 1fr; gap:8px;">
+  <div>
+    <div style="font-size:10px; font-weight:bold; color:#888; text-transform:uppercase; letter-spacing:1px; margin-bottom:3px;">Contact</div>
+    <div style="font-size:18px; font-weight:900;" contenteditable="true" style="outline:none;">—</div>
+  </div>
+  <div>
+    <div style="font-size:10px; font-weight:bold; color:#888; text-transform:uppercase; letter-spacing:1px; margin-bottom:3px;">Phone</div>
+    <div style="font-size:18px; font-weight:900;" contenteditable="true">—</div>
+  </div>
+  <div>
+    <div style="font-size:10px; font-weight:bold; color:#888; text-transform:uppercase; letter-spacing:1px; margin-bottom:3px;">Address</div>
+    <div style="font-size:18px; font-weight:900;" contenteditable="true">—</div>
+  </div>
+  <div>
+    <div style="font-size:10px; font-weight:bold; color:#888; text-transform:uppercase; letter-spacing:1px; margin-bottom:3px;">Cab</div>
+    <div style="font-size:18px; font-weight:900;">02-580-0676</div>
+  </div>
+</div>
+
+<p style="font-size:11px; text-align:center; margin-bottom:10px;"><span class="guest">bold + underline = needs a guest</span></p>
+
+<div class="grid">
+
+  <div class="box intro-outro">
+    <div class="num">INTRO</div>
+    <div class="name">welcome, msg to host</div>
+    <div class="equipment">warmup — get crowd to clap + cheer for host</div>
+  </div>
+
+  <div class="box">
+    <div class="num">1</div>
+    <div class="name">KRAUSS OPENER</div>
+    <div class="equipment">
+      questions that sit everyone down — last person standing is the one<br>
+      <span class="note">use: famous person they're thinking of</span><br>
+      <span class="note">backup: invisible deck in pocket</span>
+    </div>
+  </div>
+
+  <div class="box">
+    <div class="num">2</div>
+    <div class="name">MAGIC SQUARE</div>
+    <div class="equipment">
+      <span class="guest">☐ Sven pad — force XXXIV preshow</span><br>
+      ☐ poster board pre-drawn<br>
+      <span class="note">mock-write on poster for effect</span>
+    </div>
+  </div>
+
+  <div class="box">
+    <div class="num">3</div>
+    <div class="name">BOOK TEST</div>
+    <div class="equipment">
+      <span class="guest">☐ confirm spectator brings softcover book</span><br>
+      ☐ large surface to write predicted word
+    </div>
+  </div>
+
+  <div class="box">
+    <div class="num">4</div>
+    <div class="name">WHITE DWARF</div>
+    <div class="equipment">
+      famous person<br>
+      ☐ 1 big envelope<br>
+      ☐ 2 small envelopes (one has slit)<br>
+      ☐ sharpie<br>
+      ☐ baby gag poster
+    </div>
+  </div>
+
+  <div class="box">
+    <div class="num">5</div>
+    <div class="name">4DT</div>
+    <div class="equipment">
+      3-10 specs each write thought-of info on billet<br>
+      divine each using one-ahead<br>
+      ☐ billets<br>
+      ☐ sharpies — 3 regular + 1 huge<br>
+      ☐ lighter + ashtray<br>
+      ☐ egg beater<br>
+      <span class="note">with or without envelopes — TBD after testing both</span><br>
+      <span class="note">Q&amp;A variant: specs write a question instead</span><br>
+      <span class="note">improv fallback: Two-Billet Test (no setup needed)</span>
+    </div>
+  </div>
+
+  <div class="box">
+    <div class="num">6</div>
+    <div class="name">ULTIMATE VACATION + CLOCK</div>
+    <div class="equipment">
+      1. spec's name<br>
+      2. famous person they want to meet<br>
+      3. place where they want to meet them<br>
+      4. question they want to ask<br>
+      → clock trick (Juan Pablo): spec says stop — reveals hour of the meeting<br>
+      → full prediction revealed: person + place + question + time<br>
+      ☐ notepad<br>
+      ☐ stapled index cards<br>
+      ☐ billet folded + glued
+    </div>
+  </div>
+
+  <div class="box">
+    <div class="num">7</div>
+    <div class="name">PK TOUCH</div>
+    <div class="equipment">
+      spec 1 eyes closed — loud, 1-2 words only<br>
+      forehead ×1 · nose ×3 · secret touches<br>
+      Q1: not touching now? Q2: touched a moment ago?<br>
+      Q3: how many times last place? Q4: where last?<br>
+      Q5: same or different? → <em>different (harder)</em>
+    </div>
+  </div>
+
+  <div class="box">
+    <div class="num">8 — CLOSER</div>
+    <div class="name">CRYPTEXT</div>
+    <div class="equipment">
+      ☐ hand out poster<br>
+      <span class="guest">☐ force bill</span><br>
+      ☐ calc force<br>
+      <span class="guest">☐ confirm spectator brings 20₪ bill</span>
+    </div>
+  </div>
+
+  <div class="box intro-outro">
+    <div class="name">OUTRO &nbsp;—&nbsp; thank host, words of blessing</div>
+  </div>
+
+</div>
+
+</body>
+</html>
