@@ -4,12 +4,14 @@ SCRIPTED SHOW — YISHAI
 
 INTRO
 -----
-[PROLOGUE]
 
+PROLOGUE:
 
-Welcome + message to host. Warm up crowd — get them to clap and cheer for the host.
+Good evening everyone. My name is Yishai. Tonight I am going to attempt something that has no rational explanation. I want to be upfront about that. What you are about to see is not a trick. It is not a game. It is not a competition. It is simply me, reading your minds. Let's begin.
 
-[EPILOGUE]
+EPILOGUE:
+
+[thank host, introduce yourself briefly, words of blessing for the occasion]
 
 
 ——————————————————————————————
@@ -17,12 +19,40 @@ Welcome + message to host. Warm up crowd — get them to clap and cheer for the 
 
 1. KRAUSS OPENER
 ----------------
-[PROLOGUE]
 
+PROLOGUE:
 
-Questions that sit everyone down — last person standing is the one. Divine the famous person they're thinking of. Backup: invisible deck in pocket. Room applauds while she sits.
+Good evening, and welcome to tonight's performance. Please make sure your seats are in the upright position.
 
-[EPILOGUE]
+In a moment I will be asking you to think of certain things. This is completely voluntary. However, those who do not participate will be asked to leave the aircraft.
+
+Please think of a color of the rainbow. Any color at all. Take your time.
+
+If you are thinking of red -- or blue -- please sit down at this time. Thank you for your cooperation.
+
+For those still standing -- excellent. You are doing very well. Please now think of a simple shape. Not a square. Not a rectangle. Something else.
+
+If your shape is a circle -- or a triangle -- please be seated. We appreciate your understanding.
+
+Those of you still standing -- you are almost there. Please think of a number less than 50. Both digits must be odd. Both digits must be different. So for example, 11 is not permitted, as both digits are the same. 15 would be acceptable.
+
+If your number is 37 -- or 35 -- please sit down.
+
+[one person left standing]
+
+You. Thank you for remaining standing. In the event of a mind reading, your seat cushion can be used as a flotation device.
+
+[to audience] This person has survived three rounds of elimination. And I have absolutely no idea what they are thinking. None whatsoever.
+
+You are thinking of an animal.
+
+[pause]
+
+It's a [ANIMAL FROM PRESHOW PEEK].
+
+EPILOGUE:
+
+[to audience] Put your hands together for [NAME]. She had no idea this was going to happen to her tonight. Neither did I, to be honest. [wait for applause to settle]
 
 
 ——————————————————————————————
@@ -30,12 +60,24 @@ Questions that sit everyone down — last person standing is the one. Divine the
 
 2. MAGIC SQUARE
 ---------------
-[PROLOGUE]
 
+PROLOGUE:
 
-Everyone thinks of a number up to 100. One person called at random shouts theirs out. Magic square built around that number, totaling it in every direction. Fully impromptu.
+I want everyone to think of a number. Any number you like, up to 100. Don't tell me yet. Just hold it in your mind.
 
-[EPILOGUE]
+[pause]
+
+You, sir -- what's your number?
+
+[spectator calls out number]
+
+[write number visibly, build magic square around it]
+
+Every row. Every column. Both diagonals. The four corners. The four center squares. All of them add up to [NUMBER]. A number you chose one second ago, completely at random.
+
+EPILOGUE:
+
+Mathematics is supposed to be predictable. That's the whole point of mathematics. And yet somehow, that felt like anything but.
 
 
 ——————————————————————————————
@@ -43,12 +85,36 @@ Everyone thinks of a number up to 100. One person called at random shouts theirs
 
 3. BOOK TEST
 ------------
-[PROLOGUE]
 
+PROLOGUE:
 
-One spectator brings a softcover book. Others called at random to choose: page, line number, word number. A word predicted before anyone opened to that page.
+Earlier this evening I asked [NAME] to bring a book. Any book from her own home. I have never seen this book. I have never touched this book. Until right now.
 
-[EPILOGUE]
+[take book, riffle pages visibly without looking]
+
+I need some help from the rest of you. Someone -- call out a page number.
+
+[spectator calls out page number]
+
+Good. Page [NUMBER]. Someone else -- what line on that page? Give me a number.
+
+[spectator calls out line number]
+
+And one more -- which word on that line?
+
+[spectator calls out word number]
+
+[NAME] -- please open to page [NUMBER], find line [NUMBER], count to word number [NUMBER], and read it out loud to everyone.
+
+[spectator reads word]
+
+Before tonight's show -- I wrote one word on this card.
+
+[reveal predicted word]
+
+EPILOGUE:
+
+That book has been on her shelf for years. That page, that line, that word -- chosen just now by three different people in this room. And yet.
 
 
 ——————————————————————————————
@@ -56,12 +122,26 @@ One spectator brings a softcover book. Others called at random to choose: page, 
 
 4. DRAWING DUPLICATION
 ----------------------
-[PROLOGUE]
 
+PROLOGUE:
 
-Everyone draws something. One person's drawing collected in envelope. Performer reveals the drawing without having seen it. (White Dwarf method.)
+I want everyone to take a piece of paper -- or just imagine one if you don't have one -- and think of something simple to draw. A simple image. Could be an object, an animal, a symbol. Anything you like.
 
-[EPILOGUE]
+[NAME] -- I'm going to give you an envelope. Inside is a small card. I want you to draw your image on that card, seal it in the envelope, and hold onto it. Don't show anyone.
+
+[spectator draws and seals]
+
+Now. I have not seen what you drew. Nobody in this room has seen it. It is sealed inside that envelope in your hands.
+
+[take a moment, concentrate]
+
+You drew [DESCRIPTION OF DRAWING].
+
+Open the envelope. Show everyone.
+
+EPILOGUE:
+
+[let the moment breathe, don't rush past it]
 
 
 ——————————————————————————————
@@ -69,51 +149,113 @@ Everyone draws something. One person's drawing collected in envelope. Performer 
 
 5. 2BT — TWO BILLET TEST
 -------------------------
-[PROLOGUE]
 
+PROLOGUE:
 
-Classic Bob Cassidy. Two spectators hand in billets (name + place, or Q&A variant). Both divined.
+I need two people for this. Two strangers -- ideally people who don't know each other well.
 
-[EPILOGUE]
+[NAME 1] -- I want you to think of a person's name. Could be anyone. Someone you know, someone famous, anyone. Write it on this slip of paper, fold it up, and hold it.
+
+[NAME 2] -- I want you to think of a place. Anywhere in the world. A city, a country, a specific location. Write it down, fold it, hold it.
+
+[collect billets, one-ahead sequence]
+
+[NAME 1] -- you wrote a name. The name you wrote is [NAME].
+
+[NAME 2] -- you wrote a place. You wrote [PLACE].
+
+EPILOGUE:
+
+Two people. Two private thoughts. Written down, folded up, never shown to anyone. And yet here we are.
 
 
 ——————————————————————————————
 
 
-6. PK TOUCH
------------
-[PROLOGUE]
-
-
-Spectator closes their eyes. Touches to forehead (x1) and nose (x3), plus secret touches. Series of questions -- were you touched? touched a moment ago? how many times? where? same or different?
-
-[EPILOGUE]
-
-
-——————————————————————————————
-
-
-7. 4DT
+6. 4DT
 ------
-[PROLOGUE]
 
+PROLOGUE:
 
-3-10 spectators each write thought-of info on a billet. Envelopes numbered (3,1,2 for three / 4,1,2,3 for four etc.) -- judge holds them the whole time. Performer divines each one using one-ahead. Billets burned. (Q&A variant available.)
+This time I want more people involved. I am going to hand out envelopes -- one to each of you. Inside each envelope is a small card. I want you to write on that card one thing: something personal. Could be a name, a place, a memory, a wish. Something that means something to you. Seal it in the envelope and hand it back.
 
-[EPILOGUE]
+[collect sealed envelopes, hand to judge to hold]
+
+These envelopes have not left your sight. [JUDGE'S NAME] has been holding them the entire time. I have not opened a single one.
+
+[work through one-ahead sequence, divining each one]
+
+EPILOGUE:
+
+[let audience absorb the accumulation -- each revelation hits harder than the last]
 
 
 ——————————————————————————————
 
 
-8. ULTIMATE VACATION + CLOCK
+7. ULTIMATE VACATION + CLOCK
 -----------------------------
-[PROLOGUE]
+
+PROLOGUE:
+
+I want you to plan a vacation. Right now, in your head. A fantasy vacation -- anything you want, no budget, no limits.
+
+I need four things from you. First -- your name. Second -- one famous person, living or dead, that you would want to meet on this vacation. Third -- where in the world would you want to meet them. And fourth -- one question you would ask them if you could.
+
+[spectator answers all four]
+
+Now -- one more thing. The time of the meeting.
+
+[clock trick -- spectator stops you at a number]
+
+You stopped me at [NUMBER]. That means your meeting is at [TIME] o'clock.
+
+[open prediction]
+
+I wrote this before the show. Your name. [FAMOUS PERSON]. [PLACE]. [QUESTION]. [TIME] o'clock.
+
+EPILOGUE:
+
+Out of every destination in the world, every person who ever lived, every question you could have asked -- that is exactly what I wrote down before this evening began.
 
 
-Spectator names: (1) their name, (2) a famous person they want to meet, (3) where they want to meet them, (4) a question they want to ask. Clock trick (Juan Pablo): spec says stop -- reveals the hour of the meeting. Full prediction revealed: person + place + question + time.
+——————————————————————————————
 
-[EPILOGUE]
+
+8. PK TOUCH
+-----------
+
+PROLOGUE:
+
+For this next one I need someone brave. Not physically brave -- emotionally brave. Someone willing to trust me completely, with their eyes closed, for about two minutes.
+
+[NAME] -- come up please. I want you to close your eyes. Whatever happens, keep them closed. And whatever you feel -- or think you feel -- I want you to tell the room out loud.
+
+[touches: forehead x1, nose x3, plus secret touches]
+
+Without opening your eyes -- am I touching you right now?
+
+[Q1]
+
+A moment ago -- was I touching you?
+
+[Q2]
+
+How many times did I touch that last place?
+
+[Q3]
+
+Where was the last place I touched?
+
+[Q4]
+
+And this time -- same place as before, or different?
+
+[Q5 -- go for "different", the harder option]
+
+EPILOGUE:
+
+[NAME] -- open your eyes. [to audience] She had no idea what was coming. Her eyes were closed the entire time. And she got every single one right.
 
 
 ——————————————————————————————
@@ -121,12 +263,34 @@ Spectator names: (1) their name, (2) a famous person they want to meet, (3) wher
 
 9. CRYPTEXT  [CLOSER]
 ----------------------
-[PROLOGUE]
 
+PROLOGUE:
 
-Hand out poster. Spectator brings their own 20 shekel bill. Calculator force reveals the serial number was predicted all along.
+Before I finish tonight -- I want to show you something I prepared before this show even began.
 
-[EPILOGUE]
+[hand out poster to audience]
+
+Take a look at that. A grid of numbers. Meaningless, right? Random digits. I printed that weeks ago.
+
+I need someone who has a 20 shekel bill in their pocket right now. A real bill -- one you brought with you tonight, that has been with you all evening.
+
+[NAME] -- hold onto your bill. Don't hand it to me yet.
+
+I want you to take out your phone. Open the calculator.
+
+[calculator force sequence]
+
+The number you ended up with -- read it out loud.
+
+Now look at your bill. Read out the serial number.
+
+Now look at the poster.
+
+EPILOGUE:
+
+I printed that poster weeks ago. That bill has been in your pocket all night. And that number -- which you arrived at just now through a calculation of your own choosing -- was there the whole time, waiting for you.
+
+Thank you. You have been a wonderful audience.
 
 
 ——————————————————————————————
@@ -134,9 +298,13 @@ Hand out poster. Spectator brings their own 20 shekel bill. Calculator force rev
 
 OUTRO
 -----
-[PROLOGUE]
 
+PROLOGUE:
 
-Thank the host. Words of blessing.
+[thank the host warmly and specifically -- mention something personal about them or the occasion]
 
-[EPILOGUE]
+[words of blessing appropriate to the event]
+
+EPILOGUE:
+
+[take final bow, exit cleanly]
