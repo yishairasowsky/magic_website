@@ -43,6 +43,9 @@ PHASE 1: OPENING -- ESTABLISH THE QUESTION
 
 DO: Walk out. Cup in left hand, foil ball in right. No introduction of props.
 
+DO: Subtly show that the foil ball is not magnetic -- brush it past the cup
+    or rest it against the rim. Don't announce this. Just let it register.
+
 SAY: "This ball has one habit."
 
 DO: Toss ball up once, catch it. Unhurried.
@@ -109,16 +112,15 @@ SAY: "Not there."
 DO: Apply pressure to dislodge chop ball from gimmick. Ball settles onto left
     palm under cup.
 
-SAY: (to spectator beside you, genuinely curious) "Where do you think it is?"
+SAY: (to spectator, easy and unhurried) "Whenever you're ready, we'll begin."
 
-DO: Whatever they say, take it seriously. Then lift cup.
-    Magnetic ball sitting there on left palm.
+DO: Lift cup. Magnetic ball sitting there on left palm.
 
-SAY: "There."
+SAY: "So. Let's start."
 
-NOTE: One word. No exclamation. The understatement makes the moment land harder.
-This is also the peak of the solo phase -- the ball has been answering its own
-question. Now we're about to try sending it somewhere specific.
+NOTE: "Whenever you're ready, we'll begin" implies nothing has happened yet --
+which makes the reveal land harder. Underplay "So. Let's start." Don't punch it.
+This is the peak of the solo phase; now we send the ball somewhere new.
 
 ------------------------------------------------------
 PHASE 4: THE SPECTATOR -- SEND IT SOMEWHERE NEW
@@ -129,18 +131,22 @@ DO: Cover ball with cup.
 SAY: "Every time it goes, it comes back to me. Let's see what happens if it
      goes to you instead."
 
-DO: Mime sweeping ball from under cup with left hand. Pretend to pocket it.
-    Open left hand -- ball still there.
+DO: Mime sweeping ball from under cup with left hand. Pretend to deposit into
+    left jacket pocket. Open left hand -- ball still there.
 
-SAY: (small shrug) "It came back to me."
+SAY: "I only pretend to put it in my pocket -- it's still in my hand."
 
-DO: Cover ball. Mime scooping again. Left hand retrieves miniball from jacket
-    pocket. Bring out closed fist.
+DO: Cover ball with cup again. Left hand mimes scooping ball out from under cup,
+    pretends to deposit into left jacket pocket -- actually grabs miniball from
+    pocket instead. Bring out closed fist.
 
-SAY: "Open your hand."
+DO: Open left hand -- miniball is there. Ball is genuinely in hand.
 
-DO: Place ball on overturned cup in right hand. Slap down with left hand on
-    ordinary miniball. Simultaneously dislodge magnetic ball from gimmick.
+SAY: (to spectator) "Open your hand -- cup it like a bowl."
+
+DO: Place miniball on top of overturned cup in right hand. Tell spectator to
+    open their hand palm up. Slap down with left hand on ordinary miniball.
+    Simultaneously dislodge magnetic ball from gimmick.
     Magnetic ball drops into spectator's cupped hands. Left hand finger-palms
     ordinary ball. Cup repositions face-down.
 
@@ -159,8 +165,10 @@ DO: Flourish cup one-handed to right-side-up. Something sounds inside. Let
 
 SAY: "Can I have that back?"
 
-DO: Dump ball from cup into spectator's hand. Transfer cup (right to left),
-    load green tennis ball into cup.
+DO: Dump miniball from cup into spectator's hand. Right hand (holding green
+    tennis ball in front of body to conceal it) brings hands together.
+    Transfer cup from LEFT to RIGHT, loading green tennis ball. Relax right
+    hand, swing slightly outward. Left hand takes miniball back from spectator.
 
 DO: Glance at what's in their hand. Pause.
 
