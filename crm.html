@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yishai CRM</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif; background: #0f0f13; color: #e0e0e0; min-height: 100vh; }
+
+  header { background: #1a1a24; border-bottom: 1px solid #2a2a3a; padding: 16px 24px; display: flex; align-items: center; justify-content: space-between; }
+  header h1 { font-size: 18px; font-weight: 600; color: #c9a96e; letter-spacing: 0.5px; }
+  header .stats { display: flex; gap: 20px; font-size: 13px; color: #888; }
+  header .stats span b { color: #c9a96e; }
+
+  .toolbar { background: #15151f; border-bottom: 1px solid #2a2a3a; padding: 12px 24px; display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+  .toolbar input, .toolbar select { background: #1e1e2e; border: 1px solid #2a2a3a; color: #e0e0e0; padding: 7px 12px; border-radius: 6px; font-size: 13px; outline: none; }
+  .toolbar input:focus, .toolbar select:focus { border-color: #c9a96e; }
+  .toolbar input[type=text] { width: 220px; }
+  .toolbar .spacer { flex: 1; }
+  button { cursor: pointer; border: none; border-radius: 6px; font-size: 13px; padding: 7px 14px; transition: background 0.15s; }
+  .btn-primary { background: #c9a96e; color: #0f0f13; font-weight: 600; }
+  .btn-primary:hover { background: #dfc085; }
+  .btn-ghost { background: #1e1e2e; color: #aaa; border: 1px solid #2a2a3a; }
+  .btn-ghost:hover { background: #2a2a3a; color: #e0e0e0; }
+  .btn-danger { background: #3a1515; color: #e06060; border: 1px solid #5a2020; }
+  .btn-danger:hover { background: #4a2020; }
+
+  .board { display: flex; gap: 0; overflow-x: auto; padding: 20px 24px; min-height: calc(100vh - 120px); align-items: flex-start; }
+  .column { flex: 0 0 240px; background: #1a1a24; border-radius: 10px; margin-right: 14px; display: flex; flex-direction: column; max-height: calc(100vh - 160px); }
+  .col-header { padding: 12px 14px; border-bottom: 1px solid #2a2a3a; display: flex; align-items: center; justify-content: space-between; }
+  .col-title { font-size: 12px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; }
+  .col-count { background: #2a2a3a; color: #888; border-radius: 10px; font-size: 11px; padding: 2px 7px; }
+  .col-cards { padding: 10px; overflow-y: auto; flex: 1; display: flex; flex-direction: column; gap: 8px; }
+
+  .card { background: #0f0f13; border: 1px solid #2a2a3a; border-radius: 8px; padding: 12px; cursor: pointer; transition: border-color 0.15s, transform 0.1s; position: relative; }
+  .card:hover { border-color: #c9a96e44; transform: translateY(-1px); }
+  .card.drag-over { border-color: #c9a96e; background: #1a1a20; }
+  .card[draggable] { cursor: grab; }
+  .card-name { font-size: 14px; font-weight: 600; color: #e0e0e0; margin-bottom: 4px; }
+  .card-org { font-size: 12px; color: #888; margin-bottom: 6px; }
+  .card-meta { display: flex; gap: 6px; flex-wrap: wrap; align-items: center; }
+  .tag { font-size: 10px; padding: 2px 7px; border-radius: 10px; font-weight: 600; letter-spacing: 0.3px; }
+  .tag-restaurant { background: #1a2e1a; color: #6db96d; }
+  .tag-corporate { background: #1a1e2e; color: #6d9bd9; }
+  .tag-private { background: #2e1a2e; color: #c96db9; }
+  .tag-hotel { background: #2e251a; color: #d9a96d; }
+  .tag-other { background: #1e1e1e; color: #888; }
+  .card-date { font-size: 10px; color: #555; margin-left: auto; }
+  .card-note-preview { font-size: 11px; color: #666; margin-top: 6px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .card-overdue { border-left: 3px solid #e06060; }
+  .card-due-soon { border-left: 3px solid #e0a060; }
+
+  /* Stage colors */
+  .stage-prospect .col-title { color: #888; }
+  .stage-outreach .col-title { color: #6d9bd9; }
+  .stage-followup .col-title { color: #d9c06d; }
+  .stage-talking .col-title { color: #9b6dd9; }
+  .stage-proposal .col-title { color: #d98b6d; }
+  .stage-booked .col-title { color: #6db96d; }
+  .stage-completed .col-title { color: #4a7a4a; }
+  .stage-lost .col-title { color: #7a4a4a; }
+
+  /* Modal */
+  .modal-overlay { display: none; position: fixed; inset: 0; background: #00000099; z-index: 100; align-items: center; justify-content: center; }
+  .modal-overlay.open { display: flex; }
+  .modal { background: #1a1a24; border: 1px solid #2a2a3a; border-radius: 12px; width: 560px; max-width: 95vw; max-height: 90vh; overflow-y: auto; }
+  .modal-header { padding: 20px 24px 16px; border-bottom: 1px solid #2a2a3a; display: flex; justify-content: space-between; align-items: center; }
+  .modal-header h2 { font-size: 16px; color: #c9a96e; }
+  .modal-close { background: none; border: none; color: #666; font-size: 20px; cursor: pointer; padding: 0; line-height: 1; }
+  .modal-close:hover { color: #aaa; }
+  .modal-body { padding: 20px 24px; display: flex; flex-direction: column; gap: 14px; }
+  .modal-footer { padding: 16px 24px; border-top: 1px solid #2a2a3a; display: flex; justify-content: space-between; gap: 10px; }
+  .field { display: flex; flex-direction: column; gap: 5px; }
+  .field label { font-size: 12px; color: #888; font-weight: 600; letter-spacing: 0.3px; }
+  .field input, .field select, .field textarea { background: #0f0f13; border: 1px solid #2a2a3a; color: #e0e0e0; padding: 8px 12px; border-radius: 6px; font-size: 13px; outline: none; font-family: inherit; }
+  .field input:focus, .field select:focus, .field textarea:focus { border-color: #c9a96e; }
+  .field textarea { resize: vertical; min-height: 80px; }
+  .field-row { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+  .history-log { background: #0f0f13; border: 1px solid #2a2a3a; border-radius: 6px; padding: 10px; max-height: 160px; overflow-y: auto; display: flex; flex-direction: column; gap: 6px; }
+  .history-entry { font-size: 12px; color: #888; padding: 4px 0; border-bottom: 1px solid #1e1e2e; }
+  .history-entry:last-child { border-bottom: none; }
+  .history-entry .he-date { color: #555; font-size: 11px; }
+  .history-entry .he-text { color: #aaa; }
+
+  /* List view */
+  .list-view { display: none; padding: 20px 24px; }
+  .list-view.active { display: block; }
+  .board.hidden { display: none; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th { text-align: left; padding: 8px 12px; color: #888; font-weight: 600; font-size: 11px; letter-spacing: 0.5px; text-transform: uppercase; border-bottom: 1px solid #2a2a3a; }
+  td { padding: 10px 12px; border-bottom: 1px solid #1a1a24; vertical-align: middle; }
+  tr:hover td { background: #1a1a24; cursor: pointer; }
+  .stage-pill { font-size: 11px; padding: 3px 9px; border-radius: 10px; font-weight: 600; }
+
+  .empty-col { text-align: center; padding: 20px 10px; color: #444; font-size: 12px; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Yishai CRM</h1>
+  <div class="stats" id="stats"></div>
+</header>
+
+<div class="toolbar">
+  <input type="text" id="searchInput" placeholder="Search leads..." oninput="render()">
+  <select id="filterType" onchange="render()">
+    <option value="">All types</option>
+    <option value="restaurant">Restaurant</option>
+    <option value="corporate">Corporate</option>
+    <option value="hotel">Hotel</option>
+    <option value="private">Private</option>
+    <option value="other">Other</option>
+  </select>
+  <button class="btn-ghost" id="viewToggle" onclick="toggleView()">List view</button>
+  <div class="spacer"></div>
+  <button class="btn-primary" onclick="openModal()">+ New Lead</button>
+</div>
+
+<div class="board" id="board"></div>
+<div class="list-view" id="listView"></div>
+
+<!-- Modal -->
+<div class="modal-overlay" id="modalOverlay" onclick="handleOverlayClick(event)">
+  <div class="modal">
+    <div class="modal-header">
+      <h2 id="modalTitle">New Lead</h2>
+      <button class="modal-close" onclick="closeModal()">×</button>
+    </div>
+    <div class="modal-body">
+      <div class="field-row">
+        <div class="field">
+          <label>Name *</label>
+          <input type="text" id="fName" placeholder="Contact name">
+        </div>
+        <div class="field">
+          <label>Organization</label>
+          <input type="text" id="fOrg" placeholder="Restaurant / company name">
+        </div>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label>Type</label>
+          <select id="fType">
+            <option value="restaurant">Restaurant</option>
+            <option value="hotel">Hotel</option>
+            <option value="corporate">Corporate</option>
+            <option value="private">Private</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <div class="field">
+          <label>Stage</label>
+          <select id="fStage">
+            <option value="prospect">Prospect</option>
+            <option value="outreach">Outreach Sent</option>
+            <option value="followup">Follow-up</option>
+            <option value="talking">In Conversation</option>
+            <option value="proposal">Proposal Sent</option>
+            <option value="booked">Booked</option>
+            <option value="completed">Completed</option>
+            <option value="lost">Lost / Declined</option>
+          </select>
+        </div>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label>Phone / WhatsApp</label>
+          <input type="text" id="fPhone" placeholder="+972...">
+        </div>
+        <div class="field">
+          <label>Email</label>
+          <input type="text" id="fEmail" placeholder="email@example.com">
+        </div>
+      </div>
+      <div class="field-row">
+        <div class="field">
+          <label>Next follow-up date</label>
+          <input type="date" id="fFollowup">
+        </div>
+        <div class="field">
+          <label>Event date (if booked)</label>
+          <input type="date" id="fEventDate">
+        </div>
+      </div>
+      <div class="field">
+        <label>Notes</label>
+        <textarea id="fNotes" placeholder="Details, context, what was discussed..."></textarea>
+      </div>
+      <div id="historySection" style="display:none">
+        <div class="field">
+          <label>Add activity log entry</label>
+          <input type="text" id="fLogEntry" placeholder="e.g. Sent follow-up email, Called and left voicemail...">
+        </div>
+        <div class="field">
+          <label>Activity history</label>
+          <div class="history-log" id="historyLog"></div>
+        </div>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn-danger" id="deleteBtn" onclick="deleteLead()" style="display:none">Delete</button>
+      <div style="display:flex;gap:8px;margin-left:auto">
+        <button class="btn-ghost" onclick="closeModal()">Cancel</button>
+        <button class="btn-primary" onclick="saveLead()">Save</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const STAGES = [
+  { id: 'prospect',  label: 'Prospect',        cls: 'stage-prospect' },
+  { id: 'outreach',  label: 'Outreach Sent',    cls: 'stage-outreach' },
+  { id: 'followup',  label: 'Follow-up',        cls: 'stage-followup' },
+  { id: 'talking',   label: 'In Conversation',  cls: 'stage-talking' },
+  { id: 'proposal',  label: 'Proposal Sent',    cls: 'stage-proposal' },
+  { id: 'booked',    label: 'Booked',           cls: 'stage-booked' },
+  { id: 'completed', label: 'Completed',        cls: 'stage-completed' },
+  { id: 'lost',      label: 'Lost / Declined',  cls: 'stage-lost' },
+];
+
+const STAGE_COLORS = {
+  prospect: '#555',  outreach: '#6d9bd9',  followup: '#d9c06d',
+  talking: '#9b6dd9', proposal: '#d98b6d', booked: '#6db96d',
+  completed: '#4a7a4a', lost: '#7a4a4a'
+};
+
+let leads = JSON.parse(localStorage.getItem('yishai_crm_leads') || '[]');
+let editingId = null;
+let isListView = false;
+let dragSrcId = null;
+
+function save() { localStorage.setItem('yishai_crm_leads', JSON.stringify(leads)); }
+function uid() { return Date.now().toString(36) + Math.random().toString(36).slice(2); }
+function today() { return new Date().toISOString().slice(0,10); }
+function fmt(d) {
+  if (!d) return '';
+  const [y,m,day] = d.split('-');
+  return `${day}/${m}/${y}`;
+}
+function isOverdue(d) { return d && d < today(); }
+function isDueSoon(d) {
+  if (!d) return false;
+  const diff = (new Date(d) - new Date(today())) / 86400000;
+  return diff >= 0 && diff <= 2;
+}
+
+function filtered() {
+  const q = document.getElementById('searchInput').value.toLowerCase();
+  const t = document.getElementById('filterType').value;
+  return leads.filter(l => {
+    if (t && l.type !== t) return false;
+    if (q && !`${l.name} ${l.org} ${l.notes}`.toLowerCase().includes(q)) return false;
+    return true;
+  });
+}
+
+function render() {
+  renderStats();
+  if (isListView) renderList();
+  else renderBoard();
+}
+
+function renderStats() {
+  const active = leads.filter(l => !['completed','lost'].includes(l.stage));
+  const booked = leads.filter(l => l.stage === 'booked');
+  const overdue = leads.filter(l => isOverdue(l.followupDate) && !['completed','lost'].includes(l.stage));
+  document.getElementById('stats').innerHTML =
+    `<span>Active: <b>${active.length}</b></span>` +
+    `<span>Booked: <b>${booked.length}</b></span>` +
+    (overdue.length ? `<span style="color:#e06060">Overdue follow-ups: <b>${overdue.length}</b></span>` : '');
+}
+
+function renderBoard() {
+  const data = filtered();
+  const board = document.getElementById('board');
+  board.innerHTML = '';
+  STAGES.forEach(stage => {
+    const cards = data.filter(l => l.stage === stage.id);
+    const col = document.createElement('div');
+    col.className = `column ${stage.cls}`;
+    col.dataset.stage = stage.id;
+    col.innerHTML = `
+      <div class="col-header">
+        <span class="col-title">${stage.label}</span>
+        <span class="col-count">${cards.length}</span>
+      </div>
+      <div class="col-cards" id="col-${stage.id}">
+        ${cards.length === 0 ? '<div class="empty-col">Drop cards here</div>' : ''}
+      </div>`;
+    board.appendChild(col);
+
+    const colCards = col.querySelector('.col-cards');
+    colCards.addEventListener('dragover', e => { e.preventDefault(); colCards.classList.add('drag-over'); });
+    colCards.addEventListener('dragleave', () => colCards.classList.remove('drag-over'));
+    colCards.addEventListener('drop', e => {
+      e.preventDefault();
+      colCards.classList.remove('drag-over');
+      if (dragSrcId) {
+        const lead = leads.find(l => l.id === dragSrcId);
+        if (lead) { lead.stage = stage.id; addHistory(lead, `Moved to ${stage.label}`); save(); render(); }
+      }
+    });
+
+    cards.forEach(lead => {
+      const card = document.createElement('div');
+      card.className = 'card' + (isOverdue(lead.followupDate) ? ' card-overdue' : isDueSoon(lead.followupDate) ? ' card-due-soon' : '');
+      card.draggable = true;
+      card.dataset.id = lead.id;
+      card.innerHTML = `
+        <div class="card-name">${esc(lead.name)}</div>
+        ${lead.org ? `<div class="card-org">${esc(lead.org)}</div>` : ''}
+        <div class="card-meta">
+          <span class="tag tag-${lead.type}">${lead.type}</span>
+          ${lead.followupDate ? `<span class="card-date" style="color:${isOverdue(lead.followupDate)?'#e06060':isDueSoon(lead.followupDate)?'#e0a060':'#555'}">${fmt(lead.followupDate)}</span>` : ''}
+        </div>
+        ${lead.notes ? `<div class="card-note-preview">${esc(lead.notes)}</div>` : ''}`;
+      card.addEventListener('click', () => openModal(lead.id));
+      card.addEventListener('dragstart', () => { dragSrcId = lead.id; });
+      card.addEventListener('dragend', () => { dragSrcId = null; });
+      colCards.appendChild(card);
+    });
+  });
+}
+
+function renderList() {
+  const data = filtered();
+  const lv = document.getElementById('listView');
+  lv.innerHTML = `<table>
+    <thead><tr>
+      <th>Name</th><th>Organization</th><th>Type</th><th>Stage</th>
+      <th>Follow-up</th><th>Notes</th>
+    </tr></thead>
+    <tbody>
+    ${data.map(l => `
+      <tr onclick="openModal('${l.id}')">
+        <td><b>${esc(l.name)}</b></td>
+        <td>${esc(l.org||'')}</td>
+        <td><span class="tag tag-${l.type}">${l.type}</span></td>
+        <td><span class="stage-pill" style="background:${STAGE_COLORS[l.stage]}22;color:${STAGE_COLORS[l.stage]}">${STAGES.find(s=>s.id===l.stage)?.label||l.stage}</span></td>
+        <td style="color:${isOverdue(l.followupDate)?'#e06060':isDueSoon(l.followupDate)?'#e0a060':'#888'}">${fmt(l.followupDate)||''}</td>
+        <td style="color:#666;max-width:200px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">${esc(l.notes||'')}</td>
+      </tr>`).join('')}
+    </tbody></table>`;
+}
+
+function toggleView() {
+  isListView = !isListView;
+  document.getElementById('board').classList.toggle('hidden', isListView);
+  document.getElementById('listView').classList.toggle('active', isListView);
+  document.getElementById('viewToggle').textContent = isListView ? 'Board view' : 'List view';
+  render();
+}
+
+function openModal(id) {
+  editingId = id || null;
+  const lead = id ? leads.find(l => l.id === id) : null;
+  document.getElementById('modalTitle').textContent = lead ? `${lead.name}${lead.org ? ' - ' + lead.org : ''}` : 'New Lead';
+  document.getElementById('fName').value = lead?.name || '';
+  document.getElementById('fOrg').value = lead?.org || '';
+  document.getElementById('fType').value = lead?.type || 'restaurant';
+  document.getElementById('fStage').value = lead?.stage || 'prospect';
+  document.getElementById('fPhone').value = lead?.phone || '';
+  document.getElementById('fEmail').value = lead?.email || '';
+  document.getElementById('fFollowup').value = lead?.followupDate || '';
+  document.getElementById('fEventDate').value = lead?.eventDate || '';
+  document.getElementById('fNotes').value = lead?.notes || '';
+  document.getElementById('fLogEntry').value = '';
+  document.getElementById('deleteBtn').style.display = lead ? 'inline-block' : 'none';
+  const histSec = document.getElementById('historySection');
+  histSec.style.display = lead ? 'block' : 'none';
+  if (lead) renderHistory(lead);
+  document.getElementById('modalOverlay').classList.add('open');
+  document.getElementById('fName').focus();
+}
+
+function renderHistory(lead) {
+  const log = document.getElementById('historyLog');
+  const entries = (lead.history || []).slice().reverse();
+  log.innerHTML = entries.length ? entries.map(e =>
+    `<div class="history-entry"><span class="he-date">${fmt(e.date)} </span><span class="he-text">${esc(e.text)}</span></div>`
+  ).join('') : '<div style="color:#444;font-size:12px">No activity logged yet.</div>';
+}
+
+function addHistory(lead, text) {
+  if (!lead.history) lead.history = [];
+  lead.history.push({ date: today(), text });
+}
+
+function closeModal() {
+  document.getElementById('modalOverlay').classList.remove('open');
+  editingId = null;
+}
+
+function handleOverlayClick(e) {
+  if (e.target === document.getElementById('modalOverlay')) closeModal();
+}
+
+function saveLead() {
+  const name = document.getElementById('fName').value.trim();
+  if (!name) { document.getElementById('fName').focus(); return; }
+  const logEntry = document.getElementById('fLogEntry').value.trim();
+  if (editingId) {
+    const lead = leads.find(l => l.id === editingId);
+    const oldStage = lead.stage;
+    lead.name = name;
+    lead.org = document.getElementById('fOrg').value.trim();
+    lead.type = document.getElementById('fType').value;
+    lead.stage = document.getElementById('fStage').value;
+    lead.phone = document.getElementById('fPhone').value.trim();
+    lead.email = document.getElementById('fEmail').value.trim();
+    lead.followupDate = document.getElementById('fFollowup').value;
+    lead.eventDate = document.getElementById('fEventDate').value;
+    lead.notes = document.getElementById('fNotes').value.trim();
+    lead.updatedAt = today();
+    if (lead.stage !== oldStage) addHistory(lead, `Stage: ${STAGES.find(s=>s.id===oldStage)?.label} -> ${STAGES.find(s=>s.id===lead.stage)?.label}`);
+    if (logEntry) addHistory(lead, logEntry);
+  } else {
+    const lead = {
+      id: uid(), name, org: document.getElementById('fOrg').value.trim(),
+      type: document.getElementById('fType').value, stage: document.getElementById('fStage').value,
+      phone: document.getElementById('fPhone').value.trim(), email: document.getElementById('fEmail').value.trim(),
+      followupDate: document.getElementById('fFollowup').value, eventDate: document.getElementById('fEventDate').value,
+      notes: document.getElementById('fNotes').value.trim(), history: [], createdAt: today(), updatedAt: today()
+    };
+    addHistory(lead, 'Lead created');
+    if (logEntry) addHistory(lead, logEntry);
+    leads.push(lead);
+  }
+  save(); closeModal(); render();
+}
+
+function deleteLead() {
+  if (!editingId) return;
+  if (!confirm('Delete this lead?')) return;
+  leads = leads.filter(l => l.id !== editingId);
+  save(); closeModal(); render();
+}
+
+function esc(s) {
+  return String(s||'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+// Keyboard shortcut
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeModal();
+  if (e.key === 'n' && !['INPUT','TEXTAREA','SELECT'].includes(document.activeElement.tagName)) openModal();
+});
+
+render();
+</script>
+</body>
+</html>
