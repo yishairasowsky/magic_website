@@ -1,0 +1,238 @@
+FOOL US - Cup and Ball (Scripting Magic version)
+=================================================
+
+FORMAT:
+- SAY: = scripted lines
+- DO:  = physical actions
+- NOTE: = internal reminders
+
+McCabe principles applied:
+- Through-line established in first 30 seconds, paid off at the end
+- No "watch," no "I'm going to," no narration of actions
+- Lines get shorter and sparser as loads escalate -- let the objects do the work
+- Spectator is engaged through curiosity, not instruction
+- Ending answers the opening question; the lemon is not just a surprise, it's a revelation
+
+------------------------------------------------------
+THROUGH-LINE
+------------------------------------------------------
+
+"This ball has one habit: it disappears. I've spent years trying to figure out
+where it goes. Tonight I think we find out."
+
+The lemon is the answer. It always comes back -- and this time it brought
+something with it.
+
+------------------------------------------------------
+SETUP (not said aloud)
+------------------------------------------------------
+
+In hands:
+  Right - ordinary small foil ball
+  Left  - cup (chop cup)
+
+Right jacket pocket: Hecklau gimmick, giant foil ball (3rd big load)
+Left jacket pocket:  lemon (4th load), magnetic small foil ball
+
+Right pants pocket:  green tennis ball (1st big load)
+Left pants pocket:   pink tennis ball (2nd big load)
+
+------------------------------------------------------
+PHASE 1: OPENING -- ESTABLISH THE QUESTION
+------------------------------------------------------
+
+DO: Walk out. Cup in left hand, foil ball in right. No introduction of props.
+
+SAY: "This ball has one habit."
+
+DO: Toss ball up once, catch it. Unhurried.
+
+SAY: "It disappears."
+
+DO: Place ball on left palm. Cover with cup. No fanfare.
+
+DO: Pretend to take ball with right hand. Deposit into right jacket pocket.
+    Ball stays in left hand under cup. Secure Hecklau gimmick with right fingers.
+
+SAY: "I put it in my pocket."
+
+DO: Mime flicking it back. Right hand (armed with gimmick) lifts cup. Ball
+    sitting on left palm.
+
+SAY: "It comes back."
+
+DO: Look at the ball for a beat.
+
+SAY: "Three years of this. I still don't know where it goes."
+
+NOTE: Stop there. Don't elaborate. The audience now has a question -- where does
+it go? -- and that question carries the entire routine. Everything that follows
+is an attempt to answer it.
+
+------------------------------------------------------
+PHASE 2: THE CONVINCER -- DEEPEN THE MYSTERY
+------------------------------------------------------
+
+DO: Openly deposit ordinary ball into left jacket pocket. Immediately release
+    it, grab magnetic ball instead. Remove, display in left hand.
+
+SAY: "Let me try something."
+
+DO: Cover ball with cup (right hand). Left hand mimes scooping ball from under
+    cup, deposits (apparently) into left jacket pocket. Actually retrieves
+    ordinary miniball from pocket instead.
+
+SAY: "Gone."
+
+DO: Produce miniball and show it. Cover it with cup. This time actually scoop
+    it out with left hand. Open hand -- ball is there.
+
+SAY: "Or not."
+
+DO: Deposit ball into left pocket. Remove hand slowly. Open -- empty.
+
+NOTE: No commentary. The audience feels the rhythm without narration. The ball
+is making decisions of its own. That's the impression you're after.
+
+------------------------------------------------------
+PHASE 3: THE BANG -- THE QUESTION GETS HARDER
+------------------------------------------------------
+
+DO: Left hand open and flat. Right hand holds cup face-down above it.
+
+SAY: "The question I keep asking myself -- where is it right now?"
+
+DO: Bang cup sharply down onto left palm. Lift cup. Nothing.
+
+SAY: "Not there."
+
+DO: Apply pressure to dislodge chop ball from gimmick. Ball settles onto left
+    palm under cup.
+
+SAY: (to spectator beside you, genuinely curious) "Where do you think it is?"
+
+DO: Whatever they say, take it seriously. Then lift cup.
+    Magnetic ball sitting there on left palm.
+
+SAY: "There."
+
+NOTE: One word. No exclamation. The understatement makes the moment land harder.
+This is also the peak of the solo phase -- the ball has been answering its own
+question. Now we're about to try sending it somewhere specific.
+
+------------------------------------------------------
+PHASE 4: THE SPECTATOR -- SEND IT SOMEWHERE NEW
+------------------------------------------------------
+
+DO: Cover ball with cup.
+
+SAY: "Every time it goes, it comes back to me. Let's see what happens if it
+     goes to you instead."
+
+DO: Mime sweeping ball from under cup with left hand. Pretend to pocket it.
+    Open left hand -- ball still there.
+
+SAY: (small shrug) "It came back to me."
+
+DO: Cover ball. Mime scooping again. Left hand retrieves miniball from jacket
+    pocket. Bring out closed fist.
+
+SAY: "Open your hand."
+
+DO: Place ball on overturned cup in right hand. Slap down with left hand on
+    ordinary miniball. Simultaneously dislodge magnetic ball from gimmick.
+    Magnetic ball drops into spectator's cupped hands. Left hand finger-palms
+    ordinary ball. Cup repositions face-down.
+
+SAY: (curious, not triumphant) "Did something land?"
+
+NOTE: The spectator looks down and discovers the ball before you've announced
+success. Better than asking "did it work?" -- that's self-congratulatory and
+puts pressure on them to confirm your trick. This is genuinely curious.
+
+------------------------------------------------------
+PHASE 5: FIRST BIG LOAD -- GREEN TENNIS BALL
+------------------------------------------------------
+
+DO: Flourish cup one-handed to right-side-up. Something sounds inside. Let
+    them hear it.
+
+SAY: "Can I have that back?"
+
+DO: Dump ball from cup into spectator's hand. Transfer cup (right to left),
+    load green tennis ball into cup.
+
+DO: Glance at what's in their hand. Pause.
+
+SAY: "That's not the same ball."
+
+NOTE: Don't explain. Don't help them process. The observation is enough.
+
+DO: Left hand places miniball on top of overturned cup (right hand, loaded).
+    Open left hand takes it off, puts it in left pants pocket.
+    Immediately grasp pink tennis ball.
+
+SAY: "Open your hand."
+
+DO: Release green tennis ball from cup. Show cup empty. Load pink. Transfer.
+
+------------------------------------------------------
+PHASE 6: SECOND BIG LOAD -- PINK TENNIS BALL
+------------------------------------------------------
+
+DO: Take green tennis ball back from spectator with right hand.
+
+SAY: "This can't fit through the bottom."
+
+DO: Show it. Set green into right jacket pocket. Grasp giant foil ball.
+
+SAY: "Open your hand."
+
+DO: Release pink from cup. Show empty. Load silver. Transfer.
+
+NOTE: The patter is getting shorter. The objects are getting bigger. That's the
+right proportion -- less talk, more impossible.
+
+------------------------------------------------------
+PHASE 7: THIRD BIG LOAD -- GIANT SILVER FOIL BALL
+------------------------------------------------------
+
+DO: Take pink tennis ball from spectator with left hand.
+
+SAY: "Two won't fit."
+
+DO: Show it. Put pink in left jacket pocket. Grasp lemon.
+
+SAY: "The silver ball. I've lost track of it."
+
+DO: Pause.
+
+SAY: (to spectator) "Do you have it?"
+
+DO: Relax right hand. Silver ball drops into spectator's open hand. Meanwhile
+    remove lemon from left jacket pocket. Show cup empty at eye level.
+    Transfer cup right to left, loading lemon securely.
+
+------------------------------------------------------
+PHASE 8: THE LEMON -- THE ANSWER
+------------------------------------------------------
+
+DO: Take silver ball from spectator with right hand.
+
+SAY: "It always comes back."
+
+DO: Beat. Look at the cup.
+
+SAY: "I just never knew what it brought with it."
+
+DO: Slowly open left hand. Overturn cup. Lemon falls out.
+
+DO: Hold. Say nothing.
+
+NOTE: The final line pays off the opening question -- "I still don't know where
+it goes." Now we know: somewhere with lemons. The silence after the reveal is
+part of the script. Don't fill it.
+
+------------------------------------------------------
+RUNNING TIME: approx. 5 minutes
+------------------------------------------------------
