@@ -3,75 +3,77 @@ WHITE DWARF  [opener]
 TARGET TIME: 3 minutes
 
 
-METHOD NOTES
+PREMISE
+-------
+The human mind can project a thought so vividly it becomes almost visible --
+like an image on a screen. We're testing whether that image can be perceived
+from another room, with no contact, no communication.
+
+
+PROPS
+-----
+- Small envelope + large envelope (for spectator to examine)
+- Windowed duplicate of small envelope (in pocket before show)
+- Card + pen
+- Whiteboard + dry erase marker
+- Placard to display reveal
+
+
+PEOPLE
+------
+- 1 spectator on stage (stays the whole routine)
+- Send back: natural exit after reveal, no applause cue
+
+
+LINK TO NEXT
 ------------
-Props: small envelope, large envelope, windowed duplicate of small envelope (in pocket),
-card, pen, marker, placard.
-
-Peek happens when YOU place the small envelope into the large one -- window faces you
-as you slide it in. That is the only moment you see the word. Pocket the large envelope
-immediately after. It is never opened.
-
-Reveal structure: write one close/associated word on the placard, cross it out,
-write the actual word below it. Hand it face-down. Build to the turn.
+Both of you look forward together at the imaginary screen -- transition line:
+"That image came from inside your mind. Now let's try something different --
+what if it's not an image, but a name..."  [leads into Names and Place]
 
 
--------- SCRIPT --------
+KEY PATTER -- hit these in order
+---------------------------------
+1. PREMISE LINE (before anything happens):
+   "The mind can project a thought so vividly it becomes almost visible.
+    We're going to test that right now."
+
+2. CATEGORY (what to write -- make it meaningful, not random):
+   "Think of something specific. Something that matters to you -- or something
+    so clear you could photograph it. An object. A place. Something real.
+    Write the word."
+
+3. FROM OUTSIDE THE ROOM (while they write -- fills dead sound):
+   "Take your time. Picture it clearly -- as if you're looking right at it.
+    When you're done, turn it face-down and raise your hand."
+
+4. CONFIRMATION (cover for the peek -- when you slide small into large):
+   "We didn't set anything up beforehand, right?"
+
+5. MOVIE SCREEN BUILD (both facing forward, hands raised):
+   "Imagine what you wrote -- projected on an enormous screen.
+    Right in front of us. Fill the whole wall with it."
+
+6. TWO-STEP REVEAL (Magician in Trouble -- but only if it feels right for opener):
+   "I'm getting something. It's not [ASSOCIATED WORD] --"
+   [beat]
+   "It's [ACTUAL WORD]."
+   "Is that close, or exactly right?"
+   "Turn it around. Show everybody."
 
 
-The human mind is capable of projecting a thought so vividly that it becomes almost
-visible. Like an image on a screen. We're going to test that right now.
+DEAD MOMENT FILLS
+-----------------
+While spectator writes (you're outside): speak loud enough to be heard --
+keep giving them instructions so there is no silence in the room.
 
-    (Hold up both envelopes briefly)
-    (Hand both to spectator -- 5 seconds to examine)
-    (As they hand them back, give them the card and pen -- retain both envelopes naturally)
+While you write on the whiteboard: face away briefly -- say nothing,
+let the silence build anticipation. This is the ONE place silence works for you.
 
-I'm going to step outside. While I'm gone, I want you to think of something --
-something specific, something concrete. Something that could appear in a photograph.
-Not an idea, not a feeling -- an object. Something a camera could capture.
-Write the word on the card.
 
-    (Exit with both envelopes -- outside, switch small for windowed duplicate)
-    (From outside, loud enough to be heard:)
-
-Take your time. Gaze at what you wrote for a few seconds -- picture it clearly.
-When you're done, turn the card face-down and raise your hand.
-
-    (Audience signals -- re-enter, stand next to spectator, both facing the audience)
-    (Hold windowed envelope open yourself, flap toward them)
-
-Slide it in.
-
-    (They insert card -- you seal it)
-    (YOU place small envelope into large -- GET PEEK as you slide it in)
-    (Pocket the large envelope)
-
-We didn't set anything up beforehand, right?
-
-    (They confirm)
-    (Pick up marker and placard -- write the associated word, cross it out, write actual word below -- facing yourself)
-    (Hand placard face-down to spectator)
-
-Please hold this. Don't look at it yet.
-
-    (Both of you face forward -- raise your hands slightly, as if projecting the image out in front of you)
-
-I want you to imagine what you wrote -- projected onto an enormous screen.
-Right in front of us. Like a photograph blown up to fill the whole wall.
-
-    (Pause -- study the imaginary screen)
-
-I'm getting something. It's not [CROSSED-OUT WORD] --
-
-    (Beat)
-
-It's [ACTUAL WORD].
-
-Is that close, or is that exactly right?
-
-    (They confirm)
-
-Turn it around. Show everybody.
-
-    (They show the placard -- crossed-out word, correct word beneath)
-    (Step back -- let the room react)
+METHOD REMINDER
+---------------
+Peek happens ONLY when you slide the small (windowed) envelope into the large one.
+Window faces you. Pocket the large envelope immediately. It is never opened.
+Whiteboard: write associated word, cross it out, write actual word below.
+Hand face-down before the reveal.
