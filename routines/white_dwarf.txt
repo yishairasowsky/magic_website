@@ -1,79 +1,61 @@
-WHITE DWARF  [opener]
-=====================
-TARGET TIME: 3 minutes
+WHITE DWARF: 3 minutes
+
+PREMISE:
+A strong mind can project a thought so vividly it becomes almost visible -- like an image
+on a screen. After the spectator locks in their thought privately, we stand together on stage
+and Yishai absorbs the projected image and names it.
 
 
-PREMISE
--------
-The human mind can project a thought so vividly it becomes almost visible --
-like an image on a screen. We're testing whether that image can be perceived
-from another room, with no contact, no communication.
-
-
-PROPS
------
-- Small envelope + large envelope (for spectator to examine)
-- Windowed duplicate of small envelope (in pocket before show)
-- Card + pen
+PROPS:
+- Billet + pen
+- Envelopes: 1 large, 2 small (one windowed duplicate)
 - Whiteboard + dry erase marker
-- Placard to display reveal
 
 
-PEOPLE
-------
-- 1 spectator on stage (stays the whole routine)
-- Send back: natural exit after reveal, no applause cue
+PEOPLE:
+- 1 spectator on stage for the full routine
+- Natural exit after reveal, no applause cue
 
 
-LINK TO NEXT
-------------
-Both of you look forward together at the imaginary screen -- transition line:
-"That image came from inside your mind. Now let's try something different --
-what if it's not an image, but a name..."  [leads into Names and Place]
+TRANSITION TO NEXT:
+TBD -- depends on running order. Placeholder:
+"That image came from inside your mind. Now -- what if it's not an image, but a name..."
 
 
-KEY PATTER -- hit these in order
----------------------------------
-1. PREMISE LINE (before anything happens):
-   "The mind can project a thought so vividly it becomes almost visible.
+PATTER:
+
+1. INTRO
+   "A strong mind can project a thought so vividly it becomes almost visible.
     We're going to test that right now."
 
-2. CATEGORY (what to write -- make it meaningful, not random):
-   "Think of something specific. Something that matters to you -- or something
-    so clear you could photograph it. An object. A place. Something real.
+2. AS YOU LEAVE
+   "Think of a specific object. Something that matters to you -- but not something
+    anyone who knows you could easily guess. Picture it clearly, like a vivid photograph.
     Write the word."
+   (hand them the billet and pen -- take both envelopes naturally as they take the pen)
 
-3. FROM OUTSIDE THE ROOM (while they write -- fills dead sound):
-   "Take your time. Picture it clearly -- as if you're looking right at it.
-    When you're done, turn it face-down and raise your hand."
+3. FROM OUTSIDE (fill dead sound while they write)
+   "When you're done, turn it face-down.
+    Raise your hand -- when the audience sees that, they'll signal me to come back in."
+   (switch small envelope outside -- return with windowed duplicate)
 
-4. CONFIRMATION (cover for the peek -- when you slide small into large):
+4. WHILE PEEKING (you slide small envelope into large)
    "We didn't set anything up beforehand, right?"
+   (pocket the large envelope -- never opened again)
 
-5. MOVIE SCREEN BUILD (both facing forward, hands raised):
-   "Imagine what you wrote -- projected on an enormous screen.
-    Right in front of us. Fill the whole wall with it."
+5. BOTH ON STAGE, FACING FORWARD
+   "Imagine that object -- projected onto an enormous screen.
+    Right in front of us. Fill the whole room with it."
+   (pause -- study the imaginary screen)
+   "This is the strong sense I'm getting..."
+   (turn to whiteboard -- write associated word, cross it out, write actual word below)
+   (hand board face-down to spectator)
 
-6. TWO-STEP REVEAL (Magician in Trouble -- but only if it feels right for opener):
-   "I'm getting something. It's not [ASSOCIATED WORD] --"
-   [beat]
-   "It's [ACTUAL WORD]."
-   "Is that close, or exactly right?"
-   "Turn it around. Show everybody."
-
-
-DEAD MOMENT FILLS
------------------
-While spectator writes (you're outside): speak loud enough to be heard --
-keep giving them instructions so there is no silence in the room.
-
-While you write on the whiteboard: face away briefly -- say nothing,
-let the silence build anticipation. This is the ONE place silence works for you.
-
-
-METHOD REMINDER
----------------
-Peek happens ONLY when you slide the small (windowed) envelope into the large one.
-Window faces you. Pocket the large envelope immediately. It is never opened.
-Whiteboard: write associated word, cross it out, write actual word below.
-Hand face-down before the reveal.
+6. REVEAL
+   "I get a strong sense of [CATEGORY].
+    My initial impression was [CROSSED-OUT WORD].
+    What were you thinking of?"
+   (they say the word)
+   "I actually changed my mind.
+    Have a look -- tell everyone if I was close."
+   (they turn the board around)
