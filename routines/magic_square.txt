@@ -1,0 +1,53 @@
+MAGIC SQUARE
+============
+
+Some of you have heard of the numbers square.
+
+Someone calls out a number, and the performer constructs a grid of smaller numbers that all add up to that total. The smallest possible square is for the number 15. Watch: 3-8-4, 9-5-1, 6-7-2. Every row adds up to 15. But that's nothing.
+
+When we do it, we won't take a few minutes. We'll take seconds.
+
+And we won't use three rows -- we'll use four.
+
+And we won't use a small number like 15 or 35. We'll use anything up to 100.
+
+[to a spectator, ideally the host or father of the family]
+
+Sir -- please don't say anything yet, but I want you to think of a number. Not an easy low number like 33. Something high, and ideally something random rather than a round number. Have it in your mind?
+
+I am not going to take minutes. The moment you give me the number, watch -- I start writing immediately.
+
+Call it out.
+
+[he calls his number -- immediately begin filling the square]
+
+ 8  11   .   1
+ .   2   7  12
+ 3   .   9   6
+10   5   4   .
+
+[turn the pad and walk through it]
+
+First row: 11 and 1 is 12, plus 8 is 20, plus [N-20] -- that's [N].
+
+And the same is true for every row.
+
+[pause for applause, then:]
+
+But that's not all. Because you chose such a great number, I wanted you to have the columns as well. Left column: 8 and 3 is 11, plus 10 is 21, plus [N-21] -- equals [N].
+
+[pause]
+
+And the diagonals. This one: 8 and 2 is 10, plus 9 is 19, plus [N-19] -- that's [N]. And the other: 1 and 7 is 8, plus 10 is 18, plus [N-18] -- also [N].
+
+[pause]
+
+And each of the four quadrants adds up to [N]. The four corners -- [N]. The four center squares -- [N]. These two and these two, wherever you slice it -- [N].
+
+Wherever you add them, you get [N].
+
+[pause, then to room]
+
+Numbers are supposed to be predictable. That's the whole point of mathematics. And yet somehow that felt like anything but.
+
+A big round of applause for [SPEC'S NAME].
