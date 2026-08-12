@@ -1,60 +1,85 @@
 WHITE DWARF  [opener]
 =====================
 
-[METHOD: You have two envelopes -- a small one and a large one. The small envelope
-has an identical duplicate with a peek window on the back. Before the show, keep the
-duplicate in your pocket.
+[METHOD:
+  - You have two envelopes: small and large, plus a windowed duplicate of the small one
+  - Before the show: keep the windowed duplicate in your pocket
 
-Sequence:
-  1. Spectator examines both envelopes (the real ones -- no window yet)
-  2. You leave the room, taking the small envelope with you
-  3. While outside, switch the small envelope for the windowed duplicate
-  4. Return. Spectator writes their word on a card, seals it in the (switched) envelope
-  5. They place the small envelope inside the large one
-  6. During the handling/directions, get your peek through the window
-  7. Reveal]
+  Full sequence:
+  1. Spectator examines both envelopes
+  2. You take the small envelope and leave the room ("I'll take this with me")
+  3. Spectator writes their word on a card while you're outside
+  4. Outside: switch the real small envelope for the windowed duplicate
+  5. Return. Hand them the (switched) small envelope -- they seal their card inside
+  6. They place the sealed small envelope into the large envelope
+  7. Handle the large envelope to get the peek through the window
+  8. Reveal via placard using Magician in Trouble structure]
 
 [TARGET TIME: 3 minutes. No more.]
 
 
-There's a phenomenon called remote viewing. Military programs tested it for years --
-the idea that a trained mind can perceive something happening in another location
-without any physical connection to it. We're going to test it right now.
+There's a phenomenon called remote viewing. The idea that a trained mind can perceive
+something in another location without any physical connection to it.
+We're going to test it right now.
 
-[hold up the two envelopes briefly]
+[hold up both envelopes briefly]
 
-Take a look at these. Small one, large one.
+Take a look at these.
 
-[hand to spectator for a quick check -- 5 seconds, not 30]
+[hand to spectator -- 5 seconds max]
 
-I'm going to leave the room. While I'm gone, I want you to think of anything --
-a word, a name, a number, anything -- and write it on this card.
+I'm going to leave the room. While I'm gone, think of anything at all -- a word,
+a name, a number -- and write it on this card.
 
 [hand them the card and pen]
 
-Seal the card in the small envelope. Then put the small envelope inside the large one.
-Hold onto it. I'll be back.
+I'll take the small envelope with me -- that way you can't say I coached you.
+Hold onto the large one. I'll be back.
 
-[exit -- switch the small envelope for the windowed duplicate -- return]
+[exit with small envelope -- switch it for the windowed duplicate outside]
 
-[take the large envelope, handle it to get the peek -- you now know the word]
+[return -- hand them the switched small envelope]
 
-[pause -- look at them, not at the envelope]
+Seal your card inside this.
 
-I want you to concentrate on what you wrote. Don't say it. Just hold it in your mind.
+[they seal it]
 
-[beat]
+Now put it inside the large one.
 
-[state the word or phrase confidently, as if you're reading it off the air in front of you]
+[they do -- you take the large envelope to handle it]
 
-It's [WORD].
+Just to confirm -- we didn't set anything up beforehand, right? You wrote whatever
+came to mind, completely on your own?
 
-Open it up.
+[while they answer, get the peek through the window -- you now know the word]
 
-[they open the envelope and pull out the card]
+[set the envelope aside -- pick up the marker and the placard, back turned slightly]
 
-[silence -- let them show the room]
+[write their FIRST LIKELY ASSOCIATION to the word -- cross it out -- write their actual word below]
+[example: if the word is SHOE, write FOOT, cross it out, write SHOE beneath]
 
-I wrote down what I sensed from the other side of that door.
+[hand the placard face-down to the spectator]
+
+Hold that against your chest. Don't look at it yet.
+
+[turn to face them]
+
+My sense is you thought of something [GENERAL CATEGORY -- e.g. "related to the body,
+the lower half"]. Not [CROSSED-OUT WORD] -- are you thinking of [ACTUAL WORD]?
+
+[they confirm]
+
+But be honest -- before you settled on that, did you first think of [CROSSED-OUT WORD]?
+
+[they say yes]
+
+Turn it around.
+
+[they show the board -- crossed-out first word, correct word beneath]
+
+[silence]
+
+[OPTIONAL CLOSER -- use if it fits the moment:]
+"I sensed both of your thoughts from the other side of that door."
 
 [done]
