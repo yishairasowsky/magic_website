@@ -83,22 +83,49 @@ couple, the birthday person. They are the star. You are there to make them look 
 Introduce this idea at the top and return to it at the end.
 
 
-WHY PK TOUCH AND CRYPTEXT AREN'T LANDING
------------------------------------------
+BEN COHEN -- PER ROUTINE NOTES  [from watching the full show video]
+--------------------------------------------------------------------
 
-You said these two didn't get a great reaction in your last show. Here's why that probably is:
+The show ran 40 minutes for 6 effects. It should be 30 or less.
+Ben watched it straight through and felt what the audience felt.
 
-PK TOUCH: It's a quiet, intimate routine. One person on stage, eyes closed, small subtle
-moments. If it comes after something big and loud, the room deflates. The problem is probably
-placement, not the trick. It also needs a clearer setup -- the audience has to understand
-WHY this is impossible before it starts, not just after it ends.
+WHITE DWARF (opener):
+  Ran 8 minutes. Must be 3 minutes max. The opener has one job: get in fast,
+  land hard, get out. Everything else in the show depends on this first impression.
 
-CRYPTEXT: The calculator force can feel like a math trick rather than a miracle. The audience
-doesn't always track the logic of why the number on the bill and the number on the poster
-are connected. If they don't follow the chain, the reveal lands flat. The fix is in the setup --
-you need to clearly establish all three objects (poster, bill, calculator number) as independent
-BEFORE connecting them. Also: "thank you, you have been a wonderful audience" is a weak
-button for a closer. The last line of the show needs to hit harder.
+BOOK TEST:
+  Too many people on stage. Don't push or manhandle the audience getting people up.
+  Fewer bodies, cleaner staging.
+
+PK TOUCH:
+  Way too much setup time before anything happens. Cut the preamble drastically.
+  The effect itself got a good reaction -- the problem is everything before it.
+  Note: anyone sitting at a bad angle may not have been able to see the taps.
+  Consider your sightlines before positioning the spectator.
+
+NAMES AND PLACE (2BT):
+  Restrict the choices so you can prepare strong pre-canned lines in advance.
+  Example: woman thinks of a female name, man thinks of a male name.
+  Or restrict to a category -- sports star, singer -- something with comic potential.
+  Pre-fold the papers before the show.
+
+CELL PHONE UNLOCK:
+  Works better as an interruption mid-routine than as a standalone.
+  The reveal must be visible to the whole room at once -- turn the phone
+  toward the audience on the final number so everyone sees it open simultaneously.
+  If the audience doesn't see the phone open, the effect fails completely.
+
+CRYPTEXT:
+  Had no meaning, no grounding, no purpose. You cut the long setup process but
+  accidentally cut the context with it -- so nobody knew why to care.
+  The audience had already checked out as a group by this point.
+  Needs a full premise rewrite. The context is not optional.
+
+GENERAL -- STAGING:
+  Be mindful of keeping spectators on stage for too long.
+  The longer someone stands up there, the more pressure it puts on you to perform
+  and the more uncomfortable it gets for them and the audience.
+  Get people up, use them, get them seated.
 
 
 MAGICIAN IN TROUBLE
