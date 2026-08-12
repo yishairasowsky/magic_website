@@ -1,75 +1,62 @@
 BOOK TEST
 =========
 
-[SETUP: Before the show, ask one audience member to bring any book from home. You have never seen it. You need 5 people on stage: BOOK OWNER, PAGE PICKER (stands far stage left), LINE PICKER, WORD PICKER, and 1-2 GUARDS who hold the book at the end. Bring them all up at the start of this routine.]
+[SETUP: Ask one audience member before the show to bring any book from home.
+You need 4-5 people on stage: BOOK OWNER, PAGE PICKER (far stage left),
+and 1-2 people from the audience for line and word numbers, plus optional GUARDS.
+Bring them all up at once before you start talking.]
 
-[PEEK METHOD: Stand center stage. PAGE PICKER stands to your far left. Flip pages toward him. Because of the angle, the page number you see on the flashback peek is 1 less than what he sees -- add 1 to get his number.]
+[PEEK METHOD: Stand center. PAGE PICKER stands far stage left, both facing the audience.
+Flip pages toward him. The number you see on the flashback peek is 1 less than his -- add 1.]
 
 
-[Invite the book owner to bring the book to center stage. Hold it up for the audience.]
+[Book owner brings the book up. Hold it up briefly for the room to see.]
 
-Earlier this evening, I asked [BOOK OWNER] to bring a book from home. Any book she wanted. I have never touched this book, never seen it until this moment.
+[BOOK OWNER] chose this book. I haven't seen it until right now.
 
-[to PAGE PICKER]
+[to PAGE PICKER -- guide him to far stage left]
 
-Sir -- I need you to stand all the way over there on the left.
+Stand over there. I'll flip through -- stop me anywhere you like.
 
-[guide him to far stage left, both of you facing the audience]
+[flip slowly toward him -- get the peek on the stop]
 
-I'm going to flip through the pages slowly. The moment you want me to stop, say stop. Anywhere you like.
+See the page number? Lock it in your mind.
 
-[flip slowly toward him -- get the flashback peek as he calls stop]
+[hand book to GUARDS if using them, or set it aside]
 
-[he calls stop]
+[to the audience -- point to LINE PICKER]
 
-Good. Can you see the page number? Take a look. Remember it -- don't say a word.
-
-[he nods -- hand the book to the GUARDS]
-
-[to the GUARDS]
-
-Hold this together. Don't let it out of your hands.
-
-[to the audience -- picking LINE PICKER]
-
-You -- what line on that page? Shout out any number.
+Line number -- shout one out.
 
 [LINE PICKER calls a number]
 
-[to the audience -- picking WORD PICKER]
+[to another audience member -- WORD PICKER]
 
-And you -- which word on that line? Give me a number.
+Word number.
 
 [WORD PICKER calls a number]
 
 [to BOOK OWNER]
 
-[BOOK OWNER] -- please take the book from the guards, open to page [PAGE NUMBER], go to line [LINE NUMBER], count to word number [WORD NUMBER]. Don't say it out loud yet. Just point to it so the guards can see it too.
+Page [NUMBER]. Line [NUMBER]. Word [NUMBER].
+Open it up. Find the word. Point to it -- don't say it yet.
 
-[she finds it and points -- guards lean in -- everyone on stage can see the word]
+[she opens the book and points -- guards or nearby people lean in and see it]
 
-[pause -- look at her, then at the guards, then at the room]
+[pause -- look at her, then slowly reach into your pocket and produce the prediction card face-down]
 
-The page was stopped by this gentleman, completely freely. The line was called out by someone in the audience. The word by someone else. Nobody coordinated. And [BOOK OWNER] brought this book from her own shelf -- it has nothing to do with me.
+I want to ask you something first. Was I in the right area, close, or exactly on the word?
 
-[to BOOK OWNER]
-
-Tell me honestly -- was I far off, somewhere in the neighborhood, or exactly on the word?
-
-[she answers -- if she says exactly, cue her:]
+[she answers]
 
 Say it out loud.
 
 [she reads the word]
 
-[reach into your pocket and produce the prediction card -- hold it face-down for a moment]
+[turn the card around so the whole room sees it at once]
 
-Before this evening began -- before anyone walked into this room -- I wrote one word on this card.
+[hold the silence]
 
-[turn it around to show the room]
+I wrote that before tonight.
 
-[hold the silence -- don't rush it]
-
-That book has been on her shelf for years. That page was stopped by a stranger. That line and that word were called out by two more people, chosen at random. And yet.
-
-[lead the applause -- send everyone back to their seats warmly]
+[done -- no bow line, no applause cue, no epilogue -- let the room decide]
