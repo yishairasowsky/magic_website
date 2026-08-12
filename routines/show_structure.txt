@@ -3,6 +3,24 @@ SHOW STRUCTURE — YISHAI
 Based on answers in show_structure_questions.txt
 
 
+BEN COHEN'S NOTES  [apply everywhere]
+--------------------------------------
+
+1. NEVER ASK FOR APPLAUSE.
+   Not "give a round of applause for [NAME]." Not "let's hear it for her." Nothing.
+   If the moment earns applause, the room will give it. If it doesn't, asking makes it worse.
+   Cut every directed-applause line from every routine.
+
+   Transition fix: instead of "give it up for [NAME]," just say something to [NAME] directly
+   that signals they're done -- "thank you [NAME]" and turn away. The audience takes the cue.
+
+2. STOP OVER-PROVING.
+   "I have never touched this book." "That bill has been in your pocket all night."
+   "I printed this poster weeks ago." Every time you say it, you make it sound less true.
+   State the facts once, plainly, at the start. Then never repeat them.
+   The audience heard you the first time. Trust them.
+
+
 THE PREMISE
 -----------
 
@@ -100,9 +118,9 @@ TRANSITIONS
 
 No dead time. Every transition has three parts:
 
-  a) SEND OFF the spectator with directed applause
-     "Give a huge round of applause for [NAME] as she goes back to her seat."
-     You are setting up the next routine while the room is clapping.
+  a) SEND OFF the spectator -- no applause cue.
+     Say something directly to them ("thank you [NAME]") and turn away.
+     If the room applauds, great. Don't ask for it.
 
   b) RESET physically -- get what you need from your table -- but keep talking.
      Never turn your back on the audience in silence.
@@ -113,9 +131,9 @@ No dead time. Every transition has three parts:
 
 Example transition from Book Test into PK Touch:
 
-  "Give it up for [NAME] -- incredible. [directed applause, she sits]
-   You know, most of what I do involves information. Words, numbers, names, places.
-   But there's one thing I've always been curious about -- whether I can affect something
+  "Thank you [NAME]. [she sits]
+   Most of what I do involves information -- words, numbers, names, places.
+   But there's one thing I've always been curious about. Whether I can affect something
    that has nothing to do with information at all. Something purely physical.
    I need someone brave for this..."
 
