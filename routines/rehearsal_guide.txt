@@ -60,13 +60,19 @@ curious and creates an expectation that what you're about to do is impossible.
 You cannot say: "What I'm about to do will blow your mind."
 You have to show them why it should be impossible -- through a story, a claim,
 a phenomenon -- so that when you do it, they reach that conclusion themselves.
-
+{my idea for this is to make a claim that is small in other words undersell for example if i need to guess a word, then i should guess the cateory or get a word that is close. or if i need to guess a date then i shold beable to get the month. or things like that. but then when i actually reveal, i like to nail it on the money}
 Structure:
   1. State a phenomenon or claim (true or not -- it doesn't matter, it's for the audience to decide)
   2. Make it personal or relatable -- something they can connect to
   3. End on the setup: "We're going to test that right now."
 
 Under one minute. If you can't make it compelling in under a minute, cut it.
+
+UNDERSELL THE CLAIM, OVERDELIVER ON THE REVEAL  [Yishai's instinct -- keep this]
+If you need to guess a word, claim you'll get the category or something close.
+If you need to guess a date, claim you'll get the month.
+Set a low bar in the premise -- then blow past it in the reveal.
+The gap between what they expected and what actually happens is where the reaction lives.
 
 
 HOW TO KNOW IF THE PREMISE IS WORKING
