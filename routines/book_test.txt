@@ -12,7 +12,11 @@ Flip pages toward him. The number you see on the flashback peek is 1 less than h
 
 [Book owner brings the book up. Hold it up briefly for the room to see.]
 
-[BOOK OWNER] chose this book. I haven't seen it until right now.
+There's a phenomenon that some researchers take seriously and others dismiss entirely --
+the idea that a concentrated thought leaves a kind of trace. Something detectable,
+if you know how to look for it.
+
+[BOOK OWNER] brought this book from home. I haven't seen it.
 
 [to PAGE PICKER -- guide him to far stage left]
 
@@ -57,6 +61,6 @@ Say it out loud.
 
 [hold the silence]
 
-I wrote that before tonight.
+I wrote down what I sensed.
 
-[done -- no bow line, no applause cue, no epilogue -- let the room decide]
+[done -- let the room decide what happens next]
