@@ -1,61 +1,47 @@
 WHITE DWARF: 3 minutes
 
 PREMISE:
-A strong mind can project a thought so vividly it becomes almost visible -- like an image
-on a screen. After the spectator locks in their thought privately, we stand together on stage
-and Yishai absorbs the projected image and names it.
-
+The human mind can project an image so vividly it becomes almost visible,
+like a projection on a screen.
 
 PROPS:
 - Billet + pen
-- Envelopes: 1 large, 2 small (one windowed duplicate)
-- Whiteboard + dry erase marker
-
+- 1 large envelope; 2 small (one windowed)
+- Whiteboard + marker
 
 PEOPLE:
 - 1 spectator on stage for the full routine
-- Natural exit after reveal, no applause cue
 
+STAGE NOTE:
+Hand them both ordinary envelopes to examine. When they hand them back,
+give them the billet and pen -- naturally take both envelopes as they take the pen.
 
-TRANSITION TO NEXT:
-TBD -- depends on running order. Placeholder:
-"That image came from inside your mind. Now -- what if it's not an image, but a name..."
+TRANSITION:
+"That was when you think of an object. Now -- what if it's a human being."
 
-
-PATTER:
+KEY PATTER:
 
 1. INTRO
    "A strong mind can project a thought so vividly it becomes almost visible.
     We're going to test that right now."
 
-2. AS YOU LEAVE
-   "Think of a specific object. Something that matters to you -- but not something
-    anyone who knows you could easily guess. Picture it clearly, like a vivid photograph.
-    Write the word."
-   (hand them the billet and pen -- take both envelopes naturally as they take the pen)
+2. AS I LEAVE THE ROOM
+   "Think of a specific object that matters to you.
+    But not something anyone could easily guess.
+    Write it here."
 
-3. FROM OUTSIDE (fill dead sound while they write)
+3. FROM OUTSIDE
    "When you're done, turn it face-down.
-    Raise your hand -- when the audience sees that, they'll signal me to come back in."
-   (switch small envelope outside -- return with windowed duplicate)
+    Raise your hand -- when the audience sees that, they'll cheer to signal I should come back in."
 
-4. WHILE PEEKING (you slide small envelope into large)
-   "We didn't set anything up beforehand, right?"
-   (pocket the large envelope -- never opened again)
+4. WHILE PEEKING (as you slide small envelope into large)
+   "And we didn't set this up beforehand, right?"
 
 5. BOTH ON STAGE, FACING FORWARD
-   "Imagine that object -- projected onto an enormous screen.
-    Right in front of us. Fill the whole room with it."
-   (pause -- study the imaginary screen)
-   "This is the strong sense I'm getting..."
-   (turn to whiteboard -- write associated word, cross it out, write actual word below)
-   (hand board face-down to spectator)
+   "Imagine a giant photograph of that object, projected onto a large screen,
+    filling the whole room. This is the strong sense I'm getting."
 
 6. REVEAL
-   "I get a strong sense of [CATEGORY].
-    My initial impression was [CROSSED-OUT WORD].
-    What were you thinking of?"
-   (they say the word)
-   "I actually changed my mind.
-    Have a look -- tell everyone if I was close."
-   (they turn the board around)
+   "My initial impression was [CROSSED-OUT WORD].
+    What were you thinking of?
+    I actually changed my mind. Tell everyone if I was close."
