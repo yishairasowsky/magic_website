@@ -1,0 +1,26 @@
+PHONE UNLOCK  [interrupt / standalone]
+======================================
+
+[NOTE: Ben's advice -- this works better as an interruption mid-routine than a standalone.
+Consider dropping it in when someone in the audience challenges you or pulls out their phone.
+The reveal must be visible to the whole room at once -- turn the phone toward the audience
+the moment it opens. If they can't see the screen, the effect fails.]
+
+[METHOD: You need to know the PIN in advance. Get it through whatever means fits your
+performance context -- pre-show work, a force, a peek, etc.]
+
+
+[A spectator comes up -- or challenges you -- to open their phone]
+
+You're telling me I can't open this phone.
+
+[take the phone -- or have them hold it facing you]
+
+[enter the PIN]
+
+[the moment it unlocks -- immediately turn the screen toward the audience so everyone
+sees it open at the same time]
+
+[say nothing -- let them process what they just saw]
+
+[if they ask how -- shrug, or just move on]

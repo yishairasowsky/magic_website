@@ -1,20 +1,21 @@
 SCRIPTED SHOW — YISHAI
 ======================
 Running order. Each routine has its own file in /routines/
+See routines/show_structure.txt for arc, Ben Cohen notes, and transition logic.
 
 
 INTRO ...................... routines/intro.txt
-1. KRAUSS OPENER ........... routines/krauss_opener.txt
-2. MAGIC SQUARE ............ routines/magic_square.txt
-3. BOOK TEST ............... routines/book_test.txt
-4. DRAWING DUPLICATION ..... routines/drawing_duplication.txt
-5. NAMES AND PLACE (2BT) ... routines/names_and_place.txt
-6. ULTIMATE VACATION ....... routines/ultimate_vacation.txt
-7. PK TOUCH ................ routines/pk_touch.txt
-8. CRYPTEXT [CLOSER] ....... routines/cryptext.txt
+1. WHITE DWARF ............. routines/white_dwarf.txt        [opener -- 3 min max]
+2. BOOK TEST ............... routines/book_test.txt          [peak effect]
+3. NAMES AND PLACE (2BT) ... routines/names_and_place.txt
+4. PK TOUCH ................ routines/pk_touch.txt
+5. CRYPTEXT [CLOSER] ....... routines/cryptext.txt
 OUTRO ...................... routines/outro.txt
 
 
--- NOT YET SCRIPTED --
-White Dwarf
-Phone Unlock
+-- AVAILABLE BUT NOT IN CURRENT RUNNING ORDER --
+Phone Unlock ............... routines/phone_unlock.txt       [use as mid-routine interrupt]
+Krauss Opener .............. routines/krauss_opener.txt
+Magic Square ............... routines/magic_square.txt
+Drawing Duplication ........ routines/drawing_duplication.txt
+Ultimate Vacation .......... routines/ultimate_vacation.txt
