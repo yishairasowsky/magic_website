@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>הצעת מחיר - ישי רזובסקי</title>
+  <style>
+    @page { size: A4; margin: 18mm 20mm; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: Georgia, serif;
+      color: #222;
+      direction: rtl;
+      font-size: 13px;
+      line-height: 1.6;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    /* Header */
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      border-bottom: 2px solid #222;
+      padding-bottom: 14px;
+      margin-bottom: 20px;
+    }
+    .header h1 { font-size: 22px; letter-spacing: 1px; margin-bottom: 2px; }
+    .header p { font-size: 11px; color: #555; margin-top: 2px; }
+    .header a { color: #555; text-decoration: none; }
+    .header-right { text-align: left; font-size: 11px; color: #777; }
+
+    /* Doc title */
+    .doc-title {
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin: 16px 0 14px;
+    }
+
+    /* Meta */
+    .meta {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      font-size: 13px;
+      line-height: 1.7;
+    }
+    .label {
+      font-size: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #888;
+      margin-bottom: 2px;
+    }
+
+    /* Section title */
+    .section-title {
+      font-size: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #888;
+      margin: 20px 0 8px;
+    }
+
+    /* Tables */
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    table thead th {
+      text-align: right;
+      border-bottom: 1px solid #ccc;
+      padding: 6px 0;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #888;
+    }
+    table thead th:last-child { text-align: left; }
+    table tbody td { padding: 9px 0; border-bottom: 1px solid #eee; vertical-align: top; }
+    table tbody td:last-child { text-align: left; white-space: nowrap; }
+    .detail-label { color: #888; width: 110px; font-size: 12px; }
+    .total-row td { font-weight: bold; font-size: 15px; border-top: 2px solid #222; border-bottom: 2px solid #222; padding: 10px 0; }
+
+    /* Bank box */
+    .bank-box {
+      margin-top: 20px;
+      background: #f7f7f7;
+      border: 1px solid #e0e0e0;
+      padding: 12px 16px;
+      font-size: 12px;
+      color: #444;
+      line-height: 1.9;
+    }
+    .bank-box .bank-title {
+      font-size: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: #888;
+      margin-bottom: 6px;
+    }
+
+    /* Footer */
+    .footer {
+      margin-top: 24px;
+      font-size: 11px;
+      color: #aaa;
+      border-top: 1px solid #eee;
+      padding-top: 12px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div>
+      <h1>ישי רזובסקי</h1>
+      <p>קוסם ומנטליסט</p>
+      <p>054-848-2245 &nbsp;|&nbsp; yishairasowsky@gmail.com &nbsp;|&nbsp; www.yishai.show</p>
+    </div>
+    <div class="header-right">עוסק מורשה</div>
+  </div>
+
+  <div class="doc-title">הצעת מחיר</div>
+
+  <div class="meta">
+    <div>
+      <div class="label">לכבוד</div>
+      עמותת מדור לדור<br>לידי: סניטה
+    </div>
+    <div style="text-align:left;">
+      <div class="label">תאריך הנפקה</div>
+      יולי 2026
+    </div>
+  </div>
+
+  <div class="section-title">פרטי האירוע</div>
+  <table>
+    <tbody>
+      <tr><td class="detail-label">אירוע</td><td>אירוע קיץ לילדים</td></tr>
+      <tr><td class="detail-label">תאריך</td><td>13.8.2026</td></tr>
+      <tr><td class="detail-label">שעה</td><td>17:30</td></tr>
+      <tr><td class="detail-label">מיקום</td><td>תימורים 13, מגדל העמק</td></tr>
+      <tr><td class="detail-label">קהל</td><td>כ-100 ילדים, גן חובה עד כיתה ו</td></tr>
+      <tr><td class="detail-label">משך</td><td>שעה אחת</td></tr>
+      <tr><td class="detail-label">פורמט</td><td>קסמי קרבה אינטראקטיביים -- הקוסם מסתובב בין הילדים ומעניק לכל קבוצה חוויה אישית וקרובה. הילדים מתחברים מיד ותמיד רוצים עוד.</td></tr>
+    </tbody>
+  </table>
+
+  <div class="section-title">תמחור</div>
+  <table>
+    <thead><tr><th>פירוט</th><th>סכום</th></tr></thead>
+    <tbody>
+      <tr><td>דמי הופעה</td><td>5,000 ש"ח</td></tr>
+      <tr><td>מע"מ (18%)</td><td>900 ש"ח</td></tr>
+      <tr class="total-row"><td>סה"כ לתשלום</td><td>5,900 ש"ח</td></tr>
+    </tbody>
+  </table>
+
+  <div class="bank-box">
+    <div class="bank-title">פרטי העברה בנקאית</div>
+    בנק מרכנתיל (17) &nbsp;|&nbsp; סניף ביתר עילית (734) &nbsp;|&nbsp; חשבון 105401635<br>
+    תנאי תשלום: שוטף 60
+  </div>
+
+  <div class="footer">
+    ישי רזובסקי &nbsp;·&nbsp; עוסק מורשה &nbsp;·&nbsp; www.yishai.show &nbsp;·&nbsp; 054-848-2245
+  </div>
+
+</body>
+</html>

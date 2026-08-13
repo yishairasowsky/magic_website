@@ -1,0 +1,49 @@
+FOOL US SUBMISSION - Trick #1: Card Routine
+=============================================
+
+STACK (top to bottom):
+1. 10 of Spades (unsigned)
+2. 10 of Spades (duplicate, pre-signed by Yishai before going on stage)
+3. Ace of Hearts
+4. Black Queen
+5. Black Queen
+6. Ace of Diamonds
+7. 5 of Hearts
+8. Black Two
+9. Black Two
+10. 5 of Diamonds
+11. Rest of deck
+
+FORMAT:
+- SAY: = lines to speak
+- DO: = physical actions/moves
+- NOTE: = internal notes/reminders
+
+PERFORMANCE:
+-----------
+
+PHASE 1: THE TRANSPOSITION
+
+SAY: "I have two cards here. This is the 10 of Hearts. Ten -- like giving someone a perfect score. And the heart -- because the best compliment comes from here."
+DO: Show the 10 of Hearts openly.
+
+SAY: "And this is the 10 of Spades. Same idea, different color."
+DO: Show the 10 of Spades openly.
+
+SAY: "Teller, I'm giving you the heart. I know you have a lot to say... you just keep it all in here."
+DO: Hand Teller the 10 of Hearts and a marker. Gesture to chest warmly.
+
+SAY: "Sign it for me."
+DO: Teller signs the 10 of Hearts.
+
+SAY: "And I'll sign mine."
+DO: Sign the 10 of Spades on the border. Place it face-up on the deck, necktied so they can't see the pre-signed duplicate underneath.
+
+DO: Double turnover -- flip top two cards as one, showing the pre-signed 10 of Spades (duplicate). The real one is now face-down on top.
+
+SAY: "Penn, hold on to this one for me."
+DO: Deal the top card (actually Teller's signed 10 of Hearts, face-down? Or the unsigned 10 of Spades?) to Penn.
+
+NOTE: *** NEED TO CLARIFY -- what exactly gets dealt to Penn here and in what state? Continue from here. ***
+
+(continuing...)

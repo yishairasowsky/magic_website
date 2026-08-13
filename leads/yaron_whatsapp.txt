@@ -1,0 +1,3 @@
+About your app — I noticed that when leads don't find me on WhatsApp, you transfer them to me through the app.
+Is there a way for the app to automatically send me a notification when a lead is transferred?
+Or do you prefer to keep it the way it is now?

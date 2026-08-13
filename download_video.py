@@ -21,6 +21,8 @@ def download_video(url, audio_only=False, output_dir="."):
     ydl_opts = {
         "outtmpl": os.path.join(output_dir, "%(title)s.%(ext)s"),
         "noplaylist": True,  # download single video, not whole playlist
+        "nocheckcertificate": True,  # fix SSL cert errors on Windows
+        "extractor_args": {"youtube": {"js_runtimes": ["nodejs"]}},
     }
 
     if audio_only:
