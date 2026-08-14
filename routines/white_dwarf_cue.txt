@@ -1,56 +1,55 @@
 WHITE DWARF -- CUE SHEET
-P = Performer   S = Spectator
 
-1.  P: "[NAME] -- would you come up and help me?"
+1.  Performer: "[NAME] -- would you come up and help me?"
 
-2.  P: Hand both envelopes to S to examine.
+2.  Performer: Hand both envelopes to S to examine.
 
-3.  P: Hand billet + pen to S -- silently take both envelopes back.
+3.  Performer: Hand billet + pen to S -- silently take both envelopes back.
 
-4.  P: "Parapsychologists claim
+4.  Performer: "Parapsychologists claim
           that a strong mind projecting a thought vividly
           almost makes it visible.
           We're going to test that now."
 
-5.  P: "Think of any object. 
+5.  Performer: "Think of any object. 
           Something specifically important to you.
           But not something anyone could easily guess.
           Write it here -- but only after I leave the room."
 
-6.  P: EXIT with both envelopes. 
+6.  Performer: EXIT with both envelopes. 
           Switch small envelope for windowed duplicate.
 
-7.  P: FROM OUTSIDE -- keep talking to fill the silence:
+7.  Performer: FROM OUTSIDE -- keep talking to fill the silence:
        "[NAME], when you are done, turn it face-down.
         Then raise your hand so the audience can see you're finished --
         they'll cheer to signal I should come back in."
 
-8.  P: ENTER. Hold windowed envelope open yourself, flap toward S.
+8.  Performer: ENTER. Hold windowed envelope open yourself, flap toward S.
        "[NAME] -- slide it in."
 
-9.  S: Slides card into envelope.
-    P: Seals the envelope.
+9.  Spectator: Slides card into envelope.
+    Performer: Seals the envelope.
 
-10. P: Slide sealed small envelope into large envelope -- GET PEEK as you do.
-     P: "Now tell everybody, you and I didn't discuss this beforehand, correct?"
-     S: Confirms.
+10. Performer: Slide sealed small envelope into large envelope -- GET PEEK as you do.
+     Performer: "Now tell everybody, you and I didn't discuss this beforehand, correct?"
+     Spectator: Confirms.
 
-11. P: Pocket the large envelope immediately.
+11. Performer: Pocket the large envelope immediately.
 
-12. P + S: Both turn to face forward together.
-    P: "Imagine a giant photograph of that object, projected onto a large screen,
+12. P + Spectator: Both turn to face forward together.
+    Performer: "Imagine a giant photograph of that object, projected onto a large screen,
         filling the whole room. This is the strong sense I'm getting."
 
-13. P: Turn to whiteboard. Write associated word. Cross it out. Write actual word below.
-       Hand board face-down to S: "Hold this."
+13. Performer: Turn to whiteboard. Write associated word. Cross it out. Write actual word below.
+       Hand board face-down to Spectator: "Hold this."
 
-14. P: "My initial impression was [CROSSED-OUT WORD].
+14. Performer: "My initial impression was [CROSSED-OUT WORD].
         What were you thinking of?"
-    S: Answers.
-    P: "I actually changed my mind. Tell everyone if I was close."
-    S: Turns the board around.
+    Spectator: Answers.
+    Performer: "I actually changed my mind. Tell everyone if I was close."
+    Spectator: Turns the board around.
 
-15. P: "Thank you. As you head back to your seat."
+15. Performer: "Thank you. As you head back to your seat."
 
 16. TRANSITION:
-    P: "That's what happens when you think of an object. Now -- what if it's a human being."
+    Performer: "That's what happens when you think of an object. Now -- what if it's a human being."
