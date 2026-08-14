@@ -7,14 +7,18 @@ P = Performer   S = Spectator
 
 3.  P: Hand billet + pen to S -- silently take both envelopes back.
 
-4.  P: "A strong transmitting mind can project a thought so vividly it almost becomes visible.
-        We're going to test that now."
+4.  P: "Parapsychologists claim
+          that a strong mind projecting a thought vividly
+          almost makes it visible.
+          We're going to test that now."
 
-5.  P: "Think of any object. Something specifically important to you.
-        Not something anyone could easily guess.
-        Write it here -- but only after I leave the room."
+5.  P: "Think of any object. 
+          Something specifically important to you.
+          But not something anyone could easily guess.
+          Write it here -- but only after I leave the room."
 
-6.  P: EXIT with both envelopes. Switch small envelope for windowed duplicate.
+6.  P: EXIT with both envelopes. 
+          Switch small envelope for windowed duplicate.
 
 7.  P: FROM OUTSIDE -- keep talking to fill the silence:
        "[NAME], when you are done, turn it face-down.
@@ -28,8 +32,8 @@ P = Performer   S = Spectator
     P: Seals the envelope.
 
 10. P: Slide sealed small envelope into large envelope -- GET PEEK as you do.
-       P: "And we didn't set this up beforehand, right?"
-    S: Confirms.
+     P: "Now tell everybody, you and I didn't discuss this beforehand, correct?"
+     S: Confirms.
 
 11. P: Pocket the large envelope immediately.
 
