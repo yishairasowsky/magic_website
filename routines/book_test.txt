@@ -1,66 +1,60 @@
-BOOK TEST
-=========
+BOOK TEST -- CUE SHEET
+Performer = Performer   Spectator = the relevant person on stage
 
-[SETUP: Ask one audience member before the show to bring any book from home.
-You need 4-5 people on stage: BOOK OWNER, PAGE PICKER (far stage left),
-and 1-2 people from the audience for line and word numbers, plus optional GUARDS.
-Bring them all up at once before you start talking.]
+PREMISE:
+Researchers claim that a concentrated thought leaves a detectable trace --
+something that can be sensed, if you know how to look for it.
 
-[PEEK METHOD: Stand center. PAGE PICKER stands far stage left, both facing the audience.
-Flip pages toward him. The number you see on the flashback peek is 1 less than his -- add 1.]
+BEFORE THE SHOW:
+Ask one audience member to bring any book from home.
+
+PEOPLE NEEDED:
+- Book Owner (brings the book)
+- Page Picker (stands far stage left)
+- Line caller (shouts from audience)
+- Word caller (shouts from audience)
+
+PEEK METHOD:
+Stand center. Page Picker stands far stage left, both facing the audience.
+Flip pages toward him. Number you see on the flashback peek is 1 less than his -- add 1.
 
 
-[Book owner brings the book up. Hold it up briefly for the room to see.]
+1.  Performer: Call up Book Owner. Hold book up briefly for the room to see.
 
-There's a phenomenon that some researchers take seriously and others dismiss entirely --
-the idea that a concentrated thought leaves a kind of trace. Something detectable,
-if you know how to look for it.
+2.  Performer: Call up Page Picker. Guide him to far stage left.
+               "Stand over there. I'll flip through -- stop me anywhere."
 
-[BOOK OWNER] brought this book from home. I haven't seen it.
+3.  Performer: Flip slowly toward Page Picker -- GET PEEK on the stop.
+               "See the page number? Lock it in your mind. Don't say a word."
 
-[to PAGE PICKER -- guide him to far stage left]
+4.  Performer: To audience -- point to Line caller.
+               "Line number -- shout one out."
+               Line caller shouts a number.
 
-Stand over there. I'll flip through -- stop me anywhere you like.
+5.  Performer: Point to Word caller.
+               "Word number."
+               Word caller shouts a number.
 
-[flip slowly toward him -- get the peek on the stop]
+6.  Performer: Hand book to Book Owner.
+               "Page [NUMBER]. Line [NUMBER]. Word [NUMBER].
+                Open it up. Find the word. Point to it -- don't say it yet."
 
-See the page number? Lock it in your mind.
+7.  Book Owner: Opens book, finds the word, points to it silently.
 
-[hand book to GUARDS if using them, or set it aside]
+8.  Performer: Pause. Reach into pocket -- produce prediction card face-down.
+               "Was I in the right area, close, or exactly on the word?"
 
-[to the audience -- point to LINE PICKER]
+9.  Book Owner: Answers.
 
-Line number -- shout one out.
+10. Performer: "Say it out loud."
 
-[LINE PICKER calls a number]
+11. Book Owner: Reads the word aloud.
 
-[to another audience member -- WORD PICKER]
+12. Performer: Turn card around so the whole room sees it at once.
+               Hold the silence.
+               "I wrote down what I sensed."
 
-Word number.
+13. Performer: Send everyone back naturally. No applause cue.
 
-[WORD PICKER calls a number]
-
-[to BOOK OWNER]
-
-Page [NUMBER]. Line [NUMBER]. Word [NUMBER].
-Open it up. Find the word. Point to it -- don't say it yet.
-
-[she opens the book and points -- guards or nearby people lean in and see it]
-
-[pause -- look at her, then slowly reach into your pocket and produce the prediction card face-down]
-
-I want to ask you something first. Was I in the right area, close, or exactly on the word?
-
-[she answers]
-
-Say it out loud.
-
-[she reads the word]
-
-[turn the card around so the whole room sees it at once]
-
-[hold the silence]
-
-I wrote down what I sensed.
-
-[done -- let the room decide what happens next]
+TRANSITION:
+"That was a word from a book. Now -- something more personal."
