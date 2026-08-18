@@ -1,35 +1,29 @@
-BOOK TEST -- CUE SHEET
-Performer = Performer   Spectator = the relevant person on stage
+BOOK TEST
 
-PREMISE:
+PREMISE: 
 Researchers claim that a concentrated thought leaves a detectable trace --
 something that can be sensed, if you know how to look for it.
 
-BEFORE THE SHOW:
-Ask one audience member to bring any book from home.
+PRE-SHOW:
+Spectator brings an ordinary book, e.g. 200 page novel.
 
-PEOPLE NEEDED:
-- Book Owner (brings the book)
-- Page Picker (stands far stage left)
-- Line caller (shouts from audience)
-- Word caller (shouts from audience)
+PEOPLE:
+On stage: Performer (stage right), Page Picker (stage left)
+Seated in audience: Book Owner, Line caller, Word caller
 
-PEEK METHOD:
-Stand center. Page Picker stands far stage left, both facing the audience.
-Flip pages toward him. Number you see on the flashback peek is 1 less than his -- add 1.
+PEEK:
+Flip pages toward Page Picker. He sees page N -- you momentarily glimpse page N-1
+(the facing page) and add 1. That is his number.
 
+PATTER:
+1.  BOOK: Premise line. Book Owner hands book to Performer.
 
-1.  Performer: Call up Book Owner. Hold book up briefly for the room to see.
+2.  PAGE: Call Page Picker to stage left. Flip pages toward him -- peek on the stop.
+          "This page, or keep going?"
 
-2.  Performer: Call up Page Picker. Guide him to far stage left.
-               "Stand over there. I'll flip through -- stop me anywhere."
-
-3.  Performer: Flip slowly toward Page Picker -- GET PEEK on the stop.
-               "See the page number? Lock it in your mind. Don't say a word."
-
-4.  Performer: To audience -- point to Line caller.
-               "Line number -- shout one out."
-               Line caller shouts a number.
+3.  LINE: Close book, hand to Page Picker to hold.
+          Point to Line caller.
+          "Line number -- shout one out."
 
 5.  Performer: Point to Word caller.
                "Word number."
