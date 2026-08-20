@@ -1,0 +1,47 @@
+HR CONTACTS - LARGE ISRAELI COMPANIES
+======================================
+Status: names found via web search, emails are best guesses based on company format.
+Try each email -- if it bounces, try alternate format below.
+
+-----------------------------------------------------------------------
+COMPANY: Bank Hapoalim
+CONTACT: Inbal Tal Oz Cohen
+TITLE: Human Resources Department Manager
+EMAIL GUESS: inbal.tal@bankhapoalim.co.il
+ALT: inbal.talozcohen@bankhapoalim.co.il
+FORMAT: first.last@bankhapoalim.co.il
+-----------------------------------------------------------------------
+COMPANY: Harel Insurance
+CONTACT: Donny Gat
+TITLE: HR Coordinator
+EMAIL GUESS: donny.gat@harel-ins.co.il
+ALT: dgat@harel-ins.co.il
+FORMAT: first.last@harel-ins.co.il (first letter confirmed = d)
+-----------------------------------------------------------------------
+COMPANY: Clalit Health Services
+CONTACT: Kamilla Davydova
+TITLE: Employee Engagement & Wellbeing Coordinator
+EMAIL GUESS: KamillaD@clalit.org.il
+ALT: KamillD@clalit.org.il
+FORMAT: FirstLa@clalit.org.il (first name + first letter of last name)
+-----------------------------------------------------------------------
+COMPANY: Shufersal
+CONTACT: Reut Cohen
+TITLE: SVP Human Resources
+EMAIL GUESS: reut.cohen@shufersal.co.il
+ALT: rcohen@shufersal.co.il
+FORMAT: unknown -- try both
+-----------------------------------------------------------------------
+
+STILL NEED TO FIND:
+- Azrieli Group (HR name known, no email yet)
+- Bank Leumi
+- Mizrahi Tefahot
+- Cellcom / Partner
+- Check Point
+- Menorah / Migdal / Clal insurance
+
+NEXT STEP:
+For the ones above, go to LinkedIn and search:
+"[company name] משאבי אנוש" or "[company name] HR events"
+Then construct email using company format and try sending.
