@@ -20,43 +20,50 @@
     min-height: 297mm;
     margin: 0 auto;
     background: #fff;
-    padding: 22mm 20mm 20mm 20mm;
     position: relative;
     display: flex;
     flex-direction: column;
   }
 
-  @media print {
-    .page-he { page-break-before: always; }
-  }
-
-  .page-he {
-    direction: rtl;
-    font-family: 'Inter', 'Arial Hebrew', Arial, sans-serif;
-  }
-
   /* Top accent bar */
   .accent-bar {
-    position: absolute;
-    top: 0; left: 0; right: 0;
     height: 5px;
-    background: linear-gradient(90deg, #1a1a1a 60%, #c8a96e 100%);
+    background: linear-gradient(90deg, #1a1a1a 40%, #c8a96e 100%);
+    flex-shrink: 0;
   }
 
-  .page-he .accent-bar {
-    background: linear-gradient(270deg, #1a1a1a 60%, #c8a96e 100%);
+  /* Two columns */
+  .columns {
+    display: flex;
+    flex: 1;
   }
 
-  /* Header */
-  .header {
-    margin-bottom: 10mm;
-    border-bottom: 1px solid #e0dbd2;
-    padding-bottom: 8mm;
+  .col {
+    flex: 1;
+    padding: 14mm 12mm;
+    display: flex;
+    flex-direction: column;
   }
 
+  .col-he {
+    direction: rtl;
+    font-family: 'Inter', 'Arial Hebrew', Arial, sans-serif;
+    border-right: 1px solid #e0dbd2;
+  }
+
+  /* Lang badge */
+  .lang-badge {
+    font-size: 7pt;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #c8a96e;
+    margin-bottom: 5mm;
+  }
+
+  /* Name */
   .name {
     font-family: 'Cormorant Garamond', Georgia, serif;
-    font-size: 42pt;
+    font-size: 32pt;
     font-weight: 300;
     letter-spacing: 0.04em;
     color: #1a1a1a;
@@ -64,86 +71,74 @@
   }
 
   .title {
-    font-size: 9pt;
+    font-size: 8pt;
     font-weight: 300;
-    letter-spacing: 0.18em;
+    letter-spacing: 0.16em;
     text-transform: uppercase;
     color: #8a7d6b;
-    margin-top: 3mm;
+    margin-top: 2mm;
+    margin-bottom: 7mm;
+    padding-bottom: 7mm;
+    border-bottom: 1px solid #e0dbd2;
   }
 
-  .lang-badge {
-    position: absolute;
-    top: 22mm;
-    right: 20mm;
-    font-size: 7.5pt;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: #c8a96e;
-    font-weight: 400;
-  }
-
-  .page-he .lang-badge {
-    right: auto;
-    left: 20mm;
-  }
-
-  /* Intro text */
+  /* Intro */
   .intro {
-    font-size: 10.5pt;
-    line-height: 1.75;
+    font-size: 9.5pt;
+    line-height: 1.7;
     color: #3a3a3a;
     font-weight: 300;
-    margin-bottom: 10mm;
-    max-width: 155mm;
+    margin-bottom: 7mm;
   }
 
-  /* What I do section */
+  /* What section */
   .section-label {
-    font-size: 7.5pt;
+    font-size: 7pt;
     letter-spacing: 0.16em;
     text-transform: uppercase;
     color: #c8a96e;
-    margin-bottom: 3mm;
-    font-weight: 400;
+    margin-bottom: 2mm;
   }
 
   .what {
     font-family: 'Cormorant Garamond', Georgia, serif;
-    font-size: 16pt;
+    font-size: 13pt;
     font-weight: 400;
     color: #1a1a1a;
     line-height: 1.5;
-    margin-bottom: 12mm;
+    margin-bottom: 8mm;
   }
 
   /* Divider */
   .divider {
-    width: 30mm;
+    width: 20mm;
     height: 1px;
     background: #c8a96e;
-    margin-bottom: 10mm;
+    margin-bottom: 7mm;
   }
 
-  .page-he .divider {
+  .col-he .divider {
     margin-left: auto;
     margin-right: 0;
   }
 
-  /* Links block */
+  /* Links */
   .links {
     display: grid;
-    grid-template-columns: 28mm 1fr;
-    gap: 3mm 4mm;
-    font-size: 9pt;
+    grid-template-columns: 22mm 1fr;
+    gap: 2.5mm 3mm;
+    font-size: 8.5pt;
     color: #3a3a3a;
-    margin-bottom: 12mm;
+    margin-bottom: 8mm;
+  }
+
+  .col-he .links {
+    grid-template-columns: 1fr 22mm;
   }
 
   .links .label {
     color: #8a7d6b;
     font-weight: 400;
-    letter-spacing: 0.06em;
   }
 
   .links a {
@@ -154,107 +149,105 @@
   /* Footer */
   .footer {
     margin-top: auto;
-    padding-top: 8mm;
+    padding-top: 6mm;
     border-top: 1px solid #e0dbd2;
-    font-size: 8pt;
+    font-size: 7.5pt;
     color: #8a7d6b;
     font-weight: 300;
-    letter-spacing: 0.04em;
   }
 </style>
 </head>
 <body>
-
-<!-- ENGLISH PAGE -->
 <div class="page">
   <div class="accent-bar"></div>
-  <div class="lang-badge">English</div>
 
-  <div class="header">
-    <div class="name">Yishai</div>
-    <div class="title">Mentalist &amp; Sensory Artist</div>
+  <div class="columns">
+
+    <!-- ENGLISH -->
+    <div class="col">
+      <div class="lang-badge">English</div>
+      <div class="name">Yishai</div>
+      <div class="title">Mentalist &amp; Sensory Artist</div>
+
+      <p class="intro">
+        Yishai Rasowsky is a mentalist and close-up magician performing across Israel,
+        specializing in corporate events, family parties, and high-end hospitality.
+        He creates moments of genuine astonishment and laughter with guests of all types.
+      </p>
+
+      <div class="section-label">What he does</div>
+      <div class="what">
+        Stage or close-up mind reading,<br>
+        predictions, and psychological illusions --<br>
+        for large groups or small gatherings,<br>
+        in Hebrew or English.
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="links">
+        <span class="label">Website</span>
+        <span><a href="https://www.yishai.show">www.yishai.show</a></span>
+
+        <span class="label">Reviews</span>
+        <span><a href="https://share.google/Xj2lI4KqWeMF4MkRI">Google Reviews</a></span>
+
+        <span class="label">Instagram</span>
+        <span><a href="https://instagram.com/yishai.mentalist">@yishai.mentalist</a></span>
+
+        <span class="label">YouTube</span>
+        <span><a href="https://youtube.com/@yishaimagic">@yishaimagic</a></span>
+
+        <span class="label">Contact</span>
+        <span>054-848-2245 &nbsp;|&nbsp; <a href="mailto:yishai@yishai.show">yishai@yishai.show</a></span>
+      </div>
+
+      <div class="footer">Available for corporate events, private dining, and hospitality residencies throughout Israel.</div>
+    </div>
+
+    <!-- HEBREW -->
+    <div class="col col-he">
+      <div class="lang-badge">עברית</div>
+      <div class="name">ישי</div>
+      <div class="title">מנטליסט ואמן חושים</div>
+
+      <p class="intro">
+        ישי רזובסקי הוא מנטליסט וקוסם קלוז-אפ המופיע ברחבי ישראל,
+        המתמחה באירועים קורפורטיביים, מסיבות משפחה ואירוח יוקרתי.
+        הוא יוצר רגעים של פליאה אמיתית וצחוק עם אורחים מכל הסוגים.
+      </p>
+
+      <div class="section-label">מה הוא עושה</div>
+      <div class="what">
+        קריאת מחשבות, ניחוש ואשליות פסיכולוגיות --<br>
+        על הבמה או קלוז-אפ,<br>
+        לקבוצות גדולות ולקבוצות קטנות,<br>
+        בעברית ובאנגלית.
+      </div>
+
+      <div class="divider"></div>
+
+      <div class="links">
+        <span><a href="https://www.yishai.show">www.yishai.show</a></span>
+        <span class="label">אתר</span>
+
+        <span><a href="https://share.google/Xj2lI4KqWeMF4MkRI">Google Reviews</a></span>
+        <span class="label">ביקורות</span>
+
+        <span><a href="https://instagram.com/yishai.mentalist">@yishai.mentalist</a></span>
+        <span class="label">אינסטגרם</span>
+
+        <span><a href="https://youtube.com/@yishaimagic">@yishaimagic</a></span>
+        <span class="label">יוטיוב</span>
+
+        <span>054-848-2245 &nbsp;|&nbsp; <a href="mailto:yishai@yishai.show">yishai@yishai.show</a></span>
+        <span class="label">ליצור קשר</span>
+      </div>
+
+      <div class="footer">זמין לאירועים קורפורטיביים, ארוחות פרטיות ואירוח יוקרתי ברחבי ישראל.</div>
+    </div>
+
   </div>
-
-  <p class="intro">
-    Yishai Rasowsky is a mentalist and close-up magician performing across Israel,
-    specializing in corporate events, family parties, and high-end hospitality.
-    He creates moments of genuine astonishment and laughter with guests of all types.
-  </p>
-
-  <div class="section-label">What he does</div>
-  <div class="what">
-    Stage or close-up mind reading,<br>
-    predictions, and psychological illusions --<br>
-    for large groups or small gatherings,<br>
-    in Hebrew or English.
-  </div>
-
-  <div class="divider"></div>
-
-  <div class="links">
-    <span class="label">Website</span>
-    <span><a href="https://www.yishai.show">www.yishai.show</a></span>
-
-    <span class="label">Reviews</span>
-    <span><a href="https://share.google/Xj2lI4KqWeMF4MkRI">Google Reviews</a></span>
-
-    <span class="label">Instagram</span>
-    <span><a href="https://instagram.com/yishai.mentalist">@yishai.mentalist</a></span>
-
-    <span class="label">YouTube</span>
-    <span><a href="https://youtube.com/@yishaimagic">@yishaimagic</a></span>
-
-    <span class="label">Contact</span>
-    <span>054-848-2245 &nbsp;|&nbsp; <a href="mailto:yishai@yishai.show">yishai@yishai.show</a></span>
-  </div>
-
-  <div class="footer">Available for corporate events, private dining, and hospitality residencies throughout Israel.</div>
 </div>
-
-<!-- HEBREW PAGE -->
-<div class="page page-he">
-  <div class="accent-bar"></div>
-  <div class="lang-badge">עברית</div>
-
-  <div class="header">
-    <div class="name">ישי</div>
-    <div class="title">מנטליסט ואמן חושים</div>
-  </div>
-
-  <p class="intro">
-    ישי רזובסקי הוא מנטליסט וקוסם קלוז-אפ המופיע ברחבי ישראל,
-    המתמחה באירועים קורפורטיביים, מסיבות משפחה ואירוח יוקרתי.
-    הוא יוצר רגעים של פליאה אמיתית וצחוק עם אורחים מכל הסוגים.
-  </p>
-
-  <div class="section-label">מה הוא עושה</div>
-  <div class="what">
-    קריאת מחשבות, ניחוש ואשליות פסיכולוגיות --<br>
-    על הבמה או קלוז-אפ, לקבוצות גדולות וקטנות,<br>
-    בעברית ובאנגלית.
-  </div>
-
-  <div class="divider"></div>
-
-  <div class="links">
-    <span class="label">אתר</span>
-    <span><a href="https://www.yishai.show">www.yishai.show</a></span>
-
-    <span class="label">ביקורות</span>
-    <span><a href="https://share.google/Xj2lI4KqWeMF4MkRI">Google Reviews</a></span>
-
-    <span class="label">אינסטגרם</span>
-    <span><a href="https://instagram.com/yishai.mentalist">@yishai.mentalist</a></span>
-
-    <span class="label">יוטיוב</span>
-    <span><a href="https://youtube.com/@yishaimagic">@yishaimagic</a></span>
-
-    <span class="label">ליצור קשר</span>
-    <span>054-848-2245 &nbsp;|&nbsp; <a href="mailto:yishai@yishai.show">yishai@yishai.show</a></span>
-  </div>
-
-  <div class="footer">זמין לאירועים קורפורטיביים, ארוחות פרטיות ואירוח יוקרתי ברחבי ישראל.</div>
-</div>
-
 </body>
 </html>
