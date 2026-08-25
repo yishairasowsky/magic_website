@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Yishai -- Mentalist & Magician</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;600&family=Inter:wght@300;400&display=swap');
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #f5f3ef;
+    color: #1a1a1a;
+  }
+
+  .page {
+    width: 210mm;
+    min-height: 297mm;
+    margin: 0 auto;
+    background: #fff;
+    padding: 22mm 20mm 20mm 20mm;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    page-break-after: always;
+  }
+
+  .page-he {
+    direction: rtl;
+    font-family: 'Inter', 'Arial Hebrew', Arial, sans-serif;
+  }
+
+  /* Top accent bar */
+  .accent-bar {
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, #1a1a1a 60%, #c8a96e 100%);
+  }
+
+  .page-he .accent-bar {
+    background: linear-gradient(270deg, #1a1a1a 60%, #c8a96e 100%);
+  }
+
+  /* Header */
+  .header {
+    margin-bottom: 10mm;
+    border-bottom: 1px solid #e0dbd2;
+    padding-bottom: 8mm;
+  }
+
+  .name {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 42pt;
+    font-weight: 300;
+    letter-spacing: 0.04em;
+    color: #1a1a1a;
+    line-height: 1;
+  }
+
+  .title {
+    font-size: 9pt;
+    font-weight: 300;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #8a7d6b;
+    margin-top: 3mm;
+  }
+
+  .lang-badge {
+    position: absolute;
+    top: 22mm;
+    right: 20mm;
+    font-size: 7.5pt;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #c8a96e;
+    font-weight: 400;
+  }
+
+  .page-he .lang-badge {
+    right: auto;
+    left: 20mm;
+  }
+
+  /* Intro text */
+  .intro {
+    font-size: 10.5pt;
+    line-height: 1.75;
+    color: #3a3a3a;
+    font-weight: 300;
+    margin-bottom: 10mm;
+    max-width: 155mm;
+  }
+
+  /* What I do section */
+  .section-label {
+    font-size: 7.5pt;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: #c8a96e;
+    margin-bottom: 3mm;
+    font-weight: 400;
+  }
+
+  .what {
+    font-family: 'Cormorant Garamond', Georgia, serif;
+    font-size: 16pt;
+    font-weight: 400;
+    color: #1a1a1a;
+    line-height: 1.5;
+    margin-bottom: 12mm;
+  }
+
+  /* Divider */
+  .divider {
+    width: 30mm;
+    height: 1px;
+    background: #c8a96e;
+    margin-bottom: 10mm;
+  }
+
+  .page-he .divider {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
+  /* Links block */
+  .links {
+    display: grid;
+    grid-template-columns: 28mm 1fr;
+    gap: 3mm 4mm;
+    font-size: 9pt;
+    color: #3a3a3a;
+    margin-bottom: 12mm;
+  }
+
+  .links .label {
+    color: #8a7d6b;
+    font-weight: 400;
+    letter-spacing: 0.06em;
+  }
+
+  .links a {
+    color: #1a1a1a;
+    text-decoration: none;
+  }
+
+  /* Footer */
+  .footer {
+    margin-top: auto;
+    padding-top: 8mm;
+    border-top: 1px solid #e0dbd2;
+    font-size: 8pt;
+    color: #8a7d6b;
+    font-weight: 300;
+    letter-spacing: 0.04em;
+  }
+</style>
+</head>
+<body>
+
+<!-- ENGLISH PAGE -->
+<div class="page">
+  <div class="accent-bar"></div>
+  <div class="lang-badge">English</div>
+
+  <div class="header">
+    <div class="name">Yishai</div>
+    <div class="title">Mentalist &amp; Close-Up Magician</div>
+  </div>
+
+  <p class="intro">
+    Yishai is a professional close-up magician and mentalist based in Israel,
+    specializing in corporate events, family parties, and high-end hospitality.
+    He works with guests directly -- at the table, in the room -- creating
+    moments of genuine astonishment without a stage or any setup.
+  </p>
+
+  <div class="section-label">What he does</div>
+  <div class="what">
+    Close-up mind reading, predictions,<br>
+    and psychological illusions --<br>
+    one-on-one or in small groups,<br>
+    in Hebrew or English.
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="links">
+    <span class="label">Website</span>
+    <span><a href="https://www.yishai.show">www.yishai.show</a></span>
+
+    <span class="label">Reviews</span>
+    <span><a href="https://share.google/Xj2lI4KqWeMF4MkRI">Google Reviews</a></span>
+
+    <span class="label">Instagram</span>
+    <span><a href="https://instagram.com/yishai.mentalist">@yishai.mentalist</a></span>
+
+    <span class="label">YouTube</span>
+    <span><a href="https://youtube.com/@yishaimagic">@yishaimagic</a></span>
+
+    <span class="label">Contact</span>
+    <span>054-848-2245 &nbsp;|&nbsp; <a href="mailto:yishai@yishai.show">yishai@yishai.show</a></span>
+  </div>
+
+  <div class="footer">Available for corporate events, private dining, and hospitality residencies throughout Israel.</div>
+</div>
+
+<!-- HEBREW PAGE -->
+<div class="page page-he">
+  <div class="accent-bar"></div>
+  <div class="lang-badge">עברית</div>
+
+  <div class="header">
+    <div class="name">יישי</div>
+    <div class="title">מנטליסט וקוסם צמוד</div>
+  </div>
+
+  <p class="intro">
+    יישי הוא קוסם ומנטליסט מקצועי הפועל בישראל,
+    המתמחה באירועים קורפורטיביים, מסיבות משפחה ואירוח יוקרתי.
+    הוא עובד ישירות עם האורחים -- ליד השולחן, בתוך החדר --
+    ויוצר רגעים של פליאה אמיתית, ללא במה וללא הכנות.
+  </p>
+
+  <div class="section-label">מה הוא עושה</div>
+  <div class="what">
+    קריאת מחשבות, ניחוש ואשליות פסיכולוגיות --<br>
+    ביחיד או בקבוצות קטנות,<br>
+    בעברית ובאנגלית.
+  </div>
+
+  <div class="divider"></div>
+
+  <div class="links">
+    <span class="label">אתר</span>
+    <span><a href="https://www.yishai.show">www.yishai.show</a></span>
+
+    <span class="label">ביקורות</span>
+    <span><a href="https://share.google/Xj2lI4KqWeMF4MkRI">Google Reviews</a></span>
+
+    <span class="label">אינסטגרם</span>
+    <span><a href="https://instagram.com/yishai.mentalist">@yishai.mentalist</a></span>
+
+    <span class="label">יוטיוב</span>
+    <span><a href="https://youtube.com/@yishaimagic">@yishaimagic</a></span>
+
+    <span class="label">ליצור קשר</span>
+    <span>054-848-2245 &nbsp;|&nbsp; <a href="mailto:yishai@yishai.show">yishai@yishai.show</a></span>
+  </div>
+
+  <div class="footer">זמין לאירועים קורפורטיביים, ארוחות פרטיות ואירוח יוקרתי ברחבי ישראל.</div>
+</div>
+
+</body>
+</html>
