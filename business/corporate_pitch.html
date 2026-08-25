@@ -15,8 +15,14 @@
     color: #1a1a1a;
   }
 
+  @media print {
+    @page { margin: 0; }
+    body { background: #fff; }
+  }
+
   .page {
     width: 210mm;
+    height: 297mm;
     margin: 0 auto;
     background: #fff;
     position: relative;
