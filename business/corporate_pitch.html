@@ -24,7 +24,10 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    page-break-after: always;
+  }
+
+  @media print {
+    .page-he { page-break-before: always; }
   }
 
   .page-he {
