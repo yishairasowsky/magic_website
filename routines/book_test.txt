@@ -1,54 +1,72 @@
 BOOK TEST
+(Ben Cohen revision, 2026-08-25)
 
-PREMISE: 
-Researchers claim that a concentrated thought leaves a detectable trace --
-something that can be sensed, if you know how to look for it.
-
-PRE-SHOW:
-Spectator brings an ordinary book, e.g. 200 page novel.
+PREMISE (under 1 min):
+There is a documented phenomenon -- researchers in cognitive science claim that
+when a person concentrates deeply on a single word, something measurable happens.
+Not just in their brain -- in the space around them.
+You are not reading minds. You are reading something more subtle than that.
+A residue. A trace left by focused thought.
 
 PEOPLE:
-On stage: Performer (stage right), Page Picker (stage left)
-Seated in audience: Book Owner, Line caller, Word caller
+- One person seated (Page Stopper) -- stops the flip
+- Book Owner -- hands book, finds the word at the end
+These can be the same person. Keep it to two people max, both seated.
 
-PEEK:
-Flip pages toward Page Picker. He sees page N -- you momentarily glimpse page N-1
-(the facing page) and add 1. That is his number.
+METHOD (peek):
+Walk to Page Stopper with book. Fan/flip pages toward them.
+They say stop. You glimpse the facing page and add 1.
+That is their number.
 
-PATTER:
-1.  BOOK: Premise line. Book Owner hands book to Performer.
+STAGE NOTES:
+- No one comes on stage. You go to them.
+- Page Stopper and Book Owner can be the same person.
+- Line number and word number: call out to the room, anyone shouts one.
+- Book returns to Book Owner to find the word. They stay seated.
+- You never touch the book again after the flip.
 
-2.  PAGE: Call Page Picker to stage left. Flip pages toward him -- peek on the stop.
-          "This page, or keep going?"
+PATTER OUTLINE (bullet points):
 
-3.  LINE: Close book, hand to Page Picker to hold.
-          Point to Line caller.
-          "Line number -- shout one out."
+SETUP:
+- "There's a study out of [vague institution] -- they found that when a person
+  holds a single word in their mind, something lingers in the air around them.
+  Not for long. But long enough."
+- "I want to try something with that. All I need is a book -- any book."
+  [Book Owner hands it over]
 
-5.  Performer: Point to Word caller.
-               "Word number."
-               Word caller shouts a number.
+PAGE:
+- Walk to someone. "Just say stop whenever you feel like it."
+  Flip pages toward them -- peek on the stop.
+- "That page. Remember it." [Close book, hand back to Book Owner]
 
-6.  Performer: Hand book to Book Owner.
-               "Page [NUMBER]. Line [NUMBER]. Word [NUMBER].
-                Open it up. Find the word. Point to it -- don't say it yet."
+LINE + WORD:
+- "Somebody -- line number, shout one out." [Anyone calls it]
+- "And a word number." [Anyone calls it]
 
-7.  Book Owner: Opens book, finds the word, points to it silently.
+FIND IT:
+- "Page [N]. Line [N]. Word [N]. Take your time -- find it.
+  Don't say it. Just hold it in your mind."
+- [Pause. Let them find it. Fill with silence or one quiet line:
+  "This is the part they say is impossible."]
 
-8.  Performer: Pause. Reach into pocket -- produce prediction card face-down.
-               "Was I in the right area, close, or exactly on the word?"
+REVEAL:
+- Reach into pocket. Produce folded paper or card, face down.
+- "I'm going to tell you something. What's on this isn't a prediction.
+  It's a feeling I had -- a notion I wrote down before we even started.
+  Say the word."
+- [They say it. Turn the card around. Hold the silence.]
 
-9.  Book Owner: Answers.
+SEND BACK / TRANSITION:
+- No applause cue. Just: "Thank you."
+- Beat. Then: "That was a word from a book -- something random, on a page
+  nobody planned. Now I want to try something more personal."
 
-10. Performer: "Say it out loud."
+DEAD MOMENT FILLERS (while they search for the word):
+- "Most people assume this kind of thing requires a trick. It might.
+  Or it might not. That's what makes it interesting."
+- [Silence is also fine here -- let the room feel the wait]
 
-11. Book Owner: Reads the word aloud.
-
-12. Performer: Turn card around so the whole room sees it at once.
-               Hold the silence.
-               "I wrote down what I sensed."
-
-13. Performer: Send everyone back naturally. No applause cue.
-
-TRANSITION:
-"That was a word from a book. Now -- something more personal."
+REMINDERS:
+- Never say "prediction" -- always "a feeling" / "a notion" / "something I sensed"
+- Don't dwell after the reveal. If they react, let it happen. Move on.
+- The premise does the work. Don't explain the effect after it lands.
