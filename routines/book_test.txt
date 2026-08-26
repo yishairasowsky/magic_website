@@ -1,72 +1,73 @@
 BOOK TEST
-(Ben Cohen revision, 2026-08-25)
 
-PREMISE (under 1 min):
-There is a documented phenomenon -- researchers in cognitive science claim that
-when a person concentrates deeply on a single word, something measurable happens.
-Not just in their brain -- in the space around them.
-You are not reading minds. You are reading something more subtle than that.
-A residue. A trace left by focused thought.
+PREMISE:
+Researchers in cognitive science claim that when a person concentrates deeply on a single word, something measurable happens. Not just in their brain, but in the space around them. I am not reading minds. I am reading something more subtle than that. Some call it the afterglow of a focused thought.
 
 PEOPLE:
-- One person seated (Page Stopper) -- stops the flip
-- Book Owner -- hands book, finds the word at the end
-These can be the same person. Keep it to two people max, both seated.
+- Book Owner: provides the book, opens it at the end to confirm
+- Page Stopper: briefly comes up, stops the riffle, returns to seat immediately
+- Line Picker: seated, shouts a line number
+- Word Picker: seated, shouts a word number
 
-METHOD (peek):
-Walk to Page Stopper with book. Fan/flip pages toward them.
-They say stop. You glimpse the facing page and add 1.
-That is their number.
+METHOD:
+1. Page Stopper comes up to stage left. Performer riffles pages toward them. They say stop. Performer glimpses the facing page and adds 1. That is the page.
+2. Page Stopper is sent straight back to their seat. "Remember your page -- don't tell anyone."
+3. Line Picker shouts a line number. While counting aloud ("line one, line two..."), performer secretly opens to the page and holds thumb at the chosen line.
+4. Word Picker shouts a word number. While counting aloud ("the first word, the second..."), performer reads the target word and locks it in.
+5. Performer now knows the word. Book is closed and returned to Book Owner.
+6. Performer asks the room: "Think of random letters -- five or six. When I say now, call them out one at a time, slowly."
+7. Performer fakes writing the letters called out, but actually writes an anagram of the target word. If a letter that happens to be in the word is called (e.g. "E"), acknowledge it: "Who said E? Good..."
+8. Performer shows what is "written." "Can you make a word out of these letters?"
+9. Book Owner opens the book to the page and confirms the word.
 
-STAGE NOTES:
-- No one comes on stage. You go to them.
-- Page Stopper and Book Owner can be the same person.
-- Line number and word number: call out to the room, anyone shouts one.
-- Book returns to Book Owner to find the word. They stay seated.
-- You never touch the book again after the flip.
+ANAGRAM CONSTRUCTION:
+Keep the first and last letters in rough position, scramble the middle. The result looks like a genuine scramble but is solvable.
+Example: THINKING -> TNHIIKNG
 
-PATTER OUTLINE (bullet points):
+SUBTLETY: Deliberately write one letter "wrong" while constructing. Someone in the room will call it out -- "but there's a K!" -- which (a) feels spontaneous, (b) confirms a real letter in the word is present, and (c) pulls the audience into solving it. Correct it visibly and thank them.
 
-SETUP:
-- "There's a study out of [vague institution] -- they found that when a person
-  holds a single word in their mind, something lingers in the air around them.
-  Not for long. But long enough."
-- "I want to try something with that. All I need is a book -- any book."
-  [Book Owner hands it over]
+PATTER:
+
+PREMISE:
+"Researchers in cognitive science claim that when a person concentrates on a single word, something happens -- not just in the brain, but in the space around them. Some call it the afterglow of a focused thought. I want to see if I can read it."
 
 PAGE:
-- Walk to someone. "Just say stop whenever you feel like it."
-  Flip pages toward them -- peek on the stop.
-- "That page. Remember it." [Close book, hand back to Book Owner]
+[Hand book to Book Owner. Call Page Stopper up.]
+"Just watch the pages as I riffle. Say stop whenever you feel like it."
+[Riffle toward them. Peek on stop.]
+"That page -- remember it. Don't tell a soul. You can sit down."
 
-LINE + WORD:
-- "Somebody -- line number, shout one out." [Anyone calls it]
-- "And a word number." [Anyone calls it]
+LINE:
+"Any page in a book has dozens of lines."
+[Secretly open to the page. Begin counting lines visibly.]
+"Line one, line two, line three... you -- pick any number you like."
+[Line Picker calls a number. Count to it. Hold thumb there silently.]
+"Line [N]. Got it."
 
-FIND IT:
-- "Page [N]. Line [N]. Word [N]. Take your time -- find it.
-  Don't say it. Just hold it in your mind."
-- [Pause. Let them find it. Fill with silence or one quiet line:
-  "This is the part they say is impossible."]
+WORD:
+"And each line has about ten words."
+[Count along the line with your eyes.]
+"The first word, the second, third... which would you like?"
+[Word Picker calls a number. Read that word. Lock it in. Close the book.]
+"[N]. Perfect."
+[Return the closed book to Book Owner.]
+"Please hold this -- keep it closed for now."
 
-REVEAL:
-- Reach into pocket. Produce folded paper or card, face down.
-- "I'm going to tell you something. What's on this isn't a prediction.
-  It's a feeling I had -- a notion I wrote down before we even started.
-  Say the word."
-- [They say it. Turn the card around. Hold the silence.]
+ANAGRAM:
+"I want everyone to think of a random letter. Don't say it yet -- just hold one in your mind. When I say now, call them out one at a time, slowly."
+[Say "now." Begin faking to write the called letters. Write the anagram.]
+"Can you make a word out of these letters?"
+[Pause. Let the room try.]
+"Open the book. Page [N], line [N], word [N]."
+[Book Owner opens and reads the word aloud. The anagram resolves.]
 
-SEND BACK / TRANSITION:
-- No applause cue. Just: "Thank you."
-- Beat. Then: "That was a word from a book -- something random, on a page
-  nobody planned. Now I want to try something more personal."
-
-DEAD MOMENT FILLERS (while they search for the word):
-- "Most people assume this kind of thing requires a trick. It might.
-  Or it might not. That's what makes it interesting."
-- [Silence is also fine here -- let the room feel the wait]
+TRANSITION:
+"Thank you."
+[Beat.]
+"That was a word from a book -- something random on a page nobody chose. Now something more personal."
 
 REMINDERS:
-- Never say "prediction" -- always "a feeling" / "a notion" / "something I sensed"
-- Don't dwell after the reveal. If they react, let it happen. Move on.
-- The premise does the work. Don't explain the effect after it lands.
+- Never say "prediction" -- it is a feeling, a residue, an afterglow
+- Send Page Stopper back to seat the moment they stop the riffle
+- The anagram reveal is the climax -- hold the silence before "open the book"
+- Don't explain after it lands. Let the room sit with it.
