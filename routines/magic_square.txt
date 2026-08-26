@@ -1,6 +1,23 @@
 MAGIC SQUARE
 ============
 
+POSITION IN SHOW: Opener
+
+PRE-SHOW:
+Before the show, approach one guest and have them write a number on a billet.
+Use Marsh Peek to read it. Remember the number.
+That guest is your plant for the opener -- they do not know they are.
+
+OPENER FRAMING:
+"This show is going to be interactive -- I need everyone's help from the start.
+So before we begin, I want all of you to think of a number. Any number up to 100.
+If you already have one in mind, raise your hand."
+[Pause. Hands go up. Gently make eye contact with your pre-show guest -- a slight look or nod is enough to prompt them to raise their hand if they haven't already.]
+"You -- what's your number?"
+[They call it. You already know it. Begin the square immediately, no hesitation.]
+
+---
+
 Some of you have heard of the numbers square.
 
 Someone calls out a number, and the performer constructs a grid of smaller numbers that all add up to that total. The smallest possible square is for the number 15. Watch: 3-8-4, 9-5-1, 6-7-2. Every row adds up to 15. But that's nothing.
