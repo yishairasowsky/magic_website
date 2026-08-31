@@ -11,3 +11,8 @@ titles.png
 
 # Claude memory
 .claude/
+
+# Credentials — never commit these
+client_secret.json
+credentials.json
+token.json
