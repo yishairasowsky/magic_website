@@ -126,6 +126,32 @@ Most bookings in your history cluster around specific times of year. Get ahead o
 
 ---
 
+## Priority 6 — Publicize the Ordering Guide (Concentric Circles)
+
+You now have a real lead asset: **[How to Order a Magician: The Complete Guide](https://www.yishai.show/blog/how-to-order-a-magician-guide.html)** — it doesn't just explain how to book well, it makes the case for booking a magician at all, and it has a built-in WhatsApp feedback link so you can revise it as real questions come in.
+
+The way to spread it isn't one blast to everyone — it's **concentric circles**: start with people who already trust you, get their reactions and shares, then use that to earn credibility with the next, colder circle out.
+
+**Circle 1 — People who already know you (send this week)**
+- Every past organizer in `shows.csv` (~40 events) — a personal WhatsApp, not a broadcast: *"I put together a guide on choosing a magician for an event — thought you might find it useful, or know someone planning something. [link]"*
+- This doubles as the review/referral ask already in Priority 1 — combine them into one message.
+
+**Circle 2 — Your closest community (next 1–2 weeks)**
+- The institutional contacts you already have relationships with (RCCS, Zichron Menachem, Bet Elazraki, Lone Soldiers, Kfar Shaul) — their coordinators plan multiple events a year and know other coordinators.
+- Your own shul/neighborhood WhatsApp groups and Facebook — this is warm, not cold, since people already know you personally.
+
+**Circle 3 — Wider Anglo/community networks (once Circle 1–2 feedback is in)**
+- Use the platforms in `COMMUNITY_CONTACTS.md` — Janglo (70,000+ subscribers), ShemeshList, neighborhood klita/absorption lists, ESRA Ra'anana. Post the guide itself (not a sales pitch) — "sharing a free guide for anyone planning an event" reads as generous, not promotional, and is more likely to be approved by list moderators.
+- Event planners and venues from `event_planner_leads.txt` / `event_companies_leads.txt` — a guide is a low-pressure way to open a relationship with people who book performers for other people's events.
+
+**Circle 4 — Cold/public (ongoing, not a one-time push)**
+- Already in motion via SEO: the guide is linked from the homepage blog grid and cross-linked from three other posts, and it's in `sitemap.xml`.
+- Social captions (Instagram/Facebook) pointing to the guide work here too — see `instagram_promo_caption.txt` style for tone.
+
+**The feedback loop:** every WhatsApp reply to the guide's feedback link is a signal for what Circle 1 people actually wanted to know. Fold real questions back into the guide before it reaches Circle 3–4, so the version that reaches strangers is already sharpened by people who trust you.
+
+---
+
 ## What the Google Sheets Can Add
 
 You shared two spreadsheet links — these likely contain lead tracking or detailed booking records beyond shows.csv. To use them here:
@@ -143,7 +169,7 @@ The most valuable data would be:
 ## Quick Wins This Week
 
 1. Set up or claim Google Business Profile
-2. Text/WhatsApp 5 past organizers asking for a Google review
+2. Text/WhatsApp 5 past organizers asking for a Google review — and share the [ordering guide](https://www.yishai.show/blog/how-to-order-a-magician-guide.html) in the same message (Circle 1)
 3. Email the coordinator at 2 of the institutional clients (RCCS, Zichron Menachem, etc.) asking for referrals
 4. Write one new blog post targeting a Hebrew search term or the wedding market
 
