@@ -8,6 +8,19 @@ Guide link to use everywhere: **https://www.yishai.show/blog/how-to-order-a-magi
 
 ---
 
+## Timely Right Now: Sukkos Pitch Window
+
+`GROWTH_PLAN.md` Priority 5 flags August as the month to pitch for Tishrei
+(Sukkos) bookings — and there's now a dedicated post to point people to:
+**https://www.yishai.show/blog/sukkos-party-entertainment-israel.html**
+
+Worth folding into the Circle 1 message below for anyone who's hosted a
+sukkah gathering before (Shem Tov family, 2024-10-17; Heller's house,
+2025-10-08) or anyone likely to have one this year — swap the guide link
+for the Sukkos post link when it's more relevant than the general guide.
+
+---
+
 ## Circle 1 — Past Clients (WhatsApp)
 
 **Template** (personalize the bracketed part with something specific to their event):
