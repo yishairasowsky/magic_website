@@ -132,6 +132,8 @@ You now have a real lead asset: **[How to Order a Magician: The Complete Guide](
 
 The way to spread it isn't one blast to everyone — it's **concentric circles**: start with people who already trust you, get their reactions and shares, then use that to earn credibility with the next, colder circle out.
 
+**For the actual send-ready messages — WhatsApp, email, newsletter, Instagram, Facebook — and the week-by-week order to send them in, see `GUIDE_MARKETING_KIT.md`.** The summary below is the strategy; that file is the execution.
+
 **Circle 1 — People who already know you (send this week)**
 - Every past organizer in `shows.csv` (~40 events) — a personal WhatsApp, not a broadcast: *"I put together a guide on choosing a magician for an event — thought you might find it useful, or know someone planning something. [link]"*
 - This doubles as the review/referral ask already in Priority 1 — combine them into one message.

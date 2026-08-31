@@ -1,10 +1,33 @@
-# Ordering Guide — Ready-to-Send Outreach Drafts
+# Ordering Guide — Marketing Kit & Distribution Plan
 
-Companion to `GROWTH_PLAN.md` Priority 6 (concentric circles). Everything
-below is copy-paste-ready — nothing has been sent on your behalf. Fill in
-the blanks you have (numbers, emails) and send from your own accounts.
+Everything you need to publicize the guide, in one place: the message for
+every channel, and the order to send them in. Nothing below has been sent
+on your behalf — it's all copy-paste-ready for you to personalize and send
+from your own accounts. Companion to `GROWTH_PLAN.md` Priority 6.
 
 Guide link to use everywhere: **https://www.yishai.show/blog/how-to-order-a-magician-guide.html**
+
+---
+
+## Order of Operations
+
+Don't fire everything at once — each circle's reaction (a reply, a share,
+a review) makes the next, colder circle more likely to trust it. Rough
+pace, adjust as feels right:
+
+| When | Circle | What |
+|---|---|---|
+| **Day 1–3** | Circle 1 | 5 past clients/day from the WhatsApp tracker below — not all 21 at once |
+| **Day 3–5** | Circle 1a | One post in each magician WhatsApp group / FB group |
+| **Day 5–7** | Circle 2 | Email the 3 warm institutional contacts (Miriam, Ms. Tahel, Leora) |
+| **Week 2** | Circle 2b | Include the guide in your next newsletter to the ~50-person list |
+| **Week 2** | Circle 3 | Submit to Janglo, ShemeshList, ESRA |
+| **Week 2–3** | Circle 4 | Post the Instagram caption + Facebook post below |
+| **Ongoing** | Circle 4 | Already live: homepage, cross-links, sitemap, FAQ, Hebrew site |
+
+By the time you reach Circle 3–4, you'll have real replies from Circle 1–2
+to fold into the guide via its WhatsApp feedback link — so the version
+reaching strangers is already sharpened by people who trust you.
 
 ---
 
@@ -128,6 +151,30 @@ applies to the others below.
 
 ---
 
+## Circle 2b — Your Newsletter List (~50 people, `newsletter_list.txt`)
+
+These are past inquiries and clients who already opted in — warmer than
+Circle 3, and a channel you already own. Written in your usual newsletter
+voice (see `newsletter_july2026.txt`):
+
+> Subject: Something I put together — a guide for choosing entertainment
+>
+> Hi all,
+>
+> I get asked some version of the same question constantly: "how do I
+> know if a magician is actually the right call for my event, and how do
+> I pick a good one?" So I finally wrote it all down — the honest
+> tradeoffs, what to actually look for, and separate checklists for
+> family events and corporate events: [link]
+>
+> If you're planning something, I hope it's useful. And if you know
+> someone else who is, feel free to just forward this along.
+>
+> Yishai
+> 054-848-2245
+
+---
+
 ## Circle 3 — Anglo Community Platforms
 
 Submit the guide itself as a free resource, not a sales listing — reads as
@@ -149,13 +196,35 @@ name and link in front of thousands of the right households.
 
 ---
 
-## Circle 4 — Cold / Public
+## Circle 4 — Social & Public
 
-Already in motion, no action needed from you:
-- Linked from the homepage blog grid and 3 other posts
-- In `sitemap.xml` for Google indexing
-- Feedback WhatsApp link built into the guide itself, so real reader
-  questions flow back to you for future revisions
+**Already live, no action needed:** linked from the homepage blog grid and
+3 other posts, in `sitemap.xml` for Google indexing, and the guide has its
+own WhatsApp feedback link so real reader questions flow back to you.
+
+**Needs you — post when you reach this circle (in your usual caption style, see `instagram_promo_caption.txt`):**
+
+**Instagram / Facebook caption:**
+
+> Should you actually hire a magician for your event? 🤔
+>
+> I wrote the honest answer — including what it costs vs. a DJ, and why
+> that's not actually the full picture. Link in bio.
+>
+> 📍 Jerusalem & all of Israel
+> 🌐 www.yishai.show
+>
+> #mentalist #magician #israel #jerusalem #corporateevents #eventplanning #simcha #barmitzvah #קוסם #מנטליסט #ירושלים #אירועים
+
+**Personal Facebook post** (your own feed / Anglo groups, see `anglo_facebook_post_general.txt` style):
+
+> I get asked constantly — "is a magician actually worth it for an
+> event, and how do I pick a good one?" So I wrote it all down: the
+> honest tradeoffs, what to actually look for, and separate checklists
+> for family events and corporate events. [link]
+>
+> If you're planning something — or know someone who is — I hope it's
+> useful. No pressure, just sharing.
 
 ---
 
