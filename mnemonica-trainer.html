@@ -422,7 +422,7 @@
     var el = document.getElementById("study-card");
     studyFlipped = true;
     if(direction==="pos2card"){
-      renderCardFace(el, code, false, pos);
+      renderCardFace(el, code, true, pos);
     } else {
       var c = parseCard(code), s = SUITS[c.suit];
       el.className = "card-box";
