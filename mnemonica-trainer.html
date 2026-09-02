@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mnemonica Stack Trainer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#080808; --bg2:#0f0f0f; --bg3:#161616; --bg4:#1e1e1e;
+    --red:#c8202a; --red-lt:#e03030;
+    --gold:#c9a24b; --gold-lt:#e8c876;
+    --text:#f0f0f0; --muted:#9a9a9a; --border:#2a2a2a;
+    --good:#2e9e4f; --bad:#c8202a;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font-family:'Inter',sans-serif; min-height:100vh; padding-bottom:60px;
+  }
+  h1,h2,h3{ font-family:'Playfair Display',serif; margin:0 0 8px; }
+  header{
+    text-align:center; padding:34px 16px 18px;
+    border-bottom:1px solid var(--border);
+    background:linear-gradient(180deg,#0f0f0f,#080808);
+  }
+  header h1{ font-size:2rem; color:var(--gold-lt); letter-spacing:.5px; }
+  header p{ color:var(--muted); margin:0; font-size:.95rem; }
+  nav.tabs{
+    display:flex; flex-wrap:wrap; justify-content:center; gap:8px;
+    padding:16px; max-width:900px; margin:0 auto;
+  }
+  nav.tabs button{
+    background:var(--bg3); border:1px solid var(--border); color:var(--muted);
+    padding:9px 16px; border-radius:20px; cursor:pointer; font-size:.88rem;
+    font-weight:600; transition:.15s;
+  }
+  nav.tabs button:hover{ color:var(--text); border-color:var(--gold); }
+  nav.tabs button.active{ background:var(--red); border-color:var(--red); color:#fff; }
+  main{ max-width:900px; margin:0 auto; padding:0 16px; }
+  .panel{ display:none; }
+  .panel.active{ display:block; animation:fade .25s ease; }
+  @keyframes fade{ from{opacity:0; transform:translateY(4px);} to{opacity:1; transform:none;} }
+
+  .card-box{
+    width:150px; height:210px; margin:0 auto; border-radius:14px;
+    background:linear-gradient(160deg,var(--bg4),var(--bg3));
+    border:1px solid var(--border); display:flex; align-items:center; justify-content:center;
+    box-shadow:0 10px 30px rgba(0,0,0,.5); position:relative; user-select:none;
+  }
+  .card-box .rank{ font-size:3.1rem; font-weight:700; font-family:'Playfair Display',serif; }
+  .card-box .suit{ font-size:1.6rem; position:absolute; top:12px; left:14px; }
+  .card-box .suit.br{ position:absolute; bottom:12px; right:14px; top:auto; left:auto; transform:rotate(180deg); }
+  .red-suit{ color:var(--red-lt); }
+  .black-suit{ color:#e8e8e8; }
+  .card-box .pos-badge{
+    position:absolute; top:-12px; left:50%; transform:translateX(-50%);
+    background:var(--gold); color:#1a1a1a; font-weight:700; font-size:.78rem;
+    padding:3px 10px; border-radius:12px; box-shadow:0 2px 8px rgba(0,0,0,.4);
+  }
+  .card-box.back{
+    background:repeating-linear-gradient(45deg,var(--red),var(--red) 6px,#8f1620 6px,#8f1620 12px);
+  }
+  .card-box.back::after{
+    content:"?"; font-size:3rem; color:rgba(255,255,255,.35); font-family:'Playfair Display',serif;
+  }
+
+  .center{ text-align:center; }
+  .stage{ padding:26px 0 10px; }
+  .hint{ color:var(--muted); font-size:.85rem; margin-top:14px; }
+
+  .row{ display:flex; gap:10px; justify-content:center; flex-wrap:wrap; margin-top:20px; }
+  button.btn{
+    background:var(--bg3); border:1px solid var(--border); color:var(--text);
+    padding:11px 20px; border-radius:8px; cursor:pointer; font-size:.9rem; font-weight:600;
+    transition:.15s;
+  }
+  button.btn:hover{ border-color:var(--gold); }
+  button.btn.primary{ background:var(--red); border-color:var(--red); }
+  button.btn.primary:hover{ background:var(--red-lt); }
+  button.btn.good{ background:var(--good); border-color:var(--good); }
+  button.btn.bad{ background:var(--bad); border-color:var(--bad); }
+  button.btn:disabled{ opacity:.4; cursor:default; }
+
+  .choices{ display:grid; grid-template-columns:repeat(2,1fr); gap:10px; max-width:420px; margin:22px auto 0; }
+  .choices button{
+    padding:14px 10px; font-size:1.05rem; font-weight:700; border-radius:10px;
+    background:var(--bg3); border:1px solid var(--border); color:var(--text); cursor:pointer;
+    font-family:'Playfair Display',serif;
+  }
+  .choices button.correct{ background:var(--good); border-color:var(--good); color:#fff; }
+  .choices button.wrong{ background:var(--bad); border-color:var(--bad); color:#fff; }
+  .choices button:disabled{ cursor:default; }
+
+  input.pos-input{
+    font-size:1.4rem; text-align:center; width:110px; padding:10px;
+    background:var(--bg3); border:1px solid var(--border); color:var(--text);
+    border-radius:8px; font-family:'Playfair Display',serif;
+  }
+  input.pos-input:focus{ outline:none; border-color:var(--gold); }
+
+  .feedback{ min-height:26px; margin-top:14px; font-weight:600; }
+  .feedback.good{ color:var(--good); }
+  .feedback.bad{ color:var(--red-lt); }
+
+  .statbar{
+    display:flex; justify-content:center; gap:26px; flex-wrap:wrap; margin:6px 0 4px;
+    color:var(--muted); font-size:.85rem;
+  }
+  .statbar b{ color:var(--gold-lt); font-size:1rem; }
+
+  .grid52{
+    display:grid; grid-template-columns:repeat(auto-fill,minmax(78px,1fr)); gap:8px; margin-top:18px;
+  }
+  .mini{
+    background:var(--bg3); border:1px solid var(--border); border-radius:8px; padding:8px 4px;
+    text-align:center; cursor:pointer; position:relative;
+  }
+  .mini .p{ font-size:.68rem; color:var(--muted); }
+  .mini .c{ font-size:1.05rem; font-weight:700; font-family:'Playfair Display',serif; margin-top:2px; }
+  .mini.weak{ box-shadow:inset 0 0 0 2px var(--red); }
+  .mini.strong{ box-shadow:inset 0 0 0 2px var(--good); }
+
+  textarea.editor{
+    width:100%; min-height:320px; background:var(--bg3); color:var(--text);
+    border:1px solid var(--border); border-radius:10px; padding:12px; font-family:monospace;
+    font-size:.85rem; line-height:1.5; resize:vertical;
+  }
+  .editor-msg{ margin-top:10px; font-size:.88rem; }
+  .editor-msg.ok{ color:var(--good); }
+  .editor-msg.err{ color:var(--red-lt); }
+  p.small{ color:var(--muted); font-size:.85rem; line-height:1.6; }
+
+  select.mode-select{
+    background:var(--bg3); color:var(--text); border:1px solid var(--border);
+    padding:9px 14px; border-radius:8px; font-size:.88rem; font-weight:600;
+  }
+  footer{ text-align:center; color:var(--muted); font-size:.78rem; padding:30px 16px 0; }
+  footer a{ color:var(--gold); text-decoration:none; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Mnemonica Stack Trainer</h1>
+  <p>Learn a memorized deck cold &mdash; position, card, and neighbors, in any direction.</p>
+</header>
+
+<nav class="tabs">
+  <button data-tab="study" class="active">Study</button>
+  <button data-tab="quiz">Quiz</button>
+  <button data-tab="stack">Full Stack</button>
+  <button data-tab="edit">Edit Stack</button>
+</nav>
+
+<main>
+
+  <!-- STUDY -->
+  <section id="tab-study" class="panel active">
+    <div class="statbar">
+      <div>Card <b id="study-index">1</b> / 52</div>
+      <div>Mastered <b id="study-mastered">0</b>%</div>
+    </div>
+    <div class="stage center">
+      <div id="study-card" class="card-box back"></div>
+      <div class="hint" id="study-hint">Tap the card to reveal, or use the buttons below.</div>
+      <div class="row">
+        <button class="btn" id="study-prev">&larr; Prev</button>
+        <button class="btn primary" id="study-flip">Flip</button>
+        <button class="btn" id="study-next">Next &rarr;</button>
+      </div>
+      <div class="row">
+        <button class="btn bad" id="study-hard">Didn't know it</button>
+        <button class="btn good" id="study-easy">Knew it</button>
+      </div>
+      <div class="row">
+        <select class="mode-select" id="study-direction">
+          <option value="pos2card">Show position &rarr; guess card</option>
+          <option value="card2pos">Show card &rarr; guess position</option>
+        </select>
+        <select class="mode-select" id="study-order">
+          <option value="sequential">Sequential order</option>
+          <option value="weak">Weakest cards first</option>
+          <option value="random">Random order</option>
+        </select>
+      </div>
+    </div>
+  </section>
+
+  <!-- QUIZ -->
+  <section id="tab-quiz" class="panel">
+    <div class="statbar">
+      <div>Score <b id="quiz-score">0</b>/<b id="quiz-total">0</b></div>
+      <div>Streak <b id="quiz-streak">0</b></div>
+      <div>Accuracy <b id="quiz-acc">0%</b></div>
+    </div>
+    <div class="row">
+      <select class="mode-select" id="quiz-mode">
+        <option value="pos2card">Position &rarr; Card</option>
+        <option value="card2pos">Card &rarr; Position</option>
+        <option value="next">What card comes NEXT?</option>
+        <option value="prev">What card comes BEFORE?</option>
+      </select>
+      <button class="btn" id="quiz-reset">Reset score</button>
+    </div>
+    <div class="stage center">
+      <div id="quiz-card" class="card-box"></div>
+      <div id="quiz-prompt" class="hint" style="font-size:1rem;color:var(--text);margin-top:16px;"></div>
+
+      <div id="quiz-choices" class="choices"></div>
+
+      <div id="quiz-numeric" class="row" style="display:none;">
+        <input type="number" min="1" max="52" class="pos-input" id="quiz-num-input" placeholder="1-52">
+        <button class="btn primary" id="quiz-num-submit">Submit</button>
+      </div>
+
+      <div class="feedback" id="quiz-feedback"></div>
+      <div class="row">
+        <button class="btn primary" id="quiz-next" style="display:none;">Next card &rarr;</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FULL STACK -->
+  <section id="tab-stack" class="panel">
+    <h3>Full 52-card order</h3>
+    <p class="small">Click any card to flip it face-down and quiz yourself on the fly. Red outline = weak, green = strong (based on your quiz history).</p>
+    <div class="grid52" id="stack-grid"></div>
+  </section>
+
+  <!-- EDIT -->
+  <section id="tab-edit" class="panel">
+    <h3>Edit / replace the stack</h3>
+    <p class="small">
+      One card per line, top of deck first, in the form <code>RANK SUIT</code> (e.g. <code>4C</code>, <code>10H</code>, <code>QS</code>, <code>AD</code>).
+      Ranks: A 2 3 4 5 6 7 8 9 10 J Q K. Suits: C D H S. Must be exactly 52 unique cards.
+      Use this to load any memorized-deck system &mdash; Mnemonica, Aronson, Redford, or your own.
+    </p>
+    <textarea class="editor" id="stack-editor"></textarea>
+    <div class="editor-msg" id="editor-msg"></div>
+    <div class="row">
+      <button class="btn primary" id="editor-save">Save stack</button>
+      <button class="btn" id="editor-default">Restore default Mnemonica stack</button>
+      <button class="btn bad" id="editor-progress-reset">Reset all progress</button>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  Default order is the Tamariz <em>Mnemonica</em> stack &mdash; verify against your own reference book before performing; edit it any time in the Edit Stack tab. Progress is saved locally in your browser.
+</footer>
+
+<script>
+(function(){
+  "use strict";
+
+  // ---------- Default stack: Mnemonica (Juan Tamariz), position 1 = top of deck ----------
+  var DEFAULT_STACK = [
+    "4C","2H","7D","3C","4H","6D","AS","5H","9C","2C",
+    "QH","3D","QC","8H","6C","5S","9H","KC","2D","JH",
+    "3S","8C","6H","10C","5D","KH","JC","7S","10H","AC",
+    "4D","2S","3H","KS","5C","9D","8S","JD","10S","4S",
+    "AH","7C","QD","7H","8D","10D","KD","JS","AD","QS",
+    "9S","6S"
+  ];
+
+  var SUITS = {C:{sym:"♣",cls:"black-suit"}, D:{sym:"♦",cls:"red-suit"},
+               H:{sym:"♥",cls:"red-suit"}, S:{sym:"♠",cls:"black-suit"}};
+  var RANK_ORDER = ["A","2","3","4","5","6","7","8","9","10","J","Q","K"];
+
+  var LS_STACK = "mnemonica_trainer_stack_v1";
+  var LS_PROGRESS = "mnemonica_trainer_progress_v1";
+
+  var stack = loadStack();       // array of 52 card codes, index0 = position1
+  var progress = loadProgress(); // { "4C": {correct:0, wrong:0}, ... }
+
+  function loadStack(){
+    try{
+      var raw = localStorage.getItem(LS_STACK);
+      if(raw){
+        var arr = JSON.parse(raw);
+        if(Array.isArray(arr) && arr.length===52 && validateStack(arr).ok) return arr;
+      }
+    }catch(e){}
+    return DEFAULT_STACK.slice();
+  }
+  function saveStack(arr){
+    stack = arr;
+    localStorage.setItem(LS_STACK, JSON.stringify(arr));
+  }
+  function loadProgress(){
+    try{
+      var raw = localStorage.getItem(LS_PROGRESS);
+      if(raw) return JSON.parse(raw);
+    }catch(e){}
+    return {};
+  }
+  function saveProgress(){
+    localStorage.setItem(LS_PROGRESS, JSON.stringify(progress));
+  }
+  function getProg(code){
+    if(!progress[code]) progress[code] = {correct:0, wrong:0};
+    return progress[code];
+  }
+  function recordResult(code, ok){
+    var p = getProg(code);
+    if(ok) p.correct++; else p.wrong++;
+    saveProgress();
+  }
+  function weight(code){
+    var p = getProg(code);
+    return (p.wrong+1) / (p.correct+1);
+  }
+  function masteryLabel(code){
+    var p = getProg(code);
+    if(p.correct+p.wrong===0) return "";
+    if(p.wrong===0 && p.correct>=2) return "strong";
+    if(p.wrong > p.correct) return "weak";
+    return "";
+  }
+
+  function parseCard(code){
+    var suitLetter = code.slice(-1);
+    var rank = code.slice(0, -1);
+    return {rank:rank, suit:suitLetter};
+  }
+  function cardLabel(code){
+    var c = parseCard(code);
+    return c.rank + SUITS[c.suit].sym;
+  }
+  function renderCardFace(el, code, showPos, posNum){
+    var c = parseCard(code);
+    var s = SUITS[c.suit];
+    el.className = "card-box";
+    el.innerHTML =
+      (showPos ? '<div class="pos-badge">#'+posNum+'</div>' : '') +
+      '<div class="suit '+s.cls+'">'+s.sym+'</div>' +
+      '<div class="rank '+s.cls+'">'+c.rank+'</div>' +
+      '<div class="suit br '+s.cls+'">'+s.sym+'</div>';
+  }
+  function renderCardBack(el, posNum){
+    el.className = "card-box back";
+    el.innerHTML = (posNum ? '<div class="pos-badge">#'+posNum+'</div>' : '');
+  }
+
+  function validateStack(lines){
+    if(lines.length !== 52) return {ok:false, msg:"Need exactly 52 cards, found "+lines.length+"."};
+    var seen = {};
+    for(var i=0;i<lines.length;i++){
+      var code = lines[i];
+      var m = /^(10|[2-9]|A|J|Q|K)([CDHS])$/.exec(code);
+      if(!m) return {ok:false, msg:"Line "+(i+1)+' ("'+code+'") is not a valid card like 4C, 10H, QS, AD.'};
+      if(seen[code]) return {ok:false, msg:"Duplicate card: "+code+" (line "+(i+1)+")."};
+      seen[code] = true;
+    }
+    return {ok:true};
+  }
+
+  // ---------- Tabs ----------
+  var tabs = document.querySelectorAll("nav.tabs button");
+  tabs.forEach(function(btn){
+    btn.addEventListener("click", function(){
+      tabs.forEach(function(b){ b.classList.remove("active"); });
+      btn.classList.add("active");
+      document.querySelectorAll(".panel").forEach(function(p){ p.classList.remove("active"); });
+      document.getElementById("tab-"+btn.dataset.tab).classList.add("active");
+      if(btn.dataset.tab==="stack") renderStackGrid();
+      if(btn.dataset.tab==="edit") fillEditor();
+    });
+  });
+
+  // ---------- STUDY MODE ----------
+  var studyIdx = 0; // 0-based position index
+  var studyOrderList = [];
+  var studyFlipped = false;
+
+  function buildStudyOrder(){
+    var order = stack.map(function(c,i){ return i; });
+    var mode = document.getElementById("study-order").value;
+    if(mode==="random"){
+      for(var i=order.length-1;i>0;i--){
+        var j = Math.floor(Math.random()*(i+1));
+        var t=order[i]; order[i]=order[j]; order[j]=t;
+      }
+    } else if(mode==="weak"){
+      order.sort(function(a,b){ return weight(stack[b]) - weight(stack[a]); });
+    }
+    studyOrderList = order;
+    studyIdx = 0;
+  }
+
+  function renderStudy(){
+    var pos = studyOrderList[studyIdx] + 1;
+    var code = stack[studyOrderList[studyIdx]];
+    var direction = document.getElementById("study-direction").value;
+    var el = document.getElementById("study-card");
+    studyFlipped = false;
+
+    if(direction==="pos2card"){
+      renderCardBack(el, pos);
+      document.getElementById("study-hint").textContent = "Position #"+pos+" — what card is it? Tap to reveal.";
+    } else {
+      // card2pos: show the card, ask for position -> show card face but hide badge until flip
+      var c = parseCard(code), s = SUITS[c.suit];
+      el.className = "card-box";
+      el.innerHTML =
+        '<div class="suit '+s.cls+'">'+s.sym+'</div>' +
+        '<div class="rank '+s.cls+'">'+c.rank+'</div>' +
+        '<div class="suit br '+s.cls+'">'+s.sym+'</div>';
+      document.getElementById("study-hint").textContent = cardLabel(code)+" — what position is it in? Tap to reveal.";
+    }
+    document.getElementById("study-index").textContent = (studyIdx+1);
+    updateMasteredStat();
+  }
+
+  function flipStudy(){
+    var pos = studyOrderList[studyIdx] + 1;
+    var code = stack[studyOrderList[studyIdx]];
+    var direction = document.getElementById("study-direction").value;
+    var el = document.getElementById("study-card");
+    studyFlipped = true;
+    if(direction==="pos2card"){
+      renderCardFace(el, code, false, pos);
+    } else {
+      var c = parseCard(code), s = SUITS[c.suit];
+      el.className = "card-box";
+      el.innerHTML = '<div class="pos-badge">#'+pos+'</div>' +
+        '<div class="suit '+s.cls+'">'+s.sym+'</div>' +
+        '<div class="rank '+s.cls+'">'+c.rank+'</div>' +
+        '<div class="suit br '+s.cls+'">'+s.sym+'</div>';
+    }
+  }
+
+  function updateMasteredStat(){
+    var strong = stack.filter(function(c){ return masteryLabel(c)==="strong"; }).length;
+    document.getElementById("study-mastered").textContent = Math.round(100*strong/52);
+  }
+
+  document.getElementById("study-card").addEventListener("click", function(){
+    if(!studyFlipped) flipStudy();
+  });
+  document.getElementById("study-flip").addEventListener("click", function(){
+    if(!studyFlipped) flipStudy(); else renderStudy();
+  });
+  document.getElementById("study-next").addEventListener("click", function(){
+    studyIdx = (studyIdx+1) % 52;
+    renderStudy();
+  });
+  document.getElementById("study-prev").addEventListener("click", function(){
+    studyIdx = (studyIdx-1+52) % 52;
+    renderStudy();
+  });
+  document.getElementById("study-easy").addEventListener("click", function(){
+    recordResult(stack[studyOrderList[studyIdx]], true);
+    document.getElementById("study-next").click();
+  });
+  document.getElementById("study-hard").addEventListener("click", function(){
+    recordResult(stack[studyOrderList[studyIdx]], false);
+    document.getElementById("study-next").click();
+  });
+  document.getElementById("study-direction").addEventListener("change", function(){ renderStudy(); });
+  document.getElementById("study-order").addEventListener("change", function(){ buildStudyOrder(); renderStudy(); });
+
+  // ---------- QUIZ MODE ----------
+  var quizScore = 0, quizTotal = 0, quizStreak = 0;
+  var currentQuiz = null; // {mode, posIdx, code, answered}
+
+  function pickWeightedIndex(){
+    var weights = stack.map(function(c){ return weight(c); });
+    var sum = weights.reduce(function(a,b){return a+b;},0);
+    var r = Math.random()*sum;
+    for(var i=0;i<weights.length;i++){
+      r -= weights[i];
+      if(r<=0) return i;
+    }
+    return weights.length-1;
+  }
+
+  function newQuizQuestion(){
+    var mode = document.getElementById("quiz-mode").value;
+    var idx = pickWeightedIndex();
+    var code = stack[idx];
+    currentQuiz = {mode:mode, idx:idx, code:code, answered:false};
+
+    var cardEl = document.getElementById("quiz-card");
+    var prompt = document.getElementById("quiz-prompt");
+    var choicesEl = document.getElementById("quiz-choices");
+    var numericEl = document.getElementById("quiz-numeric");
+    document.getElementById("quiz-feedback").textContent = "";
+    document.getElementById("quiz-feedback").className = "feedback";
+    document.getElementById("quiz-next").style.display = "none";
+    choicesEl.innerHTML = "";
+    numericEl.style.display = "none";
+
+    if(mode==="pos2card"){
+      renderCardBack(cardEl, idx+1);
+      prompt.textContent = "Which card sits at position #"+(idx+1)+"?";
+      showCardChoices(code);
+    } else if(mode==="next"){
+      var refIdx = idx;
+      renderCardFace(cardEl, stack[refIdx], false, null);
+      prompt.textContent = "Which card comes NEXT, right after this one?";
+      var answerCode = stack[(refIdx+1)%52];
+      currentQuiz.code = answerCode;
+      showCardChoices(answerCode);
+    } else if(mode==="prev"){
+      var refIdx2 = idx;
+      renderCardFace(cardEl, stack[refIdx2], false, null);
+      prompt.textContent = "Which card comes right BEFORE this one?";
+      var answerCode2 = stack[(refIdx2-1+52)%52];
+      currentQuiz.code = answerCode2;
+      showCardChoices(answerCode2);
+    } else if(mode==="card2pos"){
+      renderCardFace(cardEl, code, false, null);
+      prompt.textContent = "What position (1-52) is this card in?";
+      numericEl.style.display = "flex";
+      document.getElementById("quiz-num-input").value = "";
+      document.getElementById("quiz-num-input").focus();
+    }
+  }
+
+  function showCardChoices(correctCode){
+    var choicesEl = document.getElementById("quiz-choices");
+    var pool = stack.filter(function(c){ return c!==correctCode; });
+    var distractors = [];
+    while(distractors.length<3 && pool.length){
+      var i = Math.floor(Math.random()*pool.length);
+      distractors.push(pool.splice(i,1)[0]);
+    }
+    var options = distractors.concat([correctCode]);
+    for(var i=options.length-1;i>0;i--){
+      var j = Math.floor(Math.random()*(i+1));
+      var t=options[i]; options[i]=options[j]; options[j]=t;
+    }
+    choicesEl.innerHTML = "";
+    options.forEach(function(code){
+      var b = document.createElement("button");
+      var c = parseCard(code), s = SUITS[c.suit];
+      b.innerHTML = c.rank+'<span style="color:'+(s.cls==="red-suit"?"#e03030":"#e8e8e8")+'">'+s.sym+'</span>';
+      b.addEventListener("click", function(){ answerQuiz(code===correctCode, code, correctCode); });
+      choicesEl.appendChild(b);
+    });
+  }
+
+  function answerQuiz(isCorrect, chosenLabel, correctCode){
+    if(currentQuiz.answered) return;
+    currentQuiz.answered = true;
+    quizTotal++;
+    var fb = document.getElementById("quiz-feedback");
+    if(isCorrect){
+      quizScore++; quizStreak++;
+      fb.textContent = "Correct! " + cardLabel(correctCode) + (currentQuiz.mode!=="card2pos" ? " is right." : "");
+      fb.className = "feedback good";
+    } else {
+      quizStreak = 0;
+      fb.textContent = "Not quite — the answer was " + (currentQuiz.mode==="card2pos" ? ("position #"+(currentQuiz.idx+1)) : cardLabel(correctCode)) + ".";
+      fb.className = "feedback bad";
+    }
+    // record against the underlying card being tested
+    var recordCode = currentQuiz.mode==="pos2card" ? stack[currentQuiz.idx] :
+                      currentQuiz.mode==="card2pos" ? currentQuiz.code :
+                      currentQuiz.code;
+    recordResult(recordCode, isCorrect);
+
+    Array.from(document.getElementById("quiz-choices").children).forEach(function(btn){
+      btn.disabled = true;
+    });
+    document.getElementById("quiz-next").style.display = "inline-block";
+    updateQuizStats();
+  }
+
+  document.getElementById("quiz-num-submit").addEventListener("click", submitNumeric);
+  document.getElementById("quiz-num-input").addEventListener("keydown", function(e){
+    if(e.key==="Enter") submitNumeric();
+  });
+  function submitNumeric(){
+    if(currentQuiz.answered) return;
+    var val = parseInt(document.getElementById("quiz-num-input").value, 10);
+    var correctPos = currentQuiz.idx+1;
+    var ok = val === correctPos;
+    currentQuiz.answered = true;
+    quizTotal++;
+    var fb = document.getElementById("quiz-feedback");
+    if(ok){ quizScore++; quizStreak++; fb.textContent="Correct! Position #"+correctPos+"."; fb.className="feedback good"; }
+    else { quizStreak = 0; fb.textContent="Not quite — it's position #"+correctPos+"."; fb.className="feedback bad"; }
+    recordResult(currentQuiz.code, ok);
+    document.getElementById("quiz-num-submit").disabled = true;
+    document.getElementById("quiz-next").style.display = "inline-block";
+    updateQuizStats();
+  }
+
+  function updateQuizStats(){
+    document.getElementById("quiz-score").textContent = quizScore;
+    document.getElementById("quiz-total").textContent = quizTotal;
+    document.getElementById("quiz-streak").textContent = quizStreak;
+    document.getElementById("quiz-acc").textContent = quizTotal ? Math.round(100*quizScore/quizTotal)+"%" : "0%";
+  }
+
+  document.getElementById("quiz-next").addEventListener("click", function(){
+    document.getElementById("quiz-num-submit").disabled = false;
+    newQuizQuestion();
+  });
+  document.getElementById("quiz-mode").addEventListener("change", newQuizQuestion);
+  document.getElementById("quiz-reset").addEventListener("click", function(){
+    quizScore=0; quizTotal=0; quizStreak=0; updateQuizStats();
+  });
+
+  // ---------- FULL STACK GRID ----------
+  function renderStackGrid(){
+    var grid = document.getElementById("stack-grid");
+    grid.innerHTML = "";
+    stack.forEach(function(code, i){
+      var cell = document.createElement("div");
+      cell.className = "mini";
+      var m = masteryLabel(code);
+      if(m) cell.classList.add(m);
+      var c = parseCard(code), s = SUITS[c.suit];
+      cell.innerHTML = '<div class="p">#'+(i+1)+'</div><div class="c" style="color:'+(s.cls==="red-suit"?"#e03030":"#e8e8e8")+'">'+c.rank+s.sym+'</div>';
+      var revealed = true;
+      cell.addEventListener("click", function(){
+        revealed = !revealed;
+        if(revealed){
+          cell.innerHTML = '<div class="p">#'+(i+1)+'</div><div class="c" style="color:'+(s.cls==="red-suit"?"#e03030":"#e8e8e8")+'">'+c.rank+s.sym+'</div>';
+        } else {
+          cell.innerHTML = '<div class="p">#'+(i+1)+'</div><div class="c">?</div>';
+        }
+      });
+      grid.appendChild(cell);
+    });
+  }
+
+  // ---------- EDIT STACK ----------
+  function fillEditor(){
+    document.getElementById("stack-editor").value = stack.join("\n");
+    document.getElementById("editor-msg").textContent = "";
+  }
+  document.getElementById("editor-save").addEventListener("click", function(){
+    var lines = document.getElementById("stack-editor").value
+      .split("\n").map(function(l){ return l.trim().toUpperCase(); }).filter(function(l){ return l.length; });
+    var res = validateStack(lines);
+    var msg = document.getElementById("editor-msg");
+    if(!res.ok){
+      msg.textContent = res.msg;
+      msg.className = "editor-msg err";
+      return;
+    }
+    saveStack(lines);
+    progress = {}; // fresh stack, fresh progress
+    saveProgress();
+    msg.textContent = "Saved! Progress has been reset for the new stack.";
+    msg.className = "editor-msg ok";
+    buildStudyOrder();
+    renderStudy();
+  });
+  document.getElementById("editor-default").addEventListener("click", function(){
+    document.getElementById("stack-editor").value = DEFAULT_STACK.join("\n");
+  });
+  document.getElementById("editor-progress-reset").addEventListener("click", function(){
+    if(!confirm("Reset all study/quiz progress for the current stack?")) return;
+    progress = {};
+    saveProgress();
+    document.getElementById("editor-msg").textContent = "Progress reset.";
+    document.getElementById("editor-msg").className = "editor-msg ok";
+    updateMasteredStat();
+  });
+
+  // ---------- init ----------
+  buildStudyOrder();
+  renderStudy();
+  newQuizQuestion();
+})();
+</script>
+</body>
+</html>
