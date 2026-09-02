@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Squares Flashcards (1-100)</title>
+<style>
+  :root {
+    --bg: #f4f6fb;
+    --card-bg: #ffffff;
+    --accent: #4f46e5;
+    --accent-dark: #3730a3;
+    --green: #16a34a;
+    --red: #dc2626;
+    --text: #1f2937;
+    --muted: #6b7280;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: linear-gradient(135deg, #eef2ff, #f4f6fb 60%);
+    color: var(--text);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 16px 60px;
+  }
+  h1 {
+    font-size: 1.6rem;
+    margin: 8px 0 4px;
+    text-align: center;
+  }
+  .subtitle {
+    color: var(--muted);
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 0.95rem;
+  }
+  .mode-toggle {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+    background: #e5e7eb;
+    padding: 4px;
+    border-radius: 999px;
+  }
+  .mode-toggle button {
+    border: none;
+    background: transparent;
+    padding: 8px 18px;
+    border-radius: 999px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    color: var(--muted);
+    font-weight: 600;
+    transition: all 0.2s ease;
+  }
+  .mode-toggle button.active {
+    background: var(--accent);
+    color: white;
+    box-shadow: 0 2px 6px rgba(79,70,229,0.4);
+  }
+  .stats {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 18px;
+    font-size: 0.9rem;
+    color: var(--muted);
+  }
+  .stats span b { color: var(--text); }
+  .progress-bar {
+    width: 100%;
+    max-width: 420px;
+    height: 6px;
+    background: #e5e7eb;
+    border-radius: 4px;
+    overflow: hidden;
+    margin-bottom: 24px;
+  }
+  .progress-fill {
+    height: 100%;
+    background: var(--accent);
+    width: 0%;
+    transition: width 0.25s ease;
+  }
+  .card-wrap {
+    perspective: 1200px;
+    width: 100%;
+    max-width: 340px;
+    height: 220px;
+    margin-bottom: 22px;
+  }
+  .card {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s cubic-bezier(.4,.2,.2,1);
+    cursor: pointer;
+  }
+  .card.flipped { transform: rotateY(180deg); }
+  .face {
+    position: absolute;
+    inset: 0;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: var(--card-bg);
+    box-shadow: 0 10px 30px rgba(31,41,55,0.12);
+    padding: 20px;
+    text-align: center;
+  }
+  .face .label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    color: var(--muted);
+    margin-bottom: 10px;
+  }
+  .face .value {
+    font-size: 3.2rem;
+    font-weight: 700;
+    color: var(--accent-dark);
+  }
+  .face.back {
+    transform: rotateY(180deg);
+  }
+  .face.back .value { color: var(--green); }
+  .hint {
+    color: var(--muted);
+    font-size: 0.85rem;
+    margin-bottom: 20px;
+  }
+  .controls {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 10px;
+  }
+  button.action {
+    border: none;
+    padding: 12px 20px;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.1s ease, box-shadow 0.1s ease;
+  }
+  button.action:active { transform: scale(0.96); }
+  .btn-primary { background: var(--accent); color: white; }
+  .btn-secondary { background: #e5e7eb; color: var(--text); }
+  .btn-primary:hover { background: var(--accent-dark); }
+  .btn-secondary:hover { background: #d1d5db; }
+
+  /* Quiz mode */
+  .quiz-box {
+    width: 100%;
+    max-width: 340px;
+    background: var(--card-bg);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(31,41,55,0.12);
+    padding: 28px 24px;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  .quiz-question {
+    font-size: 0.9rem;
+    color: var(--muted);
+    margin-bottom: 6px;
+  }
+  .quiz-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--accent-dark);
+    margin-bottom: 18px;
+  }
+  .quiz-input {
+    width: 100%;
+    font-size: 1.4rem;
+    text-align: center;
+    padding: 12px;
+    border-radius: 12px;
+    border: 2px solid #e5e7eb;
+    outline: none;
+    margin-bottom: 14px;
+    transition: border-color 0.15s ease;
+  }
+  .quiz-input:focus { border-color: var(--accent); }
+  .quiz-input.correct { border-color: var(--green); background: #f0fdf4; }
+  .quiz-input.wrong { border-color: var(--red); background: #fef2f2; }
+  .feedback {
+    min-height: 24px;
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+  .feedback.correct { color: var(--green); }
+  .feedback.wrong { color: var(--red); }
+  footer {
+    margin-top: 30px;
+    color: var(--muted);
+    font-size: 0.8rem;
+    text-align: center;
+  }
+  kbd {
+    background: #e5e7eb;
+    border-radius: 4px;
+    padding: 1px 6px;
+    font-size: 0.8rem;
+  }
+</style>
+</head>
+<body>
+
+<h1>🔢 Squares Flashcards</h1>
+<p class="subtitle">Master the squares of 1&ndash;100, one card at a time.</p>
+
+<div class="mode-toggle">
+  <button id="modeFlashcard" class="active">Flashcards</button>
+  <button id="modeQuiz">Quiz Me</button>
+</div>
+
+<div class="stats">
+  <span>Card <b id="statPos">1</b> / <b id="statTotal">100</b></span>
+  <span>Score <b id="statScore">0</b> / <b id="statAttempts">0</b></span>
+</div>
+
+<div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
+
+<!-- Flashcard mode -->
+<div id="flashcardSection">
+  <div class="card-wrap">
+    <div class="card" id="card">
+      <div class="face front">
+        <div class="label">Number</div>
+        <div class="value" id="frontValue">1</div>
+      </div>
+      <div class="face back">
+        <div class="label">Square</div>
+        <div class="value" id="backValue">1</div>
+      </div>
+    </div>
+  </div>
+  <p class="hint">Tap the card (or press <kbd>Space</kbd>) to flip it</p>
+  <div class="controls">
+    <button class="action btn-secondary" id="prevBtn">&larr; Prev</button>
+    <button class="action btn-secondary" id="shuffleBtn">🔀 Shuffle</button>
+    <button class="action btn-primary" id="nextBtn">Next &rarr;</button>
+  </div>
+</div>
+
+<!-- Quiz mode -->
+<div id="quizSection" style="display:none;">
+  <div class="quiz-box">
+    <div class="quiz-question">What is this number squared?</div>
+    <div class="quiz-number" id="quizNumber">1</div>
+    <input type="number" inputmode="numeric" class="quiz-input" id="quizInput" placeholder="Your answer" autocomplete="off">
+    <div class="feedback" id="quizFeedback"></div>
+  </div>
+  <div class="controls">
+    <button class="action btn-secondary" id="quizSkipBtn">Skip</button>
+    <button class="action btn-primary" id="quizCheckBtn">Check</button>
+  </div>
+</div>
+
+<footer>
+  Numbers 1&ndash;100 &middot; Built for quick square-number drilling
+</footer>
+
+<script>
+(function() {
+  const deck = Array.from({length: 100}, (_, i) => i + 1);
+  let order = [...deck];
+  let index = 0;
+  let flipped = false;
+  let score = 0;
+  let attempts = 0;
+  let mode = 'flashcard';
+
+  const cardEl = document.getElementById('card');
+  const frontValue = document.getElementById('frontValue');
+  const backValue = document.getElementById('backValue');
+  const statPos = document.getElementById('statPos');
+  const statTotal = document.getElementById('statTotal');
+  const statScore = document.getElementById('statScore');
+  const statAttempts = document.getElementById('statAttempts');
+  const progressFill = document.getElementById('progressFill');
+
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+  const shuffleBtn = document.getElementById('shuffleBtn');
+
+  const modeFlashcard = document.getElementById('modeFlashcard');
+  const modeQuiz = document.getElementById('modeQuiz');
+  const flashcardSection = document.getElementById('flashcardSection');
+  const quizSection = document.getElementById('quizSection');
+
+  const quizNumber = document.getElementById('quizNumber');
+  const quizInput = document.getElementById('quizInput');
+  const quizFeedback = document.getElementById('quizFeedback');
+  const quizCheckBtn = document.getElementById('quizCheckBtn');
+  const quizSkipBtn = document.getElementById('quizSkipBtn');
+
+  statTotal.textContent = deck.length;
+
+  function currentNumber() {
+    return order[index];
+  }
+
+  function render() {
+    const n = currentNumber();
+    frontValue.textContent = n;
+    backValue.textContent = n * n;
+    quizNumber.textContent = n;
+    statPos.textContent = index + 1;
+    progressFill.style.width = ((index + 1) / order.length * 100) + '%';
+    cardEl.classList.remove('flipped');
+    flipped = false;
+    quizInput.value = '';
+    quizInput.classList.remove('correct', 'wrong');
+    quizFeedback.textContent = '';
+    quizFeedback.className = 'feedback';
+    if (mode === 'quiz') quizInput.focus();
+  }
+
+  function flip() {
+    flipped = !flipped;
+    cardEl.classList.toggle('flipped', flipped);
+  }
+
+  function goNext() {
+    index = (index + 1) % order.length;
+    render();
+  }
+
+  function goPrev() {
+    index = (index - 1 + order.length) % order.length;
+    render();
+  }
+
+  function shuffle() {
+    for (let i = order.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [order[i], order[j]] = [order[j], order[i]];
+    }
+    index = 0;
+    render();
+  }
+
+  function checkAnswer() {
+    const n = currentNumber();
+    const correctAnswer = n * n;
+    const userAnswer = parseInt(quizInput.value, 10);
+    attempts++;
+    if (userAnswer === correctAnswer) {
+      score++;
+      quizInput.classList.add('correct');
+      quizFeedback.textContent = 'Correct! 🎉';
+      quizFeedback.classList.add('correct');
+    } else {
+      quizInput.classList.add('wrong');
+      quizFeedback.textContent = `Not quite. ${n}² = ${correctAnswer}`;
+      quizFeedback.classList.add('wrong');
+    }
+    statScore.textContent = score;
+    statAttempts.textContent = attempts;
+    setTimeout(() => {
+      index = (index + 1) % order.length;
+      render();
+    }, 1100);
+  }
+
+  function skipQuiz() {
+    index = (index + 1) % order.length;
+    render();
+  }
+
+  cardEl.addEventListener('click', flip);
+  nextBtn.addEventListener('click', goNext);
+  prevBtn.addEventListener('click', goPrev);
+  shuffleBtn.addEventListener('click', shuffle);
+  quizCheckBtn.addEventListener('click', checkAnswer);
+  quizSkipBtn.addEventListener('click', skipQuiz);
+
+  quizInput.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter') checkAnswer();
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (mode !== 'flashcard') return;
+    if (e.code === 'Space') { e.preventDefault(); flip(); }
+    if (e.code === 'ArrowRight') goNext();
+    if (e.code === 'ArrowLeft') goPrev();
+  });
+
+  function setMode(newMode) {
+    mode = newMode;
+    if (mode === 'flashcard') {
+      modeFlashcard.classList.add('active');
+      modeQuiz.classList.remove('active');
+      flashcardSection.style.display = '';
+      quizSection.style.display = 'none';
+    } else {
+      modeQuiz.classList.add('active');
+      modeFlashcard.classList.remove('active');
+      quizSection.style.display = '';
+      flashcardSection.style.display = 'none';
+    }
+    render();
+  }
+
+  modeFlashcard.addEventListener('click', () => setMode('flashcard'));
+  modeQuiz.addEventListener('click', () => setMode('quiz'));
+
+  render();
+})();
+</script>
+
+</body>
+</html>
