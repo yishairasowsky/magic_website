@@ -31,7 +31,7 @@
   }
   .app {
     width: 100%;
-    max-width: 900px;
+    max-width: 480px;
     background: rgba(255,255,255,0.6);
     border: 1px solid rgba(79,70,229,0.08);
     border-radius: 28px;
@@ -48,33 +48,9 @@
   }
   .subtitle {
     color: var(--muted);
-    margin-bottom: 20px;
+    margin-bottom: 22px;
     text-align: center;
     font-size: 0.95rem;
-  }
-  .mode-toggle {
-    display: flex;
-    gap: 8px;
-    margin-bottom: 20px;
-    background: #e5e7eb;
-    padding: 4px;
-    border-radius: 999px;
-  }
-  .mode-toggle button {
-    border: none;
-    background: transparent;
-    padding: 8px 18px;
-    border-radius: 999px;
-    font-size: 0.9rem;
-    cursor: pointer;
-    color: var(--muted);
-    font-weight: 600;
-    transition: all 0.2s ease;
-  }
-  .mode-toggle button.active {
-    background: var(--accent);
-    color: white;
-    box-shadow: 0 2px 6px rgba(79,70,229,0.4);
   }
   .stats {
     display: flex;
@@ -113,59 +89,12 @@
     text-decoration: underline;
     font-size: 0.75rem;
     cursor: pointer;
-    margin-bottom: 18px;
+    margin-top: 6px;
   }
-  .card-wrap {
-    perspective: 1200px;
-    width: 100%;
-    max-width: 420px;
-    height: 260px;
-    margin-bottom: 16px;
-    position: relative;
-  }
-  .card {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    transform-style: preserve-3d;
-    transition: transform 0.5s cubic-bezier(.4,.2,.2,1);
-    cursor: pointer;
-  }
-  .card.flipped { transform: rotateY(180deg); }
-  .face {
-    position: absolute;
-    inset: 0;
-    backface-visibility: hidden;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    background: var(--card-bg);
-    box-shadow: 0 10px 30px rgba(31,41,55,0.12);
-    padding: 20px;
-    text-align: center;
-  }
-  .face .label {
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    color: var(--muted);
-    margin-bottom: 10px;
-  }
-  .face .value {
-    font-size: 4rem;
-    font-weight: 700;
-    color: var(--accent-dark);
-  }
-  .face.back {
-    transform: rotateY(180deg);
-  }
-  .face.back .value { color: var(--green); }
   .difficulty-badge {
     position: absolute;
-    top: 10px;
-    right: 14px;
+    top: 14px;
+    right: 18px;
     font-size: 0.7rem;
     font-weight: 700;
     padding: 3px 9px;
@@ -176,18 +105,6 @@
   .badge-easy { background: #dcfce7; color: var(--green); }
   .badge-medium { background: #fef3c7; color: var(--amber); }
   .badge-hard { background: #fee2e2; color: var(--red); }
-  .hint {
-    color: var(--muted);
-    font-size: 0.85rem;
-    margin-bottom: 16px;
-  }
-  .rate-buttons {
-    display: none;
-    gap: 10px;
-    justify-content: center;
-    margin-bottom: 10px;
-  }
-  .rate-buttons.visible { display: flex; }
   .controls {
     display: flex;
     gap: 10px;
@@ -207,12 +124,9 @@
   button.action:active { transform: scale(0.96); }
   .btn-primary { background: var(--accent); color: white; }
   .btn-secondary { background: #e5e7eb; color: var(--text); }
-  .btn-success { background: var(--green); color: white; }
-  .btn-danger { background: var(--red); color: white; }
   .btn-primary:hover { background: var(--accent-dark); }
   .btn-secondary:hover { background: #d1d5db; }
 
-  /* Quiz mode */
   .quiz-box {
     width: 100%;
     max-width: 420px;
@@ -230,7 +144,7 @@
     margin-bottom: 6px;
   }
   .quiz-number {
-    font-size: 3rem;
+    font-size: 3.4rem;
     font-weight: 700;
     color: var(--accent-dark);
     margin-bottom: 18px;
@@ -257,16 +171,10 @@
   .feedback.correct { color: var(--green); }
   .feedback.wrong { color: var(--red); }
   footer {
-    margin-top: 20px;
+    margin-top: 8px;
     color: var(--muted);
     font-size: 0.8rem;
     text-align: center;
-  }
-  kbd {
-    background: #e5e7eb;
-    border-radius: 4px;
-    padding: 1px 6px;
-    font-size: 0.8rem;
   }
   @media (max-width: 480px) {
     .app { padding: 22px 18px 28px; border-radius: 20px; }
@@ -277,13 +185,8 @@
 
 <div class="app">
 
-<h1>🔢 Squares Flashcards</h1>
-<p class="subtitle">Master the squares of 1&ndash;100 &mdash; the ones you struggle with come back more often.</p>
-
-<div class="mode-toggle">
-  <button id="modeFlashcard" class="active">Flashcards</button>
-  <button id="modeQuiz">Quiz Me</button>
-</div>
+<h1>🔢 Squares Quiz</h1>
+<p class="subtitle">Numbers 1&ndash;100 &mdash; the ones you struggle with come back more often.</p>
 
 <div class="stats">
   <span>Attempts <b id="statAttempts">0</b></span>
@@ -294,51 +197,22 @@
 <div class="progress-bar"><div class="progress-fill" id="progressFill"></div></div>
 <div class="progress-caption">Mastery progress</div>
 
-<!-- Flashcard mode -->
-<div id="flashcardSection">
-  <div class="card-wrap">
-    <div class="card" id="card">
-      <div class="face front">
-        <span class="difficulty-badge" id="badgeFront">New</span>
-        <div class="label">Number</div>
-        <div class="value" id="frontValue">1</div>
-      </div>
-      <div class="face back">
-        <div class="label">Square</div>
-        <div class="value" id="backValue">1</div>
-      </div>
-    </div>
-  </div>
-  <p class="hint" id="flashcardHint">Tap the card (or press <kbd>Space</kbd>) to reveal the answer</p>
-  <div class="rate-buttons" id="rateButtons">
-    <button class="action btn-danger" id="rateHardBtn">😅 I struggled</button>
-    <button class="action btn-success" id="rateEasyBtn">🙂 I knew it</button>
-  </div>
-  <div class="controls">
-    <button class="action btn-secondary" id="prevBtn">&larr; Prev</button>
-    <button class="action btn-secondary" id="shuffleBtn">🔀 New card</button>
-  </div>
+<div class="quiz-box">
+  <span class="difficulty-badge" id="badgeQuiz">New</span>
+  <div class="quiz-question">What is this number squared?</div>
+  <div class="quiz-number" id="quizNumber">1</div>
+  <input type="number" inputmode="numeric" class="quiz-input" id="quizInput" placeholder="Your answer" autocomplete="off">
+  <div class="feedback" id="quizFeedback"></div>
 </div>
-
-<!-- Quiz mode -->
-<div id="quizSection" style="display:none;">
-  <div class="quiz-box">
-    <span class="difficulty-badge" id="badgeQuiz">New</span>
-    <div class="quiz-question">What is this number squared?</div>
-    <div class="quiz-number" id="quizNumber">1</div>
-    <input type="number" inputmode="numeric" class="quiz-input" id="quizInput" placeholder="Your answer" autocomplete="off">
-    <div class="feedback" id="quizFeedback"></div>
-  </div>
-  <div class="controls">
-    <button class="action btn-secondary" id="quizSkipBtn">Skip</button>
-    <button class="action btn-primary" id="quizCheckBtn">Check</button>
-  </div>
+<div class="controls">
+  <button class="action btn-secondary" id="quizSkipBtn">Skip</button>
+  <button class="action btn-primary" id="quizCheckBtn">Check</button>
 </div>
 
 <button class="reset-link" id="resetBtn">Reset progress</button>
 
 <footer>
-  Numbers 1&ndash;100 &middot; Harder numbers are shown more often, based on how long they take you and whether you get them right
+  Harder numbers are shown more often, based on how long they take you and whether you get them right
 </footer>
 
 </div>
@@ -351,39 +225,15 @@
   const MASTERED_THRESHOLD = 2;
 
   let stats = loadStats();
-  let mode = 'flashcard';
   let currentNumber = 1;
   let cardShownAt = Date.now();
-  let flipped = false;
-  let awaitingRating = false;
 
-  // flashcard "prev" history
-  let history = [];
-  let histPos = -1;
-
-  const cardEl = document.getElementById('card');
-  const frontValue = document.getElementById('frontValue');
-  const backValue = document.getElementById('backValue');
-  const badgeFront = document.getElementById('badgeFront');
   const badgeQuiz = document.getElementById('badgeQuiz');
-  const flashcardHint = document.getElementById('flashcardHint');
-  const rateButtons = document.getElementById('rateButtons');
-  const rateHardBtn = document.getElementById('rateHardBtn');
-  const rateEasyBtn = document.getElementById('rateEasyBtn');
-
   const statAttempts = document.getElementById('statAttempts');
   const statAccuracy = document.getElementById('statAccuracy');
   const statMastered = document.getElementById('statMastered');
   const progressFill = document.getElementById('progressFill');
   const resetBtn = document.getElementById('resetBtn');
-
-  const prevBtn = document.getElementById('prevBtn');
-  const shuffleBtn = document.getElementById('shuffleBtn');
-
-  const modeFlashcard = document.getElementById('modeFlashcard');
-  const modeQuiz = document.getElementById('modeQuiz');
-  const flashcardSection = document.getElementById('flashcardSection');
-  const quizSection = document.getElementById('quizSection');
 
   const quizNumber = document.getElementById('quizNumber');
   const quizInput = document.getElementById('quizInput');
@@ -426,7 +276,7 @@
     return candidates[candidates.length - 1];
   }
 
-  // correct: boolean, timeMs: how long it took to answer/recall
+  // correct: boolean, timeMs: how long it took to answer
   function updateWeight(n, correct, timeMs) {
     const s = getStat(n);
     s.attempts++;
@@ -471,77 +321,23 @@
     return { label: 'Hard', cls: 'badge-hard' };
   }
 
-  function applyBadge(el, n) {
+  function applyBadge(n) {
     const tier = difficultyTier(n);
-    el.textContent = tier.label;
-    el.className = 'difficulty-badge ' + tier.cls;
+    badgeQuiz.textContent = tier.label;
+    badgeQuiz.className = 'difficulty-badge ' + tier.cls;
   }
 
   function showNumber(n) {
     currentNumber = n;
     cardShownAt = Date.now();
-    flipped = false;
-    awaitingRating = false;
-    cardEl.classList.remove('flipped');
-    frontValue.textContent = n;
-    backValue.textContent = n * n;
     quizNumber.textContent = n;
-    applyBadge(badgeFront, n);
-    applyBadge(badgeQuiz, n);
-    rateButtons.classList.remove('visible');
-    flashcardHint.style.display = '';
+    applyBadge(n);
     quizInput.value = '';
     quizInput.classList.remove('correct', 'wrong');
     quizInput.disabled = false;
     quizFeedback.textContent = '';
     quizFeedback.className = 'feedback';
-    if (mode === 'quiz') quizInput.focus();
-  }
-
-  function flip() {
-    if (mode !== 'flashcard' || awaitingRating) return;
-    flipped = !flipped;
-    cardEl.classList.toggle('flipped', flipped);
-    if (flipped) {
-      awaitingRating = true;
-      flashcardHint.style.display = 'none';
-      rateButtons.classList.add('visible');
-    }
-  }
-
-  function rateFlashcard(knewIt) {
-    if (!awaitingRating) return;
-    const timeMs = Date.now() - cardShownAt;
-    updateWeight(currentNumber, knewIt, timeMs);
-    nextFlashcard();
-  }
-
-  function nextFlashcard() {
-    if (histPos < history.length - 1) {
-      histPos++;
-      showNumber(history[histPos]);
-    } else {
-      const n = pickWeighted(currentNumber);
-      history.push(n);
-      histPos++;
-      showNumber(n);
-    }
-  }
-
-  function prevFlashcard() {
-    if (histPos > 0) {
-      histPos--;
-      showNumber(history[histPos]);
-    }
-  }
-
-  function newCardFlashcard() {
-    // discard any forward history and roll a fresh weighted pick
-    history = history.slice(0, histPos + 1);
-    const n = pickWeighted(currentNumber);
-    history.push(n);
-    histPos++;
-    showNumber(n);
+    quizInput.focus();
   }
 
   function checkAnswer() {
@@ -575,16 +371,9 @@
     stats = {};
     saveStats();
     updateGlobalStatsUI();
-    history = [];
-    histPos = -1;
-    if (mode === 'flashcard') nextFlashcard(); else showNumber(pickWeighted(currentNumber));
+    showNumber(pickWeighted(currentNumber));
   }
 
-  cardEl.addEventListener('click', flip);
-  prevBtn.addEventListener('click', prevFlashcard);
-  shuffleBtn.addEventListener('click', newCardFlashcard);
-  rateHardBtn.addEventListener('click', () => rateFlashcard(false));
-  rateEasyBtn.addEventListener('click', () => rateFlashcard(true));
   quizCheckBtn.addEventListener('click', checkAnswer);
   quizSkipBtn.addEventListener('click', skipQuiz);
   resetBtn.addEventListener('click', resetProgress);
@@ -593,38 +382,9 @@
     if (e.key === 'Enter' && !quizInput.disabled) checkAnswer();
   });
 
-  document.addEventListener('keydown', (e) => {
-    if (mode !== 'flashcard') return;
-    if (e.code === 'Space') { e.preventDefault(); flip(); }
-    if (e.code === 'ArrowLeft') prevFlashcard();
-  });
-
-  function setMode(newMode) {
-    mode = newMode;
-    if (mode === 'flashcard') {
-      modeFlashcard.classList.add('active');
-      modeQuiz.classList.remove('active');
-      flashcardSection.style.display = '';
-      quizSection.style.display = 'none';
-      showNumber(currentNumber);
-    } else {
-      modeQuiz.classList.add('active');
-      modeFlashcard.classList.remove('active');
-      quizSection.style.display = '';
-      flashcardSection.style.display = 'none';
-      showNumber(pickWeighted(currentNumber));
-    }
-  }
-
-  modeFlashcard.addEventListener('click', () => setMode('flashcard'));
-  modeQuiz.addEventListener('click', () => setMode('quiz'));
-
   // init
   updateGlobalStatsUI();
-  const first = pickWeighted(null);
-  history.push(first);
-  histPos = 0;
-  showNumber(first);
+  showNumber(pickWeighted(null));
 })();
 </script>
 
