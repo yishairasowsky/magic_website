@@ -21,7 +21,28 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  # GitHub only allows Pages to deploy from the default branch, so a push to
+  # dev cannot deploy itself. It asks main to run instead; that run checks out
+  # both branches, so the new dev content still gets published to /dev.
+  redispatch:
+    if: github.ref_name != 'main'
+    runs-on: ubuntu-latest
+    permissions:
+      actions: write
+    steps:
+      - name: Ask main to rebuild
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              workflow_id: 'pages.yml',
+              ref: 'main',
+            })
+
   build:
+    if: github.ref_name == 'main'
     runs-on: ubuntu-latest
     steps:
       - name: Check out production branch
