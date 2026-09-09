@@ -29,16 +29,16 @@ to either branch.
 There is no need to create a branch per change. `dev` is the staging line and
 `main` is the live line. That is the whole model.
 
-## One-time setup step (required)
+## Setup
 
-This only works once GitHub Pages is told to publish from the workflow instead
-of straight from the branch:
+Already done -- Pages was set to publish from GitHub Actions, so the workflow
+took over on its first run. No settings need changing.
 
-**Repo → Settings → Pages → Build and deployment → Source → "GitHub Actions"**
-
-Until that is switched, the workflow will build fine but the deploy step will
-fail, and yishai.show keeps serving exactly what it serves today. Nothing
-breaks by waiting.
+One wrinkle worth knowing: GitHub only lets Pages deploy from the default
+branch, so a push to `dev` cannot deploy itself. The workflow handles this by
+having a `dev` push ask `main` to run instead. That run checks out both
+branches, so dev's content still reaches `/dev`. This is why a push to `dev`
+produces two runs in the Actions tab rather than one.
 
 ## What actually gets published
 
