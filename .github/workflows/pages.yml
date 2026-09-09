@@ -1,0 +1,67 @@
+name: Deploy site
+
+# main  -> https://www.yishai.show/      (production)
+# dev   -> https://www.yishai.show/dev/  (staging preview)
+#
+# Both are rebuilt on every push to either branch, so promoting a change
+# is just: merge dev into main.
+
+on:
+  push:
+    branches: [main, dev]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out production branch
+        uses: actions/checkout@v4
+        with:
+          ref: main
+          path: src-prod
+
+      - name: Check out staging branch
+        id: staging
+        continue-on-error: true
+        uses: actions/checkout@v4
+        with:
+          ref: dev
+          path: src-dev
+
+      - name: Build production site
+        run: src-prod/scripts/publish.sh src-prod _site
+
+      - name: Build staging site at /dev
+        if: steps.staging.outcome == 'success'
+        run: |
+          src-prod/scripts/publish.sh src-dev _site/dev
+          src-prod/scripts/stagify.sh _site/dev
+
+      - name: Check every referenced file was published
+        run: src-prod/scripts/check_links.py _site
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
