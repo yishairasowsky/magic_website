@@ -638,6 +638,14 @@
       max-width: 820px;
       margin: 0 auto;
     }
+    .video-grid--live {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1.1rem;
+      max-width: 900px;
+    }
+    @media (max-width: 620px) {
+      .video-grid--live { grid-template-columns: 1fr; }
+    }
     /* Lazy YouTube embeds */
     .yt {
       position: relative;
@@ -1076,6 +1084,356 @@
       color: rgba(119,119,119,0.45);
     }
     .footer-copy a { color: inherit; text-decoration: none; }
+
+    /* ── NAV PHONE ── */
+    .nav-phone a {
+      color: var(--white) !important;
+      font-variant-numeric: tabular-nums;
+      letter-spacing: 0.06em;
+    }
+    .nav-phone a:hover { color: var(--red) !important; }
+    @media (max-width: 1000px) and (min-width: 861px) {
+      .nav-phone { display: none; }
+    }
+
+    /* ── HERO CONTACT LINE ── */
+    .hero-contact {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem 1.6rem;
+      margin-top: 1.8rem;
+      align-items: center;
+    }
+    .hero-contact a {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      color: rgba(240,240,240,0.72);
+      text-decoration: none;
+      font-size: 0.88rem;
+      letter-spacing: 0.02em;
+      transition: color 0.2s;
+    }
+    .hero-contact a:hover { color: var(--red); }
+    .hero-contact svg { flex-shrink: 0; opacity: 0.8; }
+    @media (max-width: 700px) {
+      .hero-contact { justify-content: center; gap: 0.5rem 1.1rem; }
+      .hero-contact a { font-size: 0.82rem; }
+    }
+
+    /* ── PROOF: CLIENT ROSTER ── */
+    .proof-head {
+      text-align: center;
+      font-size: 0.7rem;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      color: rgba(240,240,240,0.38);
+      margin-bottom: 1.4rem;
+    }
+    .proof-clients {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.7rem 2.2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .proof-clients span {
+      font-family: 'Playfair Display', serif;
+      font-size: 0.98rem;
+      color: rgba(240,240,240,0.78);
+      letter-spacing: 0.01em;
+      white-space: nowrap;
+    }
+    @media (max-width: 700px) {
+      .proof-clients { gap: 0.55rem 1.2rem; }
+      .proof-clients span { font-size: 0.85rem; white-space: normal; }
+    }
+    .proof-rating {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.55rem;
+      margin: 1.6rem auto 0;
+      color: rgba(240,240,240,0.6);
+      font-size: 0.8rem;
+      letter-spacing: 0.06em;
+      text-decoration: none;
+      transition: color 0.2s;
+    }
+    .proof-rating:hover { color: var(--red); }
+    .proof-stars { color: #e8b53a; letter-spacing: 0.1em; }
+
+    /* ── GALLERY HEAD + LIGHTBOX ── */
+    .gallery-head {
+      text-align: center;
+      padding: 3rem 6% 1.4rem;
+    }
+    .gallery-hint {
+      font-size: 0.78rem;
+      color: rgba(240,240,240,0.4);
+      letter-spacing: 0.06em;
+      margin-top: 0.4rem;
+    }
+    .pg-item {
+      display: block;
+      width: 100%;
+      padding: 0;
+      margin: 0 0 6px;
+      border: none;
+      background: none;
+      cursor: zoom-in;
+      position: relative;
+      break-inside: avoid;
+      border-radius: 4px;
+      overflow: hidden;
+      line-height: 0;
+    }
+    .pg-item img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.5s ease, filter 0.35s ease;
+    }
+    .pg-item::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.45), transparent 45%);
+      opacity: 0;
+      transition: opacity 0.3s;
+      pointer-events: none;
+    }
+    .pg-item:hover img, .pg-item:focus-visible img { transform: scale(1.04); }
+    .pg-item:hover::after, .pg-item:focus-visible::after { opacity: 1; }
+    .pg-zoom {
+      position: absolute;
+      bottom: 0.75rem;
+      right: 0.75rem;
+      width: 34px; height: 34px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      background: rgba(10,10,16,0.75);
+      color: #fff;
+      backdrop-filter: blur(4px);
+      opacity: 0;
+      transform: translateY(6px);
+      transition: opacity 0.3s, transform 0.3s;
+    }
+    .pg-item:hover .pg-zoom, .pg-item:focus-visible .pg-zoom { opacity: 1; transform: translateY(0); }
+    @media (hover: none) {
+      .pg-zoom { opacity: 0.85; transform: none; }
+    }
+    .pg-item:focus-visible { outline: 2px solid var(--red); outline-offset: 2px; }
+
+    .lb {
+      position: fixed;
+      inset: 0;
+      z-index: 10000;
+      background: rgba(4,4,10,0.96);
+      backdrop-filter: blur(8px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 3.5rem 1rem 1rem;
+      animation: lbIn 0.25s ease;
+    }
+    .lb[hidden] { display: none; }
+    @keyframes lbIn { from { opacity: 0; } to { opacity: 1; } }
+    .lb-figure {
+      margin: 0;
+      max-width: min(1100px, 100%);
+      max-height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.9rem;
+    }
+    .lb-figure img {
+      max-width: 100%;
+      max-height: calc(100vh - 11rem);
+      object-fit: contain;
+      border-radius: 4px;
+      box-shadow: 0 30px 80px rgba(0,0,0,0.8);
+    }
+    .lb-figure figcaption {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+    }
+    #lb-cap {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      color: rgba(255,255,255,0.92);
+    }
+    #lb-sub { font-size: 0.82rem; color: rgba(240,240,240,0.5); }
+    #lb-count {
+      font-size: 0.7rem;
+      letter-spacing: 0.22em;
+      color: rgba(240,240,240,0.35);
+      margin-top: 0.2rem;
+    }
+    .lb-close, .lb-nav {
+      position: absolute;
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.14);
+      color: #fff;
+      cursor: pointer;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.2s, border-color 0.2s;
+    }
+    .lb-close:hover, .lb-nav:hover { background: rgba(255,255,255,0.16); border-color: rgba(255,255,255,0.35); }
+    .lb-close { top: 1.1rem; right: 1.1rem; width: 42px; height: 42px; font-size: 1rem; }
+    .lb-nav { top: 50%; transform: translateY(-50%); width: 48px; height: 48px; font-size: 1.15rem; }
+    .lb-prev { left: 1.1rem; }
+    .lb-next { right: 1.1rem; }
+    @media (max-width: 700px) {
+      .lb { padding: 3.5rem 0.5rem 1rem; }
+      .lb-nav { width: 40px; height: 40px; }
+      .lb-prev { left: 0.4rem; }
+      .lb-next { right: 0.4rem; }
+      .lb-figure img { max-height: calc(100vh - 12rem); }
+    }
+
+    /* ── INSTAGRAM STRIP ── */
+    .ig-strip {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.5rem;
+      flex-wrap: wrap;
+      max-width: 900px;
+      margin: 3rem auto 0;
+      padding: 1.5rem 1.8rem;
+      border: 1px solid rgba(200,32,42,0.18);
+      border-radius: 8px;
+      background: linear-gradient(135deg, rgba(200,32,42,0.07), rgba(255,255,255,0.02));
+    }
+    .ig-strip-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      color: var(--white);
+      margin-bottom: 0.3rem;
+    }
+    .ig-strip p {
+      font-size: 0.88rem;
+      color: rgba(240,240,240,0.55);
+      margin: 0;
+    }
+    .ig-strip-btn {
+      flex-shrink: 0;
+      background: var(--red);
+      color: #fff;
+      text-decoration: none;
+      padding: 0.75rem 1.6rem;
+      border-radius: 4px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.03em;
+      transition: background 0.2s;
+      white-space: nowrap;
+    }
+    .ig-strip-btn:hover { background: var(--red-lt); }
+    @media (max-width: 620px) {
+      .ig-strip { flex-direction: column; align-items: flex-start; text-align: left; }
+      .ig-strip-btn { width: 100%; text-align: center; }
+    }
+
+    /* ── CLOSE-UP DETAILS TOGGLE ── */
+    .closeup-details {
+      max-width: 1100px;
+      margin: 3rem auto 0;
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding-top: 1.5rem;
+    }
+    .closeup-details summary {
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.7rem;
+      font-size: 0.78rem;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: rgba(240,240,240,0.45);
+      transition: color 0.2s;
+      padding: 0.4rem 0;
+    }
+    .closeup-details summary::-webkit-details-marker { display: none; }
+    .closeup-details summary:hover { color: var(--red); }
+    .closeup-details summary em {
+      font-style: normal;
+      font-size: 0.68rem;
+      letter-spacing: 0.12em;
+      color: rgba(240,240,240,0.3);
+    }
+    .closeup-details summary::after {
+      content: "+";
+      font-size: 1.1rem;
+      line-height: 1;
+      letter-spacing: 0;
+    }
+    .closeup-details[open] summary::after { content: "\2212"; }
+    .closeup-details[open] summary { margin-bottom: 1.6rem; }
+
+    /* ── PROCESS ── */
+    #process { background: var(--bg2); }
+    .process-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.6rem;
+      max-width: 1150px;
+      margin: 2.8rem auto 0;
+    }
+    @media (max-width: 950px) { .process-grid { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 560px) { .process-grid { grid-template-columns: 1fr; } }
+    .pstep {
+      border-top: 1px solid rgba(200,32,42,0.3);
+      padding-top: 1.2rem;
+    }
+    .pnum {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.5rem;
+      color: var(--red);
+      line-height: 1;
+      margin-bottom: 0.7rem;
+    }
+    .pstep h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.12rem;
+      font-weight: 600;
+      color: var(--white);
+      margin-bottom: 0.5rem;
+      line-height: 1.35;
+    }
+    .pstep p {
+      font-size: 0.9rem;
+      color: rgba(240,240,240,0.6);
+      line-height: 1.7;
+    }
+    .assure-row {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.6rem 0.7rem;
+      max-width: 900px;
+      margin: 3rem auto 0;
+    }
+    .assure-row span {
+      font-size: 0.76rem;
+      letter-spacing: 0.06em;
+      color: rgba(240,240,240,0.6);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: 100px;
+      padding: 0.45rem 1.05rem;
+    }
   </style>
 </head>
 <body>
@@ -1089,8 +1447,10 @@
     <li><a href="#testimonials">Reviews</a></li>
           <li><a href="#blog">Articles</a></li>
     <li><a href="#about">About</a></li>
+    <li><a href="#process">Booking</a></li>
     <li><a href="/faq.html">FAQ</a></li>
-    <li><a href="#booking-form" class="nav-book">Book Now</a></li>
+    <li class="nav-phone"><a href="tel:0548482245" onclick="gtag('event','click_phone',{event_category:'contact',event_label:'nav'})">054-848-2245</a></li>
+    <li><a href="#booking-form" class="nav-book">Check Your Date</a></li>
   </ul>
   <button class="hamburger" id="hbg" onclick="toggleMenu()" aria-label="Menu">
     <span></span><span></span><span></span>
@@ -1119,10 +1479,25 @@
     <div class="hero-title">Mentalist &amp; Magician</div>
     <p class="hero-tagline">Predictions that land. Thoughts that are read. A mystery your guests will talk about for weeks.</p>
     <div class="hero-btns">
+      <a href="#booking-form" class="btn-gold" onclick="gtag('event','click_cta',{event_category:'lead',event_label:'hero_check_date'})">Check Your Date</a>
       <button class="hero-play" onclick="openModal()">
         <span class="play-icon">&#9654;</span>
         Watch the Trailer
       </button>
+    </div>
+    <div class="hero-contact">
+      <a href="tel:0548482245" onclick="gtag('event','click_phone',{event_category:'contact',event_label:'hero'})">
+        <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M6.6 10.8c1.4 2.8 3.8 5.1 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.4.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.7 21 3 13.3 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1l-2.3 2.2z"/></svg>
+        054-848-2245
+      </a>
+      <a href="https://wa.me/972548482245" target="_blank" rel="noopener" onclick="gtag('event','click_whatsapp',{event_category:'contact',event_label:'hero'})">
+        <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M12.05 0C5.5 0 .16 5.34.16 11.89c0 2.1.55 4.14 1.59 5.95L.06 24l6.3-1.65a11.88 11.88 0 005.69 1.45c6.55 0 11.89-5.34 11.89-11.89S18.6 0 12.05 0zm0 21.79a9.87 9.87 0 01-5.03-1.38l-.36-.21-3.74.98 1-3.65-.24-.37a9.86 9.86 0 01-1.51-5.27c0-5.45 4.44-9.88 9.89-9.88 5.45 0 9.88 4.43 9.88 9.88s-4.43 9.9-9.89 9.9z"/></svg>
+        WhatsApp
+      </a>
+      <a href="mailto:info@yishai.show" onclick="gtag('event','click_email',{event_category:'contact',event_label:'hero'})">
+        <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true"><path d="M20 4H4a2 2 0 00-2 2v12a2 2 0 002 2h16a2 2 0 002-2V6a2 2 0 00-2-2zm0 4.2l-8 4.8-8-4.8V6l8 4.8L20 6v2.2z"/></svg>
+        info@yishai.show
+      </a>
     </div>
   </div>
   <div class="hero-scroll">Scroll</div>
@@ -1130,38 +1505,106 @@
 
 <!-- ── SOCIAL PROOF ── -->
 <div id="proof">
-  <div class="proof-inner">
-    <div class="proof-stat">
-      <div class="proof-num">22+</div>
-      <div class="proof-label">Verified Reviews</div>
-    </div>
-    <div class="proof-stat">
-      <div class="proof-num">★★★★★</div>
-      <div class="proof-label">Audience Rating</div>
-    </div>
-    <div class="proof-stat">
-      <div class="proof-num">2,000+</div>
-      <div class="proof-label">Audience Members</div>
-    </div>
-    <div class="proof-stat">
-      <div class="proof-num">2</div>
-      <div class="proof-label">Languages (HE / EN)</div>
-    </div>
+  <div class="proof-head">Performed for</div>
+  <div class="proof-clients">
+    <span>IDF &mdash; 1875 Yehuda Battalion</span>
+    <span>Rofeh Cholim Cancer Society</span>
+    <span>Zichron Menachem</span>
+    <span>Bet Elazraki Children's Home</span>
+    <span>Lone Soldier Center</span>
+    <span>Carousel Theater Festival</span>
+    <span>Kfar Shaul Medical Center</span>
+    <span>Heichal Shlomo, Jerusalem</span>
+    <span>Olive Tree Hotel, Jerusalem</span>
+    <span>Camp Adirim</span>
   </div>
+  <a class="proof-rating" href="https://share.google/Xj2lI4KqWeMF4MkRI" target="_blank" rel="noopener">
+    <span class="proof-stars">&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+    Verified reviews on Google &mdash; read them all
+  </a>
 </div>
 
 <!-- ── PHOTO GALLERY ── -->
+<div class="gallery-head">
+  <div class="eyebrow">From real shows</div>
+  <p class="gallery-hint">Tap any photo to enlarge</p>
+</div>
 <div class="photo-gallery">
-  <img src="curated/army%20crowd.jpg" alt="Yishai performing mentalism for IDF soldiers" loading="lazy">
-  <img src="curated/19%20IDF%20soldier%20cryptext.jpeg" alt="Yishai performing for IDF soldiers" loading="lazy">
-  <img src="curated/11%20bitsritz%20cryptext.jpg" alt="Dramatic reveal moment" loading="lazy">
-  <img src="curated/08%20yakins%20laughing.jpg" alt="Audience laughing" loading="lazy">
-  <img src="curated/13%20elazraki%20kids.png" alt="Kids at camp show" loading="lazy">
-  <img src="curated/07%20yishai%20gesturing%20aroud%20and%20around%20with%20jacob%20and%20wife%20with%20extra%20top.png" alt="Yishai performing on stage" loading="lazy">
-  <img src="curated/09%20yosef%20clapping.png" alt="Audience member clapping" loading="lazy">
-  <img src="curated/12%20crowd%20gazing.jpg" alt="Crowd watching intently" loading="lazy">
-  <img src="curated/10%20staubers.jpg" alt="Audience reaction" loading="lazy">
-  <img src="curated/14%20strosberg%20crowd.png" alt="Kids watching the show" loading="lazy">
+  <button type="button" class="pg-item" onclick="openLightbox(0)" aria-label="Enlarge: Volunteer show for IDF reserve soldiers">
+    <img src="curated/army%20crowd.jpg" alt="Volunteer show for IDF reserve soldiers &mdash; 1875 Yehuda Battalion, Maccabim Camp" loading="lazy">
+    <span class="pg-zoom" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg>
+    </span>
+  </button>
+  <button type="button" class="pg-item" onclick="openLightbox(1)" aria-label="Enlarge: A soldier's thought, revealed">
+    <img src="curated/19%20IDF%20soldier%20cryptext.jpeg" alt="A soldier's thought, revealed &mdash; IDF base performance" loading="lazy">
+    <span class="pg-zoom" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg>
+    </span>
+  </button>
+  <button type="button" class="pg-item" onclick="openLightbox(2)" aria-label="Enlarge: The moment the prediction opens">
+    <img src="curated/11%20bitsritz%20cryptext.jpg" alt="The moment the prediction opens &mdash; Private event, Jerusalem" loading="lazy">
+    <span class="pg-zoom" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg>
+    </span>
+  </button>
+  <button type="button" class="pg-item" onclick="openLightbox(3)" aria-label="Enlarge: The room, one second after">
+    <img src="curated/08%20yakins%20laughing.jpg" alt="The room, one second after &mdash; Family celebration" loading="lazy">
+    <span class="pg-zoom" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg>
+    </span>
+  </button>
+  <button type="button" class="pg-item" onclick="openLightbox(4)" aria-label="Enlarge: Bet Elazraki Children's Home">
+    <img src="curated/13%20elazraki%20kids.png" alt="Bet Elazraki Children's Home &mdash; Netanya" loading="lazy">
+    <span class="pg-zoom" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg>
+    </span>
+  </button>
+  <button type="button" class="pg-item" onclick="openLightbox(5)" aria-label="Enlarge: Working a couple on stage">
+    <img src="curated/07%20yishai%20gesturing%20aroud%20and%20around%20with%20jacob%20and%20wife%20with%20extra%20top.png" alt="Working a couple on stage &mdash; Carousel Theater Festival" loading="lazy">
+    <span class="pg-zoom" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg>
+    </span>
+  </button>
+  <button type="button" class="pg-item" onclick="openLightbox(6)" aria-label="Enlarge: A guest who did not see it coming">
+    <img src="curated/09%20yosef%20clapping.png" alt="A guest who did not see it coming &mdash; Sheva berachos" loading="lazy">
+    <span class="pg-zoom" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg>
+    </span>
+  </button>
+  <button type="button" class="pg-item" onclick="openLightbox(7)" aria-label="Enlarge: Full room, total silence">
+    <img src="curated/12%20crowd%20gazing.jpg" alt="Full room, total silence &mdash; Community event" loading="lazy">
+    <span class="pg-zoom" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg>
+    </span>
+  </button>
+  <button type="button" class="pg-item" onclick="openLightbox(8)" aria-label="Enlarge: Close-up, in their hands">
+    <img src="curated/10%20staubers.jpg" alt="Close-up, in their hands &mdash; Home show, Beit Shemesh" loading="lazy">
+    <span class="pg-zoom" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg>
+    </span>
+  </button>
+  <button type="button" class="pg-item" onclick="openLightbox(9)" aria-label="Enlarge: All ages, one show">
+    <img src="curated/14%20strosberg%20crowd.png" alt="All ages, one show &mdash; Bar mitzvah, Beit Shemesh" loading="lazy">
+    <span class="pg-zoom" aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-3.5-3.5M11 8v6M8 11h6"/></svg>
+    </span>
+  </button>
+</div>
+
+<!-- ── LIGHTBOX ── -->
+<div id="lightbox" class="lb" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
+  <button class="lb-close" onclick="closeLightbox()" aria-label="Close">&#10005;</button>
+  <button class="lb-nav lb-prev" onclick="lbStep(-1)" aria-label="Previous photo">&#10094;</button>
+  <button class="lb-nav lb-next" onclick="lbStep(1)" aria-label="Next photo">&#10095;</button>
+  <figure class="lb-figure">
+    <img id="lb-img" src="" alt="">
+    <figcaption>
+      <span id="lb-cap"></span>
+      <span id="lb-sub"></span>
+      <span id="lb-count"></span>
+    </figcaption>
+  </figure>
 </div>
 
 <!-- ── VIDEO ── -->
@@ -1178,8 +1621,8 @@
     <div class="label" style="font-size:1rem;padding:3rem 1.5rem 1rem;">Official Trailer — Mind Reading &amp; Mentalism</div>
   </div>
 
-  <p class="video-grid-label">Mentalism &amp; mind reading — click to play</p>
-  <div class="video-grid">
+  <p class="video-grid-label">Filmed live at real shows — click to play</p>
+  <div class="video-grid video-grid--live">
     <div class="yt" data-ytid="MttKU4hdECY" onclick="loadYT(this, 'MttKU4hdECY')">
       <img src="https://img.youtube.com/vi/MttKU4hdECY/hqdefault.jpg" alt="Live Highlights – Crowds and Reactions" loading="lazy">
       <div class="play">&#9654;</div>
@@ -1202,7 +1645,18 @@
     </div>
   </div>
 
-  <p class="video-grid-label" style="margin-top:2.5rem;">Close-up magic — click to play</p>
+  <div class="ig-strip">
+    <div class="ig-strip-text">
+      <div class="ig-strip-title">New clips from live shows every week</div>
+      <p>The freshest material &mdash; real audiences, real reactions &mdash; goes up on Instagram first.</p>
+    </div>
+    <a class="ig-strip-btn" href="https://www.instagram.com/yishai.mentalist/" target="_blank" rel="noopener" onclick="gtag('event','click_instagram',{event_category:'social',event_label:'video_section'})">
+      Follow @yishai_mentalist
+    </a>
+  </div>
+
+  <details class="closeup-details">
+    <summary><span>Close-up magic, filmed up close</span> <em>9 clips</em></summary>
   <div class="video-grid">
     <div class="yt" data-ytid="k4KxVCAcQJE" onclick="loadYT(this, 'k4KxVCAcQJE')">
       <img src="https://img.youtube.com/vi/k4KxVCAcQJE/hqdefault.jpg" alt="Cup and Ball" loading="lazy">
@@ -1250,6 +1704,7 @@
       <div class="label">Color Changing Card</div>
     </div>
   </div>
+  </details>
 </section>
 
 <!-- ── EVENT TYPES ── -->
@@ -1515,6 +1970,46 @@
   </div>
 </section>
 
+<!-- ── PROCESS ── -->
+<section id="process" data-share>
+  <div class="center">
+    <div class="eyebrow">How it works</div>
+    <h2>From First Message to Show Night</h2>
+    <div class="rule" style="margin:1rem auto 0;"></div>
+    <p class="lead" style="margin:1.2rem auto 0;">No guesswork, no surprises. Here is exactly what happens after you get in touch.</p>
+  </div>
+  <div class="process-grid">
+    <div class="pstep">
+      <div class="pnum">01</div>
+      <h3>You send the details</h3>
+      <p>Date, location, guest count, and the kind of evening you are planning. A message or a two-minute phone call is enough.</p>
+    </div>
+    <div class="pstep">
+      <div class="pnum">02</div>
+      <h3>You get a written quote</h3>
+      <p>A clear proposal with the format, running time, and a fixed price &mdash; usually the same day. An official invoice (חשבונית) is issued for every booking.</p>
+    </div>
+    <div class="pstep">
+      <div class="pnum">03</div>
+      <h3>The show gets tailored</h3>
+      <p>A short planning call before the event: the guest of honour, the names, the details worth weaving in. This is what makes the show feel personal rather than packaged.</p>
+    </div>
+    <div class="pstep">
+      <div class="pnum">04</div>
+      <h3>Show night</h3>
+      <p>Yishai arrives early, coordinates with your MC or venue, and runs to your schedule. Sound is handled. You do nothing but watch the room react.</p>
+    </div>
+  </div>
+  <div class="assure-row">
+    <span>Performs across Israel</span>
+    <span>Hebrew &amp; English</span>
+    <span>Official invoice provided</span>
+    <span>Own sound system</span>
+    <span>Clean &amp; family-appropriate</span>
+    <span>References on request</span>
+  </div>
+</section>
+
 <!-- ── CONTACT ── -->
 <section id="booking" data-share>
   <div class="center">
@@ -1607,6 +2102,7 @@
     <a href="#services">Services</a>
     <a href="#testimonials">Reviews</a>
     <a href="#about">About</a>
+    <a href="#process">How Booking Works</a>
     <a href="#booking-form">Book</a>
     <a href="https://www.instagram.com/yishai.mentalist/" target="_blank" rel="noopener">Instagram</a>
   </nav>
@@ -1761,6 +2257,77 @@
     draw();
   })();
 </script>
+
+<!-- ── LIGHTBOX ── -->
+<script>
+  const LB_SHOTS = [
+    ["curated/army%20crowd.jpg", "Volunteer show for IDF reserve soldiers", "1875 Yehuda Battalion, Maccabim Camp"],
+    ["curated/19%20IDF%20soldier%20cryptext.jpeg", "A soldier's thought, revealed", "IDF base performance"],
+    ["curated/11%20bitsritz%20cryptext.jpg", "The moment the prediction opens", "Private event, Jerusalem"],
+    ["curated/08%20yakins%20laughing.jpg", "The room, one second after", "Family celebration"],
+    ["curated/13%20elazraki%20kids.png", "Bet Elazraki Children's Home", "Netanya"],
+    ["curated/07%20yishai%20gesturing%20aroud%20and%20around%20with%20jacob%20and%20wife%20with%20extra%20top.png", "Working a couple on stage", "Carousel Theater Festival"],
+    ["curated/09%20yosef%20clapping.png", "A guest who did not see it coming", "Sheva berachos"],
+    ["curated/12%20crowd%20gazing.jpg", "Full room, total silence", "Community event"],
+    ["curated/10%20staubers.jpg", "Close-up, in their hands", "Home show, Beit Shemesh"],
+    ["curated/14%20strosberg%20crowd.png", "All ages, one show", "Bar mitzvah, Beit Shemesh"]
+  ];
+  let lbIndex = 0;
+  const lbEl = document.getElementById('lightbox');
+
+  function lbRender() {
+    const [src, cap, sub] = LB_SHOTS[lbIndex];
+    const img = document.getElementById('lb-img');
+    img.src = src;
+    img.alt = cap + ' — ' + sub;
+    document.getElementById('lb-cap').textContent = cap;
+    document.getElementById('lb-sub').textContent = sub;
+    document.getElementById('lb-count').textContent = (lbIndex + 1) + ' / ' + LB_SHOTS.length;
+  }
+  function openLightbox(i) {
+    lbIndex = i;
+    lbRender();
+    lbEl.hidden = false;
+    document.body.style.overflow = 'hidden';
+    document.querySelector('.lb-close').focus();
+    if (window.gtag) gtag('event','view_photo',{event_category:'engagement',event_label:'gallery_' + i});
+  }
+  function closeLightbox() {
+    lbEl.hidden = true;
+    document.body.style.overflow = '';
+  }
+  function lbStep(d) {
+    lbIndex = (lbIndex + d + LB_SHOTS.length) % LB_SHOTS.length;
+    lbRender();
+  }
+  // Preload neighbours so stepping feels instant
+  function lbPreload() {
+    [1, -1].forEach(d => {
+      const n = (lbIndex + d + LB_SHOTS.length) % LB_SHOTS.length;
+      new Image().src = LB_SHOTS[n][0];
+    });
+  }
+  lbEl.addEventListener('click', e => {
+    if (e.target.closest('.lb-nav, .lb-close, .lb-figure img')) return;
+    closeLightbox();
+  });
+  document.addEventListener('keydown', e => {
+    if (lbEl.hidden) return;
+    if (e.key === 'Escape') closeLightbox();
+    else if (e.key === 'ArrowRight') { lbStep(1); lbPreload(); }
+    else if (e.key === 'ArrowLeft') { lbStep(-1); lbPreload(); }
+  });
+  // Swipe on touch devices
+  let lbTouchX = null;
+  lbEl.addEventListener('touchstart', e => { lbTouchX = e.changedTouches[0].clientX; }, {passive: true});
+  lbEl.addEventListener('touchend', e => {
+    if (lbTouchX === null) return;
+    const dx = e.changedTouches[0].clientX - lbTouchX;
+    if (Math.abs(dx) > 50) lbStep(dx < 0 ? 1 : -1);
+    lbTouchX = null;
+  }, {passive: true});
+</script>
+
 <!-- Floating WhatsApp Button -->
 <style>
   .wa-float {
