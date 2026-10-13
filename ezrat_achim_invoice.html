@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>דרישת תשלום - ישי רזובסקי בע"מ - עזרת אחים</title>
+
+  <style>
+    @page {
+      size: A4;
+      margin: 16mm 17mm;
+    }
+
+    :root {
+      --ink: #1f1f1f;
+      --muted: #6f6f6f;
+      --light: #e6e6e6;
+      --lighter: #f6f6f6;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0 auto;
+      max-width: 760px;
+      padding: 28px 24px 36px;
+      color: var(--ink);
+      background: #fff;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: 13px;
+      line-height: 1.52;
+      direction: rtl;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    /* ---------- Header ---------- */
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding-bottom: 14px;
+      border-bottom: 2px solid var(--ink);
+    }
+
+    .brand h1 {
+      margin: 0;
+      font-size: 24px;
+      line-height: 1.1;
+      font-weight: 700;
+      letter-spacing: -0.3px;
+    }
+
+    .brand .subtitle {
+      margin: 5px 0 0;
+      color: var(--muted);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 10.5px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    .contact {
+      text-align: left;
+      color: var(--muted);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 10.5px;
+      line-height: 1.55;
+    }
+
+    .contact p {
+      margin: 0;
+    }
+
+    .contact a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* ---------- Document Title ---------- */
+
+    .document-heading {
+      margin: 20px 0 17px;
+      text-align: center;
+    }
+
+    .document-heading h2 {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+    }
+
+    /* ---------- Meta ---------- */
+
+    .meta {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      padding: 10px 0 14px;
+      border-bottom: 1px solid var(--light);
+    }
+
+    .meta-item:last-child {
+      text-align: left;
+    }
+
+    .label {
+      display: block;
+      margin-bottom: 2px;
+      color: var(--muted);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 8.5px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+    }
+
+    /* ---------- Sections ---------- */
+
+    .section {
+      margin-top: 18px;
+    }
+
+    .section-title {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin: 0 0 6px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 9px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .section-title::after {
+      content: "";
+      flex: 1;
+      height: 1px;
+      background: var(--light);
+    }
+
+    /* ---------- Tables ---------- */
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      table-layout: fixed;
+    }
+
+    td {
+      padding: 5px 0;
+      border-bottom: 1px solid #eeeeee;
+      vertical-align: top;
+    }
+
+    tr:last-child td {
+      border-bottom: none;
+    }
+
+    td.key {
+      width: 120px;
+      padding-left: 18px;
+      color: var(--muted);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 10px;
+      font-weight: 600;
+    }
+
+    td.value {
+      font-size: 12px;
+    }
+
+    .amount {
+      text-align: left;
+      white-space: nowrap;
+      font-variant-numeric: tabular-nums;
+    }
+
+    /* ---------- Fees ---------- */
+
+    .fee-table td {
+      padding: 6px 0;
+    }
+
+    .total-row td {
+      padding: 8px 0;
+      border-top: 1px solid var(--ink);
+      border-bottom: 2px solid var(--ink);
+      font-size: 14px;
+      font-weight: 700;
+    }
+
+    /* ---------- Bank Details ---------- */
+
+    .bank-details {
+      margin-top: 14px;
+      padding: 10px 14px;
+      background: var(--lighter);
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 10px;
+      line-height: 1.7;
+    }
+
+    .bank-details strong {
+      font-size: 9px;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+    }
+
+    /* ---------- Footer ---------- */
+
+    .footer {
+      margin-top: 40px;
+      padding-top: 8px;
+      border-top: 1px solid var(--light);
+      color: #999;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 8.5px;
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    /* ---------- Print ---------- */
+
+    @media print {
+      body {
+        max-width: none;
+        padding: 0;
+      }
+
+      .section {
+        break-inside: avoid;
+      }
+
+      a {
+        color: inherit;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="brand">
+      <h1>ישי רזובסקי בע"מ</h1>
+      <p class="subtitle">מנטליסט וקוסם</p>
+    </div>
+
+    <div class="contact">
+      <p>054-848-2245</p>
+      <p>yishairasowsky@gmail.com</p>
+      <p><a href="https://www.yishai.show">www.yishai.show</a></p>
+    </div>
+  </header>
+
+
+  <!-- Document Heading -->
+  <div class="document-heading">
+    <h2>דרישת תשלום</h2>
+  </div>
+
+
+  <!-- Client / Date -->
+  <div class="meta">
+    <div class="meta-item">
+      <span class="label">לכבוד</span>
+      עמותת עזרת אחים<br>לידי: אהרון אליס
+    </div>
+
+    <div class="meta-item">
+      <span class="label">תאריך הנפקה</span>
+      אוקטובר 2026
+    </div>
+  </div>
+
+
+  <!-- Event Details -->
+  <section class="section">
+    <h3 class="section-title">פרטי האירוע</h3>
+
+    <table>
+      <tr>
+        <td class="key">אירוע</td>
+        <td class="value">מופע קסמים</td>
+      </tr>
+
+      <tr>
+        <td class="key">תאריך</td>
+        <td class="value">30 בספטמבר 2026</td>
+      </tr>
+
+      <tr>
+        <td class="key">מיקום</td>
+        <td class="value">רמת בית שמש</td>
+      </tr>
+    </table>
+  </section>
+
+
+  <!-- Fees -->
+  <section class="section">
+    <h3 class="section-title">תמחור</h3>
+
+    <table class="fee-table">
+      <tr class="total-row">
+        <td>סה"כ לתשלום</td>
+        <td class="amount">__________ ש"ח</td>
+      </tr>
+    </table>
+  </section>
+
+
+  <!-- Business Details -->
+  <section class="section">
+    <h3 class="section-title">פרטי העסק</h3>
+
+    <table>
+      <tr>
+        <td class="key">שם העסק</td>
+        <td class="value">ישי רזובסקי בע"מ</td>
+      </tr>
+
+      <tr>
+        <td class="key">סטטוס</td>
+        <td class="value">עוסק מורשה</td>
+      </tr>
+
+      <tr>
+        <td class="key">מספר עוסק</td>
+        <td class="value">517297750</td>
+      </tr>
+    </table>
+
+    <div class="bank-details">
+      <strong>פרטי העברה בנקאית</strong><br>
+      בנק מרכנתיל (17) &nbsp;·&nbsp;
+      סניף ביתר עילית (734) &nbsp;·&nbsp;
+      חשבון 105401635
+    </div>
+  </section>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    ישי רזובסקי בע"מ · עוסק מורשה 517297750
+    · www.yishai.show · 054-848-2245
+  </footer>
+
+</body>
+</html>
