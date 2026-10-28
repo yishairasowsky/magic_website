@@ -1,0 +1,65 @@
+WhatsApp CRM Research for Solo Freelancer — October 2026
+
+CONTEXT: You communicate with clients almost entirely via WhatsApp. You need a tool that tracks leads, logs conversations, and automatically sends a follow-up message if someone doesn't reply within a few hours. You are a solo operator, so enterprise pricing is out. All tools below work internationally, including Israel, through Meta's official WhatsApp Business API.
+
+ONE NOTE BEFORE THE LIST: Since July 2025, Meta changed its pricing model. You no longer pay per 24-hour conversation window. You now pay per delivered template message. This is actually better for low-volume solo operators because you only pay when you send, not just for keeping a chat open. The tools below all sit on top of this infrastructure.
+
+---
+
+TOOL 1: Whatsable (whatsable.app)
+
+Whatsable is a lightweight automation tool built around WhatsApp sequences. Its main feature is exactly what you need: you build a sequence of follow-up messages and attach a trigger (e.g., "lead hasn't replied in 4 hours") and Whatsable fires the next message automatically. It has a stop-on-reply function, meaning the sequence pauses the moment the contact writes back, so they never get a robotic follow-up mid-conversation. It is not a full CRM with pipelines and invoices, but for pure WhatsApp automation and follow-up logic it is purpose-built. Pricing is not publicly listed as a flat rate — they operate on a usage/plan basis that targets small business, and the site is oriented toward solo and small-team users. Best for: automating the follow-up sequence itself.
+
+---
+
+TOOL 2: WATI (wati.io)
+
+WATI is one of the most widely recommended WhatsApp-native tools and is an official Meta Business Solution Partner, which means you get legitimate API access through them without setting up your own Meta developer account. Crucially, WATI has a documented "WhatsApp Customer No Response" trigger built into its automation flow builder — you set a time window (e.g., 3 hours, 6 hours, 1 day) and it fires a follow-up automatically. It also has a contact/lead management panel so you can see where each lead stands. The downside for a solo operator: WATI's Growth plan starts at $59/month (billed annually) and the Pro plan is $119/month. That is on the steeper side, but it is the most full-featured WhatsApp-specific tool for this exact use case. Best for: someone who wants everything in one WhatsApp-native platform and doesn't mind paying for it.
+
+---
+
+TOOL 3: Kommo (kommo.com, formerly amoCRM)
+
+Kommo is a sales-focused CRM with strong WhatsApp integration and a visual pipeline (like a kanban board for leads). Its "Salesbot" feature lets you set automated follow-ups triggered by inactivity — for example, if a lead from WhatsApp hasn't responded in 3 days, the Salesbot sends a pre-written message and can move the lead to a different pipeline stage. For a mentalist tracking multiple event inquiries at once, this visual pipeline is genuinely useful — you can see at a glance who is at the "awaiting reply" stage. Kommo's Base plan is $15 per user per month, which at one user is very affordable. WhatsApp integration is available on paid plans. Best for: someone who wants a real visual lead pipeline plus automated follow-ups.
+
+---
+
+TOOL 4: Privyr (privyr.com)
+
+Privyr was designed specifically for solo salespeople and solopreneurs who live on their phones and manage leads through WhatsApp, SMS, and DMs. It captures leads from various sources, organizes them into a simple mobile-first interface, and lets you set follow-up reminders and automated message sequences. It is less of a full API automation platform and more of a smart personal assistant that sits on top of your existing WhatsApp. This means it works with WhatsApp Business without necessarily requiring full API setup — lower barrier to entry. Pricing is not publicly listed on their main page but is consistently described as affordable for solo operators, with free tier available. Best for: someone who wants the simplest possible setup and doesn't need enterprise-level API access.
+
+---
+
+TOOL 5: AiSensy (aisensy.com)
+
+AiSensy is an official WhatsApp Business API platform with a no-code chatbot and automation builder. It supports automated follow-up flows based on inactivity: you design a flow that detects no reply within X hours and triggers the next message. It also integrates with Google Sheets, HubSpot, and Zoho if you want to log leads elsewhere. Pricing starts at a lower tier than WATI, and they have a starter plan aimed at small businesses. The interface is web-based and requires no coding. Best for: someone who wants more chatbot and flow options, not just follow-ups.
+
+---
+
+TOOL 6: Zoho CRM + WhatsApp Integration (zoho.com/crm)
+
+Zoho CRM is a full-featured CRM that starts at $14 per user per month (billed annually) and includes WhatsApp integration on paid plans. You can log WhatsApp conversations against contact records, set manual follow-up tasks, and use Zoho's automation rules to trigger actions when a lead has been idle. It is not WhatsApp-native the way WATI or Whatsable are, but if you ever want to grow into a more complete business management system (quotes, contacts, email, pipeline), Zoho CRM is a serious platform at a very reasonable price. The WhatsApp automation is less turnkey than WATI but very configurable. Best for: someone who wants a proper CRM first and WhatsApp integration second.
+
+---
+
+TOOL 7: ChatMaxima (chatmaxima.com)
+
+ChatMaxima is a lesser-known but specifically affordable option — Starter plan at $19/month with no markup on Meta's per-message charges. It offers a no-code chatbot builder, WhatsApp automation, and basic lead management. It is newer and less established than WATI or Kommo but is squarely aimed at small businesses that want WhatsApp automation without paying $59+/month. Follow-up automation based on no-reply is supported. Best for: budget-conscious users who want WATI-like functionality at half the price.
+
+---
+
+RECOMMENDATION FOR YOUR SITUATION
+
+For a solo mentalist in Israel whose entire sales process runs through WhatsApp and who wants automatic no-reply follow-ups without complexity, the two strongest fits are:
+
+Kommo ($15/month) if you want a visual lead pipeline to track which event inquiries are at which stage, combined with automated follow-ups. It is the most complete CRM at the lowest price with genuine WhatsApp automation.
+
+Whatsable if you want something even simpler that is purely focused on WhatsApp sequences and follow-up automation, without the overhead of a full CRM.
+
+WATI is the gold standard for WhatsApp automation specifically, but at $59/month it is harder to justify for a one-person operation with moderate volume.
+
+One practical note: all of these tools require a WhatsApp Business API number, which means the phone number you use with them cannot simultaneously run the regular WhatsApp Business app. You would need either a second number dedicated to the CRM tool, or to fully migrate your business number to the API. This is worth factoring into your decision.
+
+---
+
+Sources consulted: wati.io, whatsable.app, kommo.com, privyr.com, aisensy.com, zoho.com, chatmaxima.com, nethunt.com/blog/whatsapp-crm, taskip.net/best-crm-with-whatsapp-integration, chatmaxima.com/blog/10-best-whatsapp-crm-systems-2026, respond.io/blog/best-whatsapp-automation-tool
