@@ -1,0 +1,120 @@
+OUTREACH BOUNCE REPORT — Nov 1, 2026
+93 emails sent. 16 bounced. 77 delivered.
+
+BOUNCED (dead addresses):
+1. recruitment_mobileye@mobileye.com — internal-only group, blocked external senders
+2. info@jerusalemestates.com — address doesn't exist
+3. diplomatie@ambafrance-il.org — user unknown
+4. il_marketing@pwc.com — address doesn't exist
+5. info@jhomes.co.il — address doesn't exist
+6. digital@madeinjerusalem.org — domain doesn't exist
+7. info@jbnf.org — domain doesn't accept email
+8. info@tzora.co.il — user unknown
+9. contact@israelunlimited.com — address doesn't exist
+10. info@eshetincoming.com — blocked external senders
+11. careers@orcam.com — account inactive/disabled
+12. info@herschelgutmanphotography.com — recipient not found
+13. orient@isrotel.co.il — invalid recipient
+
+SUCCESSFULLY DELIVERED (77 emails):
+
+TOUR GUIDES (9):
+- Jeremy@JerusalemwithJeremy.com
+- 007Shimon@Gmail.com
+- info@dannythedigger.com
+- meir@privatetourguideinisrael.net
+- eladvazana@gmail.com
+- eli@tzurtours.com
+- arimelnik@gmail.com
+- emanuelle@touringisrael.com
+- travel@amazingjerusalem.com
+
+HOTELS (7):
+- kd-concierge@danhotels.com (King David)
+- concierge@thedavidcitadel.com (David Citadel)
+- jerusalem@waldorfastoria.com (Waldorf Astoria)
+- Host@mamillahotel.com + Banquet@MamillaHotel.com (Mamilla)
+- concierge@amcol.co.il + events@amcol.co.il (American Colony)
+- events@inbalhotel.com (Inbal)
+- res@herbertsamuel.com (Herbert Samuel)
+
+CATERERS (2):
+- getcravy@gmail.com (Crave Catering)
+- info@lehembasar-jerusalem.co.il (Lechem Basar)
+
+WEDDING PHOTOGRAPHERS (3):
+- Jez.Lerman@Gmail.com (Jeremy Lerman)
+- danielnotcake@gmail.com (Daniel Notcake)
+- jake@jakelivni.com (Jake Livni)
+
+EVENT PLANNERS (6):
+- anath@lovelyevents.co.il (Lovely Events)
+- Kaiwedd1@gmail.com (Kai Event Planners)
+- contact@infinity-israel.com (Infinity Concept)
+- adena@atozeventsisrael.com (A to Z Events)
+- yehuditkosowsky@gmail.com (Yehudit Designs)
+- menashe@stein-shani.co.il (Stein-Shani)
+
+CORPORATE (7):
+- contact@lightricks.com (Lightricks)
+- info-jer@deloitte.co.il (Deloitte Jerusalem)
+- israel@kpmg.com (KPMG)
+- Israelvisits@hadassah.org (Hadassah)
+- rd@szmc.org.il (Shaare Zedek)
+- meitar@meitar.com (Meitar Law)
+
+EMBASSIES & CULTURAL (11):
+- jerusalemniv@state.gov (US Embassy)
+- webmaster.telaviv@fcdo.gov.uk (British Embassy)
+- info@tel-aviv.diplo.de (German Embassy)
+- iictelaviv@esteri.it (Italian Cultural Institute)
+- taviv@international.gc.ca (Canadian Embassy)
+- telaviv.embassy@dfat.gov.au (Australian Embassy)
+- guest@mishkenot.org.il + prog@mishkenot.org.il (Mishkenot Sha'ananim)
+- info@jmc.org.il (Jerusalem Music Centre)
+- ifjromaingary@gmail.com (Institut Francais)
+- info@ymca.org.il (Jerusalem YMCA)
+- fpa.execsec@gmail.com (Foreign Press Association)
+
+DMCs & TOURISM (11):
+- yanab@ortra.com (Ortra)
+- israel@liberty-int.com (Liberty International)
+- sarel@sareltours.com (Sar-El)
+- info@werisrael.com (WeRIsrael)
+- info@isram.co.il (ISRAM)
+- info@kenes-tours.com (Kenes Tours)
+- office@incomingisrael.com (Incoming Israel)
+- meetings@diesenhaus.com (Diesenhaus)
+- info@tlalimgroup.com (Tlalim Group)
+- touring@dekeltours.com (Dekel Tours)
+- info@artisansofleisure.com (Artisans of Leisure)
+
+VENUES (7):
+- info@sergeipalace.com (Sergei Palace)
+- reservations@beitshmuel.co.il (Beit Shmuel)
+- event@castel.co.il (Domaine du Castel)
+- info@flamwinery.com (Flam Winery)
+- info@ronitfarm.com (Ronit Farm)
+- hello@olive-and-vine.com (Olive and Vine)
+
+CLUBS & NETWORKS (10):
+- rotarymark@gmail.com (Jerusalem Rotary)
+- Hana081042@gmail.com (Lions Club Jerusalem)
+- amcham@amcham.co.il (AmCham Israel)
+- info@ibcc.org.il (Israel-Britain Chamber)
+- office@cciif.org (Israel-France Chamber)
+- info@aaci.org.il (AACI)
+- rlevin@nbn.org.il (Nefesh B'Nefesh)
+- info@eoisrael.org (EO Israel)
+- adym@caesarea.com (Caesarea Golf Club)
+
+REAL ESTATE (3):
+- jerusalem@anglo-saxon.co.il (Anglo Saxon)
+- office@israelsir.com (Israel Sotheby's)
+
+PR & MARKETING (5):
+- info@ran-rahav.co.il (Ran Rahav)
+- info@debby.co.il (Debby Group)
+- info@danilevy.co.il (Dani Levy)
+- info@promarket.co.il (Promarket)
+- contact@reblonde.com (ReBlonde)
