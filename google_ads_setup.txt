@@ -1,0 +1,62 @@
+GOOGLE ADS — QUICK SETUP TO CAPTURE PEOPLE ACTIVELY SEARCHING
+
+BUDGET: Start with 30-50 NIS/day ($8-13). Test for 2 weeks, then adjust.
+
+KEYWORDS TO BID ON:
+
+High intent (people ready to book):
+- mentalist for event Israel
+- magician for corporate event Jerusalem
+- entertainment for private dinner Israel
+- mind reader for hire Israel
+- bar mitzvah entertainer Jerusalem
+- corporate event entertainment Israel
+- magician for wedding Jerusalem
+
+Medium intent (people researching):
+- mentalist Israel
+- magician Jerusalem
+- event entertainment ideas Israel
+- unique corporate entertainment
+
+Negative keywords (block these so you don't waste money):
+- magic tricks tutorial
+- learn magic
+- magic show for kids
+- free magician
+- birthday party clown
+
+AD COPY:
+
+Headline 1: Mentalist for Your Event | Jerusalem
+Headline 2: Mind-Reading That Leaves Guests Speechless
+Headline 3: Corporate Events, Dinners & Celebrations
+Description: Professional mentalist Yishai Rasowsky performs mind-reading at corporate events, private dinners, and celebrations across Israel. No stage needed. Book a free consultation. 054-848-2245.
+
+LANDING PAGE:
+
+Your website (yishaimagic.com) needs a clear page for this. It should have:
+- A 30-second video at the top
+- 3 bullet points: what you do, who it's for, how to book
+- 2-3 testimonials
+- A contact form (name, event type, date, number of guests)
+- Your phone number visible without scrolling
+
+If your current site doesn't have this, we can build a simple landing page.
+
+SETUP STEPS:
+
+1. Go to ads.google.com and create an account
+2. Choose "Search" campaign
+3. Set location targeting: Israel (or Jerusalem + Tel Aviv + Herzliya if you want to start narrow)
+4. Set language: English + Hebrew
+5. Add the keywords above
+6. Write 3 ad variations using the copy above
+7. Set daily budget to 30-50 NIS
+8. Set bid strategy to "Maximize clicks" to start (switch to "Maximize conversions" once you have 15+ conversions)
+9. Add your phone number as a call extension
+10. Launch and check results after 7 days
+
+EXPECTED RESULTS:
+
+With 30-50 NIS/day, expect roughly 5-15 clicks per day. If 1 in 20 clicks turns into an inquiry, that's about 1 inquiry every 2-3 days. One booking from Google Ads would pay for a month of ads easily.
