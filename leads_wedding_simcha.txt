@@ -1,0 +1,64 @@
+LEADS: WEDDING, SIMCHA AND PRIVATE-EVENT VENUES, PLANNERS AND HOTEL EVENT DEPARTMENTS (compiled 2026-11-06). Format: Company | name | email | website | type and why they fit. Every email was seen on a public listing: the iTravelJerusalem convention-bureau supplier directory (conventions.itraveljerusalem.com) or the official Tel Aviv-Yafo Planners Guide published by Tel Aviv Global (telavivglobal.azurewebsites.net PDF). Deduped against outreach_crm.txt and all leads_*.txt files (Inbal, Waldorf Astoria, David Citadel, YMCA, Israel Museum, Cezanne, Arba Onot, Zohar, KST, Paragon and others already contacted were left out). Nothing was sent. Items marked (reservations address) are the only public address found, so ask for the events or banquet department in the first line.
+
+JERUSALEM AND SURROUNDING
+Mamilla Hotel | banquet team | banquet@mamillahotel.com | mamillahotel.com | luxury hotel with a dedicated wedding and private events team and a rooftop restaurant, ideal for guest entertainment
+Dan Jerusalem Hotel | Oshrat Edry | Oshrat.Edry@danhotels.com | danhotels.com | five star hotel with banquet halls, contact named on the convention bureau listing
+Emile Botta | events | emilebotta12@gmail.com | emilebotta.com | historic boutique venue with two event spaces for up to 120 guests, weddings and simchas
+Ein Yael | events | einyael.events@gmail.com | ein-yael.co.il | Jerusalem events site listing this events address, family simchas and group events
+Mishkenot Sha'ananim | guest services | guest@mishkenot.org.il | mishkenot.org.il | prestigious Old City view venue used for private receptions and weddings
+Hebrew Music Museum | contact | contact@hebrewmusicmuseum.com | hebrewmusicmuseum.com | Jerusalem museum hiring out space for private and corporate evenings
+Gottesman Family Israel Aquarium | Rebecca | rebecca@iaqua.org.il | israel-aquarium.org.il | Jerusalem venue for large private and corporate events needing guest activities
+Ofaimme Farm | events | info@ofaimme.com | ofaimme.com | farm venue near Jerusalem for events and gatherings
+Xtra Events | office | xtraevent4u@gmail.com | xtra-events.com | luxury wedding and event planner listed on the convention bureau directory, books entertainment
+Hanna Productions | Hanna Taieb | hannataieb123@gmail.com | hanna-productions.com | Jerusalem event producer, books entertainment for client events
+Shlomi Mizrahi Production | Shlomi Mizrahi | shlomim9@gmail.com | shlomiz.co.il | photography and event production, sees guest entertainment at many simchas
+A.lef Productions | Alon Lef | alonlef@gmail.com | alefproductions.co.il | Jerusalem event producer, referral source for corporate and private events
+
+TEL AVIV, JAFFA AND GUSH DAN HOTELS
+David Kempinski Tel Aviv | sales department | sales.telaviv@kempinski.com | kempinski.com | luxury seafront hotel, ballroom for up to 500, weddings and bar mitzvahs
+Sheraton Grand Tel Aviv | sales department | sales.telaviv@sheraton.com | marriott.com/tlvsi | seafront luxury hotel with event studios, private functions
+InterContinental David Tel Aviv | banquets department | tlvha.banquets@ihg.com | intercontinental.com/telaviv | upscale hotel banquet team, weddings and large celebrations
+Renaissance Tel Aviv | sales department | sales@renaissancetelaviv.co.il | renaissancetelaviv.com | seafront hotel with halls, private and corporate events
+Hilton Tel Aviv | Rotem Refael | rotem.refael@hilton.com | hilton.com | largest hotel event space in the city, weddings and galas
+The Setai Tel Aviv | Gilad L | giladl@thesetaihotel.co.il | thesetaihotel.co.il | luxury Jaffa hotel, high end private events
+Orchid Hotels Tel Aviv | Gilad | gilad@orchidhotels.com | orchidhotels.co.il | seafront hotel with reconfigurable event rooms for cocktails and events
+Alexander Hotel Tel Aviv | reception | hotel@alexander.co.il | alexander.co.il | all-suite luxury boutique hotel, small high end gatherings
+Carlton Tel Aviv | events request | request@carlton.co.il | carlton.co.il | luxury seafront hotel with Meir Adoni restaurants, private events
+Lily and Bloom Tel Aviv | hotel | hotel@lilyandbloom.com | lilyandbloom.com | Bauhaus boutique hotel, intimate private events
+Shenkin Hotel | info | info@shenkinhotel.com | shenkinhotel.com | boutique hotel, small private gatherings
+MUSE Tel Aviv | reservations | reserve@musehotel.co.il | musetelaviv.com | adults only boutique hotel (reservations address)
+Rothschild 22 (Fattal) | hotel | rothschild22@fattal.co.il | fattal-hotels.com | boutique hotel on Rothschild Blvd, private events
+Leonardo Art Hotel (Fattal) | reception | artreception@fattal.co.il | fattal-hotels.com | seafront hotel with pool deck for celebrations
+Brown BoBo Tel Aviv | reservations | reservations@brownhotels.com | brownhotels.com | designer hotel with rooftop restaurant and conference center (reservations address)
+Mishkenot Jaffa Hotel | reception | res@mishkenot-jaffa.co.il | mishkenot-jaffa.co.il | Jaffa hotel with halls for up to 250 guests (reservations address)
+Prima Tel Aviv | hotel | primatlv@prima.co.il | prima-hotels-israel.com | hotel with two halls for events
+Crowne Plaza Tel Aviv | Jenny L | jennyl@afi-hotels.co.il | ihg.com/crowneplaza | Azrieli hotel with event rooms, corporate and private
+Hotel Metropolitan Tel Aviv | reservations | reserve@hotelmetropolitan.co.il | hotelmetropolitan.co.il | seven banquet halls for up to 200 guests (reservations address)
+Margosa Hotel Jaffa | manager | manager@margosa-hotel.co.il | margosa-hotel.co.il | Jaffa boutique hotel, smaller events
+The Jaffa Luxury Collection | Galit Halfon | galit.halfon@theluxurycollectionhotels.com | marriott.com | luxury restored Jaffa hotel with event space, high end weddings and receptions
+Jacob Samuel Hotel | info | info@jacob-samuel.co.il | jacobsamuelhotel.com | upscale boutique hotel with chef restaurant, private dinners
+The Drisco Tel Aviv | contact | contact@thedrisco.com | thedrisco.com | luxury boutique hotel with event rooms and rooftop terrace
+Kfar Maccabiah Hotel Ramat Gan | info | info@kmc.co.il | kmc.co.il | large Ramat Gan hotel with meeting halls and events
+
+TEL AVIV VENUES, PLANNERS AND ORGANIZERS
+Speakeasy Tel Aviv | info | info@speakeasy.co.il | speakeasy.co.il | Rothschild Blvd cocktail venue for 50 to 150 guests, after parties and private events
+ZOA House | events | zoa@zoatlv.co.il | zoatlv.co.il | historic Tel Aviv venue with in-house kosher catering, simchas and receptions
+Dubnov Gallery (High and) | office | office@highand.co.il | dubnovgallery.co.il | gallery venue offering weddings, boutique and private events
+Windman Productions | Shiri | shiri@windman.co.il | windman.co.il | Tel Aviv event producer, books entertainment for events
+Target Market Productions | Ilanit | ilanitl@target-market.co.il | target-market.co.il | event and conference producer in Petah Tikva
+MSM Marketing and Events | Miri | miri@msm-marketing.co.il | msm-marketing.co.il | event production company, Tel Aviv
+OZ Productions | Yaron | yaron@oz-pro.co.il | oz-pro.co.il | event production company from Beit Zayit near Jerusalem
+Giant Leaps | Ora | ora@giantleaps.co.il | giantleaps.co.il | Mevaseret Zion production and incoming company, close to Jerusalem
+Tel Aviv Museum of Art | events | events@tamuseum.com | tamuseum.org.il | museum hiring spaces for galas and private receptions
+Gutman Museum | events | events@gutmanmuseum.co.il | gutmanmuseum.co.il | restored 1887 building with courtyard for private events
+Peres Center for Peace | events | events@peres-center.org | peres-center.org | Jaffa seafront auditorium and halls for events
+Israeli Opera | events | events@israelopera.org.il | israel-opera.co.il | foyer used for receptions
+Tel Aviv Cinematheque | events | eruim@cinema.co.il | cinema.co.il | rooms for social evenings and private events
+Eretz Israel Museum | Ron B | ronb@eretzmuseum.org.il | eretzmuseum.org.il | museum garden and halls for seminars and special events
+Ilana Goor Museum | events | eventsilanagoor@gmail.com | ilanagoormuseum.org | Old Jaffa art museum hosting private events with tours
+Expo Tel Aviv | Liat | liat@expotelaviv.co.il | expotelaviv.co.il | exhibition center, route to wedding and event organizers who use the site
+
+WEDDING AND SIMCHA EXPOS AND HOSPITALITY SHOWS (next 6 months, from 2026-11-06)
+HOTEX Israel hospitality trade show | 17 to 18 November 2026, Expo Tel Aviv, part of Israeli Food and Hospitality Week | organizer Stier Group, expo@stier-group.com (already contacted in the CRM, waiting for reply) | hotels, caterers and event halls attend, so a good place to meet banquet managers
+Yarid Crystal (bridal and mothers of the bride fair) | held annually at Binyanei HaUma Jerusalem, about 200 businesses, 15,000 visitors; the 2026 edition was on 13 Cheshvan 5787, around late October 2026, so the next one is expected in autumn 2027 and no public organizer email was found | main wedding fair for the religious Jerusalem market, find the organizer through the fair's own site or Facebook page before the next edition
+Expo Tel Aviv calendar | see expotelaviv.co.il, liat@expotelaviv.co.il | no dedicated wedding expo with confirmed 2027 dates was found in public listings, check the calendar again in January
